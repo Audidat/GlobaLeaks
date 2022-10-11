@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+	"commonjs": true,
+        "jasmine": true,
+	"node": true,
+        "protractor": true,
+        "serviceworker": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "angular": true,
+        "console": true,
+        "d3": true,
+        "GL": true,
+        "importScripts": true,
+        "onmessage": true,
+        "saveAs": true,
+        "sha256": true,
+        "StackTrace": true,
+        "topojson": true,
+        "Uint8Array": true,
+        "Uint32Array": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 9
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "eqeqeq": "error",
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+#!/bin/sh
+# This is the post installation script for globaleaks
+set -e
+
+#DEBHELPER#
+
+if [ "$1" = "upgrade" ]; then
+  service globaleaks stop || true
+fi
