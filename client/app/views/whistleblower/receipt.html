@@ -1,7 +1,16 @@
 <div class="row" data-ng-if="page === 'receiptpage'">
   <div class="col-md-12">
     <div id="ReceiptText">
-      <span data-translate>Thank you.</span> <span data-translate>Your report was successful.</span> <span data-translate>We will try to get back to you as soon as possible.</span>
+      <div>
+        <span data-translate>Thank you.</span>
+      </div>
+      <div>
+        <span data-translate>Your report was successful.</span> <span data-translate>We will try to get back to you as soon as possible.</span>
+      </div>
+    </div>
+    <div>
+      <!-- TODO delete -->
+      <!--<span data-translate>Message created by paco</span>-->
     </div>
   </div>
 </div>
@@ -13,7 +22,9 @@
       </div>
       <div class="card-body">
         <div id="Receipt"><div class="btn btn-light" data-uib-tooltip="{{'Copy to clipboard' | translate}}" data-ng-click="Utils.copyToClipboard(Authentication.session.receipt)">{{formatted_receipt}}</div></div>
-        <div data-translate>Use the 16 digit receipt to log in. It will allow you to view any messages we sent you, and also to add extra info.</div>
+        <!--<div data-translate>Use the 16 digit receipt to log in. It will allow you to view any messages we sent you, and also to add extra info.</div>-->
+        <div id="Receipt_key_desc" data-ng-show="public.node.receipt_key_desc" data-markdown-to-html="public.node.receipt_key_desc | stripHtml"></div>
+
         <div class="mt-md-3 clearfix" data-ng-if="page === 'receiptpage'">
           <button id="ReceiptButton" class="float-right btn btn-primary" data-ng-click="Authentication.login(0, 'whistleblower', Authentication.session.receipt)" data-translate>View your report</button>
         </div>

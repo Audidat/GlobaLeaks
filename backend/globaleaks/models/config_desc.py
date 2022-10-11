@@ -249,6 +249,7 @@ ConfigFilters = {
         'presentation',
         'whistleblowing_button',
         'whistleblowing_question',
+        'receipt_key_desc'
     ],
     'notification': [
         'disable_admin_notification_emails',
@@ -313,7 +314,8 @@ ConfigL10NFilters = {
         'signup_tos1_checkbox_label',
         'signup_tos2_title',
         'signup_tos2_text',
-        'signup_tos2_checkbox_label'
+        'signup_tos2_checkbox_label',
+        'receipt_key_desc'
     ],
 
     'notification': [
