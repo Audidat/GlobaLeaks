@@ -408,7 +408,7 @@
   "You are strongly advised to visit this site using the app called Tor Browser, that protects your identity.": "Te aconsejamos firmemente que visites este sitio usando la aplicación llamada Navegador Tor, que protege tu identidad.",
   "Download the Tor Browser": "Descargar el Navegador Tor",
   "Then, copy and paste the following address into the Tor Browser:": "Luego, copia y pega la siguiente dirección en el Navegador Tor:",
-  "Have you already filed a report? Enter your receipt.": "**Atención**\nSi ya nos comunicaste una infracción, puedes conocer el estado del proceso introduciendo tu código de recepción.",
+  "Have you already filed a report? Enter your receipt.": "Si ya nos comunicaste una infracción, puedes conocer el estado del proceso introduciendo tu código de recepción.",
   "The receipt is either invalid or the report has expired.": "El código es inválido o bien el reporte ha expirado",
   "Select a file or drag it here.": "Selecciona un archivo o arrástralo aquí ",
   "Size:": "Tamaño:",
@@ -598,5 +598,6 @@
   "Reminder about unread or updated reports": "Recordatorio acerca de reportes no leídos o actualizados.",
   "Role: {Role}": "Rol: {Role}",
   "Password: {Password}": "Contraseña: {Password}",
-  "Message created by paco": "Mensaje creado por Paco"
+  "Message created by paco": "Mensaje creado por Paco",
+  "Monitoring": "Seguimiento"
 }

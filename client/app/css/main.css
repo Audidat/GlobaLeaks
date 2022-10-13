@@ -448,8 +448,7 @@ input[type="file"] {
   white-space: pre-wrap;
 }
 
-#WhistleblowerSubmitBox,
-#WhistleblowerLoginBox {
+#WhistleblowerSubmitBox {
   text-align: center;
 }
 
@@ -1348,4 +1347,17 @@ Audidat
 
 .card-header {
   font-weight: bold;
+}
+
+#WhistleblowerLoginBox {
+  text-align: start;
+}
+
+#MonitoringTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#step-1 > .description {
+  margin-bottom: 1rem;
 }
