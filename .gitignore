@@ -1,0 +1,9 @@
+client/node_modules/*
+client/app/lib/*
+client/app/webfonts
+client/app/license.txt
+client/npm-shrinkwrap.json
+
+client/build/*
+backend/env/*
+backend/workingdir
