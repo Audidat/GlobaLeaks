@@ -1358,6 +1358,26 @@ Audidat
   font-weight: bold;
 }
 
+/* Cuestionario 2 identificación */
+
 #step-1 > .description {
   margin-bottom: 1rem;
 }
+
+#step-1 > div > div > p:nth-child(1) {
+  margin-bottom: -0.5rem;
+}
+
+#step-1 > div > div > p:nth-child(2) {
+  font-size: 0.9rem;
+}
+
+/* cuestionario 3 condiciones */
+#step-2 p {
+  margin-bottom: -1.5rem;
+}
+#step-2 li {
+  font-size: 0.9rem;
+  margin-bottom: -1rem;
+}
+

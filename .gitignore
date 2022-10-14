@@ -7,3 +7,6 @@ client/npm-shrinkwrap.json
 client/build/*
 backend/env/*
 backend/workingdir
+build/bullseye/globaleaks_4.10.10_amd64.build
+build/bullseye/globaleaks_4.10.10_amd64.buildinfo
+build/bullseye/globaleaks_4.10.10_amd64.changes
