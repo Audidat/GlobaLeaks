@@ -4131,7 +4131,7 @@
       "dv": "ރިޕޯޓެއް ފައިލް ކުރުން",
       "el": "Καταχωρήστε μια αναφορά",
       "en": "File a report",
-      "es": "Presentar un informe",
+      "es": "NUEVA COMUNICACIÓN",
       "et": "File a report",
       "fa": "تشکیل یک گزارش",
       "fa_AF": "ترتیب یک راپور",
@@ -4210,7 +4210,7 @@
       "dv": "ތިޔަ ފަރާތުގެ ރިޕޯޓުން ކޮންޓެކްސްޓް ހިޔާރުކުރައްވާ",
       "el": "Επιλέξτε τη θεματική ενότητα της αναφοράς σας:",
       "en": "Select the context of your report:",
-      "es": "Selecciona el contexto de tu reporte: ",
+      "es": "Selecciona el contexto de tu comunicación: ",
       "et": "Valige oma teate kontekst:",
       "fa": "زمینهٔ گزارش خود را انتخاب کنید:",
       "fa_AF": "محتوای راپور خود را انتخاب کنید:",
@@ -4268,6 +4268,22 @@
       "zh_CN": "请选择报告的上下文：",
       "zh_HK": "請選擇您的報告主題：",
       "zh_TW": "選擇您報告合適的情況："
+    },
+    "header_title_homepage": {
+      "en": "",
+      "es": ""
+    },
+    "presentation": {
+      "en": "",
+      "es":"# Canal de comunicación para informar de actividades y conductas presuntamente irregulares.\n#### Si tienes información o sospechas razonables de que se ha producido o puede producirse una infracción en nuestra organización, envíanos toda la información al respecto."
+    },
+    "whistleblowing_question": {
+      "en": "",
+      "es": "**Nueva información**\nSi utilizas nuestro Canal Ético, nuestros expertos valorarán la exactitud de las alegaciones y realizarán todas las investigaciones necesarias para resolver la infracción denunciada."
+    },
+    "disclaimer_text": {
+      "en": "",
+      "es": "**Información importante.**\n\nEl presente Canal Ético sirve para que cualquier persona, incluso anónimamente, presente información sobre infracciones relativas a nuestra organización. Ello significa que hemos habilitado esta vía de comunicación para recibir información real o sospechas razonables sobre infracciones que se han producido o que muy probablemente puedan producirse.\n\nLa información que se proporciona a través de este Canal Ético será recibida por nuestros expertos, que valorarán la exactitud de las alegaciones hechas en la denuncia y, tras desarrollar las investigaciones pertinentes, resolverán el procedimiento de la manera más satisfactoria para los afectados.\n\nAl utilizar este Canal Ético, por consiguiente, debes ser consciente de que todas las pruebas que puedas aportar serán de gran ayuda, ya que permitirán al investigador resolver de manera más ágil y coherente el proceso en cuestión.\n\nSi, a pesar de no ser obligatorio, decidieras comunicar tu identidad durante el proceso, debes saber que tu información personal será protegida y no se revelará a terceros bajo ningún concepto, siendo el instructor o facilitador del procedimiento el único que conocerá tales datos.\n\nGarantizaremos al máximo la garantía de indemnidad, así que no tomaremos represalias de ningún tipo en caso de que usted un trabajador de la organización u otra persona que mantenga una relación estrecha con nuestra entidad.\n\nEsperamos que el Canal Ético te sea útil y te permita resolver la incidencia que vas a comunicar, para lo cual trabajaremos con la máxima discreción y profesionalidad posibles."
     }
   }
 }

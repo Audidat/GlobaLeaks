@@ -149,40 +149,7 @@ if echo "$DISTRO_CODENAME" | grep -vqE "^(bionic|bullseye|buster|focal|jammy)$";
   DISTRO="Debian"
   DISTRO_CODENAME="bullseye"
 fi
-
-echo "Adding GlobaLeaks PGP key to trusted APT keys"
-curl -L https://deb.globaleaks.org/globaleaks.asc | apt-key add
-
-# try adding universe repo only on Ubuntu
-if echo "$DISTRO" | grep -qE "^(Ubuntu)$"; then
-  if ! grep -q "^deb .*universe" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
-    echo "Adding Ubuntu Universe repository"
-    DO "add-apt-repository -y 'deb http://archive.ubuntu.com/ubuntu $DISTRO_CODENAME universe'"
-  fi
-fi
-
-echo "Updating GlobaLeaks apt source.list in /etc/apt/sources.list.d/globaleaks.list ..."
-echo "deb http://deb.globaleaks.org $DISTRO_CODENAME/" > /etc/apt/sources.list.d/globaleaks.list
-
-if [ -d /globaleaks/deb ]; then
-  DO "apt-get -y update"
-  DO "apt-get -y install dpkg-dev"
-  echo "Installing from locally provided debian package"
-  cd /globaleaks/deb/ && dpkg-scanpackages . /dev/null | gzip -c -9 > /globaleaks/deb/Packages.gz
-  if [ ! -f /etc/apt/sources.list.d/globaleaks.local.list ]; then
-    echo "deb file:///globaleaks/deb/ /" >> /etc/apt/sources.list.d/globaleaks.local.list
-  fi
-  DO "apt -o Acquire::AllowInsecureRepositories=true -o Acquire::AllowDowngradeToInsecureRepositories=true update"
-  DO "apt-get -y --allow-unauthenticated install globaleaks"
-  DO "/etc/init.d/globaleaks restart"
-else
-  DO "apt-get update -y"
-  if [[ $VERSION ]]; then
-    DO "apt-get install globaleaks=$VERSION -y"
-  else
-    DO "apt-get install globaleaks -y"
-  fi
-fi
+apt install ./build/bullseye/globaleaks_4.10.10_all.deb -y
 
 # Set the script to its success condition
 last_command "startup"

@@ -1,7 +1,16 @@
 <div class="row" data-ng-if="page === 'receiptpage'">
   <div class="col-md-12">
     <div id="ReceiptText">
-      <span data-translate>Thank you.</span> <span data-translate>Your report was successful.</span> <span data-translate>We will try to get back to you as soon as possible.</span>
+      <div>
+        <span data-translate>Thank you.</span>
+      </div>
+      <div>
+        <span data-translate>Your report was successful.</span> <span data-translate>We will try to get back to you as soon as possible.</span>
+      </div>
+    </div>
+    <div>
+      <!-- TODO delete -->
+      <!--<span data-translate>Message created by paco</span>-->
     </div>
   </div>
 </div>
@@ -12,10 +21,26 @@
         <span data-translate>Remember your receipt for this report.</span>
       </div>
       <div class="card-body">
-        <div id="Receipt"><div class="btn btn-light" data-uib-tooltip="{{'Copy to clipboard' | translate}}" data-ng-click="Utils.copyToClipboard(Authentication.session.receipt)">{{formatted_receipt}}</div></div>
-        <div data-translate>Use the 16 digit receipt to log in. It will allow you to view any messages we sent you, and also to add extra info.</div>
+        <div id="Receipt">
+          <div class="btn btn-light" data-uib-tooltip="{{'Copy to clipboard' | translate}}"
+            data-ng-click="Utils.copyToClipboard(Authentication.session.receipt)">{{formatted_receipt}}</div>
+        </div>
+        <!--<div data-translate>Use the 16 digit receipt to log in. It will allow you to view any messages we sent you, and also to add extra info.</div>-->
+        
+        <div>
+          <p>Hay que conservar este código de dieciséis dígitos para:</p>
+          <ul>
+            <li><span data-translate>Acceder a la comunicación.</span></li>
+            <li><span data-translate>Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.</span></li>
+            <li><span data-translate>Añadir ficheros o información adicional.</span></li>
+            <li><span data-translate>Conocer el estado de tramitación de la comunicación.</span></li>
+          </ul>
+          <p><span data-translate>El órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones.</span></p>
+        </div>
+
         <div class="mt-md-3 clearfix" data-ng-if="page === 'receiptpage'">
-          <button id="ReceiptButton" class="float-right btn btn-primary" data-ng-click="Authentication.login(0, 'whistleblower', Authentication.session.receipt)" data-translate>View your report</button>
+          <button id="ReceiptButton" class="float-right btn btn-primary"
+            data-ng-click="Authentication.login(0, 'whistleblower', Authentication.session.receipt)" data-translate>View your report</button>
         </div>
       </div>
     </div>
