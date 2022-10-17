@@ -599,5 +599,11 @@
   "Role: {Role}": "Rol: {Role}",
   "Password: {Password}": "Contraseña: {Password}",
   "Message created by paco": "Mensaje creado por Paco",
-  "Monitoring": "Seguimiento"
+  "Monitoring": "Seguimiento",
+  "Acceder a la comunicación.": "Acceder a la comunicación.",
+  "Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.":"Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.",
+  "Añadir ficheros o información adicional.": "Añadir ficheros o información adicional.",
+  "Conocer el estado de tramitación de la comunicación.": "Conocer el estado de tramitación de la comunicación.",
+  "El órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones.":"El órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones."
+
 }

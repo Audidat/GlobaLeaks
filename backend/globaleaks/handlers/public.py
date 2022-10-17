@@ -285,7 +285,6 @@ def db_serialize_node(session, tid, language):
             ret['whistleblowing_question'] = root_tenant_l10n.get_val('whistleblowing_question', language)
             ret['whistleblowing_button'] = root_tenant_l10n.get_val('whistleblowing_button', language)
             ret['disclaimer_text'] = root_tenant_l10n.get_val('disclaimer_text', language)
-            ret['receipt_key_desc'] = root_tenant_l10n.get_val('receipt_key_desc', language)
 
             ret['script'] = os.path.exists(os.path.abspath(os.path.join(State.settings.scripts_path, str(tid))))
             for x in special_files:

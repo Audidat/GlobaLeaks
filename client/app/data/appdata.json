@@ -4269,10 +4269,6 @@
       "zh_HK": "請選擇您的報告主題：",
       "zh_TW": "選擇您報告合適的情況："
     },
-    "receipt_key_desc": {
-      "en": "",
-      "es": "Hay que conservar este código de dieciséis dígitos para:\n- Acceder a la comunicación.\n- Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.\n- Añadir ficheros o información adicional.\n- Conocer el estado de tramitación de la comunicación.\n\nEl órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones."
-    },
     "header_title_homepage": {
       "en": "",
       "es": ""

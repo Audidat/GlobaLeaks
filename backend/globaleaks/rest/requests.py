@@ -231,8 +231,7 @@ AdminNodeDesc = {
     'two_factor': bool,
     'encryption': bool,
     'multisite': bool,
-    'adminonly': bool,
-    'receipt_key_desc': str
+    'adminonly': bool
 }
 
 AdminNetworkDesc = {
@@ -426,8 +425,7 @@ NodeDesc = {
     'signup_tos2_title': str,
     'simplified_login': bool,
     'whistleblowing_button': str,
-    'whistleblowing_question': str,
-    'receipt_key_desc': str
+    'whistleblowing_question': str
 }
 
 TipOverviewDesc = {
