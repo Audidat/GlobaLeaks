@@ -131,23 +131,6 @@
               }
             },
             {
-              "id": "f76549c3-b8c5-4e90-a36e-af7d27006214",
-              "order": 2,
-              "block_submission": false,
-              "score_points": 0,
-              "score_type": "addition",
-              "trigger_receiver": [],
-              "hint1": {
-                "es": ""
-              },
-              "hint2": {
-                "es": ""
-              },
-              "label": {
-                "es": "Cohecho"
-              }
-            },
-            {
               "id": "4c171914-63d1-46f3-af62-18e4862334b4",
               "order": 3,
               "block_submission": false,
