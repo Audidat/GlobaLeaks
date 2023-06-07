@@ -4275,7 +4275,8 @@
     },
     "presentation": {
       "en": "",
-      "es":"# Canal de comunicación para informar de actividades y conductas presuntamente irregulares.\n#### Si tienes información o sospechas razonables de que se ha producido o puede producirse una infracción en nuestra organización, envíanos toda la información al respecto."
+      "es":"# Canal de comunicación para informar de actividades y conductas presuntamente irregulares.\n#### Si tienes información o sospechas razonables de que se ha producido o puede producirse una infracción en nuestra organización, envíanos toda la información al respecto.",
+      "eu": "# Texto en vasco"
     },
     "whistleblowing_question": {
       "en": "",
