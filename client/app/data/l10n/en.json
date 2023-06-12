@@ -379,7 +379,7 @@
   "Enter a name for the copy": "Enter a name for the copy",
   "Request support": "Request support",
   "Thank you.": "Thank you.",
-  "We will try to get back to you as soon as possible.": "We will try to get back to you as soon as possible.",
+  "We will try to get back to you as soon as possible.": "Please keep the code to track the progress of your communication.",
   "Submit": "Submit",
   "The connection is not secure.": "The connection is not secure.",
   "The platform is still not configured for HTTPS connections and should therefore only be used for testing purposes.": "The platform is still not configured for HTTPS connections and should therefore only be used for testing purposes.",
@@ -597,10 +597,10 @@
   "Password: {Password}": "Password: {Password}",
   "Message created by paco": "Message created by Paco",
   "Monitoring": "Monitoring",
-  "Hay que conservar este código de dieciséis dígitos para:": "Hay que conservar este código de dieciséis dígitos para:",
-  "Acceder a la comunicación.": "Acceder a la comunicación.",
-  "Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.":"Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.",
-  "Añadir ficheros o información adicional.": "Añadir ficheros o información adicional.",
-  "Conocer el estado de tramitación de la comunicación.": "Conocer el estado de tramitación de la comunicación.",
-  "El órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones.":"El órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones."
+  "Hay que conservar este código de dieciséis dígitos para:": "You should keep this sixteen-digit code to:",
+  "Acceder a la comunicación.": "Access the communication.",
+  "Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.":"Communicate with the mailbox management body and check received messages.",
+  "Añadir ficheros o información adicional.": "Add files or additional information.",
+  "Conocer el estado de tramitación de la comunicación.": "Know the processing status of the communication.",
+  "El órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones.":"The mailbox management body will prioritize the use of this secure channel and will ensure the anonymity and confidentiality of the communications."
 }
