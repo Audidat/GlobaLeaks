@@ -597,5 +597,13 @@
   "This email is to remind you the presence of unread or updated reports.": "Aquest correu electrònic us recorda la presència d’informes no llegits o actualitzats.",
   "Reminder about unread or updated reports": "Recordatori sobre els informes no llegits o actualitzats",
   "Role: {Role}": "Rol: {Role}",
-  "Password: {Password}": "Contrasenya: {Password}"
+  "Password: {Password}": "Contrasenya: {Password}",
+  "Monitoring": "Seguiment",
+  "Cal conservar aquest codi de setze dígits per a:": "Hay que conservar este código de dieciséis dígitos para:",
+  "Acceder a la comunicación.": "Accedir a la comunicació.",
+  "Comunicarse con el órgano gestor del buzón y consultar los mensajes recibidos.":"Comunicar-se amb l'òrgan gestor del bústia i consultar els missatges rebuts.",
+  "Añadir ficheros o información adicional.": "Afegir fitxers o informació addicional.",
+  "Conocer el estado de tramitación de la comunicación.": "Coneixer l'estat de tramitació de la comunicació.",
+  "El órgano gestor del buzón utilizará, de manera prioritaria, este canal seguro, y garantizará el anonimato y la confidencialidad de las comunicaciones.":"L'òrgan gestor del bústia utilitzarà, de manera prioritària, aquest canal segur i garantirà l'anonimat i la confidencialitat de les comunicacions."
+
 }
