@@ -36,8 +36,8 @@ class OnionService(Service):
         return tor_conn.protocol.quit()
 
     def load_onion_service(self, tid, hostname, key):
-
-        key = key.decode('utf-8')
+        if isinstance(key,bytes):
+            key = key.decode('utf-8')
         print("KEY: ", key)
         if self.tor_conn is None:
             return
