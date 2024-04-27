@@ -36,6 +36,7 @@ class OnionService(Service):
         return tor_conn.protocol.quit()
 
     def load_onion_service(self, tid, hostname, key):
+        log.err("KEY: ",  key, tid=tid)
         if self.tor_conn is None:
             return
 
