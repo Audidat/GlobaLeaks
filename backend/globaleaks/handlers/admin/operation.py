@@ -315,8 +315,7 @@ class AdminOperationHandler(OperationHandler):
 
         subject, body = Templating().get_mail_subject_and_body(data)
 
-        #yield self.state.sendmail(tid, user['mail_address'], subject, body)
-        yield True
+        yield self.state.sendmail(tid, user['mail_address'], subject, body)
 
     def toggle_escrow(self, req_args, *args, **kwargs):
         return toggle_escrow(self.request.tid, self.session)
