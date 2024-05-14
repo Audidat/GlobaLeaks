@@ -1,5 +1,5 @@
 GL.
-controller("AdminCtrl", ["$scope", function($scope) {
+  controller("AdminCtrl", ["$scope", function ($scope) {
   $scope.updateNode = function() {
     $scope.Utils.update($scope.resources.node, function() { $scope.$emit("REFRESH"); });
   };
@@ -18,20 +18,4 @@ controller("AdminCtrl", ["$scope", function($scope) {
 
     return max + 1;
   };
-
-  $scope.$watch("resources.users", function() {
-    $scope.all_recipients_enabled = false;
-
-    if (!$scope.resources.users) {
-      return;
-    }
-
-    for (var i=0; i<$scope.resources.users.length; i++) {
-      if ($scope.resources.users[i].role === "receiver" && !$scope.resources.users[i].encryption) {
-        return;
-      }
-    }
-
-    $scope.all_recipients_enabled = true;
-  }, true);
 }]);

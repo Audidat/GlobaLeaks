@@ -13,12 +13,12 @@ from globaleaks import models
 from globaleaks.models.config_desc import ConfigL10NFilters
 
 alphanumeric_str_regexp = r'^[^<>\/.{}\[\]]*$'
-numeric_str_regexp = r'^[0-9\-.+]*$'
+phone_regexp = r'^[+]?[0-9]*$'
 key_regexp = r'^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$|^[a-z_]{0,100}$'
 key_regexp_or_empty = r'^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$|^[a-z_]{0,100}$|^$'
 uuid_regexp = r'^([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})$'
 uuid_regexp_or_empty = r'^([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})$|^$'
-user_role_regexp = r'^(admin|custodian|receiver)$'
+user_role_regexp = r'^(admin|analyst|custodian|receiver)$'
 email_regexp = r'^(([\w+-\.]){0,100}[\w]{1,100}@([\w+-\.]){0,100}[\w]{1,100})$'
 email_regexp_or_empty = r'^(([\w+-\.]){0,100}[\w]{1,100}@([\w+-\.]){0,100}[\w]{1,100})$|^$'
 hostname_regexp = r'^[0-9a-z\-\.]+$'
@@ -29,6 +29,7 @@ url_regexp = r'^https?:\/\/([0-9a-z\-]+)\.([^\n])*$'
 url_regexp_or_empty = r'^https?:\/\/([0-9a-z\-]+)\.([^\n])*$|^$'
 tip_operation_regexp = r'^(postpone|set)$'
 short_text_regexp = r'^.{1,255}$'
+short_text_regexp_or_empty = r'^.{0,255}$'
 languages_list_regexp = r'^([a-zA-Z-]+)?(,\s*[a-zA-Z-]+)*$'
 
 field_instance_regexp = (r'^('
@@ -48,6 +49,7 @@ field_type_regexp = (r'^('
                      'email|'
                      'date|'
                      'daterange|'
+                     'voice|'
                      'fieldgroup)$')
 
 field_attr_type_regexp = (r'^('
@@ -90,8 +92,10 @@ FileDesc = {
     'description': str,
     'size': int,
     'type': ContentType,
-    'date': DateType
+    'date': DateType,
+    'visibility': str
 }
+
 
 AuthDesc = {
     'tid': int,
@@ -139,6 +143,10 @@ AdminUserDesc = {
     'can_delete_submission': bool,
     'can_postpone_expiration': bool,
     'can_grant_access_to_reports': bool,
+    'can_redact_information': bool,
+    'can_mask_information': bool,
+    'can_reopen_reports': bool,
+    'can_transfer_access_to_reports': bool,
     'forcefully_selected': bool
 }
 
@@ -159,7 +167,8 @@ UserUserDesc = {
 }
 
 CommentDesc = {
-    'content': str
+    'content': str,
+    'visibility': str
 }
 
 OpsDesc = {
@@ -187,6 +196,8 @@ AdminNodeDesc = {
     'description': str,
     'presentation': str,
     'footer': str,
+    'footer_privacy_policy': str,
+    'footer_whistleblowing_policy': str,
     'disclaimer_text': str,
     'rootdomain': hostname_regexp_or_empty,
     'whistleblowing_question': str,
@@ -201,7 +212,6 @@ AdminNodeDesc = {
     'disable_privacy_badge': bool,
     'disable_submissions': bool,
     'simplified_login': bool,
-    'enable_custodian': bool,
     'enable_scoring_system': bool,
     'enable_signup': bool,
     'mode': str,
@@ -230,12 +240,16 @@ AdminNodeDesc = {
     'log_accesses_of_internal_users': bool,
     'two_factor': bool,
     'encryption': bool,
-    'multisite': bool,
-    'adminonly': bool
+    'adminonly': bool,
+    'custom_support_url': url_regexp_or_empty,
+    'pgp': bool,
+    'user_privacy_policy_text': str,
+    'user_privacy_policy_url': str
 }
 
 AdminNetworkDesc = {
     'https_admin': bool,
+    'https_analyst': bool,
     'https_custodian': bool,
     'https_whistleblower': bool,
     'https_receiver': bool,
@@ -243,6 +257,8 @@ AdminNetworkDesc = {
     'anonymize_outgoing_connections': bool,
     'ip_filter_admin_enable': bool,
     'ip_filter_admin': str,
+    'ip_filter_analyst_enable': bool,
+    'ip_filter_analyst': str,
     'ip_filter_custodian_enable': bool,
     'ip_filter_custodian': str,
     'ip_filter_receiver_enable': bool,
@@ -257,9 +273,10 @@ AdminNotificationDesc = {
     'smtp_username': str,
     'smtp_password': str,
     'smtp_source_email': email_regexp,
-    'disable_admin_notification_emails': bool,
-    'disable_custodian_notification_emails': bool,
-    'disable_receiver_notification_emails': bool,
+    'enable_admin_notification_emails': bool,
+    'enable_analyst_notification_emails': bool,
+    'enable_custodian_notification_emails': bool,
+    'enable_receiver_notification_emails': bool,
     'tip_expiration_threshold': int
 }
 
@@ -304,7 +321,6 @@ AdminFieldDesc = {
     'y': int,
     'width': int,
     'required': bool,
-    'preview': bool,
     'type': field_type_regexp,
     'attrs': dict,
     'options': [AdminFieldOptionDesc],
@@ -348,15 +364,10 @@ AdminContextDesc = {
     'description': str,
     'maximum_selectable_receivers': int,
     'tip_timetolive': int,
+    'tip_reminder': int,
     'receivers': [uuid_regexp],
     'select_all_receivers': bool,
-    'show_recipients_details': bool,
     'allow_recipients_selection': bool,
-    'enable_comments': bool,
-    'enable_messages': bool,
-    'enable_two_way_comments': bool,
-    'enable_two_way_messages': bool,
-    'enable_attachments': bool,
     'score_threshold_medium': int,
     'score_threshold_high': int,
     'order': int,
@@ -377,15 +388,12 @@ AdminTLSCfgFileResourceDesc = {
     'content': str,
 }
 
-AdminCSRFileDesc = {
-    'name': short_text_regexp,
-    'content': {
-        'country': r'[A-Za-z]{2}',
-        'province': short_text_regexp,
-        'city': short_text_regexp,
-        'company': short_text_regexp,
-        'email': email_regexp
-    }
+AdminCSRDesc = {
+    'country': r'^[A-Za-z]{2}$|^$',
+    'province': short_text_regexp_or_empty,
+    'city': short_text_regexp_or_empty,
+    'company': short_text_regexp_or_empty,
+    'email': email_regexp_or_empty
 }
 
 AdminRedirectDesc = {
@@ -406,6 +414,8 @@ NodeDesc = {
     'enable_scoring_system': bool,
     'enable_signup': bool,
     'footer': str,
+    'footer_privacy_policy': str,
+    'footer_whistleblowing_policy': str,
     'header_title_homepage': str,
     'https_whistleblower': bool,
     'languages_enabled': [str],
@@ -424,23 +434,11 @@ NodeDesc = {
     'signup_tos2_text': str,
     'signup_tos2_title': str,
     'simplified_login': bool,
+    'start_time': DateType,
     'whistleblowing_button': str,
-    'whistleblowing_question': str
-}
-
-TipOverviewDesc = {
-    'id': uuid_regexp,
-    'context_id': uuid_regexp,
-    'creation_date': DateType,
-    'expiration_date': DateType
-}
-
-TipsOverviewDesc = [TipOverviewDesc]
-
-FileOverviewDesc = {
-    'id': uuid_regexp,
-    'itip': uuid_regexp,
-    'path': str
+    'whistleblowing_question': str,
+    'user_privacy_policy_text': str,
+    'user_privacy_policy_url': str
 }
 
 ReceiverIdentityAccessRequestDesc = {
@@ -451,25 +449,6 @@ CustodianIdentityAccessRequestDesc = {
     'reply': identityaccessreply_regexp,
     'reply_motivation': str
 }
-
-FilesOverviewDesc = [FileOverviewDesc]
-
-StatsDesc = {
-    'file_uploaded': int,
-    'new_submission': int,
-    'finalized_submission': int,
-    'anon_requests': int,
-    'creation_date': DateType
-}
-
-StatsCollectionDesc = [StatsDesc]
-
-AnomalyDesc = {
-    'message': str,
-    'creation_date': DateType
-}
-
-AnomalyCollectionDesc = [AnomalyDesc]
 
 ReceiverDesc = {
     'name': str,
@@ -486,13 +465,9 @@ ContextDesc = {
     'receivers': [uuid_regexp],
     'select_all_receivers': bool,
     'tip_timetolive': int,
-    'show_recipients_details': bool,
+    'tip_reminder': int,
     'allow_recipients_selection': bool,
     'maximum_selectable_receivers': int,
-    'enable_comments': bool,
-    'enable_messages': bool,
-    'enable_two_way_messages': bool,
-    'enable_attachments': bool,
     'show_receivers_in_alphabetical_order': bool,
     'picture': bool
 }
@@ -540,12 +515,12 @@ SignupDesc = {
     'name': alphanumeric_str_regexp,
     'surname': alphanumeric_str_regexp,
     'role': alphanumeric_str_regexp,
-    'phone': numeric_str_regexp,
+    'phone': phone_regexp,
     'email': email_regexp,
-    'organization_name': alphanumeric_str_regexp,
+    'organization_name': str,
     'organization_tax_code': alphanumeric_str_regexp,
     'organization_vat_code': alphanumeric_str_regexp,
-    'organization_location': alphanumeric_str_regexp,
+    'organization_location': str,
     'tos1': bool,
     'tos2': bool
 }
@@ -567,10 +542,13 @@ PasswordReset2Desc = {
 }
 
 SiteSettingsDesc = {
-    'name': str,
+    'disclaimer_text': str,
     'header_title_homepage': str,
+    'footer': str,
+    'footer_privacy_policy': str,
+    'footer_whistleblowing_policy': str,
+    'name': str,
     'presentation': str,
-    'footer': str
 }
 
 QuestionnaireDuplicationDesc = {
@@ -585,5 +563,6 @@ SubmissionStatusDesc = {
 
 SubmissionSubStatusDesc = {
     'label': str,
-    'order': int
+    'order': int,
+    'tip_timetolive': int
 }

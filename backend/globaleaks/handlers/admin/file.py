@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import mimetypes
 import os
 import re
 
@@ -15,7 +14,7 @@ from globaleaks.utils.fs import directory_traversal_check
 from globaleaks.utils.utility import uuid4
 
 
-special_files = ['css', 'favicon', 'logo']
+special_files = ['css', 'favicon', 'logo', 'script']
 
 
 @transact
@@ -107,24 +106,31 @@ class FileInstance(BaseHandler):
         'image/jpeg',
         'image/png',
         'image/x-icon',
+        'text/plain',
         'video/mp4'
     ]
 
-    def permission_check(self):
+    def permission_check(self, name):
+        if name in ['css', 'favicon', 'script'] and \
+                not self.session.has_permission('can_upload_files'):
+            raise errors.InvalidAuthentication
+
         if self.session.user_role != 'admin' and \
-          not self.session.has_permission('can_edit_general_settings'):
+                not self.session.has_permission('can_edit_general_settings'):
             raise errors.InvalidAuthentication
 
     @inlineCallbacks
     def post(self, name):
-        self.permission_check()
+        self.permission_check(name)
 
         if name == 'css':
             self.allowed_mimetypes = ['text/css']
         elif name == 'favicon':
             self.allowed_mimetypes = ['image/vnd.microsoft.icon']
         elif name == 'logo' or re.match(requests.uuid_regexp, name):
-            self.allowed_mimetypes = ['image/png']
+            self.allowed_mimetypes = ['image/gif', 'image/jpeg', 'image/png']
+        elif name == 'script':
+            self.allowed_mimetypes = ['text/javascript']
 
         if self.uploaded_file['type'] not in self.allowed_mimetypes:
             raise errors.ForbiddenOperation
@@ -147,7 +153,7 @@ class FileInstance(BaseHandler):
 
     @inlineCallbacks
     def delete(self, name):
-        self.permission_check()
+        self.permission_check(name)
 
         yield delete_file(self.request.tid, name)
 
@@ -157,7 +163,7 @@ class FileCollection(BaseHandler):
 
     def permission_check(self):
         if self.session.user_role != 'admin' and \
-          not self.session.has_permission('can_edit_general_settings'):
+                not self.session.has_permission('can_edit_general_settings'):
             raise errors.InvalidAuthentication
 
     def get(self):

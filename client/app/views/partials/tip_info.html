@@ -12,13 +12,13 @@
             </span>
           </span>
         </div>
-        <div class="float-right" data-ng-if="Authentication.session.role === 'receiver'">
-          <span data-ng-include="'views/partials/tip_submission_status.html'"></span>
-        </div>
       </div>
     </div>
   </div>
   <div class="card-body">
+    <div class="text-center mb-2">
+      <span class="font-weight-bold">ID:</span> <span>{{tip.id}}</span>
+    </div>
     <table class="table table-borderless table-striped">
       <thead>
       <tr>
@@ -27,7 +27,7 @@
         </th>
         <th class="TipInfoContext" data-ng-if="public.contexts.length > 1">
           <i class="fa-solid fa-inbox"></i>
-          <span data-translate>Context</span>
+          <span data-translate>Channel</span>
         </th>
         <th class="TipInfoSubmissionDate">
           <i class="fa-solid fa-clock"></i>
@@ -41,8 +41,12 @@
           <i class="fa-solid fa-hourglass"></i>
           <span data-translate>Expiration date</span>
         </th>
+        <th class="TipInfoReminderDate" data-ng-if="Authentication.session.role === 'receiver'">
+          <i class="fa-solid fa-bell"></i>
+          <span data-translate>Reminder date</span>
+        </th>
         <th class="TipInfoReadReceipt" data-ng-if="Authentication.session.role === 'receiver'">
-          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-envelope-circle-check"></i>
         </th>
         <th class="TipInfoConnection" data-ng-if="Authentication.session.role === 'receiver'">
           <i class="fa-solid fa-network-wired"></i>
@@ -67,6 +71,13 @@
         <td class="TipInfoExpirationDate">
           <span data-ng-if="!Utils.isNever(tip.expiration_date)">{{tip.expiration_date | date:'dd-MM-yyyy HH:mm'}}</span>
           <span data-ng-if="Utils.isNever(tip.expiration_date)">-</span>
+        </td>
+        <td class="TipInfoReminderDate" data-ng-if="Authentication.session.role === 'receiver'">
+          <span data-ng-if="!Utils.isNever(tip.reminder_date)">
+            <span>{{tip.reminder_date | date:'dd-MM-yyyy'}}</span>
+            <i data-ng-if="markReportStatus(tip.reminder_date)" class="reminder fa-solid fa-bell"></i>
+          </span>
+          <i data-ng-if="Utils.isNever(tip.reminder_date)" class="fa-solid fa-minus"></i>
         </td>
         <td class="TipInfoLastAccess" data-ng-if="Authentication.session.role === 'receiver'">
           <i data-ng-if="tip.last_access >= tip.update_date" class="fa-solid fa-check"

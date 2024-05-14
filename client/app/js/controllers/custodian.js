@@ -1,6 +1,5 @@
-GL.controller("CustodianIdentityAccessRequestsCtrl", ["$scope", "$http", "$uibModal", "IdentityAccessRequests",
-  function($scope, $http, $uibModal, IdentityAccessRequests) {
-  $scope.iars = IdentityAccessRequests.query();
+GL.controller("CustodianIdentityAccessRequestsCtrl", ["$filter", "$scope", "$http", "$uibModal",
+  function($filter, $scope, $http, $uibModal) {
 
   $scope.authorize_identity_access_request = function (iar_id) {
     return $http.put("api/custodian/iars/" + iar_id, {"reply": "authorized", "reply_motivation": ""}).

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2021-2022\n"
-"Language-Team: Malay (http://www.transifex.com/otf/globaleaks/language/ms/)\n"
+"Language-Team: Malay (http://app.transifex.com/otf/globaleaks/language/ms/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ms\n"
@@ -17,20 +17,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Log masuk"
 
-msgid "Main configuration"
-msgstr "Konfigurasi utama"
-
-msgid "Theme customization"
-msgstr "Penyesuaian tema"
-
 msgid "Languages"
 msgstr "Bahasa"
 
 msgid "Text customization"
 msgstr "Penyesuaian teks"
 
-msgid "Advanced settings"
-msgstr "Tetapan lanjutan"
+msgid "Advanced"
+msgstr "Lanjutan"
 
 msgid "Question templates"
 msgstr "Templat soalan"
@@ -50,8 +44,8 @@ msgstr "Log perubahan"
 msgid "License"
 msgstr "Lesen"
 
-msgid "Notification templates"
-msgstr "Templat pemberitahuan"
+msgid "Templates"
+msgstr "Templat"
 
 msgid "Delete"
 msgstr "Padam"
@@ -62,8 +56,8 @@ msgstr "Anomali"
 msgid "Preferences"
 msgstr "Keutamaan"
 
-msgid "Notification settings"
-msgstr "Tetapan pemberitahuan"
+msgid "Notifications"
+msgstr "Notifications"
 
 msgid "file unavailable"
 msgstr "fail tidak tersedia"
@@ -83,25 +77,16 @@ msgstr "Fail"
 msgid "Comments"
 msgstr "Komen"
 
-msgid "Messages"
-msgstr "Mesej"
-
 msgid "Details"
 msgstr "Butiran"
 
 msgid "Platform wizard"
 msgstr "Wizard platform"
 
-msgid "CREDIT CARD"
-msgstr "KAD KREDIT"
-
-msgid "YOUR NAME"
-msgstr "NAMA ANDA"
-
 msgid "Label the report"
 msgstr "Label laporan"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Tangguh tarikh tamat tempoh"
 
 msgid "Select all"
@@ -113,8 +98,8 @@ msgstr "Nyahpilih semua"
 msgid "Refresh"
 msgstr "Segar semula"
 
-msgid "Context"
-msgstr "Konteks"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Pratonton"
@@ -218,9 +203,6 @@ msgstr "Akses diminta"
 msgid "Request access to the whistleblower's identity"
 msgstr "Minta akses kepada identiti pemberi maklumat"
 
-msgid "Please write a motivation"
-msgstr "Sila tulis motivasi"
-
 msgid "Reply to the request"
 msgstr "Balas kepada permintaan"
 
@@ -247,9 +229,6 @@ msgstr "Tolak akses kepada identiti pemberi maklumat"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Benarkan akses kepada identiti pemberi maklumat"
-
-msgid "Templates"
-msgstr "Templat"
 
 msgid "URL redirects"
 msgstr "Penghalaan URL"
@@ -290,8 +269,8 @@ msgstr "Diterima"
 msgid "Strong"
 msgstr "Kuat"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Teks ditunjukkan di atas antara muka untuk memilih konteks"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Pemberitahuan e-mel senyap"
@@ -354,9 +333,6 @@ msgstr "Saiz fail maksimum ialah:"
 
 msgid "Scheduled jobs"
 msgstr "Kerja yang dijadualkan"
-
-msgid "Sites management"
-msgstr "Pengurusan laman"
 
 msgid "Regenerate"
 msgstr "Jana semula"
@@ -456,20 +432,110 @@ msgstr ""
 msgid "Logout"
 msgstr "Log keluar"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr ""
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "Sembunyikan"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "Dasar Kerahsiaan"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr "Tidak dikenali"
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "Failkan laporan"
 
-msgid "Select the context of your report:"
-msgstr "Pilih konteks laporan anda:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "Sebelum meneruskan, sila tetapkan kata laluan baru."
@@ -479,102 +545,6 @@ msgstr "Sebelum meneruskan, sila dayakan pengesahan dua faktor."
 
 msgid "Enable"
 msgstr "Dayakan"
-
-msgid "Disable submissions"
-msgstr "Nyahdayakan penghantaran"
-
-msgid "Enable encryption"
-msgstr "Dayakan penyulitan"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Dayakan pentadbir untuk mengubah kata laluan pengguna"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Pentadbir memberi kebenaran untuk mengubah kata laluan:"
-
-msgid "Enable multisite feature"
-msgstr "Dayakan ciri multilaman"
-
-msgid "Enable simplified login"
-msgstr "Dayakan log masuk diringkaskan"
-
-msgid "Enable search engines indexing"
-msgstr "Dayakan pengindeksan enjin carian"
-
-msgid "Default questionnaire"
-msgstr "Soal selidik lalai"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Tunjukkan konteks dalam susunan abjad"
-
-msgid "Size limit for file attachments"
-msgstr "Had saiz untuk lampiran fail"
-
-msgid "megabytes"
-msgstr "megabait"
-
-msgid "Require two factor authentication"
-msgstr "Memerlukan pengesahan dua faktor"
-
-msgid "Password change interval"
-msgstr "Selang masa perubahan kata laluan"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Untuk tujuan keselamatan, perubahan kata laluan diperlukan pada selang masa tetap."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Tetapkan nilai kepada 0 untuk menyahdayakan ciri ini."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Bilangan hari sehingga memberitahu laporan yang belum dibaca kepada pengguna"
-
-msgid "Disable the privacy panel"
-msgstr "Nyahdayakan panel privasi"
-
-msgid "Enable custom privacy panel"
-msgstr "Dayakan panel privasi tersuai"
-
-msgid "Custom privacy panel"
-msgstr "Panel privasi tersuai"
-
-msgid "Enable custodian user role"
-msgstr "Dayakan peranan pengguna penjaga"
-
-msgid "Enable scoring system"
-msgstr "Dayakan sistem pemarkahan"
-
-msgid "Logging level"
-msgstr "Tahap log"
-
-msgid "Log accesses of internal users"
-msgstr "Akses log pengguna dalaman"
-
-msgid "Notify administrators of software problems"
-msgstr "Beritahu pentadbir mengenai masalah perisian"
-
-msgid "Notify developers of software problems"
-msgstr "Beritahu pembangun mengenai masalah perisian"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Dengan mendayakan ciri ini, anda akan menyumbang kepada pembangunan dan keselamatan platform."
-
-msgid "Save"
-msgstr "Simpan"
-
-msgid "Reset reports"
-msgstr "Tetapkan semula laporan"
-
-msgid "Low"
-msgstr "Rendah"
-
-msgid "High"
-msgstr "Tinggi"
-
-msgid "percentage"
-msgstr "peratusan"
 
 msgid "Type"
 msgstr "Jenis"
@@ -603,6 +573,9 @@ msgstr "Tarikh penciptaan"
 msgid "Last access"
 msgstr "Akses terakhir"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "Akses terakhir pemberi maklumat"
 
@@ -621,68 +594,29 @@ msgstr "Ruang ini perlu diisi"
 msgid "Edit"
 msgstr "Edit"
 
+msgid "Save"
+msgstr "Simpan"
+
 msgid "Cancel"
 msgstr "Batalkan"
+
+msgid "days"
+msgstr "hari"
+
+msgid "Disabled"
+msgstr "Dinyahdayakan"
 
 msgid "Report statuses"
 msgstr "Status laporan"
 
-msgid "Logo"
-msgstr "Logo"
-
-msgid "Project name"
-msgstr "Nama projek"
-
-msgid "Description"
-msgstr "Penerangan"
-
-msgid "Homepage title"
-msgstr "Tajuk laman utama"
-
-msgid "Presentation"
-msgstr "Pembentangan"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Soalan untuk mendapatkan pemberi maklumat berpotensi"
-
-msgid "Whistleblowing button"
-msgstr "Butang memberi maklumat"
-
-msgid "Disclaimer"
+msgid "Channels"
 msgstr ""
-
-msgid "Footer"
-msgstr "Kekaki"
-
-msgid "Upload"
-msgstr "Muat naik"
-
-msgid "Download"
-msgstr "Muat turun"
-
-msgid "Language:"
-msgstr "Bahasa:"
-
-msgid "Add custom text"
-msgstr "Tambah teks tersuai"
-
-msgid "Custom text"
-msgstr "Teks tersuai"
-
-msgid "Original text"
-msgstr "Teks asal"
-
-msgid "Original translation"
-msgstr "Terjemahan asal"
-
-msgid "Custom translation"
-msgstr "Terjemahan tersuai"
-
-msgid "Contexts"
-msgstr "Konteks"
 
 msgid "Hidden"
 msgstr "Tersembunyi"
+
+msgid "Description"
+msgstr "Penerangan"
 
 msgid "Questionnaire"
 msgstr "Soal selidik"
@@ -690,8 +624,11 @@ msgstr "Soal selidik"
 msgid "Recipients"
 msgstr "Penerima"
 
-msgid "days"
-msgstr "hari"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Tetapkan nilai kepada 0 untuk menyahdayakan ciri ini."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Tunjukkan navigasi antara muka soal selidik"
@@ -708,24 +645,6 @@ msgstr "Bilangan maksimum penerima boleh dipilih:"
 msgid "Show recipients in alphabetical order"
 msgstr "Tunjukkan penerima dalam susunan abjad"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Tunjukkan butiran penerima di halaman status laporan"
-
-msgid "Enable comments"
-msgstr "Dayakan komen"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Benarkan pemberi maklumat menulis komen"
-
-msgid "Enable private messages"
-msgstr "Dayakan mesej peribadi"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Benarkan pemberi maklumat menghantar mesej"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Benarkan pemberi maklumat menambah lampiran kepada laporan"
-
 msgid "Additional questionnaire"
 msgstr "Soal selidik tambahan"
 
@@ -741,6 +660,9 @@ msgstr "Nilai"
 msgid "Medium"
 msgstr "Medium"
 
+msgid "High"
+msgstr "Tinggi"
+
 msgid "Software version:"
 msgstr "Versi perisian:"
 
@@ -755,6 +677,9 @@ msgstr "Alamat IP dibenarkan"
 
 msgid "Admin"
 msgstr "Pentadbir"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Penerima"
@@ -835,9 +760,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "Wizard konfigurasi manual akan memandu anda melalui persediaan HTTPS daripada Certificate Authority alternatif."
-
-msgid "Disabled"
-msgstr "Dinyahdayakan"
 
 msgid "Auto-renewal"
 msgstr "Pembaharuan automatik"
@@ -952,6 +874,12 @@ msgstr "Terima pelbagai jawapan"
 msgid "Template override"
 msgstr "Ganti templat"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "Nombor telefon"
 
@@ -975,6 +903,9 @@ msgstr "Video"
 
 msgid "Text shown upon negative answer"
 msgstr "Teks ditunjukkan selepas jawapan negatif"
+
+msgid "Low"
+msgstr "Rendah"
 
 msgid "Trigger conditions"
 msgstr "Keadaan pencetus"
@@ -1006,20 +937,149 @@ msgstr "Pendua"
 msgid "Steps"
 msgstr "Langkah-langkah"
 
-msgid "Site settings"
-msgstr "Tetapan laman"
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Project name"
+msgstr "Nama projek"
+
+msgid "Homepage title"
+msgstr "Tajuk laman utama"
+
+msgid "Presentation"
+msgstr "Pembentangan"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Soalan untuk mendapatkan pemberi maklumat berpotensi"
+
+msgid "Whistleblowing button"
+msgstr "Butang memberi maklumat"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Footer"
+msgstr "Kekaki"
+
+msgid "Upload"
+msgstr "Muat naik"
+
+msgid "Download"
+msgstr "Muat turun"
+
+msgid "Language:"
+msgstr "Bahasa:"
+
+msgid "Add custom text"
+msgstr "Tambah teks tersuai"
+
+msgid "Custom text"
+msgstr "Teks tersuai"
+
+msgid "Original text"
+msgstr "Teks asal"
+
+msgid "Original translation"
+msgstr "Terjemahan asal"
+
+msgid "Custom translation"
+msgstr "Terjemahan tersuai"
+
+msgid "Disable submissions"
+msgstr "Nyahdayakan penghantaran"
+
+msgid "Enable encryption"
+msgstr "Dayakan penyulitan"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Dayakan pentadbir untuk mengubah kata laluan pengguna"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Pentadbir memberi kebenaran untuk mengubah kata laluan:"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Dayakan log masuk diringkaskan"
+
+msgid "Enable search engines indexing"
+msgstr "Dayakan pengindeksan enjin carian"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Had saiz untuk lampiran fail"
+
+msgid "megabytes"
+msgstr "megabait"
+
+msgid "Require two factor authentication"
+msgstr "Memerlukan pengesahan dua faktor"
+
+msgid "Password change interval"
+msgstr "Selang masa perubahan kata laluan"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Untuk tujuan keselamatan, perubahan kata laluan diperlukan pada selang masa tetap."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Bilangan hari sehingga memberitahu laporan yang belum dibaca kepada pengguna"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Nyahdayakan panel privasi"
+
+msgid "Enable custom privacy panel"
+msgstr "Dayakan panel privasi tersuai"
+
+msgid "Custom privacy panel"
+msgstr "Panel privasi tersuai"
+
+msgid "Enable scoring system"
+msgstr "Dayakan sistem pemarkahan"
+
+msgid "Logging level"
+msgstr "Tahap log"
+
+msgid "percentage"
+msgstr "peratusan"
+
+msgid "Log accesses of internal users"
+msgstr "Akses log pengguna dalaman"
+
+msgid "Notify administrators of software problems"
+msgstr "Beritahu pentadbir mengenai masalah perisian"
+
+msgid "Notify developers of software problems"
+msgstr "Beritahu pembangun mengenai masalah perisian"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Dengan mendayakan ciri ini, anda akan menyumbang kepada pembangunan dan keselamatan platform."
+
+msgid "Reset reports"
+msgstr "Tetapkan semula laporan"
+
+msgid "Settings"
+msgstr "Aturan"
 
 msgid "Case management"
 msgstr "Pengurusan kes"
 
-msgid "Network settings"
-msgstr "Tetapan rangkaian"
+msgid "Network"
+msgstr "Rangkaian"
 
 msgid "Sites"
 msgstr "Laman"
 
-msgid "Mode:"
-msgstr "Mod:"
+msgid "Profile"
+msgstr ""
 
 msgid "Configure"
 msgstr "Konfigurasikan"
@@ -1027,14 +1087,17 @@ msgstr "Konfigurasikan"
 msgid "Subdomain"
 msgstr "Subdomain"
 
+msgid "Mode:"
+msgstr "Mod:"
+
 msgid "Creation date:"
 msgstr "Tarikh penciptaan:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Domain akar digunakan untuk laman sekunder"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Gunakan laman pertama untuk tujuan pentadbiran sahaja"
+
+msgid "Root domain used for secondary sites"
+msgstr "Domain akar digunakan untuk laman sekunder"
 
 msgid "Allow users to sign up"
 msgstr "Benarkan pengguna untuk mendaftar"
@@ -1055,10 +1118,10 @@ msgid "Set password"
 msgstr "Tetapkan kata laluan"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Kata laluan yang dipilih terlalu lemah. Kata laluan yang sah perlulah sekurang-kurangnya 10 aksara panjang dan mengandungi pelbagai aksara termasuk sekurang-kurangnya aksara huruf kecil, aksara huruf besar, nombor dan aksara khas."
+msgstr "Kata laluan yang dipilih terlalu lemah. Kata laluan yang sah perlulah sekurang-kurangnya 12 aksara panjang dan mengandungi pelbagai aksara termasuk sekurang-kurangnya aksara huruf kecil, aksara huruf besar, nombor dan aksara khas."
 
 msgid "Force password change"
 msgstr "Paksa perubahan kata laluan"
@@ -1093,11 +1156,23 @@ msgstr "Dipilih secara paksa"
 msgid "Allow the recipient to delete reports"
 msgstr "Benarkan penerima untuk memadam laporan"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Benarkan penerima untuk menunda tarikh tamat tempoh laporan"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Berikan akses pentadbiran pengguna kepada ciri berikut:"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "Tarikh permintaan"
@@ -1135,14 +1210,20 @@ msgstr "Sila pilih akaun anda:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Sekarang taip kata laluan anda, kemudian klik 'Log masuk':"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Teks ditunjukkan selepas pengguna telah memilih pilihan."
-
 msgid "Confirm"
 msgstr "Sahkan"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Teks ditunjukkan selepas pengguna telah memilih pilihan."
+
 msgid "Assign score points"
 msgstr "Tetapkan mata markah"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Status:"
 
 msgid "Are you sure?"
 msgstr "Adakah anda pasti?"
@@ -1167,8 +1248,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Buat salinan dan simpannya di tempat yang selamat. Ia diperlukan jika anda kehilangan kata laluan anda untuk memulihkan akses kepada akaun anda tanpa kehilangan data."
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Masukkan nama untuk salinan"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr ""
@@ -1190,14 +1286,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Platform masih tidak dikonfigurasikan untuk sambungan HTTPS dan oleh itu perlu hanya digunakan untuk tujuan pengujian."
 
-msgid "Please write a motivation for the reply"
-msgstr "Sila tuliskan motivasi untuk balas"
-
 msgid "Send"
 msgstr "Hantar"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Dengan mengesahkan, anda akan menunda tarikh tamat tempoh kepada:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Ini ialah platform demo, sila jangan gunakannya untuk penghantaran sebenar."
@@ -1231,6 +1330,12 @@ msgstr "Sumber hanya boleh diakses melalui rangkaian Tor"
 
 msgid "The upload request exceeds the size limit"
 msgstr "Permintaan muat naik melebihi had saiz"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Kata laluan semasa"
@@ -1273,20 +1378,23 @@ msgstr "Sudahkah anda memfailkan laporan? Masukkan resit anda."
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Resit tidak sah atau laporan telah tamat tempoh."
 
-msgid "Select a file or drag it here."
-msgstr "Pilih fail atau seret di sini."
+msgid "Filename"
+msgstr "Nama fail"
 
 msgid "Size:"
 msgstr "Saiz:"
 
-msgid "Uploading files…"
-msgstr "Memuat naik fail…"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "Muat naik berjaya dilengkapkan!"
+msgid "Address"
+msgstr "Alamat"
 
-msgid "Estimated upload time:"
-msgstr "Anggaran masa muat naik:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr "Kod cukai"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Penerima telah meminta anda mengisi soal selidik tambahan."
@@ -1300,8 +1408,8 @@ msgstr "Daripada:"
 msgid "To:"
 msgstr "Kepada:"
 
-msgid "Filename"
-msgstr "Nama fail"
+msgid "View"
+msgstr "Lihat"
 
 msgid "Upload date"
 msgstr "Tarikh muat naik"
@@ -1314,9 +1422,6 @@ msgstr "Jawapan soal selidik"
 
 msgid "Step"
 msgstr "Langkah"
-
-msgid "Status:"
-msgstr "Status:"
 
 msgid "Files attached by recipients"
 msgstr "Fail dilampirkan oleh penerima"
@@ -1343,9 +1448,6 @@ msgstr "Jika anda mahu menyumbang kepada pembangunan perisian atau melaporkan pe
 msgid "Join our chat:"
 msgstr "Sertai sembang kami:"
 
-msgid "Follow the project on:"
-msgstr "Ikuti projek di:"
-
 msgid "An update is available:"
 msgstr "Kemas kini tersedia:"
 
@@ -1355,6 +1457,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "Kami mengesyorkan anda mengakses bahagian “Keutamaan” untuk mendapatkan “Kunci Pemulihan Akaun” dan menyimpannya dengan selamat. Kunci ini diperlukan untuk memulihkan akses anda kepada platform dan kepada data anda sekiranya anda lupa kata laluan anda."
+
+msgid "Select a file or drag it here."
+msgstr "Pilih fail atau seret di sini."
 
 msgid "The provided recovery key is invalid."
 msgstr "Kunci pemulihan yang diberikan tidak sah."
@@ -1387,6 +1492,9 @@ msgstr "Tarikh permintaan"
 msgid "Show"
 msgstr "Tunjukkan"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Tahniah!"
 
@@ -1409,26 +1517,17 @@ msgstr "Jika tidak diaktifkan dalam masa 24 jam, platform akan dipadam secara au
 msgid "Sign up"
 msgstr "Daftar"
 
-msgid "Site"
-msgstr "Laman"
-
-msgid "Confirmation"
-msgstr "Pengesahan"
-
 msgid "Invalid confirmation"
 msgstr "Pengesahan tidak sah"
 
 msgid "Invalid phone number"
 msgstr "Nombor telefon tidak sah"
 
-msgid "Address"
-msgstr "Alamat"
+msgid "Site"
+msgstr "Laman"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr "Kod cukai"
+msgid "Confirmation"
+msgstr "Pengesahan"
 
 msgid "The answer is too short"
 msgstr "Jawapan terlalu pendek"
@@ -1467,17 +1566,17 @@ msgstr "Gunakan resit 16 digit untuk log masuk. Ia akan membenarkan anda untuk m
 msgid "View your report"
 msgstr "Lihat laporan anda"
 
-msgid "Recipient selection"
-msgstr "Pilihan penerima"
-
-msgid "Select the recipients of your report:"
-msgstr "Pilih penerima laporan anda:"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "Penerima dipilih:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Anda telah mencapai nombor maksimum penerima yang boleh dipilih."
+
+msgid "You must select at least one recipient."
+msgstr "Anda perlu memilih sekurang-kurangnya satu penerima."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1489,17 +1588,11 @@ msgid ""
 "invalid:"
 msgstr "Dalam langkah ini, jawapan kepada soalan berikut tiada atau tidak sah:"
 
-msgid "You must select at least one recipient."
-msgstr "Anda perlu memilih sekurang-kurangnya satu penerima."
+msgid "Recipient selection"
+msgstr "Pilihan penerima"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Menunggu untuk fail selesai dimuat naik."
-
-msgid "The following steps have errors:"
-msgstr "Langkah berikut mempunyai ralat:"
-
-msgid "Hide"
-msgstr "Sembunyikan"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1589,8 +1682,8 @@ msgstr "Adakah mana-mana organisasi ini menyiasat aduan anda? Jika ya, apakah ha
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Apakah keputusan yang anda mahu dapati/peroleh?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Adakah anda mahu menyediakan maklumat pengenalan anda?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Nama pertama"
@@ -1606,6 +1699,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "Lain-lain"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "{RecipientName} yang dihormati,"
@@ -1667,6 +1763,9 @@ msgstr "Teliti isu untuk menentukan sama ada ia sah atau tidak."
 
 msgid "The activities with unusual stats are:"
 msgstr "Aktiviti dengan statistik luar biasa adalah:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1896,6 +1995,9 @@ msgstr ""
 msgid "New report"
 msgstr "Laporan baru"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Tarikh tamat tempoh terawal ialah {EarliestExpirationDate}."
 
@@ -1905,18 +2007,16 @@ msgstr "Ingat untuk periksa ia sebelum ia dipadam."
 msgid "Some reports will expire soon"
 msgstr "Sesetengah laporan akan tamat tempoh tidak lama lagi"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "E-mel ini untuk memberitahu anda bahawa pemberi maklumat telah memilih anda sebagai penerima bernilai laporan mereka."
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Anda diminta memberi perhatian khusus kepada maklumat dan bahan yang terdapat di dalamnya. Ingat bahawa pemberi maklumat sering mendedahkan diri mereka kepada risiko peribadi yang tinggi demi kepentingan orang ramai. Oleh itu, bahan yang disediakan dalam laporan ini perlu dianggap sangat penting."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "E-mel ini untuk memberitahu bahawa laporan sedia ada telah dikemas kini."

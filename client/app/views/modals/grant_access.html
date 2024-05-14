@@ -1,6 +1,6 @@
 <div class="modal-header">
   <div class="modal-title" data-translate>Grant access</div>
-  <button type="button" class="close" data-ng-click="cancel()">
+  <button type="button" class="close" data-ng-click="cancel()" aria-label="{{'Close' | translate}}">
     <i class="fa-solid fa-times"></i>
   </button>
 </div>
@@ -11,7 +11,7 @@
         <ui-select-match data-ng-attr-placeholder="{{'Search' | translate}}">
            <span data-ng-bind="arg.users_names[$select.selected.id]"></span>
 	</ui-select-match>
-        <ui-select-choices data-repeat="receiver in public.receivers | filter: {name: $select.search}">
+        <ui-select-choices data-repeat="receiver in arg.selectable_recipients | filter: {name: $select.search}">
            <span data-ng-bind-html="arg.users_names[receiver.id] | highlight: $select.search"></span>
         </ui-select-choices>
       </ui-select>
@@ -27,6 +27,6 @@
   </button>
   <a id="modal-action-cancel" class="btn btn-outline-secondary" data-ng-click="cancel()">
     <i class="fa-solid fa-times"></i>
-    <span>Close</span>
+    <span data-translate>Close</span>
   </a>
 </div>

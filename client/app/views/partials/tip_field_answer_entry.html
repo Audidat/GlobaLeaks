@@ -8,6 +8,12 @@
     </div>
   </span>
 
+  <span data-ng-switch-when="voice">
+    <div class="audio-player-wrapper" data-ng-init="loadAudioFile(field.id)">
+      <iframe id="{{'audio-file-' + field.id}}" class="audio-player-iframe" frameborder="0" scrolling="no" sandbox="allow-downloads allow-scripts" src="/viewer/index.html"></iframe>
+    </div>
+  </span>
+
   <span data-ng-if="entry['value']" data-ng-switch-when="selectbox|multichoice" data-ng-switch-when-separator="|">
     <div data-ng-repeat="option in field.options">
       <span data-ng-if="entry['value'] === option.id">{{option.label}}</span>
@@ -29,5 +35,9 @@
     </div>
   </span>
 
-  <span data-ng-if="entry['value']" class="entry-text preformatted" data-ng-switch-default>{{entry['value']}}</span>
+  <span data-ng-if="entry['value']" class="preformatted" data-ng-switch-default>{{maskContent(field.id, entry['index'], entry['value'])}}</span>
+
+  <span class="float-right edit" id="edit-question" data-ng-switch-default data-ng-click="redactInformation('answer', field.id, entry['index'], entry['value'])" data-ng-if="redactMode && (resources.preferences.can_mask_information || resources.preferences.can_redact_information)" data-uib-tooltip="{{redactOperationTitle}}">
+    <i class="fa-solid fa-eraser"></i>
+  </span>
 </div>

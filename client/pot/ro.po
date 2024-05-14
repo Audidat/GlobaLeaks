@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2016-2022\n"
-"Language-Team: Romanian (http://www.transifex.com/otf/globaleaks/language/ro/)\n"
+"Language-Team: Romanian (http://app.transifex.com/otf/globaleaks/language/ro/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ro\n"
@@ -33,20 +33,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Autentificare"
 
-msgid "Main configuration"
-msgstr "Configurare de bază"
-
-msgid "Theme customization"
-msgstr "Personalizare temă "
-
 msgid "Languages"
 msgstr "Setare limbă"
 
 msgid "Text customization"
 msgstr "Personalizare text"
 
-msgid "Advanced settings"
-msgstr "Setări avansate"
+msgid "Advanced"
+msgstr "Avansat"
 
 msgid "Question templates"
 msgstr "Șabloane pentru întrebări"
@@ -66,8 +60,8 @@ msgstr "Istoric modificări"
 msgid "License"
 msgstr "Licență"
 
-msgid "Notification templates"
-msgstr "Șabloane pentru notificări"
+msgid "Templates"
+msgstr "Șabloane"
 
 msgid "Delete"
 msgstr "Şterge"
@@ -78,8 +72,8 @@ msgstr "Anomalii"
 msgid "Preferences"
 msgstr "Preferințe"
 
-msgid "Notification settings"
-msgstr "Setări de notificare"
+msgid "Notifications"
+msgstr "Notificări"
 
 msgid "file unavailable"
 msgstr "fișier indisponibil"
@@ -99,25 +93,16 @@ msgstr "Fişiere"
 msgid "Comments"
 msgstr "Comentarii"
 
-msgid "Messages"
-msgstr "Mesaje"
-
 msgid "Details"
 msgstr "Detalii"
 
 msgid "Platform wizard"
 msgstr "Configurator platformă"
 
-msgid "CREDIT CARD"
-msgstr "CARD DE CREDIT"
-
-msgid "YOUR NAME"
-msgstr "NUMELE TĂU"
-
 msgid "Label the report"
 msgstr "Etichetează sesizarea"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Amână data de expirare"
 
 msgid "Select all"
@@ -129,8 +114,8 @@ msgstr "Deselectează tot "
 msgid "Refresh"
 msgstr "Actualizează"
 
-msgid "Context"
-msgstr "Context"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Previzualizare"
@@ -234,9 +219,6 @@ msgstr "Accesul a fost solicitat"
 msgid "Request access to the whistleblower's identity"
 msgstr "Solicită accesul pentru a vizualiza identitatea avertizorului de integritate.  "
 
-msgid "Please write a motivation"
-msgstr "Te rugăm să motivezi"
-
 msgid "Reply to the request"
 msgstr "Răspunde solicitării"
 
@@ -263,9 +245,6 @@ msgstr "Interzice accesul la identitatea avertizorului de integritate "
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Permite accesul la identitatea avertizorului de integritate."
-
-msgid "Templates"
-msgstr "Șabloane"
 
 msgid "URL redirects"
 msgstr "Redirecționări URL"
@@ -306,8 +285,8 @@ msgstr "Mediu"
 msgid "Strong"
 msgstr "Ridicat"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Text afișat în partea de sus a interfeței pentru selectarea contextelor"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Pune pe silențios notificările e-mailurilor"
@@ -370,9 +349,6 @@ msgstr "Dimensiunea maximă a fișierului este:"
 
 msgid "Scheduled jobs"
 msgstr "Sarcini programate"
-
-msgid "Sites management"
-msgstr "Administrarea website-urilor"
 
 msgid "Regenerate"
 msgstr "Regenerare"
@@ -472,20 +448,110 @@ msgstr "Copiază în clipboard"
 msgid "Logout"
 msgstr "Deconectare"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Permite acestui destinatar să acorde utilizatorilor acces la sesizări"
-
 msgid "Grant access"
 msgstr "Acordă acces"
 
 msgid "Revoke access"
 msgstr "Revocă accesul"
 
+msgid "Transfer"
+msgstr "Transfer"
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr "privilegii"
+
+msgid "Hide"
+msgstr "Ascunde"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr "Selectați limba"
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "Politica de confidențialitate"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr "Anonimat"
+
+msgid "Anonymous"
+msgstr "Anonim"
+
+msgid "Subscribed"
+msgstr "subscrisă"
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr "Computer"
+
+msgid "Mobile"
+msgstr "Mobil"
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "Depune o sesizare"
 
-msgid "Select the context of your report:"
-msgstr "Selectează contextul sesizării tale:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "Înainte de a începe, te rugăm să îți setezi o nouă parolă."
@@ -495,102 +561,6 @@ msgstr "Înainte de a începe, te rugăm să activezi autentificarea în doi pa�
 
 msgid "Enable"
 msgstr "Activează:"
-
-msgid "Disable submissions"
-msgstr "Dezactivează sesizările"
-
-msgid "Enable encryption"
-msgstr "Activează criptarea"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Permite administratorilor să schimbe parolele utilizatorilor"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Administratori autorizați să schimbe parolele utilizatorului:"
-
-msgid "Enable multisite feature"
-msgstr "Activează funcționalitatea multi-site"
-
-msgid "Enable simplified login"
-msgstr "Activează autentificarea simplificată"
-
-msgid "Enable search engines indexing"
-msgstr "Activează indexarea pentru motoarele de căutare"
-
-msgid "Default questionnaire"
-msgstr "Chestionar standard"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Afișează contextele în ordine alfabetică"
-
-msgid "Size limit for file attachments"
-msgstr "Dimensiunea maximă a fișierelor atașate"
-
-msgid "megabytes"
-msgstr "megabytes"
-
-msgid "Require two factor authentication"
-msgstr "Solicită autentificarea în doi pași"
-
-msgid "Password change interval"
-msgstr "Intervalul la care trebuie schimbată parola"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Din motive de securitate, este solicitată schimbarea parolei la intervale regulate."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Selectează valoarea 0 pentru a dezactiva această opțiune."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Numărul de zile până la notificarea utilizatorilor cu privire la sesizările necitite"
-
-msgid "Disable the privacy panel"
-msgstr "Dezactivează panoul cu setări de confidențialitate"
-
-msgid "Enable custom privacy panel"
-msgstr "Activează panoul pentru personalizarea setărilor privind confidențialitatea"
-
-msgid "Custom privacy panel"
-msgstr "Panou pentru personalizarea setărilor privind confidențialitatea"
-
-msgid "Enable custodian user role"
-msgstr "Activează rolul de custode al utilizatorului"
-
-msgid "Enable scoring system"
-msgstr "Activează sistemul de evaluare"
-
-msgid "Logging level"
-msgstr "Nivel logare"
-
-msgid "Log accesses of internal users"
-msgstr "Logare acces utilizatori interni"
-
-msgid "Notify administrators of software problems"
-msgstr "Notifică administratorii privind problemele de software"
-
-msgid "Notify developers of software problems"
-msgstr "Notifică programatorii privind problemele de software"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Activând această funcționalitate, contribui la dezvoltarea și securitatea platformei."
-
-msgid "Save"
-msgstr "Salvează"
-
-msgid "Reset reports"
-msgstr "Resetează sesizări"
-
-msgid "Low"
-msgstr "Scăzut"
-
-msgid "High"
-msgstr "Ridicat"
-
-msgid "percentage"
-msgstr "procentaj"
 
 msgid "Type"
 msgstr "Tip"
@@ -619,6 +589,9 @@ msgstr "Data creării"
 msgid "Last access"
 msgstr "Ultima accesare"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "Ultima accesare de către avertizorul de integritate"
 
@@ -637,68 +610,29 @@ msgstr "Acest câmp este obligatoriu "
 msgid "Edit"
 msgstr "Editare"
 
+msgid "Save"
+msgstr "Salvează"
+
 msgid "Cancel"
 msgstr "Anulează"
+
+msgid "days"
+msgstr "zile"
+
+msgid "Disabled"
+msgstr "Dezactivat"
 
 msgid "Report statuses"
 msgstr "Statusuri sesizare"
 
-msgid "Logo"
-msgstr "Logo"
-
-msgid "Project name"
-msgstr "Numele proiectului"
-
-msgid "Description"
-msgstr "Descriere"
-
-msgid "Homepage title"
-msgstr "Titlul paginii de start"
-
-msgid "Presentation"
-msgstr "Prezentare"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Întrebarea prin care soliciți posibile avertizări"
-
-msgid "Whistleblowing button"
-msgstr "Butonul pentru avertizarea de integritate"
-
-msgid "Disclaimer"
-msgstr "Declinarea responsabilității"
-
-msgid "Footer"
-msgstr "Subsol"
-
-msgid "Upload"
-msgstr "Încărcă"
-
-msgid "Download"
-msgstr "Descărcă"
-
-msgid "Language:"
-msgstr "Limbă:"
-
-msgid "Add custom text"
-msgstr "Adaugă text personalizat"
-
-msgid "Custom text"
-msgstr "Text personalizat"
-
-msgid "Original text"
-msgstr "Textul original"
-
-msgid "Original translation"
-msgstr "Traducerea originală"
-
-msgid "Custom translation"
-msgstr "Traducere personalizată"
-
-msgid "Contexts"
-msgstr "Contexte"
+msgid "Channels"
+msgstr ""
 
 msgid "Hidden"
 msgstr "Ascuns"
+
+msgid "Description"
+msgstr "Descriere"
 
 msgid "Questionnaire"
 msgstr "Chestionar"
@@ -706,8 +640,11 @@ msgstr "Chestionar"
 msgid "Recipients"
 msgstr "Destinatari"
 
-msgid "days"
-msgstr "zile"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Selectează valoarea 0 pentru a dezactiva această opțiune."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Arată interfața de navigare a chestionarului"
@@ -724,24 +661,6 @@ msgstr "Numărul maxim de destinatari ce pot fi selectați:"
 msgid "Show recipients in alphabetical order"
 msgstr "Afișează destinatarii în ordine alfabetică"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Afișează detaliile destinatarului pe pagina care prezintă statusul sesizării"
-
-msgid "Enable comments"
-msgstr "Activează comentariile"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Permite avertizorului să scrie comentarii"
-
-msgid "Enable private messages"
-msgstr "Activează mesajele private"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Permite avertizorilor să trimită mesaje"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Permite avertizorului să adauge atașamente sesizării"
-
 msgid "Additional questionnaire"
 msgstr "Chestionar suplimentar"
 
@@ -757,6 +676,9 @@ msgstr "Valoare"
 msgid "Medium"
 msgstr "Mediu"
 
+msgid "High"
+msgstr "Ridicat"
+
 msgid "Software version:"
 msgstr "Versiune software:"
 
@@ -771,6 +693,9 @@ msgstr "Adrese IP permise"
 
 msgid "Admin"
 msgstr "Admin"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Destinatar"
@@ -851,9 +776,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "Asistentul pentru configurare manuală vă va ghida de-a lungul procesului de instalare a HTTPS de la o altă Autoritate de Certificare."
-
-msgid "Disabled"
-msgstr "Dezactivat"
 
 msgid "Auto-renewal"
 msgstr "Reînnoire automată"
@@ -968,6 +890,12 @@ msgstr "Acceptă răspunsuri multiple"
 msgid "Template override"
 msgstr "Suprascrie șablonul"
 
+msgid "Min"
+msgstr "Min"
+
+msgid "Max"
+msgstr "Max"
+
 msgid "Phone number"
 msgstr "Număr de telefon"
 
@@ -991,6 +919,9 @@ msgstr "Video"
 
 msgid "Text shown upon negative answer"
 msgstr "Text afișat atunci când răspunsul este negativ"
+
+msgid "Low"
+msgstr "Scăzut"
 
 msgid "Trigger conditions"
 msgstr "Condiții de declanșare"
@@ -1022,20 +953,149 @@ msgstr "Duplicare"
 msgid "Steps"
 msgstr "Pași"
 
-msgid "Site settings"
-msgstr "Setările website-ului"
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Project name"
+msgstr "Numele proiectului"
+
+msgid "Homepage title"
+msgstr "Titlul paginii de start"
+
+msgid "Presentation"
+msgstr "Prezentare"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Întrebarea prin care soliciți posibile avertizări"
+
+msgid "Whistleblowing button"
+msgstr "Butonul pentru avertizarea de integritate"
+
+msgid "Disclaimer"
+msgstr "Declinarea responsabilității"
+
+msgid "Footer"
+msgstr "Subsol"
+
+msgid "Upload"
+msgstr "Încărcă"
+
+msgid "Download"
+msgstr "Descărcă"
+
+msgid "Language:"
+msgstr "Limbă:"
+
+msgid "Add custom text"
+msgstr "Adaugă text personalizat"
+
+msgid "Custom text"
+msgstr "Text personalizat"
+
+msgid "Original text"
+msgstr "Textul original"
+
+msgid "Original translation"
+msgstr "Traducerea originală"
+
+msgid "Custom translation"
+msgstr "Traducere personalizată"
+
+msgid "Disable submissions"
+msgstr "Dezactivează sesizările"
+
+msgid "Enable encryption"
+msgstr "Activează criptarea"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Permite administratorilor să schimbe parolele utilizatorilor"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Administratori autorizați să schimbe parolele utilizatorului:"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Activează autentificarea simplificată"
+
+msgid "Enable search engines indexing"
+msgstr "Activează indexarea pentru motoarele de căutare"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Dimensiunea maximă a fișierelor atașate"
+
+msgid "megabytes"
+msgstr "megabytes"
+
+msgid "Require two factor authentication"
+msgstr "Solicită autentificarea în doi pași"
+
+msgid "Password change interval"
+msgstr "Intervalul la care trebuie schimbată parola"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Din motive de securitate, este solicitată schimbarea parolei la intervale regulate."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Numărul de zile până la notificarea utilizatorilor cu privire la sesizările necitite"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Dezactivează panoul cu setări de confidențialitate"
+
+msgid "Enable custom privacy panel"
+msgstr "Activează panoul pentru personalizarea setărilor privind confidențialitatea"
+
+msgid "Custom privacy panel"
+msgstr "Panou pentru personalizarea setărilor privind confidențialitatea"
+
+msgid "Enable scoring system"
+msgstr "Activează sistemul de evaluare"
+
+msgid "Logging level"
+msgstr "Nivel logare"
+
+msgid "percentage"
+msgstr "procentaj"
+
+msgid "Log accesses of internal users"
+msgstr "Logare acces utilizatori interni"
+
+msgid "Notify administrators of software problems"
+msgstr "Notifică administratorii privind problemele de software"
+
+msgid "Notify developers of software problems"
+msgstr "Notifică programatorii privind problemele de software"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Activând această funcționalitate, contribui la dezvoltarea și securitatea platformei."
+
+msgid "Reset reports"
+msgstr "Resetează sesizări"
+
+msgid "Settings"
+msgstr "Setări"
 
 msgid "Case management"
 msgstr "Managementul cazurilor"
 
-msgid "Network settings"
-msgstr "Setări de rețea"
+msgid "Network"
+msgstr "Reţea"
 
 msgid "Sites"
 msgstr "Website-uri"
 
-msgid "Mode:"
-msgstr "Mod:"
+msgid "Profile"
+msgstr "Profil"
 
 msgid "Configure"
 msgstr "Configurează"
@@ -1043,14 +1103,17 @@ msgstr "Configurează"
 msgid "Subdomain"
 msgstr "Sub-domeniu"
 
+msgid "Mode:"
+msgstr "Mod:"
+
 msgid "Creation date:"
 msgstr "Data creării:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Domeniu principal utilizat pentru website-urile secundare"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Folosește primul website doar pentru scopuri administrative"
+
+msgid "Root domain used for secondary sites"
+msgstr "Domeniu principal utilizat pentru website-urile secundare"
 
 msgid "Allow users to sign up"
 msgstr "Permite utilizatorilor să se înscrie"
@@ -1071,10 +1134,10 @@ msgid "Set password"
 msgstr "Setează parola"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Parola aleasă este prea slabă. O parolă validă trebuie să aibă cel puțin 10 caractere și să conțină o varietate de caractere, incluzând cel puțin o literă mică, o literă de tipar, un număr și un simbol."
+msgstr "Parola aleasă este prea slabă. O parolă validă trebuie să aibă cel puțin 12 caractere și să conțină o varietate de caractere, incluzând cel puțin o literă mică, o literă de tipar, un număr și un simbol."
 
 msgid "Force password change"
 msgstr "Schimbare forțată a parolei"
@@ -1109,11 +1172,23 @@ msgstr "Selectat obligatoriu"
 msgid "Allow the recipient to delete reports"
 msgstr "Permite destinatarilor să șteargă sesizările"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Permite destinatarului să amâne data de expirare a sesizării"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Permite utilizatorului acces administrativ la următoarele instrumente:"
+
+msgid "Statistics"
+msgstr "Statistici"
 
 msgid "Request date"
 msgstr "Data solicitării"
@@ -1151,14 +1226,20 @@ msgstr "Te rugăm să îți selectezi contul:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Tastează parola și dă click pe \"Autentificare\":"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Acest text apare după ce utilizatorul a selectat varianta."
-
 msgid "Confirm"
 msgstr "Confirmă"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Acest text apare după ce utilizatorul a selectat varianta."
+
 msgid "Assign score points"
 msgstr "Atribuie puncte pentru evaluare"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Status:"
 
 msgid "Are you sure?"
 msgstr "Ești sigur(ă)?"
@@ -1183,8 +1264,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Notează și pune cheia într-un loc sigur. Vei avea nevoie de ea dacă îți pierzi parola și vrei să îți recuperezi accesul la cont fără a pierde datele."
 
+msgid "Attention"
+msgstr "Atenție"
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Introdu un nume pentru copie"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr "Solicită asistență"
@@ -1206,14 +1302,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Platforma nu este configurată pentru conexiuni HTTPS și, de aceea, trebuie folosită doar pentru teste."
 
-msgid "Please write a motivation for the reply"
-msgstr "Te rugăm să scrii o motivație pentru răspuns"
-
 msgid "Send"
 msgstr "Trimite"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Confirmând, vei amâna data de expirare până la:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Aceasta este o platformă demo, te rugăm să nu o folosești pentru sesizări reale."
@@ -1247,6 +1346,12 @@ msgstr "Resursa poate fi accesată numai prin intermediul rețelei Tor"
 
 msgid "The upload request exceeds the size limit"
 msgstr "Atașamentul depășește dimensiunea maximă acceptată"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Parolă curentă"
@@ -1289,20 +1394,23 @@ msgstr "Ai trimis deja o sesizare? Introdu codul înregistrării."
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Acest cod este fie invalid, fie sesizarea a expirat."
 
-msgid "Select a file or drag it here."
-msgstr "Selectează un fișier sau trage-l aici."
+msgid "Filename"
+msgstr "Nume fișier"
 
 msgid "Size:"
 msgstr "Dimensiune:"
 
-msgid "Uploading files…"
-msgstr "Fișierele se încarcă"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "Încărcare finalizată cu succes!"
+msgid "Address"
+msgstr "Adresă"
 
-msgid "Estimated upload time:"
-msgstr "Timpul estimat pentru încărcare:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr "Cod fiscal"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Destinatarii ți-au solicitat să completezi un chestionar suplimentar."
@@ -1316,8 +1424,8 @@ msgstr "De la:"
 msgid "To:"
 msgstr "Pentru:"
 
-msgid "Filename"
-msgstr "Nume fișier"
+msgid "View"
+msgstr "Vizualizează"
 
 msgid "Upload date"
 msgstr "Data încărcării"
@@ -1330,9 +1438,6 @@ msgstr "Răspunsuri la chestionar"
 
 msgid "Step"
 msgstr "Etapa"
-
-msgid "Status:"
-msgstr "Status:"
 
 msgid "Files attached by recipients"
 msgstr "Fișiere atașate de către destinatari"
@@ -1359,9 +1464,6 @@ msgstr "Dacă vrei să contribui la dezvoltarea software-ului sau dorești să r
 msgid "Join our chat:"
 msgstr "Participă la discuția noastră:"
 
-msgid "Follow the project on:"
-msgstr "Urmărește proiectul pe: "
-
 msgid "An update is available:"
 msgstr "O nouă versiune este disponibilă"
 
@@ -1371,6 +1473,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "Vă recomandăm să accesați secțiunea \"Preferințe\" pentru a vă obține \"Cheia de recuperare a contului\" și pentru a o salva în siguranță. Această cheie va fi necesară pentru a vă recupera accesul la platformă și la datele dvs. în cazul în care vă uitați parola."
+
+msgid "Select a file or drag it here."
+msgstr "Selectează un fișier sau trage-l aici."
 
 msgid "The provided recovery key is invalid."
 msgstr "Cheia de recuperare introdusă este invalidă."
@@ -1403,6 +1508,9 @@ msgstr "Data solicitării"
 msgid "Show"
 msgstr "Arată"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Felicitări!"
 
@@ -1425,26 +1533,17 @@ msgstr "Dacă nu este activată în 24 de ore, platforma va fi ștearsă în mod
 msgid "Sign up"
 msgstr "Cont nou"
 
-msgid "Site"
-msgstr "Sait"
-
-msgid "Confirmation"
-msgstr "Confirmare"
-
 msgid "Invalid confirmation"
 msgstr "Confirmare invalidă"
 
 msgid "Invalid phone number"
 msgstr "Număr de telefon invalid"
 
-msgid "Address"
-msgstr "Adresă"
+msgid "Site"
+msgstr "Sait"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr "Cod fiscal"
+msgid "Confirmation"
+msgstr "Confirmare"
 
 msgid "The answer is too short"
 msgstr "Răspunsul este prea scurt"
@@ -1483,17 +1582,17 @@ msgstr "Folosește numărul de înregistrare din 16 cifre pentru a te autentific
 msgid "View your report"
 msgstr "Vizualizează sesizarea"
 
-msgid "Recipient selection"
-msgstr "Selectează destinatarul"
-
-msgid "Select the recipients of your report:"
-msgstr "Selectează destinatarii avertizării tale:"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "Destinatari selectați:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Ai atins numărul maxim de destinatari ce pot fi selectați."
+
+msgid "You must select at least one recipient."
+msgstr "Trebuie sa alegi cel puțin un destinatar."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1505,17 +1604,11 @@ msgid ""
 "invalid:"
 msgstr "În această etapă, răspunsurile pentru următoarele întrebări fie lipsesc, fie sunt invalide:"
 
-msgid "You must select at least one recipient."
-msgstr "Trebuie sa alegi cel puțin un destinatar."
+msgid "Recipient selection"
+msgstr "Selectează destinatarul"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Se așteaptă finalizarea încărcării fișierului(lor)."
-
-msgid "The following steps have errors:"
-msgstr "Următorii pași au erori:"
-
-msgid "Hide"
-msgstr "Ascunde"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1605,8 +1698,8 @@ msgstr "Aceste organizații au investigat afirmațiile dvs.? Dacă da, care a fo
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Care este rezultatul pe care doriți să-l obțineți cu sprijinul nostru?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Vrei să oferi informații care să permită identificarea ta?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Prenume"
@@ -1622,6 +1715,9 @@ msgstr "Prefer să fiu contactat doar prin intermediul acestei platforme"
 
 msgid "Other"
 msgstr "Alta"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "Bună ziua, {RecipientName},"
@@ -1683,6 +1779,9 @@ msgstr "Verifică situația pentru a decide dacă este legitimă sau nu."
 
 msgid "The activities with unusual stats are:"
 msgstr "Activitățile care înregistrează statistici neobișnuite sunt:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1912,6 +2011,9 @@ msgstr "Acesta este un e-mail pentru a te anunța că un destinatar ți-a acorda
 msgid "New report"
 msgstr "Sesizare nouă"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Cea mai apropiată dată de expirare este {EarliestExpirationDate}."
 
@@ -1921,18 +2023,16 @@ msgstr "Nu uita să le verifici înainte de a fi șterse."
 msgid "Some reports will expire soon"
 msgstr "Unele sesizări vor expira în curând."
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Acesta este un email prin care te anunțăm că un avertizor te-a selectat ca destinatar de încredere al sesizării lui."
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Te rugăm să acorzi atenție specială informațiilor și materialelor prezentate aici. Te rugăm să nu uiți că avertizorii de integritate se expun adesea unor riscuri personale mari în interesul public. De aceea, materialele oferite prin intermediul acestei sesizări trebuie să fie considerate de importanță majoră. "
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Prin acest e-mail te notificăm că o avertizare deja existentă a fost completată."

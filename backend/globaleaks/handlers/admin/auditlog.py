@@ -14,7 +14,6 @@ def serialize_log(log):
     return {
         'date': log.date,
         'type': log.type,
-        'severity': log.severity,
         'user_id': log.user_id,
         'object_id': log.object_id,
         'data': log.data
@@ -33,8 +32,8 @@ def get_tips(session, tid):
     tips = []
 
     comments_by_itip = {}
-    messages_by_itip = {}
     files_by_itip = {}
+    receiver_count_by_itip = {}
 
     # Fetch comments count
     for itip_id, count in session.query(models.InternalTip.id,
@@ -44,15 +43,6 @@ def get_tips(session, tid):
                                  .group_by(models.InternalTip.id):
         comments_by_itip[itip_id] = count
 
-    # Fetch messages count
-    for itip_id, count in session.query(models.InternalTip.id,
-                                        func.count(distinct(models.Message.id))) \
-                                 .filter(models.Message.receivertip_id == models.ReceiverTip.id,
-                                         models.ReceiverTip.internaltip_id == models.InternalTip.id,
-                                         models.InternalTip.tid == tid) \
-                                 .group_by(models.InternalTip.id):
-        messages_by_itip[itip_id] = count
-
     # Fetch files count
     for itip_id, count in session.query(models.InternalTip.id,
                                         func.count(distinct(models.InternalFile.id))) \
@@ -60,6 +50,14 @@ def get_tips(session, tid):
                                          models.InternalTip.tid == tid) \
                                  .group_by(models.InternalTip.id):
         files_by_itip[itip_id] = count
+
+    # Fetch number of receivers who has access to each itip
+    for itip_id, count in session.query(models.ReceiverTip.internaltip_id,
+                                        func.count(models.ReceiverTip.id)) \
+                                 .filter(models.ReceiverTip.internaltip_id == models.InternalTip.id,
+                                         models.InternalTip.tid == tid) \
+                                 .group_by(models.ReceiverTip.internaltip_id):
+        receiver_count_by_itip[itip_id] = count
 
     for itip in session.query(models.InternalTip).filter(models.InternalTip.tid == tid):
         tips.append({
@@ -73,8 +71,8 @@ def get_tips(session, tid):
             'substatus': itip.substatus,
             'tor': itip.tor,
             'comments': comments_by_itip.get(itip.id, 0),
-            'messages': messages_by_itip.get(itip.id, 0),
             'files': files_by_itip.get(itip.id, 0),
+            'receiver_count': receiver_count_by_itip.get(itip.id, 0),
             'last_access': itip.last_access
         })
 

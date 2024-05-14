@@ -8,6 +8,7 @@ window.localStorage = window.sessionStorage;
 
 var GL = angular.module("GL", [
     "angular.filter",
+    "angularjs-dropdown-multiselect",
     "ngAria",
     "ngIdle",
     "ngRoute",
@@ -20,9 +21,15 @@ var GL = angular.module("GL", [
     "ngCsv",
     "ngResource",
     "ngSanitize",
-    "ngFileSaver",
-    "ng-showdown"
+    "ng-showdown",
+    "chart.js"
 ]).
+  config(["$ariaProvider", function($ariaProvider) {
+    $ariaProvider.config({ariaInvalid: false});
+}]).
+  config(["ChartJsProvider", function(ChartJsProvider) {
+    ChartJsProvider.setOptions("global",{ colors : ["#EEF5FC", "#C4DEF8", "#9FC9F1", "#79B0E6", "#5797D5", "#377ABC", "#2866A2", "#205282", "#1F4365", "#103253"]});
+}]).
   config(["$compileProvider", function($compileProvider) {
     $compileProvider.debugInfoEnabled(false);
 }]).
@@ -34,6 +41,7 @@ var GL = angular.module("GL", [
 }]).
   config(["$showdownProvider", function($showdownProvider) {
     $showdownProvider.setOption("sanitize", true);
+    $showdownProvider.setOption("simplifiedAutoLink", true);
     $showdownProvider.setOption("openLinksInNewWindow", true);
 }]).
   config(["$provide", function($provide) {
@@ -67,7 +75,7 @@ var GL = angular.module("GL", [
     }
 
     function fetchResources(role, lst) {
-      return ["$location", "$q", "$rootScope", "Access", "GLTranslate", "AdminAuditLogResource", "AdminContextResource", "AdminQuestionnaireResource", "AdminStepResource", "AdminFieldResource", "AdminFieldTemplateResource", "AdminUserResource", "AdminNodeResource", "AdminNetworkResource", "AdminNotificationResource", "AdminRedirectResource", "AdminTenantResource", "TipsCollection", "JobsAuditLog", "AdminSubmissionStatusResource", "ReceiverTips", "UserPreferences", function($location, $q, $rootScope, Access, GLTranslate, AdminAuditLogResource, AdminContextResource, AdminQuestionnaireResource, AdminStepResource, AdminFieldResource, AdminFieldTemplateResource, AdminUserResource, AdminNodeResource, AdminNetworkResource, AdminNotificationResource, AdminRedirectResource, AdminTenantResource, TipsCollection, JobsAuditLog, AdminSubmissionStatusResource, ReceiverTips, UserPreferences) {
+      return ["$location", "$q", "$rootScope", "Access", "GLTranslate", "AdminAuditLogResource", "AdminContextResource", "AdminQuestionnaireResource", "AdminStepResource", "AdminFieldResource", "AdminFieldTemplateResource", "AdminUserResource", "AdminNodeResource", "AdminNetworkResource", "AdminNotificationResource", "AdminRedirectResource", "AdminTenantResource", "TipsCollection", "JobsAuditLog", "AdminSubmissionStatusResource", "ReceiverTips", "Statistics", "IdentityAccessRequests", "UserPreferences", function($location, $q, $rootScope, Access, GLTranslate, AdminAuditLogResource, AdminContextResource, AdminQuestionnaireResource, AdminStepResource, AdminFieldResource, AdminFieldTemplateResource, AdminUserResource, AdminNodeResource, AdminNetworkResource, AdminNotificationResource, AdminRedirectResource, AdminTenantResource, TipsCollection, JobsAuditLog, AdminSubmissionStatusResource, ReceiverTips, Statistics, IdentityAccessRequests, UserPreferences) {
         var resourcesPromises = {
           auditlog: function() { return AdminAuditLogResource.query().$promise; },
           node: function() { return AdminNodeResource.get().$promise; },
@@ -82,7 +90,9 @@ var GL = angular.module("GL", [
           jobs: function() { return JobsAuditLog.query().$promise; },
           questionnaires: function() { return AdminQuestionnaireResource.query().$promise; },
           submission_statuses: function() { return AdminSubmissionStatusResource.query().$promise; },
-          rtips: function() { return ReceiverTips.get().$promise; },
+          rtips: function() { return ReceiverTips.query().$promise; },
+          iars: function() { return IdentityAccessRequests.query().$promise; },
+          stats: function() { return Statistics.get().$promise; },
           preferences: function() { return UserPreferences.get().$promise; }
         };
 
@@ -117,6 +127,11 @@ var GL = angular.module("GL", [
         controller: "WizardCtrl",
         header_title: "Platform wizard"
       }).
+      when("/signup", {
+        templateUrl: "views/signup/main.html",
+        controller: "SignupCtrl",
+        header_title: "Sign up"
+      }).
       when("/submission", {
         templateUrl: "views/whistleblower/submission.html",
         controller: "SubmissionCtrl",
@@ -127,7 +142,7 @@ var GL = angular.module("GL", [
         controller: "SignupActivationCtrl",
         header_title: "Signup"
       }).
-      when("/status/:tip_id", {
+      when("/reports/:tip_id", {
         templateUrl: "views/recipient/tip.html",
         controller: "TipCtrl",
         header_title: "Report",
@@ -156,6 +171,7 @@ var GL = angular.module("GL", [
       }).
       when("/recipient/home", {
         templateUrl: "views/recipient/home.html",
+        controller: "HomeCtrl",
         header_title: "Home",
         sidebar: "views/recipient/sidebar.html",
         resolve: {
@@ -173,10 +189,10 @@ var GL = angular.module("GL", [
           resources: fetchResources("receiver", ["preferences"]),
         }
       }).
-      when("/recipient/content", {
-        templateUrl: "views/recipient/content.html",
+      when("/recipient/settings", {
+        templateUrl: "views/recipient/settings.html",
         controller: "AdminCtrl",
-        header_title: "Site settings",
+        header_title: "Settings",
         sidebar: "views/recipient/sidebar.html",
         resolve: {
           access: requireAuth("receiver"),
@@ -194,7 +210,7 @@ var GL = angular.module("GL", [
       }).
       when("/admin/home", {
         templateUrl: "views/admin/home.html",
-        controller: "AdminCtrl",
+        controller: "HomeCtrl",
         header_title: "Home",
         sidebar: "views/admin/sidebar.html",
         resolve: {
@@ -212,20 +228,20 @@ var GL = angular.module("GL", [
           resources: fetchResources("admin", ["node", "preferences"])
         }
       }).
-      when("/admin/content", {
-        templateUrl: "views/admin/content.html",
+      when("/admin/settings", {
+        templateUrl: "views/admin/settings.html",
         controller: "AdminCtrl",
-        header_title: "Site settings",
+        header_title: "Settings",
         sidebar: "views/admin/sidebar.html",
         resolve: {
           access: requireAuth("admin"),
-          resources: fetchResources("admin", ["node", "preferences"])
+          resources: fetchResources("admin", ["node", "preferences", "users"])
         }
       }).
       when("/admin/contexts", {
         templateUrl: "views/admin/contexts.html",
         controller: "AdminCtrl",
-        header_title: "Contexts",
+        header_title: "Channels",
         sidebar: "views/admin/sidebar.html",
         resolve: {
           access: requireAuth("admin"),
@@ -255,7 +271,7 @@ var GL = angular.module("GL", [
       when("/admin/notifications", {
         templateUrl: "views/admin/notifications.html",
         controller: "AdminCtrl",
-        header_title: "Notification settings",
+        header_title: "Notifications",
         sidebar: "views/admin/sidebar.html",
         resolve: {
           access: requireAuth("admin"),
@@ -265,21 +281,11 @@ var GL = angular.module("GL", [
       when("/admin/network", {
         templateUrl: "views/admin/network.html",
         controller: "AdminCtrl",
-        header_title: "Network settings",
+        header_title: "Network",
         sidebar: "views/admin/sidebar.html",
         resolve: {
           access: requireAuth("admin"),
           resources: fetchResources("admin", ["network", "node", "preferences", "redirects"])
-        }
-      }).
-      when("/admin/advanced", {
-        templateUrl: "views/admin/advanced.html",
-        controller: "AdminCtrl",
-        header_title: "Advanced settings",
-        sidebar: "views/admin/sidebar.html",
-        resolve: {
-          access: requireAuth("admin"),
-          resources: fetchResources("admin", ["node", "preferences", "questionnaires", "users"])
         }
       }).
       when("/admin/auditlog", {
@@ -295,11 +301,11 @@ var GL = angular.module("GL", [
       when("/admin/sites", {
         templateUrl: "views/admin/sites.html",
         controller: "AdminCtrl",
-        header_title: "Sites management",
+        header_title: "Sites",
         sidebar: "views/admin/sidebar.html",
         resolve: {
           access: requireAuth("admin"),
-          resources: fetchResources("admin", ["node", "preferences", "tenants"])
+          resources: fetchResources("admin", ["node", "preferences", "questionnaires", "tenants"])
         }
       }).
       when("/admin/casemanagement", {
@@ -314,6 +320,7 @@ var GL = angular.module("GL", [
       }).
       when("/custodian/home", {
         templateUrl: "views/custodian/home.html",
+        controller: "HomeCtrl",
         header_title: "Home",
         sidebar: "views/custodian/sidebar.html",
         resolve: {
@@ -331,22 +338,42 @@ var GL = angular.module("GL", [
           resources: fetchResources("custodian", ["preferences"])
         }
       }).
-      when("/custodian/content", {
-        templateUrl: "views/custodian/content.html",
-        controller: "AdminCtrl",
-        header_title: "Site settings",
-        sidebar: "views/custodian/sidebar.html",
-        resolve: {
-          access: requireAuth("custodian"),
-          resources: fetchResources("custodian", ["node", "preferences"])
-        }
-      }).
       when("/custodian/requests", {
         templateUrl: "views/custodian/identity_access_requests.html",
         header_title: "Requests",
         resolve: {
           access: requireAuth("custodian"),
-          resources: fetchResources("custodian", ["preferences"])
+          resources: fetchResources("custodian", ["iars", "preferences"])
+        }
+      }).
+      when("/analyst/home", {
+        templateUrl: "views/analyst/home.html",
+        controller: "HomeCtrl",
+        header_title: "Home",
+        sidebar: "views/analyst/sidebar.html",
+        resolve: {
+          access: requireAuth("analyst"),
+          resources: fetchResources("analyst", ["preferences"])
+        }
+      }).
+      when("/analyst/preferences", {
+        templateUrl: "views/partials/preferences.html",
+        controller: "PreferencesCtrl",
+        header_title: "Preferences",
+        sidebar: "views/analyst/sidebar.html",
+        resolve: {
+          access: requireAuth("analyst"),
+          resources: fetchResources("analyst", ["preferences"])
+        }
+      }).
+      when("/analyst/statistics", {
+        templateUrl: "views/analyst/statistics.html",
+        controller: "StatisticsCtrl",
+        header_title: "Statistics",
+        sidebar: "views/analyst/sidebar.html",
+        resolve: {
+          access: requireAuth("analyst"),
+          resources: fetchResources("analyst", ["stats"])
         }
       }).
       when("/login", {
@@ -410,9 +437,11 @@ var GL = angular.module("GL", [
 }]).
   config(["uibDatepickerConfig", function (uibDatepickerConfig) {
     uibDatepickerConfig.datepickerPopup = "dd-MM-yyyy";
+    uibDatepickerConfig.showWeeks = false;
 }]).
   config(["uibDatepickerPopupConfig", function (uibDatepickerPopupConfig) {
     uibDatepickerPopupConfig.datepickerPopup = "dd-MM-yyyy";
+    uibDatepickerPopupConfig.showWeeks = false;
 }]).
   config(["$uibModalProvider", function($uibModalProvider) {
     $uibModalProvider.options.animation = false;
@@ -476,7 +505,7 @@ var GL = angular.module("GL", [
       testChunks: false,
       simultaneousUploads: 1,
       generateUniqueIdentifier: function () {
-        return Math.random() * 1000000 + 1000000;
+        return crypto.randomUUID();
       },
       headers: function() {
         return $rootScope.Authentication.get_headers();
@@ -562,7 +591,7 @@ var GL = angular.module("GL", [
             if (elem === null) {
               elem = document.createElement("script");
               elem.setAttribute("id", "load-custom-script");
-              elem.setAttribute("src", "script");
+              elem.setAttribute("src", "s/script");
               document.getElementsByTagName("body")[0].appendChild(elem);
             }
           }
@@ -594,8 +623,6 @@ var GL = angular.module("GL", [
         $rootScope.connection = {
           "tor": getResponseHeaders()["X-Check-Tor"] === "true" || $location.host().match(/\.onion$/),
         };
-
-        $rootScope.privacy_badge_open = !$rootScope.connection.tor;
 
         Utils.route_check();
 
@@ -645,7 +672,6 @@ var GL = angular.module("GL", [
     $rootScope.$watch("GLTranslate.state.language", function(new_val, old_val) {
       if(new_val !== old_val) {
 	if (old_val && old_val !== "*") {
-          $location.search("lang", new_val);
           GLTranslate.setLang(new_val);
           $rootScope.reload();
         }
@@ -732,7 +758,7 @@ var GL = angular.module("GL", [
 
        angular.extend(config.headers, $rootScope.Authentication.get_headers());
 
-       if (!$rootScope.Authentication.session && (config.url.substr(config.url.length - 9, config.url.length) !== "api/token") && (["DELETE", "POST", "PUT"].indexOf(config.method) !== -1)) {
+       if (!$rootScope.Authentication.session && (config.url.substring(config.url.length - 14, config.url.length) !== "api/auth/token") && (["DELETE", "POST", "PUT"].indexOf(config.method) !== -1)) {
          return new TokenResource().$get().then(function(token) {
            angular.extend(config.headers, {"x-token": token.id + ":" + token.answer});
            return config;

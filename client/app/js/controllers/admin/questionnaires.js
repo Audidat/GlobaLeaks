@@ -48,8 +48,8 @@ GL.controller("AdminQuestionnaireCtrl",
     });
   };
 }]).
-controller("AdminQuestionnaireEditorCtrl", ["$scope", "$uibModal", "$http", "FileSaver", "AdminStepResource",
-  function($scope, $uibModal, $http, FileSaver, AdminStepResource) {
+controller("AdminQuestionnaireEditorCtrl", ["$scope", "$uibModal", "$http", "AdminStepResource",
+  function($scope, $uibModal, $http, AdminStepResource) {
 
   $scope.editing = false;
 
@@ -86,13 +86,7 @@ controller("AdminQuestionnaireEditorCtrl", ["$scope", "$uibModal", "$http", "Fil
   };
 
   $scope.exportQuestionnaire = function(obj) {
-    $http({
-      method: "GET",
-      url: "api/admin/questionnaires/" + obj.id,
-      responseType: "blob",
-    }).then(function (response) {
-      FileSaver.saveAs(response.data, obj.name + ".json");
-    });
+    return $scope.Utils.saveAs(obj.name + ".json", "api/admin/questionnaires/" + obj.id);
   };
 }]).
 controller("AdminQuestionnaireAddCtrl", ["$scope", function($scope) {

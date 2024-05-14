@@ -1,13 +1,14 @@
 # 
 # Translators:
+# 0f41b5a358484c50d812a80e7387c7ca_b389158 <e89646e3c4143fd4f5c23fbc4ae4882b_892000>, 2020
 # Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2020,2022
-# Marija Grinevičiūtė <marijagrineviciute@outlook.com>, 2020
+# 0f41b5a358484c50d812a80e7387c7ca_b389158 <e89646e3c4143fd4f5c23fbc4ae4882b_892000>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
-"Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2020,2022\n"
-"Language-Team: Lithuanian (http://www.transifex.com/otf/globaleaks/language/lt/)\n"
+"Last-Translator: 0f41b5a358484c50d812a80e7387c7ca_b389158 <e89646e3c4143fd4f5c23fbc4ae4882b_892000>, 2020\n"
+"Language-Team: Lithuanian (http://app.transifex.com/otf/globaleaks/language/lt/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: lt\n"
@@ -17,20 +18,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Prisijungti"
 
-msgid "Main configuration"
-msgstr "Pagrindinė konfigūracija"
-
-msgid "Theme customization"
-msgstr "Temos tinkinimas"
-
 msgid "Languages"
 msgstr "Kalbos"
 
 msgid "Text customization"
 msgstr "Teksto tinkinimas"
 
-msgid "Advanced settings"
-msgstr "Išplėstinės nuostatos"
+msgid "Advanced"
+msgstr "Išplėstiniai"
 
 msgid "Question templates"
 msgstr "Klausimų šablonai"
@@ -50,8 +45,8 @@ msgstr "Keitimų žurnalas"
 msgid "License"
 msgstr "Licencija"
 
-msgid "Notification templates"
-msgstr "Pranešimo šablonai"
+msgid "Templates"
+msgstr "Šablonai"
 
 msgid "Delete"
 msgstr "Ištrinti"
@@ -62,8 +57,8 @@ msgstr "Neatitikimai"
 msgid "Preferences"
 msgstr "Parinktys"
 
-msgid "Notification settings"
-msgstr "Pranešimo nuostatos"
+msgid "Notifications"
+msgstr "Pranešimai"
 
 msgid "file unavailable"
 msgstr "failas neprieinamas"
@@ -83,25 +78,16 @@ msgstr "Failai"
 msgid "Comments"
 msgstr "Komentarai"
 
-msgid "Messages"
-msgstr "Laiškai"
-
 msgid "Details"
 msgstr "Išsamiau"
 
 msgid "Platform wizard"
 msgstr "Platformos vedlys"
 
-msgid "CREDIT CARD"
-msgstr "KREDITO KORTELĖ"
-
-msgid "YOUR NAME"
-msgstr "JŪSŲ VARDAS IR PAVARDĖ"
-
 msgid "Label the report"
 msgstr "Ženklinti pranešimą"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Atidėti galiojimo pabaigos datą"
 
 msgid "Select all"
@@ -113,8 +99,8 @@ msgstr "Panaikinti žymėjimą"
 msgid "Refresh"
 msgstr "Įkelti iš naujo"
 
-msgid "Context"
-msgstr "Kontekstas"
+msgid "Channel"
+msgstr "Kanalas"
 
 msgid "Preview"
 msgstr "Peržiūra"
@@ -218,9 +204,6 @@ msgstr "Prašymas gauti prieigą"
 msgid "Request access to the whistleblower's identity"
 msgstr "Prašymas leisti susipažinti su informatoriaus tapatybe"
 
-msgid "Please write a motivation"
-msgstr "Prašymą pagrįskite"
-
 msgid "Reply to the request"
 msgstr "Atsakyti į prašymą"
 
@@ -247,9 +230,6 @@ msgstr "Neleisti susipažinti su informatoriaus tapatybe"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Leisti susipažinti su informatoriaus tapatybe"
-
-msgid "Templates"
-msgstr "Šablonai"
 
 msgid "URL redirects"
 msgstr "URL peradresavimai"
@@ -290,8 +270,8 @@ msgstr "Priimtinas"
 msgid "Strong"
 msgstr "Stiprus"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Tekstas rodomas sąsajos viršuje pasirenkant kontekstus"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr "Sąsajos viršuje rodomas tekstas, skirtas kanalams pasirinkti"
 
 msgid "Silence email notifications"
 msgstr "Nutildyti el. pašto pranešimus"
@@ -354,9 +334,6 @@ msgstr "Didžiausias failo dydis:"
 
 msgid "Scheduled jobs"
 msgstr "Suplanuoti darbai"
-
-msgid "Sites management"
-msgstr "Svetainių valdymas"
 
 msgid "Regenerate"
 msgstr "Atkurti"
@@ -456,20 +433,110 @@ msgstr "Kopijuoti į iškarpinę"
 msgid "Logout"
 msgstr "Atsijungti"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Leiskite šiam gavėjui suteikti naudotojui prieigą prie pranešimų"
-
 msgid "Grant access"
 msgstr "Suteikti prieigą"
 
 msgid "Revoke access"
 msgstr "Atšaukti prieigą"
 
+msgid "Transfer"
+msgstr "Perkelti"
+
+msgid "Assigned to"
+msgstr "Priskirta"
+
+msgid "Not provided."
+msgstr "Nepateikta."
+
+msgid "Set a reminder"
+msgstr "Nustatyti priminimą"
+
+msgid "Privileges"
+msgstr "Privilegijos"
+
+msgid "Hide"
+msgstr "Slėpti"
+
+msgid "Unhide"
+msgstr "Neslėpti"
+
+msgid "Redact"
+msgstr "Redaguoti"
+
+msgid "Select an option"
+msgstr "Pasirinkti variantą"
+
+msgid "Select your language"
+msgstr "Pasirinkti kalbą"
+
+msgid "Give this user ability to mask information"
+msgstr "Suteikite šiam naudotojui galimybę maskuoti informaciją"
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr "Suteikite šiam naudotojui galimybę visam laikui redaguoti užmaskuotą informaciją"
+
+msgid "I've read and accept the Privacy Policy"
+msgstr "Perskaičiau ir sutinku su privatumo politika"
+
+msgid "Download copy of the Privacy Policy"
+msgstr "Atsisiųsti Privatumo politikos kopiją"
+
+msgid "Privacy Policy"
+msgstr "Privatumo politika"
+
+msgid "Whistleblowing Policy"
+msgstr "Pranešimų teikimo politika"
+
+msgid "Voice"
+msgstr "Balsas"
+
+msgid "Everyone"
+msgstr "Visi"
+
+msgid "Recipients only"
+msgstr "Tik gavėjai"
+
+msgid "Me only"
+msgstr "Tik man"
+
+msgid "Returning whistleblowers"
+msgstr "Grįžtantys pranešėjai"
+
+msgid "Anonymity"
+msgstr "Anonimiškumas"
+
+msgid "Anonymous"
+msgstr "Anonimas"
+
+msgid "Subscribed"
+msgstr "Prenumeruota"
+
+msgid "Initially anonymous"
+msgstr "Iš pradžių anonimiškai"
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr "Įrenginiai"
+
+msgid "Computer"
+msgstr "Kompiuteris"
+
+msgid "Mobile"
+msgstr "Mobilusis"
+
+msgid "Act on behalf of a whistleblower"
+msgstr "Veikti pranešėjo vardu"
+
+msgid "The link will expire in 7 days."
+msgstr "Nuoroda baigs galioti po 7 dienų."
+
 msgid "File a report"
 msgstr "Teikti pranešimą"
 
-msgid "Select the context of your report:"
-msgstr "Pasirinkite pranešimo kontekstą:"
+msgid "Select a reporting channel:"
+msgstr "Pasirinkite pranešimų kanalą:"
 
 msgid "Before proceeding, please set a new password."
 msgstr "Prieš pradėdami sukurkite naują slaptažodį."
@@ -479,102 +546,6 @@ msgstr "Prieš tęsdami įgalinkite dviejų veiksnių tapatybės nustatymo būd�
 
 msgid "Enable"
 msgstr "Įjungti"
-
-msgid "Disable submissions"
-msgstr "Išjungti pateikimą"
-
-msgid "Enable encryption"
-msgstr "Įgalinti šifravimą"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Leisti administratoriams keisti naudotojų slaptažodžius"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Administratoriai, įgalioti keisti naudotojų slaptažodžius:"
-
-msgid "Enable multisite feature"
-msgstr "Įgalinti daugiavietės funkciją"
-
-msgid "Enable simplified login"
-msgstr "Įgalinti supaprastintą prisijungimą"
-
-msgid "Enable search engines indexing"
-msgstr "Įgalinti paieškos variklių indeksavimą"
-
-msgid "Default questionnaire"
-msgstr "Numatytasis klausimynas"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Rodyti kontekstus abėcėlės tvarka"
-
-msgid "Size limit for file attachments"
-msgstr "Pridedamų failų dydžio limitas"
-
-msgid "megabytes"
-msgstr "megabaitai"
-
-msgid "Require two factor authentication"
-msgstr "Reikalauti dviejų veiksnių tapatybės nustatymo"
-
-msgid "Password change interval"
-msgstr "Slaptažodžio keitimo dažnis"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Saugumo sumetimais slaptažodžius reikia keisti reguliariai."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Norėdami išjungti šią funkciją, nustatykite vertę „0“."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Dienų skaičius iki įspėjimo naudotojams apie neperskaitytus pranešimus"
-
-msgid "Disable the privacy panel"
-msgstr "Išjungti privatumo skydelį"
-
-msgid "Enable custom privacy panel"
-msgstr "Įgalinti pasirinktinį privatumo skydelį"
-
-msgid "Custom privacy panel"
-msgstr "Pasirinktinis privatumo skydelis"
-
-msgid "Enable custodian user role"
-msgstr "Įgalinti saugotojo naudotojo funkciją"
-
-msgid "Enable scoring system"
-msgstr "Įjungti vertinimo sistemą"
-
-msgid "Logging level"
-msgstr "Registravimo lygis"
-
-msgid "Log accesses of internal users"
-msgstr "Registruoti vidaus naudotojų prieigas"
-
-msgid "Notify administrators of software problems"
-msgstr "Pranešti administratoriams apie programinės įrangos problemas"
-
-msgid "Notify developers of software problems"
-msgstr "Pranešti kūrėjams apie programinės įrangos problemas"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Įgalinę šią funkciją prisidėsite prie platformos kūrimo ir saugumo."
-
-msgid "Save"
-msgstr "Įrašyti"
-
-msgid "Reset reports"
-msgstr "Atnaujinti pranešimus"
-
-msgid "Low"
-msgstr "Žemas"
-
-msgid "High"
-msgstr "Aukštas"
-
-msgid "percentage"
-msgstr "procentai"
 
 msgid "Type"
 msgstr "Tipas"
@@ -603,6 +574,9 @@ msgstr "Sukūrimo data"
 msgid "Last access"
 msgstr "Paskutinis prisijungimas"
 
+msgid "Receivers"
+msgstr "Gavėjai"
+
 msgid "Whistleblower's last access"
 msgstr "Paskutinis pranešėjo prisijungimas"
 
@@ -621,68 +595,29 @@ msgstr "Šis laukas privalomas"
 msgid "Edit"
 msgstr "Keisti"
 
+msgid "Save"
+msgstr "Įrašyti"
+
 msgid "Cancel"
 msgstr "Atšaukti"
+
+msgid "days"
+msgstr "dienos"
+
+msgid "Disabled"
+msgstr "Išjungta"
 
 msgid "Report statuses"
 msgstr "Pranešimo statusai"
 
-msgid "Logo"
-msgstr "Logotipas"
-
-msgid "Project name"
-msgstr "Projekto pavadinimas"
-
-msgid "Description"
-msgstr "Aprašas"
-
-msgid "Homepage title"
-msgstr "Pradžios puslapio pavadinimas"
-
-msgid "Presentation"
-msgstr "Pristatymas"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Klausimas, kuriuo siekiama išsiaiškinti galimus pranešėjus"
-
-msgid "Whistleblowing button"
-msgstr "Pranešimo apie pažeidimus mygtukas"
-
-msgid "Disclaimer"
-msgstr "Atsisakymas"
-
-msgid "Footer"
-msgstr "Poraštė"
-
-msgid "Upload"
-msgstr "Įkelti"
-
-msgid "Download"
-msgstr "Atsisiųsti"
-
-msgid "Language:"
-msgstr "Kalba:"
-
-msgid "Add custom text"
-msgstr "Įvesti pasirinktinį tekstą"
-
-msgid "Custom text"
-msgstr "Pasirinktinis tekstas"
-
-msgid "Original text"
-msgstr "Originalus tekstas"
-
-msgid "Original translation"
-msgstr "Originalus vertimas"
-
-msgid "Custom translation"
-msgstr "Pasirinktinis vertimas"
-
-msgid "Contexts"
-msgstr "Kontekstai"
+msgid "Channels"
+msgstr "Kanalai"
 
 msgid "Hidden"
 msgstr "Paslėpta"
+
+msgid "Description"
+msgstr "Aprašas"
 
 msgid "Questionnaire"
 msgstr "Klausimynas"
@@ -690,8 +625,11 @@ msgstr "Klausimynas"
 msgid "Recipients"
 msgstr "Gavėjai"
 
-msgid "days"
-msgstr "dienos"
+msgid "Reminder date"
+msgstr "Priminimo data"
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Norėdami išjungti šią funkciją, nustatykite vertę „0“."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Rodyti klausimyno naršymo sąsają"
@@ -708,24 +646,6 @@ msgstr "Didžiausias pasirinktinų gavėjų skaičius:"
 msgid "Show recipients in alphabetical order"
 msgstr "Rodyti gavėjus abėcėlės tvarka"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Rodyti gavėjo informaciją pranešimo statuso puslapyje"
-
-msgid "Enable comments"
-msgstr "Įgalinti komentarus"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Leisti pranešėjui rašyti komentarus"
-
-msgid "Enable private messages"
-msgstr "Įgalinti privačias žinutes"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Leisti pranešėjui siųsti žinutes"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Leisti pranešėjui prie pranešimo pridėti priedų"
-
 msgid "Additional questionnaire"
 msgstr "Papildomas klausimynas"
 
@@ -741,6 +661,9 @@ msgstr "Vertė"
 msgid "Medium"
 msgstr "Vidutinis"
 
+msgid "High"
+msgstr "Aukštas"
+
 msgid "Software version:"
 msgstr "Programinės įrangos versija:"
 
@@ -755,6 +678,9 @@ msgstr "Leidžiami IP adresai"
 
 msgid "Admin"
 msgstr "Administratorius"
+
+msgid "Analyst"
+msgstr "Analitikas"
 
 msgid "Recipient"
 msgstr "Gavėjas"
@@ -836,9 +762,6 @@ msgid ""
 "from an alternative Certificate Authority."
 msgstr "Rankinės konfigūracijos vedlys padės jums nustatyti HTTPS iš alternatyvios sertifikavimo institucijos."
 
-msgid "Disabled"
-msgstr "Išjungta"
-
 msgid "Auto-renewal"
 msgstr "Automatinis atnaujinimas"
 
@@ -863,7 +786,7 @@ msgstr "Kam"
 msgid ""
 "Default mail configuration in use. Please consider using a private mail "
 "server."
-msgstr ""
+msgstr "Naudojama numatytoji pašto konfigūracija. Apsvarstykite galimybę naudoti privatų pašto serverį."
 
 msgid "SMTP email address"
 msgstr "SMTP el. pašto adresas"
@@ -952,6 +875,12 @@ msgstr "Priimti kelis atsakymus"
 msgid "Template override"
 msgstr "Šablono perrašymas"
 
+msgid "Min"
+msgstr "Maž."
+
+msgid "Max"
+msgstr "Didž."
+
 msgid "Phone number"
 msgstr "Telefono numeris"
 
@@ -975,6 +904,9 @@ msgstr "Vaizdo įrašas"
 
 msgid "Text shown upon negative answer"
 msgstr "Tekstas rodomas gavus neigiamą atsakymą"
+
+msgid "Low"
+msgstr "Žemas"
 
 msgid "Trigger conditions"
 msgstr "Paleidimo sąlygos"
@@ -1006,20 +938,149 @@ msgstr "Dublikatas"
 msgid "Steps"
 msgstr "Žingsniai"
 
-msgid "Site settings"
-msgstr "Svetainės nustatymai"
+msgid "Logo"
+msgstr "Logotipas"
+
+msgid "Project name"
+msgstr "Projekto pavadinimas"
+
+msgid "Homepage title"
+msgstr "Pradžios puslapio pavadinimas"
+
+msgid "Presentation"
+msgstr "Pristatymas"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Klausimas, kuriuo siekiama išsiaiškinti galimus pranešėjus"
+
+msgid "Whistleblowing button"
+msgstr "Pranešimo apie pažeidimus mygtukas"
+
+msgid "Disclaimer"
+msgstr "Atsisakymas"
+
+msgid "Footer"
+msgstr "Poraštė"
+
+msgid "Upload"
+msgstr "Įkelti"
+
+msgid "Download"
+msgstr "Atsisiųsti"
+
+msgid "Language:"
+msgstr "Kalba:"
+
+msgid "Add custom text"
+msgstr "Įvesti pasirinktinį tekstą"
+
+msgid "Custom text"
+msgstr "Pasirinktinis tekstas"
+
+msgid "Original text"
+msgstr "Originalus tekstas"
+
+msgid "Original translation"
+msgstr "Originalus vertimas"
+
+msgid "Custom translation"
+msgstr "Pasirinktinis vertimas"
+
+msgid "Disable submissions"
+msgstr "Išjungti pateikimą"
+
+msgid "Enable encryption"
+msgstr "Įgalinti šifravimą"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Leisti administratoriams keisti naudotojų slaptažodžius"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Administratoriai, įgalioti keisti naudotojų slaptažodžius:"
+
+msgid "Enable PGP"
+msgstr "Įjungti PGP"
+
+msgid "Enable simplified login"
+msgstr "Įgalinti supaprastintą prisijungimą"
+
+msgid "Enable search engines indexing"
+msgstr "Įgalinti paieškos variklių indeksavimą"
+
+msgid "Show channels in alphabetical order"
+msgstr "Rodyti kanalus abėcėlės tvarka"
+
+msgid "Size limit for file attachments"
+msgstr "Pridedamų failų dydžio limitas"
+
+msgid "megabytes"
+msgstr "megabaitai"
+
+msgid "Require two factor authentication"
+msgstr "Reikalauti dviejų veiksnių tapatybės nustatymo"
+
+msgid "Password change interval"
+msgstr "Slaptažodžio keitimo dažnis"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Saugumo sumetimais slaptažodžius reikia keisti reguliariai."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Dienų skaičius iki įspėjimo naudotojams apie neperskaitytus pranešimus"
+
+msgid "Custom support URL"
+msgstr "Pasirinktinis palaikymo URL adresas"
+
+msgid "Disable the privacy panel"
+msgstr "Išjungti privatumo skydelį"
+
+msgid "Enable custom privacy panel"
+msgstr "Įgalinti pasirinktinį privatumo skydelį"
+
+msgid "Custom privacy panel"
+msgstr "Pasirinktinis privatumo skydelis"
+
+msgid "Enable scoring system"
+msgstr "Įjungti vertinimo sistemą"
+
+msgid "Logging level"
+msgstr "Registravimo lygis"
+
+msgid "percentage"
+msgstr "procentai"
+
+msgid "Log accesses of internal users"
+msgstr "Registruoti vidaus naudotojų prieigas"
+
+msgid "Notify administrators of software problems"
+msgstr "Pranešti administratoriams apie programinės įrangos problemas"
+
+msgid "Notify developers of software problems"
+msgstr "Pranešti kūrėjams apie programinės įrangos problemas"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Įgalinę šią funkciją prisidėsite prie platformos kūrimo ir saugumo."
+
+msgid "Reset reports"
+msgstr "Atnaujinti pranešimus"
+
+msgid "Settings"
+msgstr "Nustatymai"
 
 msgid "Case management"
 msgstr "Atvejo valdymas"
 
-msgid "Network settings"
-msgstr "Tinklo nustatymai"
+msgid "Network"
+msgstr "Tinklas"
 
 msgid "Sites"
 msgstr "Svetainės"
 
-msgid "Mode:"
-msgstr "Režimas:"
+msgid "Profile"
+msgstr "Profilis"
 
 msgid "Configure"
 msgstr "Konfigūruoti"
@@ -1027,14 +1088,17 @@ msgstr "Konfigūruoti"
 msgid "Subdomain"
 msgstr "Subdomenas"
 
+msgid "Mode:"
+msgstr "Režimas:"
+
 msgid "Creation date:"
 msgstr "Sukūrimo data:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Antrinėms svetainėms naudojamas šakninis domenas"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Naudoti pirmąją svetainę tik administraciniais tikslais"
+
+msgid "Root domain used for secondary sites"
+msgstr "Antrinėms svetainėms naudojamas šakninis domenas"
 
 msgid "Allow users to sign up"
 msgstr "Leisti naudotojams registruotis"
@@ -1055,10 +1119,10 @@ msgid "Set password"
 msgstr "Nustatyti slaptažodį"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Pasirinktas slaptažodis per silpnas. Tinkamą slaptažodį turi sudaryti bent 10 skirtingų simbolių, įskaitant bent vieną mažąją raidę, didžiąją raidę, skaičių ir specialųjį simbolį."
+msgstr "Pasirinktas slaptažodis per silpnas. Tinkamą slaptažodį turi sudaryti bent 12 skirtingų simbolių, įskaitant bent vieną mažąją raidę, didžiąją raidę, skaičių ir specialųjį simbolį."
 
 msgid "Force password change"
 msgstr "Priversti pakeisti slaptažodį"
@@ -1093,11 +1157,23 @@ msgstr "Priverstinai atrinktas"
 msgid "Allow the recipient to delete reports"
 msgstr "Leisti gavėjui pranešimus ištrinti"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Leisti gavėjui atidėti pranešimo galiojimo pabaigos datą"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr "Suteikite šiam naudotojui galimybę suteikti naudotojams prieigą prie pranešimų"
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr "Suteikite šiam naudotojui galimybę perduoti pranešimus kitiems naudotojams"
+
+msgid "Allow this user to reopen management of a report"
+msgstr "Leisti šiam naudotojui iš naujo atidaryti pranešimo valdymą"
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Suteikite naudotojui administracinę prieigą prie šių funkcijų:"
+
+msgid "Statistics"
+msgstr "Statistika"
 
 msgid "Request date"
 msgstr "Prašymo data"
@@ -1135,14 +1211,20 @@ msgstr "Pasirinkite savo paskyrą:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Dabar įveskite slaptažodį ir spustelėkite „Prisijungti“:"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Tekstas rodomas, kai naudotojas pasirenka parinktį."
-
 msgid "Confirm"
 msgstr "Patvirtinti"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Tekstas rodomas, kai naudotojas pasirenka parinktį."
+
 msgid "Assign score points"
 msgstr "Priskirti vertinimo taškus"
+
+msgid "Change status"
+msgstr "Keisti būseną"
+
+msgid "Status:"
+msgstr "Būsena:"
 
 msgid "Are you sure?"
 msgstr "Ar tikrai?"
@@ -1167,8 +1249,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Padarykite kopiją ir laikykite ją saugioje vietoje. Jei prarasite slaptažodį, jos reikės, kad atgautumėte prieigą prie savo paskyros, neprarasdami duomenų."
 
+msgid "Attention"
+msgstr "Dėmesio"
+
+msgid "For security reasons the code needs to be changed."
+msgstr "Saugumo sumetimais kodą reikia pakeisti."
+
 msgid "Enter a name for the copy"
 msgstr "Įveskite kopijos pavadinimą"
+
+msgid "Mask"
+msgstr "Maskuoti"
+
+msgid "Unselect"
+msgstr "Atšaukti"
+
+msgid "Reopen"
+msgstr "Atidaryti iš naujo"
 
 msgid "Request support"
 msgstr "Prašyti pagalbos"
@@ -1190,14 +1287,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Platforma vis dar nesukonfigūruota HTTPS ryšiams, todėl turėtų būti naudojama tik testavimo tikslais."
 
-msgid "Please write a motivation for the reply"
-msgstr "Atsakymą pagrįskite"
-
 msgid "Send"
 msgstr "Siųsti"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Patvirtindami atidėsite galiojimo pabaigos datą iki:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr "Patvirtindami nustatysite priminimo datą:"
+
+msgid "Transfer access"
+msgstr "Perkelti prieigą"
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Ši platforma demonstracinė, todėl nenaudokite jos tikriems pateikimams."
@@ -1231,6 +1331,12 @@ msgstr "Resursą galima pasiekti tik per „Tor“ tinklą"
 
 msgid "The upload request exceeds the size limit"
 msgstr "Įkeliamas prašymas viršija dydžio limitą"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr "Jūs veikiate pranešėjo vardu."
 
 msgid "Current password"
 msgstr "Dabartinis slaptažodis"
@@ -1273,20 +1379,23 @@ msgstr "Ar jau pateikėte pranešimą? Įveskite pranešimo patvirtinimą"
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Pranešimo patvirtinimas neteisingas arba pranešimas nebegalioja."
 
-msgid "Select a file or drag it here."
-msgstr "Pasirinkite failą arba vilkite jį čia."
+msgid "Filename"
+msgstr "Failo pavadinimas"
 
 msgid "Size:"
 msgstr "Dydis:"
 
-msgid "Uploading files…"
-msgstr "Failai įkeliami..."
+msgid "Access date"
+msgstr "Prieigos data"
 
-msgid "Upload completed successfully!"
-msgstr "Įkėlimas baigtas sėkmingai!"
+msgid "Address"
+msgstr "Adresas"
 
-msgid "Estimated upload time:"
-msgstr "Numatomas įkėlimo laikas:"
+msgid "Fiscal code"
+msgstr "Fiskalinis kodas"
+
+msgid "Tax code"
+msgstr "Mokesčių kodas"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Gavėjai paprašė jūsų užpildyti papildomą klausimyną."
@@ -1300,8 +1409,8 @@ msgstr "Nuo:"
 msgid "To:"
 msgstr "Kam:"
 
-msgid "Filename"
-msgstr "Failo pavadinimas"
+msgid "View"
+msgstr "Rodymas"
 
 msgid "Upload date"
 msgstr "Įkėlimo data"
@@ -1314,9 +1423,6 @@ msgstr "Klausimyno atsakymai"
 
 msgid "Step"
 msgstr "Žingsnis"
-
-msgid "Status:"
-msgstr "Būsena:"
 
 msgid "Files attached by recipients"
 msgstr "Gavėjų pridėti failai"
@@ -1343,9 +1449,6 @@ msgstr "Jei norite prisidėti prie programinės įrangos kūrimo ar pranešti ap
 msgid "Join our chat:"
 msgstr "Prisijunkite prie mūsų pokalbio:"
 
-msgid "Follow the project on:"
-msgstr "Projektą sekite:"
-
 msgid "An update is available:"
 msgstr "Galimas atnaujinimas:"
 
@@ -1355,6 +1458,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "Rekomenduojame pasiekti skiltį „Nuostatos“, kad galėtumėte nuskaityti „Paskyros atkūrimo raktą“ ir saugiai jį saugoti. Šis raktas bus reikalingas, kad atgautumėte prieigą prie platformos ir jūsų duomenų, jei savo slaptažodį pamirštumėte."
+
+msgid "Select a file or drag it here."
+msgstr "Pasirinkite failą arba vilkite jį čia."
 
 msgid "The provided recovery key is invalid."
 msgstr "Pateiktas atkūrimo raktas netinkamas."
@@ -1387,6 +1493,9 @@ msgstr "Prašymo data"
 msgid "Show"
 msgstr "Rodyti"
 
+msgid "Subscription date"
+msgstr "Prenumeratos data"
+
 msgid "Congratulations!"
 msgstr "Sveikiname!"
 
@@ -1409,26 +1518,17 @@ msgstr "Jei platforma neaktyvinsite per 24 valandas, ji bus automatiškai ištri
 msgid "Sign up"
 msgstr "Registruotis"
 
-msgid "Site"
-msgstr "Tinklapis"
-
-msgid "Confirmation"
-msgstr "Patvirtinimas"
-
 msgid "Invalid confirmation"
 msgstr "Netinkamas patvirtinimas"
 
 msgid "Invalid phone number"
 msgstr "Neteisingas telefono numeris"
 
-msgid "Address"
-msgstr "Adresas"
+msgid "Site"
+msgstr "Tinklapis"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr "Mokesčių kodas"
+msgid "Confirmation"
+msgstr "Patvirtinimas"
 
 msgid "The answer is too short"
 msgstr "Atsakymas per trumpas"
@@ -1467,17 +1567,17 @@ msgstr "Norėdami prisijungti, naudokite 16 skaitmenų patvirtinimo kodą. Tai l
 msgid "View your report"
 msgstr "Peržiūrėkite savo pranešimą"
 
-msgid "Recipient selection"
-msgstr "Gavėjo pasirinkimas"
-
-msgid "Select the recipients of your report:"
-msgstr "Pasirinkite pranešimo gavėjus:"
+msgid "Select the recipients of your report"
+msgstr "Pasirinkti pranešimo gavėjus"
 
 msgid "Recipients selected:"
 msgstr "Pasirinkti gavėjai:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Pasiekėte didžiausią galimų pasirinkti gavėjų skaičių."
+
+msgid "You must select at least one recipient."
+msgstr "Būtina pasirinkti bent vieną gavėją."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1489,17 +1589,11 @@ msgid ""
 "invalid:"
 msgstr "Šiame etape atsakymų į šiuos klausimus nėra arba jie negalioja:"
 
-msgid "You must select at least one recipient."
-msgstr "Būtina pasirinkti bent vieną gavėją."
+msgid "Recipient selection"
+msgstr "Gavėjo pasirinkimas"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Laukiama, kol failas(-ai) bus įkeltas (-i)."
-
-msgid "The following steps have errors:"
-msgstr "Toliau aprašytuose žingsniuose yra klaidų:"
-
-msgid "Hide"
-msgstr "Slėpti"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1589,8 +1683,8 @@ msgstr "Ar šios organizacijos tyrė jūsų skundus? Jei taip, kokie rezultatai?
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Kokį rezultato tikitės su mūsų pagalba?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Ar norite pateikti savo identifikavimo informaciją?"
+msgid "Would you like to tell us who you are?"
+msgstr "Ar norite papasakoti, kas esate?"
 
 msgid "First name"
 msgstr "Vardas"
@@ -1606,6 +1700,9 @@ msgstr "Pageidauju, kad su manimi būtų susisiekta tik per šią platformą"
 
 msgid "Other"
 msgstr "Kita"
+
+msgid "Specify"
+msgstr "Nurodykite"
 
 msgid "Dear {RecipientName},"
 msgstr "Gerb. {RecipientName},"
@@ -1667,6 +1764,9 @@ msgstr "Išnagrinėkite klausimą, kad nustatytumėte, ar jis teisėtas, ar ne."
 
 msgid "The activities with unusual stats are:"
 msgstr "Veiksmai su neįprasta statistika yra:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr "Laisva vieta diske: {FreeMemory}/{TotalMemory}"
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1896,6 +1996,9 @@ msgstr "Šiuo el. laišku pranešama, kad gavėjas suteikė prieigą prie vieno 
 msgid "New report"
 msgstr "Naujas pranešimas"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr "Vieno ar daugiau pranešimų galiojimas baigiasi ir jie netrukus bus ištrinti."
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Anksčiausia galiojimo pabaigos data – {EarliestExpirationDate}."
 
@@ -1905,18 +2008,16 @@ msgstr "Prieš ištrindami nepamirškite jų patikrinti."
 msgid "Some reports will expire soon"
 msgstr "Kai kurių pranešimų galiojimas netrukus baigsis."
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Tai el. laiškas, kuriuo jums pranešama, kad pranešėjas pasirinko jus kaip vertingą savo pranešimo gavėją."
+msgid "This is an email to notify you the reception of a new report."
+msgstr "Tai el. laiškas, kuriuo informuojame apie naujo pranešimo gavimą."
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Atkreipkite ypatingą dėmesį į joje esančią informaciją ir medžiagą. Turėkite omenyje, kad pranešėjai dažnai susiduria su didele asmenine rizika visuomenės labui. Todėl šiame pranešime pateikta medžiaga turėtų būti laikoma labai svarbia."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr "Tai el. laiškas, kuriuo informuojama, kad buvo sulaukta vieno ar daugiau pranešimų priminimo datos."
+
+msgid "Reminder"
+msgstr "Priminimas"
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Šiuo el. laišku pranešama, kad esamas pranešimas atnaujintas."

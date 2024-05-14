@@ -29,7 +29,7 @@
         </div>
       </form>
     </div>
-    <div data-ng-repeat="questionnaire in resources.questionnaires | orderBy: 'name'">
+    <div data-ng-repeat="questionnaire in resources.questionnaires | orderBy: ['editable','name']">
       <form id="questionnaire-{{$index}}" class="configItem" name="editQuestionnaire" data-ng-controller="AdminQuestionnaireEditorCtrl" novalidate>
         <div class="editorHeader row" data-ng-click="toggleEditing(); $event.stopPropagation();">
           <span class="col-md-7">{{questionnaire.name}}</span>
@@ -61,7 +61,7 @@
               <button
                 class="btn btn-sm btn-outline-secondary"
                 data-ng-click="duplicate_questionnaire(questionnaire)">
-                <i class="fa-solid fa-duplicate"></i>
+                <i class="fa-solid fa-clone"></i>
                 <span data-translate>Duplicate</span>
               </button>
               <button

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2020-2022\n"
-"Language-Team: Amharic (http://www.transifex.com/otf/globaleaks/language/am/)\n"
+"Language-Team: Amharic (http://app.transifex.com/otf/globaleaks/language/am/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: am\n"
@@ -18,20 +18,14 @@ msgstr ""
 msgid "Log in"
 msgstr "ግቡ"
 
-msgid "Main configuration"
-msgstr "ዋና ውቅረት"
-
-msgid "Theme customization"
-msgstr "ገጽታ ማበጀት"
-
 msgid "Languages"
 msgstr "ቋንቃዎች"
 
 msgid "Text customization"
 msgstr "ጽሁፍ ማበጀት"
 
-msgid "Advanced settings"
-msgstr "የላቀ ቅንብር"
+msgid "Advanced"
+msgstr "የላቀ"
 
 msgid "Question templates"
 msgstr "የጥያቄ ቅንብር ደንቦች"
@@ -51,8 +45,8 @@ msgstr "የለወጥ መዝገብ "
 msgid "License"
 msgstr "ፍቃድ"
 
-msgid "Notification templates"
-msgstr "የማሳወቂያ ቅንብር ደንቦች"
+msgid "Templates"
+msgstr "ቅንብር ደንቦች"
 
 msgid "Delete"
 msgstr "አጥፋ"
@@ -63,8 +57,8 @@ msgstr "አፈንጋጮች"
 msgid "Preferences"
 msgstr "ምርጫዎች"
 
-msgid "Notification settings"
-msgstr "የማሳወቂያ ቅንብር"
+msgid "Notifications"
+msgstr "ማሳወቂያዎች"
 
 msgid "file unavailable"
 msgstr "ፋይል የለም"
@@ -84,25 +78,16 @@ msgstr "ፋይሎች"
 msgid "Comments"
 msgstr "አስተያየቶች"
 
-msgid "Messages"
-msgstr "መልእክቶች"
-
 msgid "Details"
 msgstr "ዝርዝሮች"
 
 msgid "Platform wizard"
 msgstr "የመሳርያ ስርዓት አዋቂ"
 
-msgid "CREDIT CARD"
-msgstr "የዱቤ ካርድ"
-
-msgid "YOUR NAME"
-msgstr "ስምዎት"
-
 msgid "Label the report"
 msgstr "ሪፖርቱን ሰይሙ"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "መቃጠያ ቀን አስተላልፍ"
 
 msgid "Select all"
@@ -114,8 +99,8 @@ msgstr "ሁሉንም አትምረጡ"
 msgid "Refresh"
 msgstr "አድሱ"
 
-msgid "Context"
-msgstr "አገባበ ነገር"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "ቅድመ እይታ"
@@ -219,9 +204,6 @@ msgstr "መድረሻ ተጠይቋል"
 msgid "Request access to the whistleblower's identity"
 msgstr "የመረጃ ሰጭውን ማንነት መድረሻ ይጠይቁ"
 
-msgid "Please write a motivation"
-msgstr "እባኮት ተነሳሽነት ይጻፉ"
-
 msgid "Reply to the request"
 msgstr "ጥያቄውን ይመልሱ"
 
@@ -248,9 +230,6 @@ msgstr "ወደ መረጃ ሰጪው ማንነት መድረሻ ከልክል"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "ወደ መረጃሰጪው ማንነት መድረሻ ፍቀድ"
-
-msgid "Templates"
-msgstr "ቅንብር ደንቦች"
 
 msgid "URL redirects"
 msgstr "ዩአርኤል ይዞራል"
@@ -291,8 +270,8 @@ msgstr "ተቀባይ"
 msgid "Strong"
 msgstr "ጠንካራ"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "በይነገጹ አናት ላይ አገባበ ነገር ለመምረጥ የሚታይ ጽሑፍ"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "የኢሜይል ማሳወቂያዎችን ያጥፋ"
@@ -355,9 +334,6 @@ msgstr "ከፍተኛው የፋይል መጠን"
 
 msgid "Scheduled jobs"
 msgstr "መርሃግብር የተያዘላቸው ሥራዎች"
-
-msgid "Sites management"
-msgstr "የድረገጽ አስተዳደር"
 
 msgid "Regenerate"
 msgstr "እንደገና ፍጠር"
@@ -457,20 +433,110 @@ msgstr ""
 msgid "Logout"
 msgstr "ዘግተህ ውጣ "
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr ""
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "ደብቅ"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr "ከአማረጮች ይምረጡ"
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "የግላዊነት ፖሊሲ "
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr ""
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr ""
 
-msgid "Select the context of your report:"
-msgstr "የሪፖርትዎትን አገባበ ነገር ይምረጡ"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "ከመቀጠልዎ በፊት አዲስ የይለፍ ቃል ያዘጋጁ"
@@ -480,102 +546,6 @@ msgstr "ከመቀጠልዎ በፊት ባለሁለት ደረጃ ማረጋገጫ �
 
 msgid "Enable"
 msgstr "ያንቁ"
-
-msgid "Disable submissions"
-msgstr "ማስረከብን ያቦዝኑ"
-
-msgid "Enable encryption"
-msgstr "ማመስጠርን ያንቁ"
-
-msgid "Enable administrators to change user passwords"
-msgstr "አስተዳዳሪዎቹን የተጠቃሚ የይለፍ ቃልን እንዲቀይሩ ያንቁ"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "አስተዳዳሪዎች የተጠቃሚ የይለፍ ቃሎችን እንዲቀይሩ ተፈቅዷል"
-
-msgid "Enable multisite feature"
-msgstr "የሕብረ ድረገጽ ባህርይ ያንቁ"
-
-msgid "Enable simplified login"
-msgstr ""
-
-msgid "Enable search engines indexing"
-msgstr "የፍለጋ ግርግም ማውጫ ያንቁ"
-
-msgid "Default questionnaire"
-msgstr "ነባሪ መጠይቅ"
-
-msgid "Show contexts in alphabetical order"
-msgstr "አገባበ ነገሮችን በፊደል ተራ ያሳዩ"
-
-msgid "Size limit for file attachments"
-msgstr "ለፋይል አባሪዎች የመጠን ገደብ"
-
-msgid "megabytes"
-msgstr "ሜጋባይትስ"
-
-msgid "Require two factor authentication"
-msgstr "ባለ ሁለት ደረጃ ማረጋገጫ ይጠይቁ"
-
-msgid "Password change interval"
-msgstr "የይለፍ ቃል መቀየርያ ወቅት"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "ለድህንነት ሲባል በየተወሰነ ጊዜ ውስጥ የይለፍ ቃል መቀየር ያስፈልጋል፡፡"
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "ይህንን ባህርይ ለማቦዘን ዋጋውን 0 ያድርጉ"
-
-msgid "Number of days till notifying unread reports to users"
-msgstr ""
-
-msgid "Disable the privacy panel"
-msgstr "የግላዊነት ፓነሉን ያቦዝኑ"
-
-msgid "Enable custom privacy panel"
-msgstr "ብጁ የግላዊነት ፓነል ያዘጋጁ"
-
-msgid "Custom privacy panel"
-msgstr "ብጁ የግል መረጃ ጥበቃ"
-
-msgid "Enable custodian user role"
-msgstr "የሞግዚት ተጠቃሚ ሚናን ያንቁ"
-
-msgid "Enable scoring system"
-msgstr "የውጤት ስርኣት ያንቁ"
-
-msgid "Logging level"
-msgstr "የመግባት ደረጃ"
-
-msgid "Log accesses of internal users"
-msgstr "የውስጥ ተጠቃሚዎች የመግባት መዳረሻዎች"
-
-msgid "Notify administrators of software problems"
-msgstr "አስተዳዳሪዎችን የሶፍትዌር ችግሮች ያሳውቁ"
-
-msgid "Notify developers of software problems"
-msgstr "ገንቢዎችን የሶፍትዌር ችግሮችን ያሳውቁ"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "ይህንን ባህርይ በማንቃት ለመሳርያ ስርኣቱ ግንባታ እ\nደህንነት አስተዋጽኦ ያበረክታሉ"
-
-msgid "Save"
-msgstr "አስቀምጥ "
-
-msgid "Reset reports"
-msgstr "ሪፖርቶችን ዳግም ያስጀምሩ"
-
-msgid "Low"
-msgstr "ዝቅተኛ"
-
-msgid "High"
-msgstr "ከፍተኛ"
-
-msgid "percentage"
-msgstr "ፐርሰንቴጅ"
 
 msgid "Type"
 msgstr "አይነት"
@@ -604,6 +574,9 @@ msgstr "የፍጥረት ቀን፡"
 msgid "Last access"
 msgstr "የመጨረሻ መዳረሻ"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "የመረጃ ሰጪው የመጨረሻ መዳረሻ"
 
@@ -622,68 +595,29 @@ msgstr "ይህ መስክ አስገዳጅ ነው"
 msgid "Edit"
 msgstr "አርትኦት "
 
+msgid "Save"
+msgstr "አስቀምጥ "
+
 msgid "Cancel"
 msgstr "ሰርዝ "
+
+msgid "days"
+msgstr "ቀናት"
+
+msgid "Disabled"
+msgstr "የቦዘነ"
 
 msgid "Report statuses"
 msgstr "ሁኔታዎችን ያሳውቁ"
 
-msgid "Logo"
-msgstr " ምልክት"
-
-msgid "Project name"
-msgstr "የፕሮጀክት ስም"
-
-msgid "Description"
-msgstr "ገለጻ "
-
-msgid "Homepage title"
-msgstr "የመነሻ ገጽ ርዕስ"
-
-msgid "Presentation"
-msgstr "አቀራረብ"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "መረጃ ሊሰጡ ለሚችሉ አካላት ጥያቄዎች"
-
-msgid "Whistleblowing button"
-msgstr "የመረጃ መስጫ አዝራር"
-
-msgid "Disclaimer"
+msgid "Channels"
 msgstr ""
-
-msgid "Footer"
-msgstr "ግርጌ ማስታወሻ"
-
-msgid "Upload"
-msgstr "ይጫኑ"
-
-msgid "Download"
-msgstr "አውርድ "
-
-msgid "Language:"
-msgstr "ቋንቋ"
-
-msgid "Add custom text"
-msgstr "የተበጀ ጽሑፍ ጨምር"
-
-msgid "Custom text"
-msgstr "የተበጀ ጽሑፍ"
-
-msgid "Original text"
-msgstr "ምንጭ ጸሑፍ"
-
-msgid "Original translation"
-msgstr "ምንጭ ትርጉም"
-
-msgid "Custom translation"
-msgstr "ብጁ ትርጉም"
-
-msgid "Contexts"
-msgstr "አገባበ ነገር"
 
 msgid "Hidden"
 msgstr "የተደበቀ"
+
+msgid "Description"
+msgstr "ገለጻ "
 
 msgid "Questionnaire"
 msgstr "መጠይቅ"
@@ -691,8 +625,11 @@ msgstr "መጠይቅ"
 msgid "Recipients"
 msgstr "ተቀባዮች"
 
-msgid "days"
-msgstr "ቀናት"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "ይህንን ባህርይ ለማቦዘን ዋጋውን 0 ያድርጉ"
 
 msgid "Show the questionnaire navigation interface"
 msgstr "የመጠይቅ ዳሰሳ በይነ ገጽ አሳይ"
@@ -709,24 +646,6 @@ msgstr "መምረጥ የሚቻለው የተቀባዮች ከፍተኛ ቁጥር"
 msgid "Show recipients in alphabetical order"
 msgstr "ተቀባዮችን በፊደል ተራ አሳይ"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "የተቀባዮችን ዝርዝር መረጃ በሪፖርቱ ሁኔታ ገጽ ላይ አሳይ"
-
-msgid "Enable comments"
-msgstr "አስተያየት አንቃ"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "መረጃ ሰጪው አስተያየት እንዲሰጥ ፍቀዱ"
-
-msgid "Enable private messages"
-msgstr "የግል ምልእክቶችን አንቃ"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "መረጃ ሰጪው መልእክት እንዲልክ ፍቀድ"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "መረጃ ሰጪው ሪፖርቱ ላይ አባሪ እንዲጨምር ፍቀድ"
-
 msgid "Additional questionnaire"
 msgstr "ተጨማሪ መጠይቅ"
 
@@ -742,6 +661,9 @@ msgstr "ዋጋ"
 msgid "Medium"
 msgstr "መገናኛ "
 
+msgid "High"
+msgstr "ከፍተኛ"
+
 msgid "Software version:"
 msgstr "የሶፍትዌር ስሪት"
 
@@ -756,6 +678,9 @@ msgstr "የተፈቀዱ አይፒ አድራሻዎች"
 
 msgid "Admin"
 msgstr "አስተዳዳሪ "
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "ተቀባይ"
@@ -836,9 +761,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "በእጅ ማዋቀሪያው አዋቂ ኤችቲቲፒኤስን ከአማራጭ የሰርቲፊኬት ስልጣን በመነሳት ለማዋቀር ይመራችኋል"
-
-msgid "Disabled"
-msgstr "የቦዘነ"
 
 msgid "Auto-renewal"
 msgstr "ራስአድስ"
@@ -953,6 +875,12 @@ msgstr "ብዙ መልሶችን ተቀበል"
 msgid "Template override"
 msgstr "ቅንብር ደንብ ጣስ"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "ስልክ ቁጥር"
 
@@ -976,6 +904,9 @@ msgstr "ተንቀሳቃሽ ምስል"
 
 msgid "Text shown upon negative answer"
 msgstr "በአሉታዊ መልስ ጊዜ የሚታይ ጽሑፍ"
+
+msgid "Low"
+msgstr "ዝቅተኛ"
 
 msgid "Trigger conditions"
 msgstr "ሁኔታዎችን ቀስቅስ"
@@ -1007,20 +938,149 @@ msgstr "አባዛ"
 msgid "Steps"
 msgstr "ደረጃዎች"
 
-msgid "Site settings"
-msgstr "የድረ ገጽ ቅንብር"
+msgid "Logo"
+msgstr " ምልክት"
+
+msgid "Project name"
+msgstr "የፕሮጀክት ስም"
+
+msgid "Homepage title"
+msgstr "የመነሻ ገጽ ርዕስ"
+
+msgid "Presentation"
+msgstr "አቀራረብ"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "መረጃ ሊሰጡ ለሚችሉ አካላት ጥያቄዎች"
+
+msgid "Whistleblowing button"
+msgstr "የመረጃ መስጫ አዝራር"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Footer"
+msgstr "ግርጌ ማስታወሻ"
+
+msgid "Upload"
+msgstr "ይጫኑ"
+
+msgid "Download"
+msgstr "አውርድ "
+
+msgid "Language:"
+msgstr "ቋንቋ"
+
+msgid "Add custom text"
+msgstr "የተበጀ ጽሑፍ ጨምር"
+
+msgid "Custom text"
+msgstr "የተበጀ ጽሑፍ"
+
+msgid "Original text"
+msgstr "ምንጭ ጸሑፍ"
+
+msgid "Original translation"
+msgstr "ምንጭ ትርጉም"
+
+msgid "Custom translation"
+msgstr "ብጁ ትርጉም"
+
+msgid "Disable submissions"
+msgstr "ማስረከብን ያቦዝኑ"
+
+msgid "Enable encryption"
+msgstr "ማመስጠርን ያንቁ"
+
+msgid "Enable administrators to change user passwords"
+msgstr "አስተዳዳሪዎቹን የተጠቃሚ የይለፍ ቃልን እንዲቀይሩ ያንቁ"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "አስተዳዳሪዎች የተጠቃሚ የይለፍ ቃሎችን እንዲቀይሩ ተፈቅዷል"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr ""
+
+msgid "Enable search engines indexing"
+msgstr "የፍለጋ ግርግም ማውጫ ያንቁ"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "ለፋይል አባሪዎች የመጠን ገደብ"
+
+msgid "megabytes"
+msgstr "ሜጋባይትስ"
+
+msgid "Require two factor authentication"
+msgstr "ባለ ሁለት ደረጃ ማረጋገጫ ይጠይቁ"
+
+msgid "Password change interval"
+msgstr "የይለፍ ቃል መቀየርያ ወቅት"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "ለድህንነት ሲባል በየተወሰነ ጊዜ ውስጥ የይለፍ ቃል መቀየር ያስፈልጋል፡፡"
+
+msgid "Number of days till notifying unread reports to users"
+msgstr ""
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "የግላዊነት ፓነሉን ያቦዝኑ"
+
+msgid "Enable custom privacy panel"
+msgstr "ብጁ የግላዊነት ፓነል ያዘጋጁ"
+
+msgid "Custom privacy panel"
+msgstr "ብጁ የግል መረጃ ጥበቃ"
+
+msgid "Enable scoring system"
+msgstr "የውጤት ስርኣት ያንቁ"
+
+msgid "Logging level"
+msgstr "የመግባት ደረጃ"
+
+msgid "percentage"
+msgstr "ፐርሰንቴጅ"
+
+msgid "Log accesses of internal users"
+msgstr "የውስጥ ተጠቃሚዎች የመግባት መዳረሻዎች"
+
+msgid "Notify administrators of software problems"
+msgstr "አስተዳዳሪዎችን የሶፍትዌር ችግሮች ያሳውቁ"
+
+msgid "Notify developers of software problems"
+msgstr "ገንቢዎችን የሶፍትዌር ችግሮችን ያሳውቁ"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "ይህንን ባህርይ በማንቃት ለመሳርያ ስርኣቱ ግንባታ እ\nደህንነት አስተዋጽኦ ያበረክታሉ"
+
+msgid "Reset reports"
+msgstr "ሪፖርቶችን ዳግም ያስጀምሩ"
+
+msgid "Settings"
+msgstr "ቅንብሮችን"
 
 msgid "Case management"
 msgstr "ጉዳይ አስተዳደር"
 
-msgid "Network settings"
-msgstr "አውታረ መረብ ቅንብር"
+msgid "Network"
+msgstr ""
 
 msgid "Sites"
 msgstr "ድረገጾች"
 
-msgid "Mode:"
-msgstr "ሁነታ፡"
+msgid "Profile"
+msgstr "ፕሮፋይል "
 
 msgid "Configure"
 msgstr "ውቀር"
@@ -1028,14 +1088,17 @@ msgstr "ውቀር"
 msgid "Subdomain"
 msgstr "ንኡስጎራ"
 
+msgid "Mode:"
+msgstr "ሁነታ፡"
+
 msgid "Creation date:"
 msgstr "የፍጥረት ቀን፡"
 
-msgid "Root domain used for secondary sites"
-msgstr "ለሁለተኛ ድረገጾች የሚያገለግል ስርወ ጎራ"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "ለአስተዳደራዊ ጉዳዮች ብቻ የመጀመርያውን ድረገጽ ተጠቀሙ"
+
+msgid "Root domain used for secondary sites"
+msgstr "ለሁለተኛ ድረገጾች የሚያገለግል ስርወ ጎራ"
 
 msgid "Allow users to sign up"
 msgstr "ተጠቃሚዎች እንዲመዘገቡ ፍቀድ"
@@ -1056,10 +1119,10 @@ msgid "Set password"
 msgstr "የይለፍ ቃል ያዘጋጁ"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "የተመረጠው የይለፍ ቃል በጣም ደካማ ነው፡፡ ተቀባይነት ያለው የይለፍ ቃል ቢያንስ\n10 ቁምፊ እርዝመት እንዲኖረው እና የተለያዩ ቁምፊዎችን\nትንሹን እና ትልቁን የእንግሊዝኛ ፊደላት፣ ቁጥር እና አንድ ልዩ ቁምፊ መያዝ አለበት፡፡"
+msgstr "የተመረጠው የይለፍ ቃል በጣም ደካማ ነው፡፡ ተቀባይነት ያለው የይለፍ ቃል ቢያንስ 12 ቁምፊ እርዝመት እንዲኖረው እና የተለያዩ ቁምፊዎችን ትንሹን እና ትልቁን የእንግሊዝኛ ፊደላት፣ ቁጥር እና አንድ ልዩ ቁምፊ መያዝ አለበት፡፡"
 
 msgid "Force password change"
 msgstr "የይለፍ ቃል ለውጥ አስገድድ"
@@ -1094,11 +1157,23 @@ msgstr "በግድ የተመረጠ"
 msgid "Allow the recipient to delete reports"
 msgstr "ተቀባዩ ሪፖርቶች እንዲያጠፋ ፍቀዱ"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "ተቀባዩ የሪፖርት መቃጠያ ቀን እንዲያስተላልፍ ፍቀድ"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "ተጠቃሚው በሚመለከቱት ባህሪዎች ላይ አስተዳደራዊ መዳረሻ አለው"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "የጥያቄ ቀን"
@@ -1136,14 +1211,20 @@ msgstr "መለያዎትን ምረጡ"
 msgid "Now type your password, then click 'Log in':"
 msgstr "አሁን የይለፍ ቃሎትን ተይቡ እና 'ግባ' ተጫኑ፡፡"
 
-msgid "Text shown after the user has selected the option."
-msgstr "ተጠቃሚው አማራጩን ከመረጠ በኋላ የሚታይ ጽሑፍ፡፡"
-
 msgid "Confirm"
 msgstr "አረጋግጥ "
 
+msgid "Text shown after the user has selected the option."
+msgstr "ተጠቃሚው አማራጩን ከመረጠ በኋላ የሚታይ ጽሑፍ፡፡"
+
 msgid "Assign score points"
 msgstr "የውጤት ነጥቦች መድብ"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "ሁኔታ፡-"
 
 msgid "Are you sure?"
 msgstr "እርግጠኛ ነዎት?"
@@ -1168,8 +1249,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "ቅዱና በጥብቅ ቦታ አስቀምጡ፡፡ የይለፍ ቃልህ ቢጠፋ ምንም ውሂብ ሳይጠፋበዎት\n\nየመለያ መዳረሻ ለማግኘት አስፈላጊ ይሆናል"
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "ለቅጂው ስም አስገቡ"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr ""
@@ -1191,14 +1287,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "የመሳርያ ስርኣቱ ለኤችቲቲፒኤስ ግንኙነት አልተዋቀረም በመሆኑም\n\nለፍተሻ አላማዎች ብቻ ማገልገል አለበት"
 
-msgid "Please write a motivation for the reply"
-msgstr "ለመልሱ ማነሳሻ ጻፉ"
-
 msgid "Send"
 msgstr "ይላኩ"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "በማረጋገጥ የሪፖርት መቃጠያ ቀኑን ያስተላልፋሉ፡-"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "ይህ የሙከራ የመሳርያ ስርኣት ነው፤ ለትክክለኛ ማስረከቢያ አትጠቀሙበት፡፡"
@@ -1232,6 +1331,12 @@ msgstr "ንብረቱ መዳረሻ በቶር ኔትዎርክ በኩል ብቻ ነ
 
 msgid "The upload request exceeds the size limit"
 msgstr "የጭነት ጥያቄው ከተፈቀደው ወሰን ያልፋል"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "የአሁን ይለፍ ቃል"
@@ -1274,20 +1379,23 @@ msgstr "ሪፖርት አስቀድመው አስገብተዋል? ደረሰኝዎ�
 msgid "The receipt is either invalid or the report has expired."
 msgstr "ደረሰኙ የተሳሳተ ነው ወይም ሪፖርቱ ተቃጥሏል፡፡"
 
-msgid "Select a file or drag it here."
-msgstr "ፋይል ምረጡ ወይም እዚህ ጎትቱ፡፡"
+msgid "Filename"
+msgstr "የፋይል ስም"
 
 msgid "Size:"
 msgstr "መጠን"
 
-msgid "Uploading files…"
-msgstr "ፋይል በመጫን ላይ…"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "ጭነት በስኬት ተጠናቋል!"
+msgid "Address"
+msgstr "አድራሻ"
 
-msgid "Estimated upload time:"
-msgstr "የጭነት ጊዜ በግምት፡፡"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr "የግብር ኮድ"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "ተቀባዮች ተጨማሪ መጠይቅ እንዲሞሉ ጠይቀዋል፡፡"
@@ -1301,8 +1409,8 @@ msgstr "ከ"
 msgid "To:"
 msgstr "ወደ"
 
-msgid "Filename"
-msgstr "የፋይል ስም"
+msgid "View"
+msgstr "አሳይ "
 
 msgid "Upload date"
 msgstr "የጭነት ቀን"
@@ -1315,9 +1423,6 @@ msgstr "የመጠይቅ መልሶች"
 
 msgid "Step"
 msgstr "ደረጃ"
-
-msgid "Status:"
-msgstr "ሁኔታ፡-"
 
 msgid "Files attached by recipients"
 msgstr "ለመረጃ ሰጪው የተያያዙ ፋይሎች"
@@ -1344,9 +1449,6 @@ msgstr "ለሶፍትዌር ግንባታ አስተዋጽኦ ማደረግ ከፈ�
 msgid "Join our chat:"
 msgstr "\"ቻታችንን ተቀላቀ"
 
-msgid "Follow the project on:"
-msgstr "ፕሮጀክቱን በ--- ተከታተሉ"
-
 msgid "An update is available:"
 msgstr "ማዘመኛ አለ"
 
@@ -1356,6 +1458,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "የመለያ መልሶ ማግኛ ቁልፋችሁን\" መልሳችሁ ለማግኘት እና በጥንቃቄ ለማስቀመጥ \n\nምርጫዎች\" የሚለውን ክፍል እንድትጠቀሙ እንመክራለን፡፡ ምናልባት የይለፍ ቃላችሁን ብትረሱ\n\nይሄ ቁልፍ የመሳርያ ሥርዓቱን እና ውሂባችሁን\n\n ለማግኘት ያስፈልጋችኋል፡፡"
+
+msgid "Select a file or drag it here."
+msgstr "ፋይል ምረጡ ወይም እዚህ ጎትቱ፡፡"
 
 msgid "The provided recovery key is invalid."
 msgstr "የተሰጠው መልሶ ማግኛ ቁልፍ ትክክል አይደለም፡፡"
@@ -1388,6 +1493,9 @@ msgstr "የጥያቄው ቀን"
 msgid "Show"
 msgstr "አሳይ "
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "እንኳን ደስ አሎት!"
 
@@ -1410,26 +1518,17 @@ msgstr "በ24 ሰኣት ውስጥ ካልነቃ የመሳርያ ስርኣቱ በ�
 msgid "Sign up"
 msgstr "ተመዝገቡ"
 
-msgid "Site"
-msgstr "ጣቢያ"
-
-msgid "Confirmation"
-msgstr "ማረጋገጫ"
-
 msgid "Invalid confirmation"
 msgstr "የተሳሳተ ማረጋገጫ"
 
 msgid "Invalid phone number"
 msgstr "የተሳሳተ ስልክ ቁጥር"
 
-msgid "Address"
-msgstr "አድራሻ"
+msgid "Site"
+msgstr "ጣቢያ"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr "የግብር ኮድ"
+msgid "Confirmation"
+msgstr "ማረጋገጫ"
 
 msgid "The answer is too short"
 msgstr "መልሱ ከሚፈቀደው በታች አጭር ነው፡፡"
@@ -1468,10 +1567,7 @@ msgstr "ለመግባት ባለ 16 ቁጥሩን ደረሰኝ ይጠቀሙ፡፡ �
 msgid "View your report"
 msgstr "ሪፖርቶን ይዩ"
 
-msgid "Recipient selection"
-msgstr "የተቀባይ ምርጫ"
-
-msgid "Select the recipients of your report:"
+msgid "Select the recipients of your report"
 msgstr ""
 
 msgid "Recipients selected:"
@@ -1479,6 +1575,9 @@ msgstr "የመረጡ ተቀባዮች፡-"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "የሚመረጡ ተቀባዮች ከፍተኛው ቁጥር ላይ ደርሰዋል፡፡"
+
+msgid "You must select at least one recipient."
+msgstr "ቢያንስ አንድ ተቀባይ መምረጥ አለበዎት"
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1490,17 +1589,11 @@ msgid ""
 "invalid:"
 msgstr "እዚህ ደረጃ ላይ ለሚከተሉት ጥያቄዎች የተሰጡ መልሶች ወይ ጠፍተዋል\n\nወይም ትክክል አይደሉም"
 
-msgid "You must select at least one recipient."
-msgstr "ቢያንስ አንድ ተቀባይ መምረጥ አለበዎት"
+msgid "Recipient selection"
+msgstr "የተቀባይ ምርጫ"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "ፋይል ጭኖ እስኪጨርስ በመጠበቅ ላይ"
-
-msgid "The following steps have errors:"
-msgstr "የሚከተሉት ደረጃዎች ስህተት አላቸው፡፡"
-
-msgid "Hide"
-msgstr "ደብቅ"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1590,8 +1683,8 @@ msgstr ""
 msgid "What is the outcome you want to achieve with our support?"
 msgstr ""
 
-msgid "Do you want to provide your identification information?"
-msgstr "የመታወቂያ መረጃዎን መስጠት ይፈልጋሉ?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "የራሶት ስም"
@@ -1607,6 +1700,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "ሌላ"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "ውድ {RecipientName},"
@@ -1668,6 +1764,9 @@ msgstr "ጉዳዩ ሕጋዊ መሆን አለመሆኑን መርምሩ፡፡"
 
 msgid "The activities with unusual stats are:"
 msgstr "ያልተለመደ ስታቲስቲክስ ያሳዩት እንቅስቃሴዎች እነዚህ ናቸው"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1897,6 +1996,9 @@ msgstr ""
 msgid "New report"
 msgstr "አዲስ ሪፖርት"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "ቅርቡ መቃጠያ ቀን {EarliestExpirationDate} ነው፡፡"
 
@@ -1906,18 +2008,16 @@ msgstr "ከመሰረዛቸው በፊት መረጋገጦን አይርሱ፡፡"
 msgid "Some reports will expire soon"
 msgstr "አንዳንድ ሪፖርቶች በቅርብ ይቃጠላሉ"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "ይህ ኢሜል መረጃ ሰጪው እርሶን ለዚህ ሪፖርት ጠቃሚ ተቀባይ\n\nእንደሆኑ መምረጡን ያሳውቃል፡፡"
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "የቀረበውን መረጃ በልዩ ትኩረት እንዲመለከቱ ይጠየቃሉ፡፡\n\nመረጃ ሰጪዎች ለሕዝብ ጥቅም ሲሉ ራሳቸውን ለከፋ\n\nየግል አደጋ እንደሚያጋልጡ ልብ በሉ፡፡ ስለዚህ በዚህ ሪፖርት ውስጥ የቀረበው\n\nመረጃ ከፍተኛ አስፈላጊነት እንዳለው ሊጤን ይገባል፡፡"
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr ""

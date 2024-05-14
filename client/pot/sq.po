@@ -2,12 +2,12 @@
 # Translators:
 # Anja Xhakani <anja@ura.design>, 2021
 # Besnik Bleta <besnik@programeshqip.org, 2021
-# Besnik Bleta <besnik@programeshqip.org>, 2021-2022
+# Besnik Bleta <besnik@programeshqip.org>, 2021-2024
 # Bujar Tafili, 2015
 # Bujar Tafili, 2015
 # Florent <fspahija@kdi-kosova.org>, 2021-2022
 # F Nilaj <activisti@protonmail.com>, 2016
-# Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2015-2022
+# Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2015-2022,2024
 # Jakub Srna <jaksrn@gmail.com>, 2014
 # Roman 'Kaktuxista' Benji <romanbeno273@gmail.com>, 2014
 # Tibor Deak <deaktib@gmail.com>, 2019,2021
@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
-"Last-Translator: Besnik Bleta <besnik@programeshqip.org>, 2021-2022\n"
-"Language-Team: Albanian (http://www.transifex.com/otf/globaleaks/language/sq/)\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>, 2021-2024\n"
+"Language-Team: Albanian (http://app.transifex.com/otf/globaleaks/language/sq/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sq\n"
@@ -26,20 +26,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Hyni"
 
-msgid "Main configuration"
-msgstr "Formësimi kryesor"
-
-msgid "Theme customization"
-msgstr "Përshtatje teme"
-
 msgid "Languages"
 msgstr "Gjuhë"
 
 msgid "Text customization"
 msgstr "Përshtatje teksti"
 
-msgid "Advanced settings"
-msgstr "Rregullime të mëtejshme"
+msgid "Advanced"
+msgstr "Të mëtejshme"
 
 msgid "Question templates"
 msgstr "Gjedhe pyetjesh"
@@ -59,8 +53,8 @@ msgstr "Regjistër ndryshimesh"
 msgid "License"
 msgstr "Licencë"
 
-msgid "Notification templates"
-msgstr "Gjedhe njoftimesh"
+msgid "Templates"
+msgstr "Gjedhe"
 
 msgid "Delete"
 msgstr "Fshije"
@@ -71,8 +65,8 @@ msgstr "Anomali"
 msgid "Preferences"
 msgstr "Parapëlqime"
 
-msgid "Notification settings"
-msgstr "Rregullime njoftimesh"
+msgid "Notifications"
+msgstr "Njoftime"
 
 msgid "file unavailable"
 msgstr "kartelë jo e passhme"
@@ -92,26 +86,17 @@ msgstr "Kartela"
 msgid "Comments"
 msgstr "Komente"
 
-msgid "Messages"
-msgstr "Mesazhe"
-
 msgid "Details"
 msgstr "Hollësi"
 
 msgid "Platform wizard"
 msgstr "Ndihmës platforme"
 
-msgid "CREDIT CARD"
-msgstr "KARTË KREDITI"
-
-msgid "YOUR NAME"
-msgstr "EMRI JUAJ"
-
 msgid "Label the report"
 msgstr "I vini raportimit një etiketë"
 
-msgid "Postpone the expiration date"
-msgstr "Shtyjini datën e skadimit"
+msgid "Edit the expiration date"
+msgstr "Modifica la data di scadenza"
 
 msgid "Select all"
 msgstr "Përzgjidhi krejt"
@@ -122,8 +107,8 @@ msgstr "Shpërzgjidhi krejt"
 msgid "Refresh"
 msgstr "Rifreskoje"
 
-msgid "Context"
-msgstr "Kontekst"
+msgid "Channel"
+msgstr "Kanal"
 
 msgid "Preview"
 msgstr "Parashiheni"
@@ -227,9 +212,6 @@ msgstr "U kërkua hyrje"
 msgid "Request access to the whistleblower's identity"
 msgstr "Kërko hyrje te identiteti i nxjerrësit të së fshehtës"
 
-msgid "Please write a motivation"
-msgstr "Ju lutemi, shkruani një motivim"
-
 msgid "Reply to the request"
 msgstr "Përgjigjuni kërkesës"
 
@@ -256,9 +238,6 @@ msgstr "Hidhe poshtë kërkesën për hyrje te identiteti i nxjerrësit të së 
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Autorizoni hyrje te identiteti i nxjerrësit të së fshehtës"
-
-msgid "Templates"
-msgstr "Gjedhe"
 
 msgid "URL redirects"
 msgstr "Ridrejtime URL-sh"
@@ -299,8 +278,8 @@ msgstr "I pranueshëm"
 msgid "Strong"
 msgstr "I fortë"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Tekst i shfaqur në krye të ndërfaqes, për përzgjedhje kontekstesh"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr "Tekst i shfaqur në krye të ndërfaqes për përzgjedhje kanalesh"
 
 msgid "Silence email notifications"
 msgstr "Heshtoji njoftimet me email"
@@ -363,9 +342,6 @@ msgstr "Madhësia maksimum për kartela është:"
 
 msgid "Scheduled jobs"
 msgstr "Akte të planifikuar"
-
-msgid "Sites management"
-msgstr "Administrim sajtesh"
 
 msgid "Regenerate"
 msgstr "Riprodhoji"
@@ -465,20 +441,110 @@ msgstr "Kopjoje në të papastër"
 msgid "Logout"
 msgstr "Dalje"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Jepi këtij marrësi aftësinë të akordojë hyrje përdoruesish te raportimet"
-
 msgid "Grant access"
 msgstr "Akordoji hyrje"
 
 msgid "Revoke access"
 msgstr "Shfuqizoji hyrjen"
 
+msgid "Transfer"
+msgstr "Të shpërngulë"
+
+msgid "Assigned to"
+msgstr "Caktuar për"
+
+msgid "Not provided."
+msgstr "S’është dhënë."
+
+msgid "Set a reminder"
+msgstr "Ujdisni një kujtues"
+
+msgid "Privileges"
+msgstr "Privilegje"
+
+msgid "Hide"
+msgstr "Fshihe"
+
+msgid "Unhide"
+msgstr "Shfshihe"
+
+msgid "Redact"
+msgstr "Redaktoni"
+
+msgid "Select an option"
+msgstr "Përzgjidhni një mundësi"
+
+msgid "Select your language"
+msgstr "Përzgjidhni gjuhën tuaj"
+
+msgid "Give this user ability to mask information"
+msgstr "Jepini këtij përdoruesi aftësinë të maskojë hollësi"
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr "Jepini këtij përdoruesi aftësinë të redaktojë në mënyrë permanente hollësi të maskuara"
+
+msgid "I've read and accept the Privacy Policy"
+msgstr "I kam lexuar dhe i pranoj Rregullat e Privatësisë"
+
+msgid "Download copy of the Privacy Policy"
+msgstr "Shkarkoni një kopje të Rregullave të Privatësisë"
+
+msgid "Privacy Policy"
+msgstr "Rregulla Privatësie"
+
+msgid "Whistleblowing Policy"
+msgstr "Rregulla Nxjerrjeje të Fshehtash"
+
+msgid "Voice"
+msgstr "Zë"
+
+msgid "Everyone"
+msgstr "Gjithkush"
+
+msgid "Recipients only"
+msgstr "Vetëm marrësit"
+
+msgid "Me only"
+msgstr "Vetëm unë"
+
+msgid "Returning whistleblowers"
+msgstr "Nxjerrës të rikthyer të fshehtash"
+
+msgid "Anonymity"
+msgstr "Anonimitet"
+
+msgid "Anonymous"
+msgstr "Anonim"
+
+msgid "Subscribed"
+msgstr "I pajtuar"
+
+msgid "Initially anonymous"
+msgstr "Fillimisht anonim"
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr "Pajisje"
+
+msgid "Computer"
+msgstr "Kompjuter"
+
+msgid "Mobile"
+msgstr "Celular"
+
+msgid "Act on behalf of a whistleblower"
+msgstr "Veproni në këmbë të një nxjerrësi të fshehtash"
+
+msgid "The link will expire in 7 days."
+msgstr "Lidhja do të skadojë pas 7 ditësh"
+
 msgid "File a report"
 msgstr "Depozitoni një raportim"
 
-msgid "Select the context of your report:"
-msgstr "Përzgjidhni kontekstin e raportimit tuaj:"
+msgid "Select a reporting channel:"
+msgstr "Përzgjidhni një kanal raportimi:"
 
 msgid "Before proceeding, please set a new password."
 msgstr "Para se të shkoni më tej, ju lutemi, caktoni një fjalëkalim të ri."
@@ -488,102 +554,6 @@ msgstr "Para se të ecet më tej, ju lutemi, aktivizoni mirëfilltësimin dyfakt
 
 msgid "Enable"
 msgstr "Aktivizoje"
-
-msgid "Disable submissions"
-msgstr "Çaktivizo parashtrime"
-
-msgid "Enable encryption"
-msgstr "Aktivizo fshehtëzim"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Aktivizo ndryshim fjalëkalimesh përdoruesish nga përgjegjësit"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Përgjegjës të autorizuar për ndryshime fjalëkalimesh përdoruesish:"
-
-msgid "Enable multisite feature"
-msgstr "Aktivizo veçorinë shumësajtësh"
-
-msgid "Enable simplified login"
-msgstr "Aktivizo hyrje të thjeshtuar"
-
-msgid "Enable search engines indexing"
-msgstr "Aktivizo indeksim nga motorë kërkimesh"
-
-msgid "Default questionnaire"
-msgstr "Pyetësor parazgjedhje"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Kontekstet shfaqi në rend alfabetik"
-
-msgid "Size limit for file attachments"
-msgstr "Kufi madhësie për bashkëngjitje kartelash"
-
-msgid "megabytes"
-msgstr "megabajte"
-
-msgid "Require two factor authentication"
-msgstr "Kërko doemos mirëfilltësim dyfaktorësh"
-
-msgid "Password change interval"
-msgstr "Interval ndryshimi fjalëkalimi"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Për arsye sigurie, ndryshimet e fjalëkalimeve në intervale të rregullta janë të detyrueshme."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Për ta çaktivizuar këtë veçori, jepini vlerën 0."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Numër ditësh deri në njoftim të përdoruesve për raportime të palexuar"
-
-msgid "Disable the privacy panel"
-msgstr "Çaktivizo panelin e privatësisë"
-
-msgid "Enable custom privacy panel"
-msgstr "Aktivizo panel vetjak privatësie"
-
-msgid "Custom privacy panel"
-msgstr "Panel vetjak privatësie"
-
-msgid "Enable custodian user role"
-msgstr "Aktivizo rol përdoruesi ruajtës"
-
-msgid "Enable scoring system"
-msgstr "Aktivizo sistem pikësh"
-
-msgid "Logging level"
-msgstr "Nivel regjistrimi"
-
-msgid "Log accesses of internal users"
-msgstr "Regjistro hyrje përdoruesish të brendshëm"
-
-msgid "Notify administrators of software problems"
-msgstr "Njoftoji përgjegjësit për probleme software-i"
-
-msgid "Notify developers of software problems"
-msgstr "Njoftoji zhvilluesit për probleme software-i"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Duke aktivizuar këtë veçori, do të kontribuoni në zhvillimin dhe sigurinë e platformës."
-
-msgid "Save"
-msgstr "Ruaje"
-
-msgid "Reset reports"
-msgstr "Ktheji raportimet te parazgjedhjet"
-
-msgid "Low"
-msgstr "I ulët"
-
-msgid "High"
-msgstr "I lartë"
-
-msgid "percentage"
-msgstr "përqindje"
 
 msgid "Type"
 msgstr "Lloj"
@@ -612,6 +582,9 @@ msgstr "Datë krijimi"
 msgid "Last access"
 msgstr "Hyrja e fundit"
 
+msgid "Receivers"
+msgstr "Marrësit"
+
 msgid "Whistleblower's last access"
 msgstr "Hyrja e fundit nga nxjerrës të fshehtash"
 
@@ -630,68 +603,29 @@ msgstr "Kjo fushë është e detyrueshme"
 msgid "Edit"
 msgstr "Përpunojeni"
 
+msgid "Save"
+msgstr "Ruaje"
+
 msgid "Cancel"
 msgstr "Anuloje"
+
+msgid "days"
+msgstr "ditë"
+
+msgid "Disabled"
+msgstr "I çaktivizuar"
 
 msgid "Report statuses"
 msgstr "Gjendje raportimesh"
 
-msgid "Logo"
-msgstr "Stemë"
-
-msgid "Project name"
-msgstr "Emër projekti"
-
-msgid "Description"
-msgstr "Përshkrim"
-
-msgid "Homepage title"
-msgstr "Titull faqeje hyrëse"
-
-msgid "Presentation"
-msgstr "Paraqitje"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Pyetje për tërheqje nxjerrësish të mundshëm të fshehtash"
-
-msgid "Whistleblowing button"
-msgstr "Buton nxjerrjeje të fshehtash"
-
-msgid "Disclaimer"
-msgstr "Klauzolë"
-
-msgid "Footer"
-msgstr "Fundfaqe"
-
-msgid "Upload"
-msgstr "Ngarkoje"
-
-msgid "Download"
-msgstr "Shkarkoje"
-
-msgid "Language:"
-msgstr "Gjuhë:"
-
-msgid "Add custom text"
-msgstr "Shtoni tekst vetjak"
-
-msgid "Custom text"
-msgstr "Tekst vetjak"
-
-msgid "Original text"
-msgstr "Teksti origjinal"
-
-msgid "Original translation"
-msgstr "Përkthimi origjinal"
-
-msgid "Custom translation"
-msgstr "Përkthim vetjak"
-
-msgid "Contexts"
-msgstr "Kontekste"
+msgid "Channels"
+msgstr "Kanale"
 
 msgid "Hidden"
 msgstr "I fshehur"
+
+msgid "Description"
+msgstr "Përshkrim"
 
 msgid "Questionnaire"
 msgstr "Pyetësor"
@@ -699,8 +633,11 @@ msgstr "Pyetësor"
 msgid "Recipients"
 msgstr "Marrës"
 
-msgid "days"
-msgstr "ditë"
+msgid "Reminder date"
+msgstr "Datë kujtuesi"
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Për ta çaktivizuar këtë veçori, jepini vlerën 0."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Shfaq ndërfaqe lëvizjeje nëpër pyetësor"
@@ -717,24 +654,6 @@ msgstr "Numër maksimum marrësish të përzgjedhshëm:"
 msgid "Show recipients in alphabetical order"
 msgstr "Marrësit shfaqi në rend alfabetik"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Shfaq hollësi marrësi te faqja e gjendjes së raportimit"
-
-msgid "Enable comments"
-msgstr "Aktivizo komente"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Lejoji nxjerrësit të së fshehtës të shkruajë komente"
-
-msgid "Enable private messages"
-msgstr "Aktivizo mesazhe private"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Lejoji nxjerrësit të të fshehtës të dërgojë mesazhe"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Lejoji nxjerrësit të së fshehtës të shtojë te raportimi bashkëngjitje"
-
 msgid "Additional questionnaire"
 msgstr "Pyetësor shtesë"
 
@@ -750,6 +669,9 @@ msgstr "Vlerë"
 msgid "Medium"
 msgstr "Mesatar"
 
+msgid "High"
+msgstr "I lartë"
+
 msgid "Software version:"
 msgstr "Version software-i:"
 
@@ -764,6 +686,9 @@ msgstr "Adresa IP të lejuara"
 
 msgid "Admin"
 msgstr "Përgjegjës"
+
+msgid "Analyst"
+msgstr "Analist"
 
 msgid "Recipient"
 msgstr "Marrës"
@@ -845,9 +770,6 @@ msgid ""
 "from an alternative Certificate Authority."
 msgstr "Ndihmësi i formësimit dorazi do t’ju udhëheqë nëpër ujdisjen e HTTPS-së me një autoritet alternativ dëshmish."
 
-msgid "Disabled"
-msgstr "I çaktivizuar"
-
 msgid "Auto-renewal"
 msgstr "Vetërinovim"
 
@@ -855,7 +777,7 @@ msgid "Tor Onion Service"
 msgstr "Shërbim Onion Tor"
 
 msgid "Anonymize outgoing connections"
-msgstr "Anonimizo lidhjet ikëse"
+msgstr "Anonimizo lidhjet për jashtë"
 
 msgid "Let the platform be reachable without Tor"
 msgstr "Lejojeni platformën të jetë e përdorshme pa Tor"
@@ -961,6 +883,12 @@ msgstr "Prano disa përgjigje njëherësh"
 msgid "Template override"
 msgstr "Anashkalim gjedheje"
 
+msgid "Min"
+msgstr "Min."
+
+msgid "Max"
+msgstr "Maks."
+
 msgid "Phone number"
 msgstr "Numër telefoni"
 
@@ -984,6 +912,9 @@ msgstr "Video"
 
 msgid "Text shown upon negative answer"
 msgstr "Tekst i shfaqur në rast përgjigjeje negative"
+
+msgid "Low"
+msgstr "I ulët"
 
 msgid "Trigger conditions"
 msgstr "Kushte aktivizimi"
@@ -1015,20 +946,149 @@ msgstr "Përsëdyte"
 msgid "Steps"
 msgstr "Hapa"
 
-msgid "Site settings"
-msgstr "Rregullime sajti"
+msgid "Logo"
+msgstr "Stemë"
+
+msgid "Project name"
+msgstr "Emër projekti"
+
+msgid "Homepage title"
+msgstr "Titull faqeje hyrëse"
+
+msgid "Presentation"
+msgstr "Paraqitje"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Pyetje për tërheqje nxjerrësish të mundshëm të fshehtash"
+
+msgid "Whistleblowing button"
+msgstr "Buton nxjerrjeje të fshehtash"
+
+msgid "Disclaimer"
+msgstr "Klauzolë"
+
+msgid "Footer"
+msgstr "Fundfaqe"
+
+msgid "Upload"
+msgstr "Ngarkoje"
+
+msgid "Download"
+msgstr "Shkarkoje"
+
+msgid "Language:"
+msgstr "Gjuhë:"
+
+msgid "Add custom text"
+msgstr "Shtoni tekst vetjak"
+
+msgid "Custom text"
+msgstr "Tekst vetjak"
+
+msgid "Original text"
+msgstr "Teksti origjinal"
+
+msgid "Original translation"
+msgstr "Përkthimi origjinal"
+
+msgid "Custom translation"
+msgstr "Përkthim vetjak"
+
+msgid "Disable submissions"
+msgstr "Çaktivizo parashtrime"
+
+msgid "Enable encryption"
+msgstr "Aktivizo fshehtëzim"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Aktivizo ndryshim fjalëkalimesh përdoruesish nga përgjegjësit"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Përgjegjës të autorizuar për ndryshime fjalëkalimesh përdoruesish:"
+
+msgid "Enable PGP"
+msgstr "Aktivizo PGP"
+
+msgid "Enable simplified login"
+msgstr "Aktivizo hyrje të thjeshtuar"
+
+msgid "Enable search engines indexing"
+msgstr "Aktivizo indeksim nga motorë kërkimesh"
+
+msgid "Show channels in alphabetical order"
+msgstr "Shfaqi kanalet në rend alfabetik"
+
+msgid "Size limit for file attachments"
+msgstr "Kufi madhësie për bashkëngjitje kartelash"
+
+msgid "megabytes"
+msgstr "megabajte"
+
+msgid "Require two factor authentication"
+msgstr "Kërko doemos mirëfilltësim dyfaktorësh"
+
+msgid "Password change interval"
+msgstr "Interval ndryshimi fjalëkalimi"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Për arsye sigurie, ndryshimet e fjalëkalimeve në intervale të rregullta janë të detyrueshme."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Numër ditësh deri në njoftim të përdoruesve për raportime të palexuar"
+
+msgid "Custom support URL"
+msgstr "URL e përshtatur asistence"
+
+msgid "Disable the privacy panel"
+msgstr "Çaktivizo panelin e privatësisë"
+
+msgid "Enable custom privacy panel"
+msgstr "Aktivizo panel vetjak privatësie"
+
+msgid "Custom privacy panel"
+msgstr "Panel vetjak privatësie"
+
+msgid "Enable scoring system"
+msgstr "Aktivizo sistem pikësh"
+
+msgid "Logging level"
+msgstr "Nivel regjistrimi"
+
+msgid "percentage"
+msgstr "përqindje"
+
+msgid "Log accesses of internal users"
+msgstr "Regjistro hyrje përdoruesish të brendshëm"
+
+msgid "Notify administrators of software problems"
+msgstr "Njoftoji përgjegjësit për probleme software-i"
+
+msgid "Notify developers of software problems"
+msgstr "Njoftoji zhvilluesit për probleme software-i"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Duke aktivizuar këtë veçori, do të kontribuoni në zhvillimin dhe sigurinë e platformës."
+
+msgid "Reset reports"
+msgstr "Fshiji raportimet"
+
+msgid "Settings"
+msgstr "Rregullime"
 
 msgid "Case management"
 msgstr "Administrim rastesh"
 
-msgid "Network settings"
-msgstr "Rregullime rrjeti"
+msgid "Network"
+msgstr "Rrjet"
 
 msgid "Sites"
 msgstr "Sajte"
 
-msgid "Mode:"
-msgstr "Mënyrë:"
+msgid "Profile"
+msgstr "Profil"
 
 msgid "Configure"
 msgstr "Formësojeni"
@@ -1036,14 +1096,17 @@ msgstr "Formësojeni"
 msgid "Subdomain"
 msgstr "Nënpërkatësi"
 
+msgid "Mode:"
+msgstr "Mënyrë:"
+
 msgid "Creation date:"
 msgstr "Datë krijimi:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Përkatësi rrënjë e përdorur për sajte dytësorë"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Sajtin e parë përdore vetëm për qëllime administrative"
+
+msgid "Root domain used for secondary sites"
+msgstr "Përkatësi rrënjë e përdorur për sajte dytësorë"
 
 msgid "Allow users to sign up"
 msgstr "Lejoju përdoruesve të regjistrohen"
@@ -1064,10 +1127,10 @@ msgid "Set password"
 msgstr "Caktoni fjalëkalim"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Fjalëkalimi i zgjedhur është shumë i dobët. Një fjalëkalim i vlefshëm duhet të jetë të paktën 10 shenja i gjatë dhe të përmbajë një larmi shenjash, përfshi të paktën një shkronjë të vogël, një shkronjë të madhe, një numër dhe një shenjë speciale."
+msgstr "Fjalëkalimi i zgjedhur është shumë i dobët. Një fjalëkalim i vlefshëm duhet të jetë të paktën 12 shenja i gjatë dhe të përmbajë një larmi shenjash, përfshi të paktën një shkronjë të vogël, një shkronjë të madhe, një numër dhe një shenjë speciale."
 
 msgid "Force password change"
 msgstr "Detyro ndryshim fjalëkalimi"
@@ -1102,11 +1165,23 @@ msgstr "E përzgjedhur me zor"
 msgid "Allow the recipient to delete reports"
 msgstr "Lejoje marrësin të fshijë raportime"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Lejoje marrësin të shtyjë datën e skadimit të raportimit"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr "Jepini këtij përdoruesi aftësinë të akordojë hyrje përdoruesish te raportimet"
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr "Jepini këtij përdoruesi aftësinë të shpërngulë raportime te përdorues të tjerë"
+
+msgid "Allow this user to reopen management of a report"
+msgstr "Lejoje këtë përdorues të rihapë administrimin e një raportimit"
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Jepi përdoruesit hyrje përgjegjësi në veçoritë vijuese:"
+
+msgid "Statistics"
+msgstr "Statistika"
 
 msgid "Request date"
 msgstr "Datë kërkese"
@@ -1144,14 +1219,20 @@ msgstr "Ju lutemi, përzgjidhni llogarinë tuaj:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Tani shtypni fjalëkalimin tuaj, mandej klikoni mbi “Hyni”:"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Tekst i shfaqur pasi përdoruesi të ketë përzgjedhur këtë mundësi."
-
 msgid "Confirm"
 msgstr "Ripohojeni"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Tekst i shfaqur pasi përdoruesi të ketë përzgjedhur këtë mundësi."
+
 msgid "Assign score points"
 msgstr "Caktoni pikë"
+
+msgid "Change status"
+msgstr "Ndryshoni gjendje"
+
+msgid "Status:"
+msgstr "Gjendje:"
 
 msgid "Are you sure?"
 msgstr "Jeni i sigurt?"
@@ -1176,8 +1257,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Bëni një kopje dhe depozitojeni në një vend të parrezik. Do t’ju duhet, nëse humbni fjalëkalimin tuaj, për të rifituar hyrje në llogarinë tuaj pa humbje të dhënash."
 
+msgid "Attention"
+msgstr "Kujdes"
+
+msgid "For security reasons the code needs to be changed."
+msgstr "Për arsye sigurie, kodi duhet ndryshuar."
+
 msgid "Enter a name for the copy"
 msgstr "Jepni një emër për kopjen"
+
+msgid "Mask"
+msgstr "Maskoje"
+
+msgid "Unselect"
+msgstr "Shpërzgjidhe"
+
+msgid "Reopen"
+msgstr "Rihape"
 
 msgid "Request support"
 msgstr "Kërkoni asistencë"
@@ -1199,14 +1295,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Platforma ende s’është formësuar për lidhje HTTPS, ndaj duhet përdorur vetëm për qëllime testimi."
 
-msgid "Please write a motivation for the reply"
-msgstr "Ju lutemi, shkruani një shtysë për përgjigjen"
-
 msgid "Send"
 msgstr "Dërgoje"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Duke e ripohuar, do ta shtyni datën e skadimit më:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr "Duke e ripohuar, do të caktoni një kujtues më datë:"
+
+msgid "Transfer access"
+msgstr "Të shpërngulë hyrje"
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Kjo është një platformë demonstrimi, ju lutemi, mos e përdorni për parashtrime të njëmendta."
@@ -1240,6 +1339,12 @@ msgstr "Burimi mund të përdoret vetëm përmes rrjetit Tor"
 
 msgid "The upload request exceeds the size limit"
 msgstr "Kërkesa për ngarkim tejkalon kufirin për madhësitë"
+
+msgid "A user with this username already exists"
+msgstr "Ka tashmë një përdorues me atë emër përdoruesi"
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr "Po veproni në këmbë të një nxjerrësi të fshehtash."
 
 msgid "Current password"
 msgstr "Fjalëkalimi i tanishëm"
@@ -1282,20 +1387,23 @@ msgstr "Keni parashtruar tashmë një raportim? Jepni dëftesën tuaj."
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Ose dëftesa është e pavlefshme, ose raportimi ka skaduar."
 
-msgid "Select a file or drag it here."
-msgstr "Përzgjidhni një kartelë ose tërhiqeni këtu."
+msgid "Filename"
+msgstr "Emër kartele"
 
 msgid "Size:"
 msgstr "Madhësi:"
 
-msgid "Uploading files…"
-msgstr "Po ngarkohen kartela…"
+msgid "Access date"
+msgstr "Datë përdorimi"
 
-msgid "Upload completed successfully!"
-msgstr "Ngarkimi u plotësua me sukses!"
+msgid "Address"
+msgstr "Adresë"
 
-msgid "Estimated upload time:"
-msgstr "Kohë ngarkimi përafërsisht:"
+msgid "Fiscal code"
+msgstr "Kod fiskal"
+
+msgid "Tax code"
+msgstr "Kod tatimor"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Marrësit kanë kërkuar që të plotësoni një pyetësor shtesë."
@@ -1309,8 +1417,8 @@ msgstr "Nga:"
 msgid "To:"
 msgstr "Për:"
 
-msgid "Filename"
-msgstr "Emër kartele"
+msgid "View"
+msgstr "Shihni"
 
 msgid "Upload date"
 msgstr "Datë ngarkimi"
@@ -1323,9 +1431,6 @@ msgstr "Përgjigje pyetësori"
 
 msgid "Step"
 msgstr "Hap"
-
-msgid "Status:"
-msgstr "Gjendje:"
 
 msgid "Files attached by recipients"
 msgstr "Kartela të bashkëngjitura nga marrës"
@@ -1352,9 +1457,6 @@ msgstr "Nëse doni të jepni ndihmesë në zhvillimin e software-it, ose të njo
 msgid "Join our chat:"
 msgstr "Merrni pjesë në fjalosjen tonë:"
 
-msgid "Follow the project on:"
-msgstr "Ndiqeni projektin në:"
-
 msgid "An update is available:"
 msgstr "Ka një përditësim gati:"
 
@@ -1364,6 +1466,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "Rekomandojmë që të përdorni ndarjen “Parapëlqime”, që të rimerrni “Kyç Rimarrjeje Llogarie” tuajin dhe ta depozitoni pa rrezik diku. Ky kyç do të jetë i nevojshëm për të rifituar hyrje te platforma dhe të dhënat tuaja, në rast se harroni fjalëkalimin tuaj."
+
+msgid "Select a file or drag it here."
+msgstr "Përzgjidhni një kartelë ose tërhiqeni këtu."
 
 msgid "The provided recovery key is invalid."
 msgstr "Kyçi i rimarrjeve i dhënë është i pavlefshëm."
@@ -1396,6 +1501,9 @@ msgstr "Datë e kërkesës"
 msgid "Show"
 msgstr "Shfaqe"
 
+msgid "Subscription date"
+msgstr "Datë pajtimi"
+
 msgid "Congratulations!"
 msgstr "Përgëzime!"
 
@@ -1418,26 +1526,17 @@ msgstr "Në mos u aktivizoftë brenda 24 orësh, platforma do të fshihet vetvet
 msgid "Sign up"
 msgstr "Regjistrohuni"
 
-msgid "Site"
-msgstr "Webfaqe"
-
-msgid "Confirmation"
-msgstr "Ripohim"
-
 msgid "Invalid confirmation"
 msgstr "Ripohim i pavlefshëm"
 
 msgid "Invalid phone number"
 msgstr "Numër telefoni i pavlefshëm"
 
-msgid "Address"
-msgstr "Adresë"
+msgid "Site"
+msgstr "Sajt"
 
-msgid "Fiscal code"
-msgstr "Kod fiskal"
-
-msgid "Tax code"
-msgstr "Kodi i taksës"
+msgid "Confirmation"
+msgstr "Ripohim"
 
 msgid "The answer is too short"
 msgstr "Përgjigja është shumë e shkurtër"
@@ -1474,19 +1573,19 @@ msgid ""
 msgstr "Për të bërë hyrjen, përdorni dëftesën me 16 shifra. Do t’ju lejojë të shihni çfarëdo mesazhesh që ju kemi dërguar dhe edhe të shtoni informacion shtesë."
 
 msgid "View your report"
-msgstr "Shiheni raportin tuaj"
+msgstr "Shiheni raportimin tuaj"
 
-msgid "Recipient selection"
-msgstr "Përzgjedhje marrësish"
-
-msgid "Select the recipients of your report:"
-msgstr "Përzgjidhni marrësit për raportimin tuaj:"
+msgid "Select the recipients of your report"
+msgstr "Përzgjidhni marrësit e raportimit tuaj"
 
 msgid "Recipients selected:"
 msgstr "Marrës të përzgjedhur:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Keni mbërritur në numrin maksimum të marrësve të përzgjedhshëm."
+
+msgid "You must select at least one recipient."
+msgstr "Duhet të përzgjidhni të paktën një marrës."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1498,17 +1597,11 @@ msgid ""
 "invalid:"
 msgstr "Te ky hap, përgjigjet për pyetjet vijuese ose mungojnë, ose janë të pavlefshme:"
 
-msgid "You must select at least one recipient."
-msgstr "Duhet të përzgjidhni të paktën një marrës."
+msgid "Recipient selection"
+msgstr "Përzgjedhje marrësish"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Po pritet që të përfundojë ngarkimi i kartelës(ave)."
-
-msgid "The following steps have errors:"
-msgstr "Hapat vijues kanë gabime:"
-
-msgid "Hide"
-msgstr "Fshihe"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1535,7 +1628,7 @@ msgid "I have read and agree to the terms of the license."
 msgstr "I kam lexuar dhe pajtohem me kushtet e licencës."
 
 msgid "You have completed the platform wizard."
-msgstr "Keni plotësuar hapat e ndihmësit të platformës."
+msgstr "Keni plotësuar hapat e ndihmësit të instalimit të platformës."
 
 msgid "Please summarize your report in a few words."
 msgstr "Ju lutemi, përmblidhni në pak fjalë raportimin tuaj."
@@ -1571,7 +1664,7 @@ msgid "Do you have evidence to support your report?"
 msgstr "Keni fakte për të mbështetur raportimin tuaj?"
 
 msgid "Please attach the evidence to support your report."
-msgstr "Ju lutemi, bashkëngjitni faktet për të mbështetur raportimin tua."
+msgstr "Ju lutemi, bashkëngjitni faktet për të mbështetur raportimin tuaj."
 
 msgid "Please describe the evidence in detail."
 msgstr "Ju lutemi, përshkruajini hollësisht faktet."
@@ -1598,8 +1691,8 @@ msgstr "A i kanë hetuar pretendimet tuaja këto ente? Nëse po, ç’doli prej 
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Cili është përfundimi që doni të arrini me mbështetjen tonë?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Doni të jepni hollësi për identifikimin tuaj?"
+msgid "Would you like to tell us who you are?"
+msgstr "Do të donit të na tregonit se cili jeni?"
 
 msgid "First name"
 msgstr "Emër"
@@ -1615,6 +1708,9 @@ msgstr "Parapëlqej të kontaktohem vetëm përmes kësaj platforme"
 
 msgid "Other"
 msgstr "Tjetër"
+
+msgid "Specify"
+msgstr "Specifikojeni"
 
 msgid "Dear {RecipientName},"
 msgstr "I dashur {RecipientName},"
@@ -1676,6 +1772,9 @@ msgstr "Shqyrtojeni çështjen, për të përcaktuar se është e ligjshme apo j
 
 msgid "The activities with unusual stats are:"
 msgstr "Veprimtaritë me statistika të pazakonta janë:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr "Hapësirë disku e lirë: {FreeMemory}/{TotalMemory}"
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1905,6 +2004,9 @@ msgstr "Ky është një email për t’ju njoftuar se një marrës ju ka akordua
 msgid "New report"
 msgstr "Raportim i ri"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr "Një ose disa raportime po skadojnë dhe së shpejti do të fshihen."
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Data më e hershme e skadimit është {EarliestExpirationDate}."
 
@@ -1914,18 +2016,16 @@ msgstr "Ju lutemi, mos harroni t’i shihni, para se të fshihen."
 msgid "Some reports will expire soon"
 msgstr "Disa raportime do të skadojnë së shpejti"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Ky është një email për t’ju njoftuar se një nxjerrës të fshehte ju ka përzgjedhur ju si një marrës të vlefshëm për raportimin e vet."
+msgid "This is an email to notify you the reception of a new report."
+msgstr "Ky është një email për t’ju njoftuar marrjen e një raportimit të ri."
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Ju kërkohet të bëni kujdes të veçantë me informacionin dhe materialin që përmbahet këtu. Ju lutemi, mbani parasysh se nxjerrësit e të fshehtave, shpesh ekspozojnë veten ndaj rreziqesh të mëdha personale, për interesin e publikut. Ndaj materiali i dhënë brenda këtij raportimi duhet konsideruar si i rëndësie të madhe."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr "Ky është një email për t’ju njoftuar se ka ardhur data kujtuese për një ose më tepër raportime."
+
+msgid "Reminder"
+msgstr "Kujtues"
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Ky është një email për t’ju njoftuar se është përditësuar një raportim ekzistues."

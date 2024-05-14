@@ -8,15 +8,17 @@ import re
 
 from datetime import datetime, timedelta
 
-from twisted.internet.abstract import isIPAddress
-
 from globaleaks import __version__
 from globaleaks.rest import errors
 from globaleaks.utils.pgp import PGPContext
-from globaleaks.utils.utility import datetime_to_pretty_str, \
+from globaleaks.utils.sock import isIPAddress
+from globaleaks.utils.utility import \
+    datetime_to_pretty_str, \
     datetime_to_day_str, \
     bytes_to_pretty_str, \
+    ISO8601_to_day_str, \
     ISO8601_to_pretty_str
+
 
 node_keywords = [
     '{NodeName}',
@@ -43,8 +45,7 @@ tip_keywords = [
     '{EventTime}',
     '{SubmissionDate}',
     '{QuestionnaireAnswers}',
-    '{Comments}',
-    '{Messages}'
+    '{Comments}'
 ]
 
 file_keywords = [
@@ -52,7 +53,7 @@ file_keywords = [
     '{FileSize}'
 ]
 
-export_message_keywords = [
+export_comment_keywords = [
     '{Author}',
     '{Content}'
 ]
@@ -236,13 +237,13 @@ class TipKeyword(UserNodeKeyword):
         elif field_type == 'date':
             date = entry.get('value')
             if date is not None:
-                output += indent(indent_n) + ISO8601_to_pretty_str(date) + '\n'
+                output += indent(indent_n) + ISO8601_to_day_str(date) + '\n'
         elif field_type == 'daterange':
             daterange = entry.get('value')
             if daterange is not None:
                 daterange = daterange.split(':')
-                output += indent(indent_n) + datetime_to_pretty_str(datetime.fromtimestamp(int(daterange[0])/1000)) + '\n'
-                output += indent(indent_n) + datetime_to_pretty_str(datetime.fromtimestamp(int(daterange[1])/1000)) + '\n'
+                output += indent(indent_n) + datetime_to_day_str(datetime.fromtimestamp(int(daterange[0])/1000)) + '\n'
+                output += indent(indent_n) + datetime_to_day_str(datetime.fromtimestamp(int(daterange[1])/1000)) + '\n'
         elif field_type == 'tos':
             answer = '☑' if entry.get('value', '') is True else '☐'
             output += indent(indent_n) + answer + '\n'
@@ -298,13 +299,16 @@ class TipKeyword(UserNodeKeyword):
 
         return output
 
-    def dump_messages(self, messages):
+    def dump_comments(self, comments):
         ret = ''
-        for message in messages:
+        for comment in comments:
+            if comment['visibility'] == 'personal':
+                continue
+
             data = copy.deepcopy(self.data)
-            data['type'] = 'export_message'
-            data['message'] = copy.deepcopy(message)
-            template = 'export_message_whistleblower' if (message['type'] == 'whistleblower') else 'export_message_recipient'
+            data['type'] = 'export_comment'
+            data['comment'] = copy.deepcopy(comment)
+            template = 'export_comment_recipient' if comment['author_id'] else 'export_comment_whistleblower'
             ret += indent_text('-' * 40) + '\n'
             ret += indent_text(str(Templating().format_template(self.data['notification'][template], data))) + '\n\n'
 
@@ -314,7 +318,7 @@ class TipKeyword(UserNodeKeyword):
         return self.data['tip']['id']
 
     def UrlPath(self):
-        return '/#/status/' + self.data['tip']['id']
+        return '/#/reports/' + self.data['tip']['id']
 
     def TipNum(self):
         return str(self.data['tip']['progressive'])
@@ -352,35 +356,22 @@ class TipKeyword(UserNodeKeyword):
 
     def Comments(self):
         comments = self.data.get('comments', [])
-        if not len(comments):
-            return ''
-
-        ret = 'Comments:\n'
-        ret += self.dump_messages(comments) + '\n'
-        return ret + '\n'
-
-    def Messages(self):
-        messages = self.data.get('messages', [])
-        if not len(messages):
-            return ''
-
-        ret = 'Private messages:\n'
-        ret += self.dump_messages(messages)
-        return ret + '\n'
+        comments = self.dump_comments(comments)
+        return 'Comments\n' + comments + '\n' if comments else ''
 
 
 class ExportMessageKeyword(TipKeyword):
-    keyword_list = TipKeyword.keyword_list + export_message_keywords
-    data_keys = TipKeyword.data_keys + ['message']
+    keyword_list = TipKeyword.keyword_list + export_comment_keywords
+    data_keys = TipKeyword.data_keys + ['comment']
 
     def Author(self):
-        return 'Recipient' if self.data['message']['type'] == 'receiver' else 'Whistleblower'
+        return 'Recipient' if self.data['comment']['author_id'] else 'Whistleblower'
 
     def Content(self):
-        return self.data['message']['content']
+        return self.data['comment']['content']
 
     def EventTime(self):
-        return datetime_to_pretty_str(self.data['message']['creation_date'])
+        return datetime_to_pretty_str(self.data['comment']['creation_date'])
 
 
 class ExpirationSummaryKeyword(UserNodeKeyword):
@@ -595,7 +586,7 @@ class EmailValidationKeyword(UserNodeKeyword):
         return self.data['new_email_address']
 
     def UrlPath(self):
-        return '/api/email/validation/' + self.data['validation_token']
+        return '/api/user/validate/email/' + self.data['validation_token']
 
 
 class AccountActivationKeyword(UserNodeKeyword):
@@ -637,13 +628,14 @@ supported_template_types = {
     'null': Keyword,
     'tip': TipKeyword,
     'tip_access': UserNodeKeyword,
+    'tip_reminder': UserNodeKeyword,
     'tip_update': TipKeyword,
     'tip_expiration_summary': ExpirationSummaryKeyword,
     'unread_tips': UserNodeKeyword,
     'pgp_alert': PGPAlertKeyword,
     'admin_pgp_alert': AdminPGPAlertKeyword,
     'export_template': TipKeyword,
-    'export_message': ExportMessageKeyword,
+    'export_comment': ExportMessageKeyword,
     'admin_anomaly': AnomalyKeyword,
     'admin_test': UserNodeKeyword,
     'https_certificate_expiration': CertificateExprKeyword,
@@ -692,12 +684,7 @@ class Templating(object):
             raise NotImplementedError('This data_type (%s) is not supported' % ['data.type'])
 
         if data['type'] in ['tip', 'tip_update']:
-            if data['tip']['label']:
-                prefix = '{TipNum} ({TipLabel}) - '
-            else:
-                prefix = '{TipNum} - '
-
-            subject_template = prefix + subject_template
+            subject_template = '{TipNum} - ' + subject_template
 
         subject = self.format_template(subject_template, data)
         body = self.format_template(body_template, data)

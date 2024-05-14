@@ -1,8 +1,5 @@
 # -*- coding: utf-8
-import getpass
-import grp
 import os
-import pwd
 import sys
 
 from globaleaks.orm import make_db_uri, set_db_uri, enable_orm_debug
@@ -22,9 +19,12 @@ class SettingsClass(object, metaclass=Singleton):
         # daemonize the process
         self.nodaemon = False
 
+        # migrate only
+        self.migrate_only = False
+
         self.bind_address = '::'
-        self.bind_remote_ports = [80, 443]
-        self.bind_local_ports = [8080, 8082, 8083, 8443]
+        self.bind_remote_ports = [8080, 8443]
+        self.bind_local_ports = [8083]
 
         self.db_type = 'sqlite'
 
@@ -46,16 +46,10 @@ class SettingsClass(object, metaclass=Singleton):
         # and resetted by session_management sched
         self.failed_login_attempts = {}
 
-        self.local_hosts = ['127.0.0.1', 'localhost']
-
         self.onionservice = None
 
-        # Default request time uniform value
-        self.side_channels_guard = 150
-
         # SOCKS default
-        self.socks_host = "127.0.0.1"
-        self.socks_port = 9050
+        self.socks_port = 9999
 
         self.rsa_key_bits = 4096
         self.csr_sign_bits = 512
@@ -64,13 +58,7 @@ class SettingsClass(object, metaclass=Singleton):
         self.notification_limit = 30
         self.jobs_operation_limit = 20
 
-        self.user = getpass.getuser()
-
-        self.uid = os.getuid()
-        self.gid = os.getgid()
-
         self.devel_mode = False
-        self.disable_csp = False
 
         # Number of failed login enough to generate an alarm
         self.failed_login_alarm = 5
@@ -84,9 +72,6 @@ class SettingsClass(object, metaclass=Singleton):
         self.log_file_size = 1000000  # 1MB
         self.num_log_files = self.log_size / self.log_file_size
 
-        self.AES_file_regexp = r'(.*)\.aes'
-        self.AES_keyfile_prefix = "aeskey-"
-
         self.exceptions_email_hourly_limit = 20
 
         self.enable_input_length_checks = True
@@ -99,11 +84,12 @@ class SettingsClass(object, metaclass=Singleton):
         self.enable_api_cache = True
 
     def eval_paths(self):
-        self.pidfile_path = os.path.join(self.working_path, 'globaleaks.pid')
+        self.pidfile_path = os.path.join(self.ramdisk_path, 'globaleaks.pid')
 
         self.files_path = os.path.abspath(os.path.join(self.working_path, 'files'))
-        self.scripts_path = os.path.abspath(os.path.join(self.working_path, 'scripts'))
         self.attachments_path = os.path.abspath(os.path.join(self.working_path, 'attachments'))
+        self.tor_path = os.path.abspath(os.path.join(self.working_path, 'tor'))
+        self.tor_control = os.path.abspath(os.path.join(self.tor_path, 'tor_control'))
         self.tmp_path = os.path.abspath(os.path.join(self.working_path, 'tmp'))
 
         self.db_file_path = os.path.abspath(os.path.join(self.working_path, 'globaleaks.db'))
@@ -134,20 +120,14 @@ class SettingsClass(object, metaclass=Singleton):
         self.devel_mode = True
         self.rsa_key_bits = 1024
         self.acme_directory_url = 'https://acme-staging-v02.api.letsencrypt.org/directory'
+        self.bind_local_ports = [8080, 8082, 8083, 8443]
         self.bind_remote_ports = []
         self.working_path = os.path.join(self.src_path, 'workingdir')
 
     def load_cmdline_options(self, options):
         self.nodaemon = options.nodaemon
-        self.disable_csp = options.disable_csp
         self.bind_address = options.ip
-        self.socks_host = options.socks_host
-        self.socks_port = options.socks_port
-
-        if options.user:
-            self.user = options.user
-            self.uid = pwd.getpwnam(options.user).pw_uid
-            self.gid = grp.getgrnam(options.user).gr_gid
+        self.migrate_only = options.migrate_only
 
         if options.devel_mode:
             self.set_devel_mode()

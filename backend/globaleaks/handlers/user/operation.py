@@ -28,17 +28,15 @@ def change_password(session, tid, user_session, password, old_password):
     user = db_get_user(session, tid, user_session.user_id)
 
     if not user.password_change_needed:
-        if not GCE.check_password(user.hash_alg,
-                                  old_password,
+        if not GCE.check_password(old_password,
                                   user.salt,
-                                  user.password):
+                                  user.hash):
            raise errors.InvalidOldPassword
 
     config = models.config.ConfigFactory(session, tid)
 
     # Regenerate the password hash only if different from the best choice on the platform
-    if user.hash_alg != 'ARGON2':
-        user.hash_alg = 'ARGON2'
+    if len(user.hash) != 44:
         user.salt = GCE.generate_salt()
 
     if not check_password_strength(password):
@@ -46,10 +44,10 @@ def change_password(session, tid, user_session, password, old_password):
 
     # Check that the new password is different form the current password
     password_hash = GCE.hash_password(password, user.salt)
-    if user.password == password_hash:
+    if user.hash == password_hash:
         raise errors.PasswordReuseError
 
-    user.password = password_hash
+    user.hash = password_hash
     user.password_change_date = datetime_now()
     user.password_change_needed = False
 
@@ -86,10 +84,11 @@ def change_password(session, tid, user_session, password, old_password):
 
 
 @transact
-def get_users_names(session, tid, user_id):
+def get_users_names(session, tid):
     ret = {}
 
-    for user_id, user_name in session.query(models.User.id, models.User.name).filter(models.User.tid == tid):
+    for user_id, user_name in session.query(models.User.id, models.User.name) \
+                                     .filter(models.User.tid == tid):
         ret[user_id] = user_name
 
     return ret
@@ -117,7 +116,7 @@ def get_recovery_key(session, tid, user_id, user_cc):
 
 
 @transact
-def enable_2fa(session, tid, user_id, secret, token):
+def enable_2fa(session, tid, user_id, obj_id, secret, token):
     """
     Transact for the first step of 2fa enrollment (completion)
 
@@ -127,9 +126,8 @@ def enable_2fa(session, tid, user_id, secret, token):
     :param secret: A two factor secret
     :param token: The current two factor token
     """
-    user = db_get_user(session, tid, user_id)
+    user = db_get_user(session, tid, obj_id)
 
-    # RFC 6238: step size 30 sec; valid_window = 1; total size of the window: 1.30 sec
     try:
         State.totp_verify(secret, token)
     except Exception:
@@ -137,9 +135,27 @@ def enable_2fa(session, tid, user_id, secret, token):
 
     user.two_factor_secret = secret
 
+    db_log(session, tid=tid, type='enable_2fa', user_id=user_id, object_id=obj_id)
+
 
 @transact
-def disable_2fa(session, tid, user_id):
+def disable_2fa(session, tid, user_id, obj_id):
+    """
+    Transaction for disabling the two factor authentication
+
+    :param session:
+    :param tid:
+    :param user_id:
+    """
+    user = db_get_user(session, tid, obj_id)
+
+    user.two_factor_secret = ''
+
+    db_log(session, tid=tid, type='disable_2fa', user_id=user_id, object_id=obj_id)
+
+
+@transact
+def accepted_privacy_policy(session, tid, user_id):
     """
     Transaction for disabling the two factor authentication
 
@@ -148,8 +164,7 @@ def disable_2fa(session, tid, user_id):
     :param user_id:
     """
     user = db_get_user(session, tid, user_id)
-
-    user.two_factor_secret = ''
+    user.accepted_privacy_policy = datetime_now()
 
 
 class UserOperationHandler(OperationHandler):
@@ -167,8 +182,7 @@ class UserOperationHandler(OperationHandler):
                                req_args['current'])
 
     def get_users_names(self, req_args, *args, **kwargs):
-        return get_users_names(self.session.user_tid,
-                               self.session.user_id)
+        return get_users_names(self.session.user_tid)
 
     def get_recovery_key(self, req_args, *args, **kwargs):
         return get_recovery_key(self.session.user_tid,
@@ -178,12 +192,18 @@ class UserOperationHandler(OperationHandler):
     def enable_2fa(self, req_args, *args, **kwargs):
         return enable_2fa(self.session.user_tid,
                           self.session.user_id,
+                          self.session.user_id,
                           req_args['secret'],
                           req_args['token'])
 
     def disable_2fa(self, req_args, *args, **kwargs):
         return disable_2fa(self.session.user_tid,
+                           self.session.user_id,
                            self.session.user_id)
+
+    def accepted_privacy_policy(self, req_args, *args, **kwargs):
+        return accepted_privacy_policy(self.session.user_tid,
+                                       self.session.user_id)
 
     def operation_descriptors(self):
         return {
@@ -191,5 +211,6 @@ class UserOperationHandler(OperationHandler):
             'get_users_names': UserOperationHandler.get_users_names,
             'get_recovery_key': UserOperationHandler.get_recovery_key,
             'enable_2fa': UserOperationHandler.enable_2fa,
-            'disable_2fa': UserOperationHandler.disable_2fa
+            'disable_2fa': UserOperationHandler.disable_2fa,
+            'accepted_privacy_policy': UserOperationHandler.accepted_privacy_policy
         }

@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
-
+import ipaddress
 import re
 
+from cryptography import x509
+from cryptography.x509.oid import NameOID
+from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import ec, rsa
 from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives import hashes, serialization
 
 from OpenSSL import SSL
 from OpenSSL._util import lib as _lib, ffi as _ffi
@@ -13,6 +16,7 @@ from OpenSSL.crypto import load_certificate, load_privatekey, FILETYPE_PEM, \
 
 from twisted.internet import ssl
 
+from globaleaks.utils.utility import datetime_never, datetime_now
 from globaleaks.utils.log import log
 
 
@@ -20,6 +24,7 @@ from globaleaks.utils.log import log
 SSL.OP_SINGLE_ECDH_USE = 0x00080000
 SSL.OP_NO_RENEGOTIATION = 0x40000000
 SSL.OP_PRIORITIZE_CHACHA = 0x00200000
+SSL.OP_CLEANSE_PLAINTEXT = 0x00000002
 
 TLS_CIPHER_LIST = b'TLS13-AES-256-GCM-SHA384:' \
                   b'TLS13-CHACHA20-POLY1305-SHA256:' \
@@ -73,6 +78,47 @@ def gen_x509_csr_pem(key_pair, csr_fields, csr_sign_bits):
     return pem_csr
 
 
+def gen_selfsigned_certificate(hostname="127.0.0.1", ip="127.0.0.1"):
+    """Generates self signed certificate for localhost and 127.0.0.1."""
+    key = ec.generate_private_key(ec.SECP384R1(), default_backend())
+
+    name = x509.Name([
+        x509.NameAttribute(NameOID.COMMON_NAME, hostname)
+    ])
+
+    alt_names = [x509.DNSName(hostname)]
+
+    alt_names.append(x509.DNSName(ip))
+    alt_names.append(x509.IPAddress(ipaddress.ip_address(ip)))
+
+    san = x509.SubjectAlternativeName(alt_names)
+
+    # path_len=0 means this cert can only sign itself, not other certs.
+    basic_contraints = x509.BasicConstraints(ca=True, path_length=0)
+
+    cert = (
+        x509.CertificateBuilder()
+        .subject_name(name)
+        .issuer_name(name)
+        .public_key(key.public_key())
+        .serial_number(x509.random_serial_number())
+        .not_valid_before(datetime_now())
+        .not_valid_after(datetime_never())
+        .add_extension(basic_contraints, False)
+        .add_extension(san, False)
+        .sign(key, hashes.SHA256(), default_backend())
+    )
+
+    cert_pem = cert.public_bytes(encoding=serialization.Encoding.PEM)
+
+    key_pem = key.private_bytes(
+        encoding=serialization.Encoding.PEM,
+        format=serialization.PrivateFormat.TraditionalOpenSSL,
+        encryption_algorithm=serialization.NoEncryption(),
+    )
+
+    return key_pem, cert_pem
+
 def gen_x509_csr(key_pair, csr_fields, csr_sign_bits):
     """
     gen_x509_csr creates a certificate signature request by applying the passed
@@ -105,7 +151,8 @@ def gen_x509_csr(key_pair, csr_fields, csr_sign_bits):
     subj = req.get_subject()
 
     for field, value in csr_fields.items():
-        setattr(subj, field, value)
+        if value:
+            setattr(subj, field, value)
 
     prv_key = load_privatekey(SSL.FILETYPE_PEM, key_pair)
 
@@ -158,7 +205,7 @@ def new_tls_server_context():
                     SSL.OP_NO_RENEGOTIATION)
 
     ctx.set_mode(SSL.MODE_RELEASE_BUFFERS)
-    ctx.set_session_cache_mode(SSL.SESS_CACHE_OFF)
+    ctx.set_session_cache_mode(SSL.SESS_CACHE_SERVER)
 
     ctx.set_cipher_list(TLS_CIPHER_LIST)
 
@@ -174,7 +221,8 @@ def new_tls_client_context():
                     SSL.OP_NO_TLSv1_1 |
                     SSL.OP_SINGLE_ECDH_USE |
                     SSL.OP_NO_COMPRESSION |
-                    SSL.OP_NO_RENEGOTIATION)
+                    SSL.OP_NO_RENEGOTIATION |
+                    SSL.OP_CLEANSE_PLAINTEXT)
 
     ctx.set_mode(SSL.MODE_RELEASE_BUFFERS)
     ctx.set_session_cache_mode(SSL.SESS_CACHE_OFF)
@@ -216,10 +264,11 @@ class TLSServerContextFactory(ssl.ContextFactory):
         key = load_privatekey(FILETYPE_PEM, key)
         self.ctx.use_privatekey(key)
 
-        # Configure ECDH with CURVE NID_secp384r1
-        ecdh = _lib.EC_KEY_new_by_curve_name(715)  # pylint: disable=no-member
-        ecdh = _ffi.gc(ecdh, _lib.EC_KEY_free)  # pylint: disable=no-member
-        _lib.SSL_CTX_set_tmp_ecdh(self.ctx._context, ecdh)  # pylint: disable=no-member
+        try:
+            _lib.SSL_CTX_set_ecdh_auto(self.ctx._context, 1)  # pylint: disable=no-member
+        except AttributeError:
+            # The function is present and should be run only in older version of OpenSSL
+            pass
 
     def getContext(self):
         return self.ctx
@@ -241,7 +290,7 @@ class CtxValidator(object):
     def _validate(self, cfg, ctx, check_expiration):
         raise NotImplementedError()
 
-    def validate(self, cfg, must_be_disabled=True, check_expiration=True):
+    def validate(self, cfg, check_expiration=True):
         """
         Checks the validity of the passed config for usage in an OpenSSLContext
 
@@ -252,9 +301,6 @@ class CtxValidator(object):
         :rtype: A tuple of (Bool, Exception) where True, None signifies success
 
         """
-        if must_be_disabled and cfg['https_enabled']:
-            raise ValidationException('HTTPS must not be enabled')
-
         ctx = new_tls_server_context()
 
         try:

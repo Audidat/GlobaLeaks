@@ -1,6 +1,6 @@
 <div class="modal-header">
   <div class="modal-title" data-translate>Are you sure?</div>
-  <button type="button" class="close" data-ng-click="cancel()">
+  <button type="button" class="close" data-ng-click="cancel()" aria-label="{{'Close' | translate}}">
     <i class="fa-solid fa-times"></i>
   </button>
 </div>
@@ -10,7 +10,7 @@
     <input class="form-control inputelem"
            type="text"
            readonly="readonly"
-           data-ng-model="args.expiration_date"
+           data-ng-model="args.date"
            data-ng-required="true"
            data-ng-click="args.opened = true"
            uib-datepicker-popup

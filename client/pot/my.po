@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2021-2022\n"
-"Language-Team: Burmese (http://www.transifex.com/otf/globaleaks/language/my/)\n"
+"Language-Team: Burmese (http://app.transifex.com/otf/globaleaks/language/my/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: my\n"
@@ -18,20 +18,14 @@ msgstr ""
 msgid "Log in"
 msgstr "လော့အင်ဝင်ရန်"
 
-msgid "Main configuration"
-msgstr "အဓိက အစိတ်အပိုင်းများဖွဲ့စည်းပုံ"
-
-msgid "Theme customization"
-msgstr "ဒီဇိုင်းပုံစံပြား ဖန်တီးပြုပြင်ခြင်း"
-
 msgid "Languages"
 msgstr "ဘာသာစကားများ"
 
 msgid "Text customization"
 msgstr "စာသား ဖန်တီးပြုပြင်ခြင်း"
 
-msgid "Advanced settings"
-msgstr "အဆင့်မြင့်သော ဆက်တင်များ"
+msgid "Advanced"
+msgstr "အဆင့်မြင့်"
 
 msgid "Question templates"
 msgstr "မေးခွန်း ပုံစံပြားများ"
@@ -51,8 +45,8 @@ msgstr "အပြောင်းအလဲစာရင်း"
 msgid "License"
 msgstr "လိုင်စင်"
 
-msgid "Notification templates"
-msgstr "အသိပေးချက် ပုံစံပြားများ"
+msgid "Templates"
+msgstr "ပုံစံပြားများ"
 
 msgid "Delete"
 msgstr "ဖျက်မည်"
@@ -63,8 +57,8 @@ msgstr "မူမမှန်မှုများ"
 msgid "Preferences"
 msgstr "အလေးပေး ရွေးချယ်မှု"
 
-msgid "Notification settings"
-msgstr "အသိပေးချက် ဆက်တင်များ"
+msgid "Notifications"
+msgstr "အသိပေးချက်များ"
 
 msgid "file unavailable"
 msgstr "ဖိုင် မရရှိနိုင်ပါ"
@@ -84,25 +78,16 @@ msgstr "ဖိုင်များ"
 msgid "Comments"
 msgstr "မှတ်ချက်များ"
 
-msgid "Messages"
-msgstr "မက်ဆေ့ချ်များ"
-
 msgid "Details"
 msgstr "အသေးစိတ်များ"
 
 msgid "Platform wizard"
 msgstr "ပလက်ဖောင်း ဝိဇ္ဇာ"
 
-msgid "CREDIT CARD"
-msgstr "အကြွေးဝယ်ကတ်"
-
-msgid "YOUR NAME"
-msgstr "သင့်အမည်"
-
 msgid "Label the report"
 msgstr "အစီရင်ခံစာကို အညွှန်းတပ်ပါ"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "သက်တမ်းကုန်ဆုံးရက် ရွှေ့ဆိုင်းပါ"
 
 msgid "Select all"
@@ -114,8 +99,8 @@ msgstr "အားလုံးကို မရွေးချယ်ပါ"
 msgid "Refresh"
 msgstr "ရီဖရက်ရှ်လုပ်ရန်"
 
-msgid "Context"
-msgstr "အကြောင်းအရာ"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "အစမ်းကြည့်ရှုခြင်း"
@@ -219,9 +204,6 @@ msgstr "ဝင်ရောက်ခွင့် တောင်းဆိုပ�
 msgid "Request access to the whistleblower's identity"
 msgstr "သတင်းပေးသူ၏ ကိုယ်ပိုင်အမှတ်သင်္ကေတကို ဝင်ရောက်ကြည့်ရှုခွင့် တောင်းဆိုသည်"
 
-msgid "Please write a motivation"
-msgstr "ကျေးဇူးပြုပြီး လှုံ့ဆော်မှုတစ်ခု ရေးပေးပါ"
-
 msgid "Reply to the request"
 msgstr "တောင်းဆိုမှုကို အကြောင်းပြန်ပါ"
 
@@ -248,9 +230,6 @@ msgstr "သတင်းပေးသူ၏ ကိုယ်ပိုင်အမ�
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "သတင်းပေးသူ၏ ကိုယ်ပိုင်အမှတ်သင်္ကေတကို အသုံးပြုရန် ခွင့်ပြုမည်"
-
-msgid "Templates"
-msgstr "ပုံစံပြားများ"
 
 msgid "URL redirects"
 msgstr "URL ဦးတည်ရာပြောင်းမှုများ"
@@ -291,8 +270,8 @@ msgstr "လက်ခံနိုင်"
 msgid "Strong"
 msgstr "အားကောင်း"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "အကြောင်းအရာများ ရွေးချယ်ရန်အတွက် အသုံးပြုသူမြင်ရမည့်ပုံစံ ထိပ်ပိုင်းတွင် ပြသသည့် စာသား"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "အီးမေးလ် အသိပေးချက်များကို အသံတိတ်မည်"
@@ -355,9 +334,6 @@ msgstr "အကြီးဆုံး ဖိုင် အရွယ်အစား-
 
 msgid "Scheduled jobs"
 msgstr "စီစဉ်ထားသော အလုပ်များ"
-
-msgid "Sites management"
-msgstr "ဝက်ဘ်ဆိုက် စီမံခန့်ခွဲမှု"
 
 msgid "Regenerate"
 msgstr "ပြန်လည်ထုတ်လုပ်မည်"
@@ -457,20 +433,110 @@ msgstr "clipboard ထဲသို့ ကူးရန်"
 msgid "Logout"
 msgstr "အကောင့်ထွက်ရန်"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr ""
 
+msgid "Transfer"
+msgstr "လွှဲပြောင်းရန်"
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "ဝှက်မည်"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "ကိုယ်ရေးကိုယ်တာမူဝါဒ"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr "အသံ"
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr "အမည်မသိနိုင်ခြင်း"
+
+msgid "Anonymous"
+msgstr "အမည်မဖေါ်"
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr "စက်ပစ္စည်းများ"
+
+msgid "Computer"
+msgstr "ကြန္ပ်ဴတာ"
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "အစီရင်ခံစာ တင်ပါ"
 
-msgid "Select the context of your report:"
-msgstr "သင့်အစီရင်ခံစာ၏ အကြောင်းအရာကို ရွေးချယ်ပါ - "
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "ဆက်မလုပ်မီ ကျေးဇူးပြု၍ စကားဝှက်အသစ် သတ်မှတ်ပါ။ "
@@ -480,102 +546,6 @@ msgstr "ဆက်မလုပ်မီ ကျေးဇူးပြု၍ အဆ�
 
 msgid "Enable"
 msgstr "ဖွင့်မည်"
-
-msgid "Disable submissions"
-msgstr "တင်သွင်းမှုများကို ပိတ်ပါ"
-
-msgid "Enable encryption"
-msgstr "ကုဒ်ဖြင့်ပြောင်းလဲမှု ဖွင့်ပါ"
-
-msgid "Enable administrators to change user passwords"
-msgstr "အုပ်ချုပ်ရေးမှူးများအား အသုံးပြုသူ စကားဝှက်များကို ပြောင်းလဲခွင့်ပြုပါ"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "အုပ်ချုပ်ရေးမှူးများအား အသုံးပြုသူ စကားဝှက်များကို ပြောင်းလဲခွင့်ပြုထားသည် - "
-
-msgid "Enable multisite feature"
-msgstr "ဝက်ဘ်ဆိုက်မျိုးစုံ လုပ်ဆောင်ချက်ကို ဖွင့်ပါ"
-
-msgid "Enable simplified login"
-msgstr "ရိုးရှင်းသော အကောင့်ဝင်မှုကို ဖွင့်ပါ"
-
-msgid "Enable search engines indexing"
-msgstr "ရှာဖွေရေးအင်ဂျင် အညွှန်းစီစဉ်ခြင်းကို ဖွင့်ပါ"
-
-msgid "Default questionnaire"
-msgstr "နဂိုမူလ မေးခွန်းလွှာ"
-
-msgid "Show contexts in alphabetical order"
-msgstr "အကြောင်းအရာများကို အက္ခရာစဉ်အတိုင်း ပြသပါ"
-
-msgid "Size limit for file attachments"
-msgstr "ပူးတွဲဖိုင်များအတွက် အရွယ်အစား ကန့်သတ်ချက်"
-
-msgid "megabytes"
-msgstr "မီဂါဘိုက်"
-
-msgid "Require two factor authentication"
-msgstr "အဆင့်နှစ်ဆင့်ဖြင့် စစ်မှန်ကြောင်းသက်သေပြခြင်းကို လိုအပ်သည်"
-
-msgid "Password change interval"
-msgstr "စကားဝှက် အပြောင်းအလဲ ကြားကာလ"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "လုံခြုံရေးအတွက် စကားဝှက် အပြောင်းအလဲများကို ပုံမှန် ကြားကာလများတွင် လိုအပ်သည်။"
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "ဤလုပ်ဆောင်ချက်ကို ပိတ်ရန် တန်ဖိုးကို 0 သတ်မှတ်ပါ။"
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "သုံးစွဲသူများအား မဖတ်ရသေးသော အစီရင်ခံစာများကို အကြောင်းမကြားမီ ရက်အရေအတွက်"
-
-msgid "Disable the privacy panel"
-msgstr "ကိုယ်ရေး အချက်အလက် မျက်နှာပြင်ကို ပိတ်ပါ"
-
-msgid "Enable custom privacy panel"
-msgstr "စိတ်ကြိုက် ကိုယ်ရေး အချက်အလက် မျက်နှာပြင်ကို ဖွင့်ပါ"
-
-msgid "Custom privacy panel"
-msgstr "စိတ်ကြိုက် ကိုယ်ရေး အချက်အလက် မျက်နှာပြင်"
-
-msgid "Enable custodian user role"
-msgstr "အုပ်ထိန်းသူအဖြစ် အသုံးပြုသူ အခန်းကဏ္ဍကို  ဖွင့်ပါ"
-
-msgid "Enable scoring system"
-msgstr "အမှတ်ပေးစနစ်ကို ဖွင့်ပါ"
-
-msgid "Logging level"
-msgstr "စာရင်းမှတ်ခြင်း အဆင့်"
-
-msgid "Log accesses of internal users"
-msgstr "အတွင်းပိုင်း အသုံးပြုသူများ၏ ဝင်ရောက်ခွင့် မှတ်တမ်း"
-
-msgid "Notify administrators of software problems"
-msgstr "ဆော့ဝဲ ပြဿနာများအတွက် အုပ်ချုပ်ရေးမှူးများကို အကြောင်းကြားပါ"
-
-msgid "Notify developers of software problems"
-msgstr "ဆော့ဝဲ ပြဿနာများအတွက် ဆော့ဝဲရေးသားသူများကို အကြောင်းကြားပါ"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "ဤလုပ်ဆောင်ချက်ကို ဖွင့်ထားခြင်းဖြင့် သင်သည် ပလက်ဖောင်း ဖွံ့ဖြိုးတိုးတက်ရေးနှင့် လုံခြုံရေးကို အထောက်အကူပြုပါမည်။"
-
-msgid "Save"
-msgstr "သိမ်းမည်"
-
-msgid "Reset reports"
-msgstr "အစီရင်ခံစာများ ပြန်လည်သတ်မှတ်မည်"
-
-msgid "Low"
-msgstr "နိမ့်"
-
-msgid "High"
-msgstr "မြင့်"
-
-msgid "percentage"
-msgstr "ရာခိုင်နှုန်း"
 
 msgid "Type"
 msgstr "အမျိုးအစား"
@@ -604,6 +574,9 @@ msgstr "ဖန်တီးသည့်နေ့စွဲ"
 msgid "Last access"
 msgstr "နောက်ဆုံး အသုံးပြုခြင်း"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "သတင်းပေးသူ၏ နောက်ဆုံး အသုံးပြုခြင်း"
 
@@ -622,68 +595,29 @@ msgstr "ဤအကွက်ကို မဖြစ်မနေဖြည့်စ�
 msgid "Edit"
 msgstr "တည်းဖြတ်မည်"
 
+msgid "Save"
+msgstr "သိမ်းမည်"
+
 msgid "Cancel"
 msgstr "ပယ်ဖျက်မည်"
+
+msgid "days"
+msgstr "ရက်များ"
+
+msgid "Disabled"
+msgstr "ပိတ်ထားသည်"
 
 msgid "Report statuses"
 msgstr "အစီရင်ခံစာ အခြေအနေများ"
 
-msgid "Logo"
-msgstr "လိုဂို"
-
-msgid "Project name"
-msgstr "စီမံကိန်း အမည်"
-
-msgid "Description"
-msgstr "ဖော်ပြချက်"
-
-msgid "Homepage title"
-msgstr "ပင်မစာမျက်နှာ ခေါင်းစဉ်"
-
-msgid "Presentation"
-msgstr "တင်ပြချက်"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "ဖြစ်နိုင်ခြေရှိသော သတင်းပေးသူများကို မေးရန် မေးခွန်း"
-
-msgid "Whistleblowing button"
-msgstr "သတင်းပေး ခလုတ်"
-
-msgid "Disclaimer"
-msgstr "မသက်ဆိုင်ကြောင်းရှင်းလင်းချက်"
-
-msgid "Footer"
-msgstr "အောက်ခြေ စာသား"
-
-msgid "Upload"
-msgstr "အပ်လုဒ်လုပ်မည်"
-
-msgid "Download"
-msgstr "ဒေါင်းလုဒ်လုပ်မည်"
-
-msgid "Language:"
-msgstr "ဘာသာစကား - "
-
-msgid "Add custom text"
-msgstr "စိတ်ကြိုက်စာသား ထည့်ရန်"
-
-msgid "Custom text"
-msgstr "စိတ်ကြိုက်စာသား"
-
-msgid "Original text"
-msgstr "မူရင်းစာသား"
-
-msgid "Original translation"
-msgstr "မူရင်း ဘာသာပြန်ဆိုချက်"
-
-msgid "Custom translation"
-msgstr "စိတ်ကြိုက် ဘာသာပြန်ဆိုချက်"
-
-msgid "Contexts"
-msgstr "အကြောင်းအရာများ"
+msgid "Channels"
+msgstr ""
 
 msgid "Hidden"
 msgstr "ဝှက်ထားသည်"
+
+msgid "Description"
+msgstr "ဖော်ပြချက်"
 
 msgid "Questionnaire"
 msgstr "မေးခွန်းလွှာ"
@@ -691,8 +625,11 @@ msgstr "မေးခွန်းလွှာ"
 msgid "Recipients"
 msgstr "လက်ခံသူများ"
 
-msgid "days"
-msgstr "ရက်များ"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "ဤလုပ်ဆောင်ချက်ကို ပိတ်ရန် တန်ဖိုးကို 0 သတ်မှတ်ပါ။"
 
 msgid "Show the questionnaire navigation interface"
 msgstr "မေးခွန်းလွှာ လမ်းညွှန်မျက်နှာပြင်ကို ပြသပါ"
@@ -709,24 +646,6 @@ msgstr "ရွေးချယ်နိုင်သော လက်ခံသူ �
 msgid "Show recipients in alphabetical order"
 msgstr "လက်ခံသူများကို အက္ခရာစဉ်အတိုင်း ပြသပါ"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "လက်ခံသူ အသေးစိတ်များကို အစီရင်ခံစာ၏ အခြေအနေပြ စာမျက်နှာတွင် ပြသပါ"
-
-msgid "Enable comments"
-msgstr "မှတ်ချက်များကို ဖွင့်ပါ"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "သတင်းပေးသူအား မှတ်ချက်များ ရေးသားခွင့်ပြုပါ"
-
-msgid "Enable private messages"
-msgstr "သီးသန့် မက်ဆေ့ချ်များကို ဖွင့်ပါ"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "သတင်းပေးသူအား မက်ဆေ့များ ပို့ခွင့်ပြုပါ"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "သတင်းပေးသူအား အစီရင်ခံစာတွင် ပူးတွဲဖိုင်များ ထည့်ခွင့်ပြုပါ"
-
 msgid "Additional questionnaire"
 msgstr "အပိုဆောင်း မေးခွန်းလွှာ"
 
@@ -742,6 +661,9 @@ msgstr "တန်ဖိုး"
 msgid "Medium"
 msgstr "အလယ်အလတ်"
 
+msgid "High"
+msgstr "မြင့်"
+
 msgid "Software version:"
 msgstr "ဆော့ဝဲ ဗားရှင်း - "
 
@@ -756,6 +678,9 @@ msgstr "ခွင့်ပြုထားသော IP လိပ်စာမျ�
 
 msgid "Admin"
 msgstr "အုပ်ချုပ်ရေးမှူး"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "လက်ခံသူ"
@@ -836,9 +761,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "ကိုယ်တိုင် အစိတ်အပိုင်းများ ဖွဲ့စည်းသည့် ဝိဇ္ဇာသည် အခြား အသိအမှတ်ပြု အာဏာပိုင်ထံမှ HTTPS ကို သတ်မှတ်ခြင်းဖြင့် သင့်အား လမ်းညွှန်ပါမည်။"
-
-msgid "Disabled"
-msgstr "ပိတ်ထားသည်"
 
 msgid "Auto-renewal"
 msgstr "အော်တို သက်တမ်းတိုးခြင်း"
@@ -953,6 +875,12 @@ msgstr "အဖြေများစွာကို လက်ခံမည်"
 msgid "Template override"
 msgstr "ပုံစံပြား ပယ်ဖျက်ခြင်း"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "ဖုန်းနံပါတ်"
 
@@ -976,6 +904,9 @@ msgstr "ဗီဒီယို"
 
 msgid "Text shown upon negative answer"
 msgstr "ငြင်းပယ်သော အဖြေအတွက် ပြသသည့် စာသား"
+
+msgid "Low"
+msgstr "နိမ့်"
 
 msgid "Trigger conditions"
 msgstr "လှုံ့ဆော် အခြေအနေများ"
@@ -1007,20 +938,149 @@ msgstr "ပွားသည်"
 msgid "Steps"
 msgstr "အဆင့်များ"
 
-msgid "Site settings"
-msgstr "ဝက်ဘ်ဆိုက် ဆက်တင်များ"
+msgid "Logo"
+msgstr "လိုဂို"
+
+msgid "Project name"
+msgstr "စီမံကိန်း အမည်"
+
+msgid "Homepage title"
+msgstr "ပင်မစာမျက်နှာ ခေါင်းစဉ်"
+
+msgid "Presentation"
+msgstr "တင်ပြချက်"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "ဖြစ်နိုင်ခြေရှိသော သတင်းပေးသူများကို မေးရန် မေးခွန်း"
+
+msgid "Whistleblowing button"
+msgstr "သတင်းပေး ခလုတ်"
+
+msgid "Disclaimer"
+msgstr "မသက်ဆိုင်ကြောင်းရှင်းလင်းချက်"
+
+msgid "Footer"
+msgstr "အောက်ခြေ စာသား"
+
+msgid "Upload"
+msgstr "အပ်လုဒ်လုပ်မည်"
+
+msgid "Download"
+msgstr "ဒေါင်းလုဒ်လုပ်မည်"
+
+msgid "Language:"
+msgstr "ဘာသာစကား - "
+
+msgid "Add custom text"
+msgstr "စိတ်ကြိုက်စာသား ထည့်ရန်"
+
+msgid "Custom text"
+msgstr "စိတ်ကြိုက်စာသား"
+
+msgid "Original text"
+msgstr "မူရင်းစာသား"
+
+msgid "Original translation"
+msgstr "မူရင်း ဘာသာပြန်ဆိုချက်"
+
+msgid "Custom translation"
+msgstr "စိတ်ကြိုက် ဘာသာပြန်ဆိုချက်"
+
+msgid "Disable submissions"
+msgstr "တင်သွင်းမှုများကို ပိတ်ပါ"
+
+msgid "Enable encryption"
+msgstr "ကုဒ်ဖြင့်ပြောင်းလဲမှု ဖွင့်ပါ"
+
+msgid "Enable administrators to change user passwords"
+msgstr "အုပ်ချုပ်ရေးမှူးများအား အသုံးပြုသူ စကားဝှက်များကို ပြောင်းလဲခွင့်ပြုပါ"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "အုပ်ချုပ်ရေးမှူးများအား အသုံးပြုသူ စကားဝှက်များကို ပြောင်းလဲခွင့်ပြုထားသည် - "
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "ရိုးရှင်းသော အကောင့်ဝင်မှုကို ဖွင့်ပါ"
+
+msgid "Enable search engines indexing"
+msgstr "ရှာဖွေရေးအင်ဂျင် အညွှန်းစီစဉ်ခြင်းကို ဖွင့်ပါ"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "ပူးတွဲဖိုင်များအတွက် အရွယ်အစား ကန့်သတ်ချက်"
+
+msgid "megabytes"
+msgstr "မီဂါဘိုက်"
+
+msgid "Require two factor authentication"
+msgstr "အဆင့်နှစ်ဆင့်ဖြင့် စစ်မှန်ကြောင်းသက်သေပြခြင်းကို လိုအပ်သည်"
+
+msgid "Password change interval"
+msgstr "စကားဝှက် အပြောင်းအလဲ ကြားကာလ"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "လုံခြုံရေးအတွက် စကားဝှက် အပြောင်းအလဲများကို ပုံမှန် ကြားကာလများတွင် လိုအပ်သည်။"
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "သုံးစွဲသူများအား မဖတ်ရသေးသော အစီရင်ခံစာများကို အကြောင်းမကြားမီ ရက်အရေအတွက်"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "ကိုယ်ရေး အချက်အလက် မျက်နှာပြင်ကို ပိတ်ပါ"
+
+msgid "Enable custom privacy panel"
+msgstr "စိတ်ကြိုက် ကိုယ်ရေး အချက်အလက် မျက်နှာပြင်ကို ဖွင့်ပါ"
+
+msgid "Custom privacy panel"
+msgstr "စိတ်ကြိုက် ကိုယ်ရေး အချက်အလက် မျက်နှာပြင်"
+
+msgid "Enable scoring system"
+msgstr "အမှတ်ပေးစနစ်ကို ဖွင့်ပါ"
+
+msgid "Logging level"
+msgstr "စာရင်းမှတ်ခြင်း အဆင့်"
+
+msgid "percentage"
+msgstr "ရာခိုင်နှုန်း"
+
+msgid "Log accesses of internal users"
+msgstr "အတွင်းပိုင်း အသုံးပြုသူများ၏ ဝင်ရောက်ခွင့် မှတ်တမ်း"
+
+msgid "Notify administrators of software problems"
+msgstr "ဆော့ဝဲ ပြဿနာများအတွက် အုပ်ချုပ်ရေးမှူးများကို အကြောင်းကြားပါ"
+
+msgid "Notify developers of software problems"
+msgstr "ဆော့ဝဲ ပြဿနာများအတွက် ဆော့ဝဲရေးသားသူများကို အကြောင်းကြားပါ"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "ဤလုပ်ဆောင်ချက်ကို ဖွင့်ထားခြင်းဖြင့် သင်သည် ပလက်ဖောင်း ဖွံ့ဖြိုးတိုးတက်ရေးနှင့် လုံခြုံရေးကို အထောက်အကူပြုပါမည်။"
+
+msgid "Reset reports"
+msgstr "အစီရင်ခံစာများ ပြန်လည်သတ်မှတ်မည်"
+
+msgid "Settings"
+msgstr "ဆက်တင်များ"
 
 msgid "Case management"
 msgstr "ကိစ္စရပ် စီမံခန့်ခွဲမှု"
 
-msgid "Network settings"
-msgstr "ကွန်ရက် ဆက်တင်များ"
+msgid "Network"
+msgstr "ကွန်ယက်"
 
 msgid "Sites"
 msgstr "ဝက်ဘ်ဆိုက်များ"
 
-msgid "Mode:"
-msgstr "မုဒ် - "
+msgid "Profile"
+msgstr "မွတ္တမ္း"
 
 msgid "Configure"
 msgstr "ချိန်ညှိမည်"
@@ -1028,14 +1088,17 @@ msgstr "ချိန်ညှိမည်"
 msgid "Subdomain"
 msgstr "ဒိုမိန်းခွဲ"
 
+msgid "Mode:"
+msgstr "မုဒ် - "
+
 msgid "Creation date:"
 msgstr "ဖန်တီးသည့်နေ့စွဲ -"
 
-msgid "Root domain used for secondary sites"
-msgstr "ဒိုမိန်းခွဲများအတွက် အသုံးပြုထားသော မူလ ဒိုမိန်း"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "ပထမ ဝဘ်ဆိုက်ကို အုပ်ချုပ်မှုအတွက်သာ အသုံးပြုပါ"
+
+msgid "Root domain used for secondary sites"
+msgstr "ဒိုမိန်းခွဲများအတွက် အသုံးပြုထားသော မူလ ဒိုမိန်း"
 
 msgid "Allow users to sign up"
 msgstr "အသုံးပြုသူများကို အကောင့်ဖွင့်ခွင့်ပြုပါ"
@@ -1056,10 +1119,10 @@ msgid "Set password"
 msgstr "စကားဝှက် သတ်မှတ်ပါ"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "ရွေးချယ်ထားသော စကားဝှက်သည် အလွန်အားနည်းနေသည်။ တရားဝင် စကားဝှက်သည် အနည်းဆုံး စာလုံးရေ 10 လုံးရှိသင့်ပြီး အနည်းဆုံး စာလုံးအသေး၊ စာလုံးအကြီး၊ နံပါတ်နှင့် အထူးအက္ခရာများ ပါဝင်သော အက္ခရာအမျိုးမျိုး ပါဝင်သင့်သည်။"
+msgstr "ရွေးချယ်ထားသော စကားဝှက်သည် အလွန်အားနည်းနေသည်။ တရားဝင် စကားဝှက်သည် အနည်းဆုံး စာလုံးရေ 12 လုံးရှိသင့်ပြီး အနည်းဆုံး စာလုံးအသေး၊ စာလုံးအကြီး၊ နံပါတ်နှင့် အထူးအက္ခရာများ ပါဝင်သော အက္ခရာအမျိုးမျိုး ပါဝင်သင့်သည်။"
 
 msgid "Force password change"
 msgstr "စကားဝှက်ကို အတင်းအကျပ် ပြောင်းလဲပါ"
@@ -1094,11 +1157,23 @@ msgstr "အတင်းအကျပ် ရွေးချယ်ထားကြ�
 msgid "Allow the recipient to delete reports"
 msgstr "လက်ခံသူအား အစီရင်ခံစာများကို ဖျက်ခွင့်ပြုပါ"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "လက်ခံသူအား အစီရင်ခံစာ သက်တမ်းကုန်ဆုံးရက်ကို ရွှေ့ဆိုင်းခွင့်ပြုပါ"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "အသုံးပြုသူအား အောက်ပါလုပ်ဆောင်ချက်များကို ထိန်းချုပ် အသုံးပြုခွင့်ပေးပါ။"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "တောင်းဆိုသည့် နေ့စွဲ"
@@ -1136,14 +1211,20 @@ msgstr "ကျေးဇူးပြု၍ သင့်အကောင့်က�
 msgid "Now type your password, then click 'Log in':"
 msgstr "ယခု သင့်စကားဝှက်ကို ရိုက်၍ 'လော့အင်ဝင်ရန်' ကို နှိပ်ပါ -"
 
-msgid "Text shown after the user has selected the option."
-msgstr "အသုံးပြုသူ ရွေးချယ်စရာကို ရွေးချယ်ပြီးနောက် ပြသသည့် စာသား။"
-
 msgid "Confirm"
 msgstr "အတည်ပြုမည်"
 
+msgid "Text shown after the user has selected the option."
+msgstr "အသုံးပြုသူ ရွေးချယ်စရာကို ရွေးချယ်ပြီးနောက် ပြသသည့် စာသား။"
+
 msgid "Assign score points"
 msgstr "ရမှတ်များကို သတ်မှတ်ပါ"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "အခြေအနေ -"
 
 msgid "Are you sure?"
 msgstr "သေချာပါသလား။"
@@ -1168,8 +1249,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "၎င်းကို ကူးယူ၍ လုံခြုံသော နေရာတွင် သိမ်းထားပါ။ သင့်စကားဝှက် ပျောက်သွားလျှင် အချက်အလက် ဆုံးရှုံးမှု မရှိဘဲ သင့်အကောင့်ကို အသုံးပြုခွင့် ပြန်ရရန်အတွက် ၎င်းကို လိုအပ်ပါမည်။"
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "မိတ္တူအတွက် အမည်တစ်ခု ရိုက်ထည့်ပါ"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr ""
@@ -1191,14 +1287,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "ပလက်ဖောင်းကို HTTPS ချိတ်ဆက်မှုများအတွက် ချိန်ညှိမထားသဖြင့် စမ်းသပ်ရန်အတွက်သာ အသုံးပြုသင့်သည်။"
 
-msgid "Please write a motivation for the reply"
-msgstr "ကျေးဇူးပြု၍ အကြောင်းပြန်မှုအတွက် လှုံ့ဆော်မှုတစ်ခု ရေးပါ။"
-
 msgid "Send"
 msgstr "ပို့မည်"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "အတည်ပြုခြင်းအားဖြင့် သင်သည် သက်တမ်းကုန်ဆုံးရက်ကို ရွှေ့ဆိုင်းပါမည် -"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "ဤပလက်ဖောင်းသည် နမူနာ ဖြစ်၍ အမှန်တကယ် တင်သွင်းမှုများအတွက် အသုံးမပြုပါနှင့်။"
@@ -1232,6 +1331,12 @@ msgstr "ရင်းမြစ်ကို Tor ကွန်ရက်မှတစ�
 
 msgid "The upload request exceeds the size limit"
 msgstr "အပ်လုဒ် တောင်းဆိုမှုသည် အရွယ်အစား ကန့်သတ်ချက်ထက် ကျော်လွန်နေသည်"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "လက်ရှိ စကားဝှက်"
@@ -1274,20 +1379,23 @@ msgstr "သင် အစီရင်ခံစာ တင်ပြီးပြီ�
 msgid "The receipt is either invalid or the report has expired."
 msgstr "လက်ခံဖြတ်ပိုင်းသည် မမှန်ကန်ပါ (သို့) သက်တမ်းကုန်ဆုံးသွားပါပြီ။ "
 
-msgid "Select a file or drag it here."
-msgstr "ဖိုင်တစ်ခုကို ရွေးချယ်ပါ (သို့) ၎င်းကို ဆွဲယူပါ။"
+msgid "Filename"
+msgstr "ဖိုင် အမည်"
 
 msgid "Size:"
 msgstr "အရွယ်အစား - "
 
-msgid "Uploading files…"
-msgstr "ဖိုင်များ အပ်လုဒ်လုပ်နေသည်…"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "အောင်မြင်စွာ အပ်လုဒ်လုပ်ပြီးပါပြီ။"
+msgid "Address"
+msgstr "လိပ်စာ"
 
-msgid "Estimated upload time:"
-msgstr "အပ်လုဒ်လုပ်ရန် ကြာချိန် ခန့်မှန်းချက် -"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr "အခွန် ကုဒ်"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "လက်ခံသူများက သင့်အား အပိုဆောင်း မေးခွန်းလွှာဖြည့်ရန် တောင်းဆိုထားသည်။"
@@ -1301,8 +1409,8 @@ msgstr "မှ -"
 msgid "To:"
 msgstr "သို့ - "
 
-msgid "Filename"
-msgstr "ဖိုင် အမည်"
+msgid "View"
+msgstr "ကြည့်ရှုန်"
 
 msgid "Upload date"
 msgstr "အပ်လုဒ်လုပ်သည့် နေ့စွဲ-"
@@ -1315,9 +1423,6 @@ msgstr "မေးခွန်းလွှာ အဖြေများ"
 
 msgid "Step"
 msgstr "အဆင့်"
-
-msgid "Status:"
-msgstr "အခြေအနေ -"
 
 msgid "Files attached by recipients"
 msgstr "လက်ခံသူများက တွဲကပ်သော ဖိုင်များ"
@@ -1344,9 +1449,6 @@ msgstr "သင်သည် ဆော့ဝဲ ဖွံ့ဖြိုးတိ�
 msgid "Join our chat:"
 msgstr "ကျွန်ုပ်တို့နှင့် စကားစမြည်ပြောရန် - "
 
-msgid "Follow the project on:"
-msgstr "စီမံကိန်းကို လိုက်ပါ - "
-
 msgid "An update is available:"
 msgstr "အပ်ဒိတ် ရရှိနိုင်သည် - "
 
@@ -1356,6 +1458,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "သင်၏ “အကောင့်ပြန်လည်ရယူရန် စကားဝှက်သော့” ကို ပြန်လည်ရယူပြီး လုံခြုံစွာသိမ်းဆည်းရန် “အလေးပေး ရွေးချယ်မှု” ကဏ္ဍကို ဝင်ရောက်ကြည့်ရှုဖို့ ကျွန်ုပ်တို့ အကြံပြုပါသည်။ အကယ်၍ သင့်စကားဝှက်ကို မေ့သွားပါက ပလက်ဖောင်းနှင့် သင်၏ အချက်အလက်များကို ပြန်လည်ရယူရန် ဤသော့ကို လိုအပ်သည်။"
+
+msgid "Select a file or drag it here."
+msgstr "ဖိုင်တစ်ခုကို ရွေးချယ်ပါ (သို့) ၎င်းကို ဆွဲယူပါ။"
 
 msgid "The provided recovery key is invalid."
 msgstr "ပေးထားသော ပြန်လည်ရယူရန် စကားဝှက်သော့သည် မမှန်ကန်ပါ။"
@@ -1388,6 +1493,9 @@ msgstr "တောင်းဆိုသည့် နေ့စွဲ"
 msgid "Show"
 msgstr "ပြသမည်"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "ဂုဏ်ယူပါသည်။"
 
@@ -1410,26 +1518,17 @@ msgstr "၂၄ နာရီအတွင်း သက်ဝင်မလုပ်�
 msgid "Sign up"
 msgstr "အကောင့်ဖွင့်ရန်"
 
-msgid "Site"
-msgstr "ဝက်ဘ်ဆိုက်"
-
-msgid "Confirmation"
-msgstr "အတည်ပြုရန်"
-
 msgid "Invalid confirmation"
 msgstr "အတည်ပြုချက် မမှန်ကန်ပါ"
 
 msgid "Invalid phone number"
 msgstr "မမှန်ကန်သော ဖုန်းနံပါတ်"
 
-msgid "Address"
-msgstr "လိပ်စာ"
+msgid "Site"
+msgstr "ဝက်ဘ်ဆိုက်"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr "အခွန် ကုဒ်"
+msgid "Confirmation"
+msgstr "အတည်ပြုရန်"
 
 msgid "The answer is too short"
 msgstr "အဖြေက တိုလွန်းသည်"
@@ -1468,17 +1567,17 @@ msgstr "လော့အင်ဝင်ရန် ဂဏန်း 16 လုံး�
 msgid "View your report"
 msgstr "သင့်အစီရင်ခံစာကို ကြည့်ရှုရန်"
 
-msgid "Recipient selection"
-msgstr "လက်ခံသူ ရွေးချယ်မှု"
-
-msgid "Select the recipients of your report:"
-msgstr "သင့်အစီရင်ခံစာ လက်ခံသူများကို ရွေးချယ်ပါ -"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "လက်ခံသူများကို ရွေးချယ်ထားပါသည် -"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "သင် ရွေးချယ်နိုင်သော လက်ခံသူ အများဆုံး အရေအတွက်ကို ရောက်ရှိပါပြီ။"
+
+msgid "You must select at least one recipient."
+msgstr "အနည်းဆုံး လက်ခံသူတစ်ဦးကို သင် ရွေးချယ်ရမည်။"
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1490,17 +1589,11 @@ msgid ""
 "invalid:"
 msgstr "ဤအဆင့်တွင် အောက်ပါမေးခွန်းများ၏ အဖြေများ လိုနေသည် (သို့) မမှန်ကန်ပါ -"
 
-msgid "You must select at least one recipient."
-msgstr "အနည်းဆုံး လက်ခံသူတစ်ဦးကို သင် ရွေးချယ်ရမည်။"
+msgid "Recipient selection"
+msgstr "လက်ခံသူ ရွေးချယ်မှု"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "ဖိုင်(များ) အပ်လုဒ်လုပ်ခြင်း ပြီးဆုံးရန် စောင့်နေသည်။"
-
-msgid "The following steps have errors:"
-msgstr "အောက်ပါအဆင့်များတွင် ပြဿနာရှိသည် - "
-
-msgid "Hide"
-msgstr "ဝှက်မည်"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1590,8 +1683,8 @@ msgstr "ဤအဖွဲ့အစည်းများသည် သင်၏ အ�
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "သင်မြင်တွေ့လိုသော/ရရှိလိုသော ရလဒ်မှာ ဘာလဲ။"
 
-msgid "Do you want to provide your identification information?"
-msgstr "သင့်မှတ်ပုံတင် အချက်အလက်ကို ပေးလိုပါသလား။"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "အမည် ပထမစာလုံး"
@@ -1607,6 +1700,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "အခြား"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "ချစ်ခင်ရပါသော {RecipientName}"
@@ -1668,6 +1764,9 @@ msgstr "တရားဝင် ဟုတ်မဟုတ် ဆုံးဖြတ�
 
 msgid "The activities with unusual stats are:"
 msgstr "ပုံမှန်မဟုတ်သော စာရင်းအင်းများနှင့် အသုံးပြုမှုများ -"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1897,6 +1996,9 @@ msgstr ""
 msgid "New report"
 msgstr "အစီရင်ခံစာအသစ်"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "အစောဆုံး သက်တမ်းကုန်ဆုံးရက်မှာ {EarliestExpirationDate} ဖြစ်သည်။"
 
@@ -1906,18 +2008,16 @@ msgstr "၎င်းတို့ကို မဖျက်ခင် စစ်ဆ�
 msgid "Some reports will expire soon"
 msgstr "အချို့အစီရင်ခံစာများသည် မကြာမီ သက်တမ်းကုန်တော့မည်"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "ဤသည်မှာ သတင်းပေးသူက ၎င်းတို့၏ အစီရင်ခံစာအတွက် အဖိုးတန် လက်ခံသူအဖြစ် သင့်ကို ရွေးချယ်ထားကြောင်း အကြောင်းကြားသည့် အီးမေးလ် ဖြစ်သည်။"
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "ထိုနေရာတွင် ပါဝင်သည့် အချက်အလက်နှင့် ပစ္စည်းများကို အထူးဂရုပြုရန် သင့်အား တောင်းဆိုသည်။ သတင်းပေးသူများသည် အများပြည်သူ အကျိုးစီးပွားအတွက် ကြီးမားသော ပုဂ္ဂိုလ်ရေးအန္တရာယ်များကို မကြာခဏ ကြုံတွေ့တတ်ကြောင်း သတိပြုပါ။ ထို့ကြောင့် ဤအစီရင်ခံစာအတွင်း ပါဝင်သော အကြောင်းအရာကို အလွန်အရေးကြီးသည်ဟု မှတ်ယူသင့်သည်။"
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "ဤသည်မှာ ရှိပြီးသား အစီရင်ခံစာကို အပ်ဒိတ်လုပ်ထားကြောင်း အကြောင်းကြားသည့် အီးမေးလ် ဖြစ်သည်။"

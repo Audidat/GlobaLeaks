@@ -1,11 +1,11 @@
 GL.controller("SubmissionCtrl",
-    ["$scope", "$filter", "$location", "$interval", "tmhDynamicLocale", "Submission", "fieldUtilities",
-      function ($scope, $filter, $location, $interval, tmhDynamicLocale, Submission, fieldUtilities) {
+    ["$scope", "$rootScope", "$filter", "$location", "$interval", "$timeout", "tmhDynamicLocale", "Submission", "fieldUtilities",
+      function ($scope, $rootScope, $filter, $location, $interval, $timeout, tmhDynamicLocale, Submission, fieldUtilities) {
   $scope.vars = {};
 
   $scope.fieldUtilities = fieldUtilities;
 
-  $scope.context_id = $location.search().context || "";
+  $rootScope.context_id = $location.search().context || $rootScope.context_id;
 
   $scope.context = undefined;
 
@@ -15,16 +15,13 @@ GL.controller("SubmissionCtrl",
 
   $scope.score = 0;
 
-  $scope.singleStepForm = function() {
-    return $scope.firstStepIndex() === $scope.lastStepIndex();
-  };
-
   $scope.contextsOrderPredicate = $scope.public.node.show_contexts_in_alphabetical_order ? "name" : "order";
 
   $scope.selectable_contexts = $filter("filter")($scope.public.contexts, {"hidden": false});
   $scope.selectable_contexts = $filter("orderBy")($scope.selectable_contexts, $scope.contextsOrderPredicate);
 
   $scope.selectContext = function(context) {
+    $rootScope.context_id = context.id;
     $scope.context = context;
   };
 
@@ -37,11 +34,7 @@ GL.controller("SubmissionCtrl",
   };
 
   $scope.switch_selection = function (receiver) {
-    if (receiver.forcefully_selected) {
-      return;
-    }
-
-    if ($scope.submission.selected_receivers[receiver.id]) {
+    if (!$scope.submission.selected_receivers[receiver.id]) {
       delete $scope.submission.selected_receivers[receiver.id];
     } else if ($scope.selectable()) {
       $scope.submission.selected_receivers[receiver.id] = true;
@@ -50,18 +43,18 @@ GL.controller("SubmissionCtrl",
 
   $scope.goToStep = function(index) {
     $scope.navigation = index;
-    $scope.Utils.scrollToTop();
+    $scope.Utils.scrollTo("#SubmissionForm");
   };
 
   $scope.firstStepIndex = function() {
-    return $scope.receiver_selection_step ? -1 : 0;
+    return $scope.context.allow_recipients_selection ? -1 : 0;
   };
 
   $scope.lastStepIndex = function() {
     var last_enabled = 0;
 
     for (var i = 0; i < $scope.questionnaire.steps.length; i++) {
-      if (fieldUtilities.isFieldTriggered(null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
+      if (fieldUtilities.isFieldTriggered($scope, null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
         last_enabled = i;
       }
     }
@@ -87,16 +80,11 @@ GL.controller("SubmissionCtrl",
 
   $scope.checkForInvalidFields = function() {
     for(var i = 0; i <= $scope.navigation; i++) {
-      $scope.validate[i] = true;
-
       if ($scope.questionnaire.steps[i].enabled) {
-        // find the first invalid element
-        var form = document.getElementById("step-" + i);
-        var firstInvalid = form.querySelector(".inputelem.ng-invalid");
-
-        // if we find one, set focus
-        if (firstInvalid) {
+        // check presence of invalid elements
+        if (document.querySelector("#step-" + i + " .inputelem.ng-invalid")) {
           $scope.navigation = i;
+          $scope.Utils.scrollTo("#SubmissionErrors");
           return false;
         }
       }
@@ -106,10 +94,16 @@ GL.controller("SubmissionCtrl",
   };
 
   $scope.runValidation = function() {
-    $scope.validate[$scope.navigation] = true;
+    for(var i = -1; i <= $scope.navigation; i++) {
+      $scope.validate[i] = true;
+    }
 
-    if (!$scope.areReceiversSelected() || !$scope.checkForInvalidFields()) {
-      $scope.Utils.scrollToTop();
+    if ($scope.context.allow_recipients_selection && !$scope.areReceiversSelected()) {
+      $scope.navigation = -1;
+      return false;
+    }
+
+    if (!$scope.checkForInvalidFields()) {
       return false;
     }
 
@@ -124,9 +118,9 @@ GL.controller("SubmissionCtrl",
     if ($scope.hasNextStep()) {
       $scope.vars.submissionForm.$dirty = false;
       for (var i = $scope.navigation + 1; i <= $scope.lastStepIndex(); i++) {
-        if (fieldUtilities.isFieldTriggered(null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
+        if (fieldUtilities.isFieldTriggered($scope, null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
           $scope.navigation = i;
-          $scope.Utils.scrollToTop();
+          $scope.Utils.scrollTo("#step-" + i + " .inputelem");
           return;
         }
       }
@@ -137,9 +131,13 @@ GL.controller("SubmissionCtrl",
     if ($scope.hasPreviousStep()) {
       $scope.vars.submissionForm.$dirty = false;
       for (var i = $scope.navigation - 1; i >= $scope.firstStepIndex(); i--) {
-        if (i === -1 || fieldUtilities.isFieldTriggered(null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
+        if (i === -1 || fieldUtilities.isFieldTriggered($scope, null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
           $scope.navigation = i;
-          $scope.Utils.scrollToTop();
+          if (i === -1) {
+            $scope.Utils.scrollTo("#SubmissionForm");
+          } else {
+            $scope.Utils.scrollTo("#step-" + i + " .inputelem");
+          }
           return;
         }
       }
@@ -164,7 +162,7 @@ GL.controller("SubmissionCtrl",
       return;
     }
 
-    return "api/submission/attachment";
+    return "api/whistleblower/submission/attachment";
   };
 
   $scope.prepareSubmission = function(context) {
@@ -180,16 +178,10 @@ GL.controller("SubmissionCtrl",
     $scope.receiversOrderPredicate = $scope.submission.context.show_receivers_in_alphabetical_order ? "name" : null;
     $scope.show_steps_navigation_bar = $scope.context.allow_recipients_selection || $scope.questionnaire.steps.length > 1;
 
-    if ($scope.context.allow_recipients_selection) {
-      $scope.navigation = -1;
-    } else {
-      $scope.navigation = 0;
-    }
+    $scope.navigation = $scope.firstStepIndex();
   };
 
   $scope.completeSubmission = function() {
-    fieldUtilities.onAnswersUpdate($scope);
-
     if (!$scope.runValidation()) {
       return;
     }
@@ -221,12 +213,6 @@ GL.controller("SubmissionCtrl",
     }
   };
 
-  $scope.displayStepErrors = function(index) {
-    if (index !== -1) {
-      return $scope.stepForm(index).$invalid;
-    }
-  };
-
   $scope.replaceReceivers = function(receivers) {
     for(var key in $scope.submission.selected_receivers) {
       if (receivers.indexOf(key) === -1) {
@@ -254,8 +240,14 @@ GL.controller("SubmissionCtrl",
       return true;
     }
 
-    if ($scope.displayStepErrors($scope.navigation)) {
-      return true;
+    if ($scope.navigation === -1) {
+      if ($scope.context.allow_recipients_selection && !$scope.areReceiversSelected()) {
+        return true;
+      }
+    } else {
+      if ($scope.stepForm($scope.navigation).$invalid) {
+        return true;
+      }
     }
 
     return false;
@@ -268,7 +260,8 @@ GL.controller("SubmissionCtrl",
 
     if ($scope.context_id) {
       context = $filter("filter")($scope.public.contexts,
-                                  {"id": $scope.context_id})[0];
+                                  {"id": $scope.context_id},
+                                  true)[0];
     } else if ($scope.selectable_contexts.length === 1) {
       context = $scope.selectable_contexts[0];
     }
@@ -288,9 +281,15 @@ GL.controller("SubmissionCtrl",
       fieldUtilities.onAnswersUpdate($scope);
     }, true);
 
+    $scope.$watch("submission._submission.identity_provided", function() {
+      fieldUtilities.onAnswersUpdate($scope);
+    });
+
     $scope.$on("GL::uploadsUpdated", function () {
       fieldUtilities.onAnswersUpdate($scope);
     });
+
+    $scope.Utils.scrollTo("#SubmissionForm");
   });
 }]).
 controller("AdditionalQuestionnaireCtrl",
@@ -306,17 +305,9 @@ controller("AdditionalQuestionnaireCtrl",
 
   $scope.score = 0;
 
-  $scope.singleStepForm = function() {
-    return $scope.firstStepIndex() === $scope.lastStepIndex();
-  };
-
   $scope.goToStep = function(index) {
     $scope.navigation = index;
-    $scope.Utils.scrollToTop();
-  };
-
-  $scope.firstStepIndex = function() {
-    return 0;
+    $scope.Utils.scrollTo("#SubmissionForm");
   };
 
   $scope.lastStepIndex = function() {
@@ -336,18 +327,16 @@ controller("AdditionalQuestionnaireCtrl",
   };
 
   $scope.hasPreviousStep = function() {
-    return $scope.navigation > $scope.firstStepIndex();
+    return $scope.navigation > 0;
   };
 
   $scope.checkForInvalidFields = function() {
     for(var i = 0; i <= $scope.navigation; i++) {
       if ($scope.questionnaire.steps[i].enabled) {
-        // find the first invalid element
-        var form = document.getElementById("step-" + i);
-        var firstInvalid = form.querySelector(".inputelem.ng-invalid");
-
-        // if we find one, set focus
-        if (firstInvalid) {
+        // check presence of invalid elements
+        if (document.querySelector("#step-" + i + " .inputelem.ng-invalid")) {
+          $scope.navigation = i;
+          $scope.Utils.scrollTo("#SubmissionErrors");
           return false;
         }
       }
@@ -357,10 +346,11 @@ controller("AdditionalQuestionnaireCtrl",
   };
 
   $scope.runValidation = function() {
-    $scope.validate[$scope.navigation] = true;
+    for(var i = -1; i <= $scope.navigation; i++) {
+      $scope.validate[i] = true;
+    }
 
     if ($scope.navigation > -1 && !$scope.checkForInvalidFields()) {
-      $scope.Utils.scrollToTop();
       return false;
     }
 
@@ -375,9 +365,9 @@ controller("AdditionalQuestionnaireCtrl",
     if ($scope.hasNextStep()) {
       $scope.vars.submissionForm.$dirty = false;
       for (var i = $scope.navigation + 1; i <= $scope.lastStepIndex(); i++) {
-        if (fieldUtilities.isFieldTriggered(null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
+        if (fieldUtilities.isFieldTriggered($scope, null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
           $scope.navigation = i;
-          $scope.Utils.scrollToTop();
+          $scope.Utils.scrollTo("#step-" + i + " .inputelem");
           return;
         }
       }
@@ -387,18 +377,14 @@ controller("AdditionalQuestionnaireCtrl",
   $scope.decrementStep = function() {
     if ($scope.hasPreviousStep()) {
       $scope.vars.submissionForm.$dirty = false;
-      for (var i = $scope.navigation - 1; i >= $scope.firstStepIndex(); i--) {
-        if (i === -1 || fieldUtilities.isFieldTriggered(null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
+      for (var i = $scope.navigation - 1; i >= 0; i--) {
+        if (i === -1 || fieldUtilities.isFieldTriggered($scope, null, $scope.questionnaire.steps[i], $scope.answers, $scope.score)) {
           $scope.navigation = i;
-          $scope.Utils.scrollToTop();
+          $scope.Utils.scrollTo("#step-" + i + " .inputelem");
           return;
         }
       }
     }
-  };
-
-  $scope.areReceiversSelected = function() {
-    return true;
   };
 
   $scope.submissionHasErrors = function() {
@@ -414,21 +400,22 @@ controller("AdditionalQuestionnaireCtrl",
   };
 
   $scope.completeSubmission = function() {
+    for(var i = -1; i <= $scope.navigation; i++) {
+      $scope.validate[i] = true;
+    }
+
     fieldUtilities.onAnswersUpdate($scope);
 
-    $scope.validate[$scope.navigation] = true;
-
     if (!$scope.checkForInvalidFields()) {
-      $scope.Utils.scrollToTop();
       return;
     }
 
     $scope.done = true;
 
     for (var key in $scope.uploads) {
-        if ($scope.uploads[key]) {
-          $scope.uploads[key].resume();
-        }
+      if ($scope.uploads[key]) {
+        $scope.uploads[key].resume();
+      }
     }
 
     $scope.interval = $interval(function() {
@@ -442,7 +429,7 @@ controller("AdditionalQuestionnaireCtrl",
 
       $interval.cancel($scope.interval);
 
-      return $http.post("api/wbtip/" + $scope.tip.id + "/update",
+      return $http.post("api/whistleblower/wbtip/fillform",
                         {"cmd": "additional_questionnaire", "answers": $scope.answers}).
           then(function(){
             $scope.reload();
@@ -457,19 +444,13 @@ controller("AdditionalQuestionnaireCtrl",
     }
   };
 
-  $scope.displayStepErrors = function(index) {
-    if (index !== -1) {
-      return $scope.stepForm(index).$invalid;
-    }
-  };
-
   $scope.displayErrors = function() {
     if (!($scope.validate[$scope.navigation])) {
       return false;
     }
 
-    if ($scope.displayStepErrors($scope.navigation)) {
-      return true;
+    if ($scope.navigation !== -1) {
+      return $scope.stepForm($scope.navigation).$invalid;
     }
 
     return false;
@@ -483,6 +464,10 @@ controller("AdditionalQuestionnaireCtrl",
   $scope.$watch("answers", function () {
     fieldUtilities.onAnswersUpdate($scope);
   }, true);
+
+  $scope.$watch("submission._submission.identity_provided", function() {
+    fieldUtilities.onAnswersUpdate($scope);
+  });
 
   $scope.$on("GL::uploadsUpdated", function () {
     fieldUtilities.onAnswersUpdate($scope);
@@ -523,7 +508,7 @@ controller("SubmissionFormFieldCtrl", ["$scope", function($scope) {
 }]).
 controller("SubmissionFieldEntryCtrl", ["$scope",
   function($scope) {
-    $scope.fieldEntry = $scope.fieldId + "-input-" + $scope.$index;
+    $scope.fieldEntry = $scope.fieldId + "-input-" + $scope.entryIndex;
 }]).
 controller("SubmissionFieldCtrl", ["$scope", "fieldUtilities", function ($scope, fieldUtilities) {
   $scope.fieldFormVarName = fieldUtilities.fieldFormName($scope.field.id + "$" + $scope.$index);
@@ -552,7 +537,7 @@ controller("SubmissionFieldCtrl", ["$scope", "fieldUtilities", function ($scope,
   if ($scope.field.type === "inputbox") {
     $scope.validator = fieldUtilities.getValidator($scope.field);
   } else if ($scope.field.type === "date") {
-    $scope.dateOptions = {showWeeks: false};
+    $scope.dateOptions = {};
 
     if (angular.isDefined($scope.field.attrs.min_date)) {
       $scope.dateOptions.minDate = new Date($scope.field.attrs.min_date.value);
@@ -570,8 +555,8 @@ controller("SubmissionFieldCtrl", ["$scope", "fieldUtilities", function ($scope,
       $scope.status.opened = true;
     };
   } else if ($scope.field.type === "daterange") {
-    $scope.dateOptions1 = {showWeeks: false};
-    $scope.dateOptions2 = {showWeeks: false};
+    $scope.dateOptions1 = {};
+    $scope.dateOptions2 = {};
 
     if (angular.isDefined($scope.field.attrs.min_date)) {
       $scope.dateOptions1.minDate = new Date($scope.field.attrs.min_date.value);
@@ -634,5 +619,9 @@ controller("SubmissionFieldCtrl", ["$scope", "fieldUtilities", function ($scope,
     return false;
   };
 
-  $scope.fieldId = $scope.stepId + "-field-" + $scope.fieldRow + "-" + $scope.fieldCol;
+  if ($scope.fieldEntry) {
+    $scope.fieldId = $scope.fieldEntry + "-field-" + $scope.fieldRow + "-" + $scope.fieldCol;
+  } else {
+    $scope.fieldId = ($scope.stepId ? $scope.stepId + "-": "") + "field-" + $scope.fieldRow + "-" + $scope.fieldCol;
+  }
 }]);

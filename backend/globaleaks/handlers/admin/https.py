@@ -13,10 +13,9 @@ from globaleaks.rest import errors, requests
 from globaleaks.settings import Settings
 from globaleaks.state import State
 from globaleaks.utils import letsencrypt, tls
-from globaleaks.utils.log import log
 
 
-def db_load_tls_config(session, tid):
+def db_load_tls_config(session, tid, test=False):
     """
     Transaction for loading the TLS configuration of a tenant
 
@@ -26,13 +25,24 @@ def db_load_tls_config(session, tid):
     """
     node = ConfigFactory(session, tid)
 
+    if test or node.get_val('https_enabled'):
+        key = node.get_val('https_key')
+        cert = node.get_val('https_cert')
+        chain = node.get_val('https_chain')
+        hostname = node.get_val('hostname')
+    else:
+        key = node.get_val('https_selfsigned_key')
+        cert = node.get_val('https_selfsigned_cert')
+        chain = ''
+        hostname = '127.0.0.1'
+
     return {
         'tid': tid,
-        'ssl_key': node.get_val('https_key'),
-        'ssl_cert': node.get_val('https_cert'),
-        'ssl_intermediate': node.get_val('https_chain'),
+        'ssl_key': key,
+        'ssl_cert': cert,
+        'ssl_intermediate': chain,
         'https_enabled': node.get_val('https_enabled'),
-        'hostname': node.get_val('hostname'),
+        'hostname': hostname
     }
 
 
@@ -81,7 +91,7 @@ def db_load_https_key(session, tid, data=None):
     if not data:
       data = tls.gen_ecc_key()
 
-    db_cfg = db_load_tls_config(session, tid)
+    db_cfg = db_load_tls_config(session, tid, True)
     db_cfg['ssl_key'] = data
 
     config = ConfigFactory(session, tid)
@@ -94,7 +104,7 @@ def db_load_https_key(session, tid, data=None):
 
 
 def db_load_https_cert(session, tid, data):
-    db_cfg = db_load_tls_config(session, tid)
+    db_cfg = db_load_tls_config(session, tid, True)
     db_cfg['ssl_cert'] = data
 
     config = ConfigFactory(session, tid)
@@ -108,7 +118,7 @@ def db_load_https_cert(session, tid, data):
 
 
 def db_load_https_chain(session, tid, data):
-    db_cfg = db_load_tls_config(session, tid)
+    db_cfg = db_load_tls_config(session, tid, True)
     db_cfg['ssl_intermediate'] = data
 
     config = ConfigFactory(session, tid)
@@ -119,12 +129,6 @@ def db_load_https_chain(session, tid, data):
         State.tenants[tid].cache.https_intermediate = data
 
     return ok
-
-
-def db_generate_https_csr(session, tid, data):
-    ConfigFactory(session, tid).set_val('https_csr', data)
-
-    return True
 
 
 def db_serialize_https_config_summary(session, tid):
@@ -145,7 +149,7 @@ def db_try_to_enable_https(session, tid):
     config = ConfigFactory(session, tid)
 
     cv = tls.ChainValidator()
-    tls_config = db_load_tls_config(session, tid)
+    tls_config = db_load_tls_config(session, tid, True)
     tls_config['https_enabled'] = False
 
     ok, _ = cv.validate(tls_config)
@@ -170,11 +174,14 @@ def db_reset_https_config(session, tid):
     config.set_val('https_key', '')
     config.set_val('https_cert', '')
     config.set_val('https_chain', '')
-    config.set_val('https_csr', '')
     config.set_val('acme', False)
     config.set_val('acme_accnt_key', '')
-    State.snimap.unload(tid)
+
     State.tenants[tid].cache.https_enabled = False
+
+    State.snimap.unload(tid)
+
+    State.snimap.load(tid, db_load_tls_config(session, tid))
 
 
 class FileResource(object):
@@ -281,26 +288,6 @@ class ChainFileRes(FileResource):
         }
 
 
-class CsrFileRes(FileResource):
-    @staticmethod
-    @transact
-    def delete_file(session, tid):
-        ConfigFactory(session, tid).set_val('https_csr', '')
-
-    @staticmethod
-    @transact
-    def get_file(session, tid):
-        return ConfigFactory(session, tid).get_val('https_csr')
-
-    @staticmethod
-    def db_serialize(session, tid):
-        csr = ConfigFactory(session, tid).get_val('https_csr')
-        return {
-            'name': 'csr',
-            'set': len(csr) != 0
-        }
-
-
 class FileHandler(BaseHandler):
     check_roles = 'admin'
     root_tenant_or_management_only = True
@@ -308,8 +295,7 @@ class FileHandler(BaseHandler):
     mapped_resources = {
         'key': KeyFileRes,
         'cert': CertFileRes,
-        'chain': ChainFileRes,
-        'csr': CsrFileRes
+        'chain': ChainFileRes
     }
 
     def get_res_or_raise(self, name):
@@ -365,36 +351,30 @@ class ConfigHandler(BaseHandler):
         tw(db_reset_https_config, self.request.tid)
 
 
-class CSRFileHandler(FileHandler):
+class CSRHandler(BaseHandler):
     check_roles = 'admin'
     root_tenant_or_management_only = True
 
-    @inlineCallbacks
-    def post(self, name):
+    def post(self):
         request = self.validate_request(self.request.content.read(),
-                                        requests.AdminCSRFileDesc)
+                                        requests.AdminCSRDesc)
 
-        desc = request['content']
         csr_fields = {
-            'C': desc['country'].upper(),
-            'ST': desc['province'],
-            'L': desc['city'],
-            'O': desc['company'],
-            'OU': desc['company'],
+            'C': request['country'].upper(),
+            'ST': request['province'],
+            'L': request['city'],
+            'O': request['company'],
+            'OU': request['company'],
             'CN': State.tenants[self.request.tid].cache.hostname,
-            'emailAddress': desc['email'],
+            'emailAddress': request['email'],
         }
 
-        csr_txt = yield self.perform_action(self.request.tid, csr_fields)
-
-        ok = yield tw(db_generate_https_csr, self.request.tid, csr_txt)
-        if not ok:
-            raise errors.InputValidationError
+        return self.perform_action(self.request.tid, csr_fields)
 
     @staticmethod
     @transact
     def perform_action(session, tid, csr_fields):
-        db_cfg = db_load_tls_config(session, tid)
+        db_cfg = db_load_tls_config(session, tid, True)
 
         pkv = tls.KeyValidator()
         ok, _ = pkv.validate(db_cfg)

@@ -9,15 +9,15 @@ from sqlalchemy.sql.expression import func
 from twisted.internet.defer import inlineCallbacks
 
 from globaleaks import models
-from globaleaks.db import compact_db
+from globaleaks.db import compact_db, db_get_tracked_attachments, db_get_tracked_files, db_refresh_tenant_cache
 from globaleaks.handlers.admin.node import db_admin_serialize_node
 from globaleaks.handlers.admin.notification import db_get_notification
 from globaleaks.handlers.user import user_serialize_user
 from globaleaks.jobs.job import DailyJob
-from globaleaks.orm import db_del, db_log, db_query, transact, tw
+from globaleaks.orm import db_del, db_log, transact, tw
 from globaleaks.utils.fs import srm
 from globaleaks.utils.templating import Templating
-from globaleaks.utils.utility import datetime_now, is_expired
+from globaleaks.utils.utility import datetime_never, datetime_now, is_expired
 
 
 __all__ = ['Cleaning']
@@ -95,40 +95,31 @@ class Cleaning(DailyJob):
         subquery = session.query(models.Subscriber.tid).filter(models.Subscriber.activation_token != '',
                                                                models.Subscriber.tid == models.Tenant.id,
                                                                models.Subscriber.registration_date < datetime_now() - timedelta(days=1)) \
-                                                  .subquery()
+                                                       .subquery()
         db_del(session, models.Tenant, models.Tenant.id.in_(subquery))
 
-    @transact
-    def get_files_list(self, session):
-        return [x[0] for x in db_query(session, models.File.id)]
+        # delete expired audit logs older than 5 years and not pertaining any report
+        subquery = session.query(models.InternalTip.id).subquery()
+        db_del(session, models.AuditLog, (models.AuditLog.date <= datetime_now() - timedelta(days=5 * 365),
+                                          not_(models.AuditLog.object_id.in_(subquery))))
 
-    @transact
-    def get_attachments_list(self, session):
-        return [x[0] for x in db_query(session, models.InternalFile.filename)] + \
-               [x[0] for x in db_query(session, models.ReceiverFile.filename)] + \
-               [x[0] for x in db_query(session, models.WhistleblowerFile.filename)]
+        # delete expired change email tokens
+        session.query(models.User) \
+               .filter(models.User.change_email_date <= datetime_now() - timedelta(hours=72)) \
+               .update({'change_email_date': datetime_never(),
+                        'change_email_token': None,
+                        'change_email_address': ''})
 
-    def perform_secure_deletion_of_files(self, valid_files):
+    def perform_secure_deletion_of_files(self, path, valid_files):
         # Delete the customization files not associated to the database
-        for f in os.listdir(self.state.settings.files_path):
+        for f in os.listdir(path):
             if f in valid_files:
                 continue
 
-            path = os.path.join(self.state.settings.files_path, f)
-            timestamp = datetime.fromtimestamp(os.path.getmtime(path))
+            filepath = os.path.join(path, f)
+            timestamp = datetime.fromtimestamp(os.path.getmtime(filepath))
             if is_expired(timestamp, days=1):
-                srm(path)
-
-    def perform_secure_deletion_of_attachments(self, valid_files):
-        # Delete the attachment files not associated to the database
-        for f in os.listdir(self.state.settings.attachments_path):
-            if f in valid_files:
-                continue
-
-            path = os.path.join(self.state.settings.attachments_path, f)
-            timestamp = datetime.fromtimestamp(os.path.getmtime(path))
-            if is_expired(timestamp, days=1):
-                srm(path)
+                srm(filepath)
 
     def perform_secure_deletion_of_temporary_files(self):
         # Delete the outdated temp files if older than 1 day
@@ -145,18 +136,33 @@ class Cleaning(DailyJob):
             if is_expired(timestamp, days=7):
                 srm(path)
 
+    @transact
+    def delete_expired_demo_platforms(self, session):
+        to_delete = set(tid[0] for tid in session.query(models.Tenant.id)
+                                                 .filter(models.Tenant.id != 1,
+                                                         models.Tenant.id == models.Config.tid,
+                                                         models.Tenant.creation_date <= datetime_now() - timedelta(90),
+                                                         models.Config.var_name == 'mode',
+                                                         models.Config.value == 'demo').all())
+        db_del(session, models.Tenant, models.Tenant.id.in_(to_delete))
+        db_refresh_tenant_cache(session, to_delete)
+
+
     @inlineCallbacks
     def operation(self):
+        if self.state.tenants[1].cache['mode'] == 'demo':
+            yield self.delete_expired_demo_platforms()
+
         yield self.clean()
 
         for tid in self.state.tenants:
             yield tw(self.db_check_for_expiring_submissions, tid)
 
-        valid_files = yield self.get_files_list()
-        self.perform_secure_deletion_of_files(valid_files)
+        valid_files = yield tw(db_get_tracked_files)
+        self.perform_secure_deletion_of_files(self.state.settings.files_path, valid_files)
 
-        valid_files = yield self.get_attachments_list()
-        self.perform_secure_deletion_of_attachments(valid_files)
+        valid_files = yield tw(db_get_tracked_attachments)
+        self.perform_secure_deletion_of_files(self.state.settings.attachments_path, valid_files)
 
         self.perform_secure_deletion_of_temporary_files()
 

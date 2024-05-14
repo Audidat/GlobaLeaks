@@ -12,6 +12,7 @@ class EnumUserRole(_Enum):
     admin = 0
     receiver = 1
     custodian = 2
+    analyst = 3
 
 
 class EnumFieldInstance(_Enum):
@@ -33,6 +34,7 @@ class EnumFieldOptionScoreType(_Enum):
     multiplier = 2
 
 
-class EnumMessageType(_Enum):
-    whistleblower = 0
-    receiver = 1
+class EnumVisibility(_Enum):
+    public = 0
+    internal = 1
+    personal = 2

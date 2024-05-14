@@ -69,11 +69,8 @@ class TwoFactorAuthCodeRequired(GLException):
     status_code = 300
 
 
-class HTTPAuthenticationRequired(GLException):
-    """
-    Basic Authentication Required
-    """
-    reason = "Basic Authentication Required"
+class SessionExpired(GLException):
+    reason = "Session expired"
     error_code = 5
     status_code = 401
 
@@ -186,8 +183,7 @@ class AccessLocationInvalid(GLException):
     error_code = 16
     status_code = 401
 
-
-class SessionExpired(GLException):
-    reason = "Session expired"
+class DuplicateUserError(GLException):
+    reason = "A user with this username already exists"
     error_code = 17
-    status_code = 401
+    status_code = 422

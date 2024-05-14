@@ -24,21 +24,15 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2015-2019,2022\n"
-"Language-Team: Hebrew (http://www.transifex.com/otf/globaleaks/language/he/)\n"
+"Language-Team: Hebrew (http://app.transifex.com/otf/globaleaks/language/he/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 "mime-version: 1.0\n"
 
 msgid "Log in"
 msgstr "התחבר"
-
-msgid "Main configuration"
-msgstr "תצורה ראשית"
-
-msgid "Theme customization"
-msgstr "התאמה אישית של ערכת נושא"
 
 msgid "Languages"
 msgstr "שפות"
@@ -46,8 +40,8 @@ msgstr "שפות"
 msgid "Text customization"
 msgstr "התאמה אישית של טקסט"
 
-msgid "Advanced settings"
-msgstr "הגדרות מתקדמות"
+msgid "Advanced"
+msgstr "מתקדם"
 
 msgid "Question templates"
 msgstr "תבניות שאלה"
@@ -67,8 +61,8 @@ msgstr "יומן שינויים"
 msgid "License"
 msgstr "רישיון"
 
-msgid "Notification templates"
-msgstr "תבניות התראה"
+msgid "Templates"
+msgstr "תבניות"
 
 msgid "Delete"
 msgstr "מחק"
@@ -79,8 +73,8 @@ msgstr "אנומליות"
 msgid "Preferences"
 msgstr "העדפות"
 
-msgid "Notification settings"
-msgstr "הגדרות התראה"
+msgid "Notifications"
+msgstr "התראות"
 
 msgid "file unavailable"
 msgstr "קובץ לא זמין"
@@ -100,25 +94,16 @@ msgstr "קבצים"
 msgid "Comments"
 msgstr "הערות"
 
-msgid "Messages"
-msgstr "הודעות"
-
 msgid "Details"
 msgstr "פרטים"
 
 msgid "Platform wizard"
 msgstr "אשף פלטפורמה"
 
-msgid "CREDIT CARD"
-msgstr "כרטיס אשראי"
-
-msgid "YOUR NAME"
-msgstr "שמך"
-
 msgid "Label the report"
 msgstr "סווג את הדוח"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "דחה את תאריך התפוגה"
 
 msgid "Select all"
@@ -130,8 +115,8 @@ msgstr "בטל בחירת הכל"
 msgid "Refresh"
 msgstr "רענן"
 
-msgid "Context"
-msgstr "הקשר"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "הצג מראש"
@@ -235,9 +220,6 @@ msgstr "דרושה גישה"
 msgid "Request access to the whistleblower's identity"
 msgstr "בקש גישה אל זהות של חושף שחיתות"
 
-msgid "Please write a motivation"
-msgstr "אנא לכתוב מוטיבציה"
-
 msgid "Reply to the request"
 msgstr "השב אל הבקשה"
 
@@ -264,9 +246,6 @@ msgstr "מנע גישה אל הזהות של המתריע"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "תן הרשאת גישת הזהות של המתריע"
-
-msgid "Templates"
-msgstr "תבניות"
 
 msgid "URL redirects"
 msgstr ""
@@ -307,7 +286,7 @@ msgstr "מקובל"
 msgid "Strong"
 msgstr "חזק"
 
-msgid "Text shown on top of the interface for selecting contexts"
+msgid "Text shown on top of the interface for selecting channels"
 msgstr ""
 
 msgid "Silence email notifications"
@@ -371,9 +350,6 @@ msgstr "גודל מרבי של קובץ:"
 
 msgid "Scheduled jobs"
 msgstr "עבודות מתוזמנות"
-
-msgid "Sites management"
-msgstr "ניהול אתרים"
 
 msgid "Regenerate"
 msgstr "חולל מחדש"
@@ -473,20 +449,110 @@ msgstr "העתק ללוח גזירה"
 msgid "Logout"
 msgstr "התנתק"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "תן לנמען יכלת לתת גישה למשתמשים אל הדוחות"
-
 msgid "Grant access"
 msgstr "תן גישה"
 
 msgid "Revoke access"
 msgstr ""
 
+msgid "Transfer"
+msgstr "העבר"
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr "הרשאות"
+
+msgid "Hide"
+msgstr "הסתר"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr "בחר את שפתך"
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "מדיניות פרטיות"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr "אלמוני"
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr "מחשב"
+
+msgid "Mobile"
+msgstr "נייד"
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr ""
 
-msgid "Select the context of your report:"
-msgstr "בחר את ההקשר של הדוח שלך:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "לפני שממשיכים, אנא קבע/י סיסמה חדשה"
@@ -496,102 +562,6 @@ msgstr "לפני שממשיכים, אנא תאפשר/י אימות דו-שלבי
 
 msgid "Enable"
 msgstr "אפשר"
-
-msgid "Disable submissions"
-msgstr "השבת הגשות"
-
-msgid "Enable encryption"
-msgstr "אפשר הצפנה"
-
-msgid "Enable administrators to change user passwords"
-msgstr ""
-
-msgid "Administrators authorized to change user passwords:"
-msgstr ""
-
-msgid "Enable multisite feature"
-msgstr ""
-
-msgid "Enable simplified login"
-msgstr ""
-
-msgid "Enable search engines indexing"
-msgstr "אפשר אינדקס מנועי חיפוש"
-
-msgid "Default questionnaire"
-msgstr ""
-
-msgid "Show contexts in alphabetical order"
-msgstr "הראה הקשרים בסדר אלפאביתי"
-
-msgid "Size limit for file attachments"
-msgstr "גודל גבול עבור קבצים מצורפים"
-
-msgid "megabytes"
-msgstr ""
-
-msgid "Require two factor authentication"
-msgstr "דרוש אימות דו־שלבי"
-
-msgid "Password change interval"
-msgstr "מרווח שינוי סיסמה"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "מטעמי אבטחה, שינוי סיסמה דרושים במרווחים תדירים."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "קבע את הערך אל 0 והשבת מאפיין זה."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr ""
-
-msgid "Disable the privacy panel"
-msgstr "בטל תג הפרטיות"
-
-msgid "Enable custom privacy panel"
-msgstr "אפשר תג פרטיות מותאם אישית"
-
-msgid "Custom privacy panel"
-msgstr "לוח פרטיות מותאם אישית"
-
-msgid "Enable custodian user role"
-msgstr ""
-
-msgid "Enable scoring system"
-msgstr "אפשר מערכת ניקוד"
-
-msgid "Logging level"
-msgstr ""
-
-msgid "Log accesses of internal users"
-msgstr ""
-
-msgid "Notify administrators of software problems"
-msgstr ""
-
-msgid "Notify developers of software problems"
-msgstr ""
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr ""
-
-msgid "Save"
-msgstr "שמור"
-
-msgid "Reset reports"
-msgstr "אפס דוחות"
-
-msgid "Low"
-msgstr "נמוכה"
-
-msgid "High"
-msgstr "גבוהה"
-
-msgid "percentage"
-msgstr ""
 
 msgid "Type"
 msgstr "סוג"
@@ -620,6 +590,9 @@ msgstr "תאריך יצירה"
 msgid "Last access"
 msgstr "גישה אחרונה"
 
+msgid "Receivers"
+msgstr "נמענים"
+
 msgid "Whistleblower's last access"
 msgstr ""
 
@@ -638,68 +611,29 @@ msgstr "שדה זה הוא חובה"
 msgid "Edit"
 msgstr "ערוך"
 
+msgid "Save"
+msgstr "שמור"
+
 msgid "Cancel"
 msgstr "בטל"
+
+msgid "days"
+msgstr "ימים"
+
+msgid "Disabled"
+msgstr "מושבת"
 
 msgid "Report statuses"
 msgstr "מעמדי דוח"
 
-msgid "Logo"
-msgstr "סמליל"
-
-msgid "Project name"
-msgstr "שם מיזם"
-
-msgid "Description"
-msgstr "תיאור"
-
-msgid "Homepage title"
-msgstr "כותרת עמוד הבית"
-
-msgid "Presentation"
-msgstr "מצגת"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "שאלות על הלשנה"
-
-msgid "Whistleblowing button"
-msgstr "כפתור חשיפת שחיתות"
-
-msgid "Disclaimer"
+msgid "Channels"
 msgstr ""
-
-msgid "Footer"
-msgstr "כותרת תחתונה"
-
-msgid "Upload"
-msgstr "העלה"
-
-msgid "Download"
-msgstr "הורד"
-
-msgid "Language:"
-msgstr "שפה:"
-
-msgid "Add custom text"
-msgstr "הוסף טקסט מותאם אישית"
-
-msgid "Custom text"
-msgstr "טקסט מותאם אישית"
-
-msgid "Original text"
-msgstr "טקסט מקורי"
-
-msgid "Original translation"
-msgstr "תרגום מקורי"
-
-msgid "Custom translation"
-msgstr "תרגום מותאם אישית"
-
-msgid "Contexts"
-msgstr "הקשרים"
 
 msgid "Hidden"
 msgstr "מוסתר"
+
+msgid "Description"
+msgstr "תיאור"
 
 msgid "Questionnaire"
 msgstr "שְׁאֵלוֹן"
@@ -707,8 +641,11 @@ msgstr "שְׁאֵלוֹן"
 msgid "Recipients"
 msgstr "מקבלים"
 
-msgid "days"
-msgstr "ימים"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "קבע את הערך אל 0 והשבת מאפיין זה."
 
 msgid "Show the questionnaire navigation interface"
 msgstr ""
@@ -725,24 +662,6 @@ msgstr "מספר מקסימאלי של מקבלים לבחירה:"
 msgid "Show recipients in alphabetical order"
 msgstr "מקבלי הצג לפי סדר אלפביתי"
 
-msgid "Show recipient details on the status page of the report"
-msgstr ""
-
-msgid "Enable comments"
-msgstr "אפשר הערות"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "התר לחושף השחיתות לכתוב תגובות"
-
-msgid "Enable private messages"
-msgstr "אפשר הודעות פרטיות"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "התר לחושף השחיתות לשלוח הודעות"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "התר לחושף השחיתות להוסיף צרופות אל ההגשה"
-
 msgid "Additional questionnaire"
 msgstr ""
 
@@ -758,6 +677,9 @@ msgstr "ערך"
 msgid "Medium"
 msgstr "בינוני"
 
+msgid "High"
+msgstr "גבוהה"
+
 msgid "Software version:"
 msgstr "גרסת תוכנה:"
 
@@ -772,6 +694,9 @@ msgstr ""
 
 msgid "Admin"
 msgstr "מינהלן"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "מקבל"
@@ -852,9 +777,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr ""
-
-msgid "Disabled"
-msgstr "מושבת"
 
 msgid "Auto-renewal"
 msgstr "חידוש אוטומטי"
@@ -969,6 +891,12 @@ msgstr "קבל תשובות רבות"
 msgid "Template override"
 msgstr ""
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "מספר טלפון"
 
@@ -992,6 +920,9 @@ msgstr "סרטון"
 
 msgid "Text shown upon negative answer"
 msgstr ""
+
+msgid "Low"
+msgstr "נמוכה"
 
 msgid "Trigger conditions"
 msgstr "תנאיי מעורר"
@@ -1023,20 +954,149 @@ msgstr "שכפל"
 msgid "Steps"
 msgstr "צעדים"
 
-msgid "Site settings"
-msgstr "הגדרות אתר"
+msgid "Logo"
+msgstr "סמליל"
+
+msgid "Project name"
+msgstr "שם מיזם"
+
+msgid "Homepage title"
+msgstr "כותרת עמוד הבית"
+
+msgid "Presentation"
+msgstr "מצגת"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "שאלות על הלשנה"
+
+msgid "Whistleblowing button"
+msgstr "כפתור חשיפת שחיתות"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Footer"
+msgstr "כותרת תחתונה"
+
+msgid "Upload"
+msgstr "העלה"
+
+msgid "Download"
+msgstr "הורד"
+
+msgid "Language:"
+msgstr "שפה:"
+
+msgid "Add custom text"
+msgstr "הוסף טקסט מותאם אישית"
+
+msgid "Custom text"
+msgstr "טקסט מותאם אישית"
+
+msgid "Original text"
+msgstr "טקסט מקורי"
+
+msgid "Original translation"
+msgstr "תרגום מקורי"
+
+msgid "Custom translation"
+msgstr "תרגום מותאם אישית"
+
+msgid "Disable submissions"
+msgstr "השבת הגשות"
+
+msgid "Enable encryption"
+msgstr "אפשר הצפנה"
+
+msgid "Enable administrators to change user passwords"
+msgstr ""
+
+msgid "Administrators authorized to change user passwords:"
+msgstr ""
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr ""
+
+msgid "Enable search engines indexing"
+msgstr "אפשר אינדקס מנועי חיפוש"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "גודל גבול עבור קבצים מצורפים"
+
+msgid "megabytes"
+msgstr ""
+
+msgid "Require two factor authentication"
+msgstr "דרוש אימות דו־שלבי"
+
+msgid "Password change interval"
+msgstr "מרווח שינוי סיסמה"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "מטעמי אבטחה, שינוי סיסמה דרושים במרווחים תדירים."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr ""
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "בטל תג הפרטיות"
+
+msgid "Enable custom privacy panel"
+msgstr "אפשר תג פרטיות מותאם אישית"
+
+msgid "Custom privacy panel"
+msgstr "לוח פרטיות מותאם אישית"
+
+msgid "Enable scoring system"
+msgstr "אפשר מערכת ניקוד"
+
+msgid "Logging level"
+msgstr ""
+
+msgid "percentage"
+msgstr ""
+
+msgid "Log accesses of internal users"
+msgstr ""
+
+msgid "Notify administrators of software problems"
+msgstr ""
+
+msgid "Notify developers of software problems"
+msgstr ""
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr ""
+
+msgid "Reset reports"
+msgstr "אפס דוחות"
+
+msgid "Settings"
+msgstr "הגדרות"
 
 msgid "Case management"
 msgstr "ניהול תיקים"
 
-msgid "Network settings"
-msgstr "הגדרות רשת"
+msgid "Network"
+msgstr "רשת"
 
 msgid "Sites"
 msgstr "אתרים"
 
-msgid "Mode:"
-msgstr "מצב:"
+msgid "Profile"
+msgstr ""
 
 msgid "Configure"
 msgstr "תצר"
@@ -1044,13 +1104,16 @@ msgstr "תצר"
 msgid "Subdomain"
 msgstr "תת‏־תחום"
 
+msgid "Mode:"
+msgstr "מצב:"
+
 msgid "Creation date:"
 msgstr "תאריך יצירה:"
 
-msgid "Root domain used for secondary sites"
+msgid "Use the first site for administrative purposes only"
 msgstr ""
 
-msgid "Use the first site for administrative purposes only"
+msgid "Root domain used for secondary sites"
 msgstr ""
 
 msgid "Allow users to sign up"
@@ -1072,10 +1135,10 @@ msgid "Set password"
 msgstr "קבע סיסמה"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "הסיסמה הנבחרת חלשה מדי. סיסמה תקפה אמורה להיות באורך 10 תווים לפחות ולהכיל מגוון תווים כולל לפחות אות קטנה, אות גדולה, מספר ותו מיוחד."
+msgstr ""
 
 msgid "Force password change"
 msgstr "כפה שינוי סיסמה"
@@ -1110,11 +1173,23 @@ msgstr "נבחר בכוח"
 msgid "Allow the recipient to delete reports"
 msgstr ""
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
+msgstr ""
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
 msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr ""
+
+msgid "Statistics"
+msgstr "סטטיסטיקה"
 
 msgid "Request date"
 msgstr "תאריך בקשה"
@@ -1152,14 +1227,20 @@ msgstr "אנא בחר את חשבונך"
 msgid "Now type your password, then click 'Log in':"
 msgstr "הקלד כעת את סיסמתך, לאחר מכן לחץ על 'התחבר':"
 
-msgid "Text shown after the user has selected the option."
-msgstr ""
-
 msgid "Confirm"
 msgstr "אשר"
 
+msgid "Text shown after the user has selected the option."
+msgstr ""
+
 msgid "Assign score points"
 msgstr "הקצאת נקודות ציון"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "מצב"
 
 msgid "Are you sure?"
 msgstr "האם אתה בטוח?"
@@ -1184,7 +1265,22 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr ""
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
+msgstr ""
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
 msgstr ""
 
 msgid "Request support"
@@ -1207,14 +1303,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr ""
 
-msgid "Please write a motivation for the reply"
-msgstr "אנא לכתוב מוטיבציה על התשובה"
-
 msgid "Send"
 msgstr "שלח"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "לאחר שיאשר, תוכל לדחות את מועד התפוגה:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr ""
@@ -1248,6 +1347,12 @@ msgstr "משאב ניתן לגשת רק בתוך רשת Tor"
 
 msgid "The upload request exceeds the size limit"
 msgstr "בקשת ההעלאה עולה על מגבלות הגודל"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "סיסמה נוכחית"
@@ -1290,20 +1395,23 @@ msgstr ""
 msgid "The receipt is either invalid or the report has expired."
 msgstr ""
 
-msgid "Select a file or drag it here."
-msgstr ""
+msgid "Filename"
+msgstr "שם הקובץ"
 
 msgid "Size:"
 msgstr "גודל:"
 
-msgid "Uploading files…"
-msgstr "מעלה קבצים..."
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "הטעינה הושלמה בהצלחה!"
+msgid "Address"
+msgstr "כתובת"
 
-msgid "Estimated upload time:"
-msgstr "זמן העלאה משוער:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr ""
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr ""
@@ -1317,8 +1425,8 @@ msgstr "מ:"
 msgid "To:"
 msgstr "אל:"
 
-msgid "Filename"
-msgstr "שם הקובץ"
+msgid "View"
+msgstr "הצג"
 
 msgid "Upload date"
 msgstr "תאריך העלאה"
@@ -1331,9 +1439,6 @@ msgstr "תשובות לשאלון"
 
 msgid "Step"
 msgstr "צעד"
-
-msgid "Status:"
-msgstr "מצב"
 
 msgid "Files attached by recipients"
 msgstr ""
@@ -1360,9 +1465,6 @@ msgstr ""
 msgid "Join our chat:"
 msgstr "הצטרף אל ההתכתבות שלנו:"
 
-msgid "Follow the project on:"
-msgstr "עקוב אחר המיזם ב:"
-
 msgid "An update is available:"
 msgstr "עדכון זמין:"
 
@@ -1371,6 +1473,9 @@ msgid ""
 "your “Account Recovery Key” and store it safely. This key will be necessary "
 "to recover your access to the platform and to your data in case you forget "
 "your password."
+msgstr ""
+
+msgid "Select a file or drag it here."
 msgstr ""
 
 msgid "The provided recovery key is invalid."
@@ -1404,6 +1509,9 @@ msgstr "תאריך הבקשה"
 msgid "Show"
 msgstr "הצג"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "מזל טוב!"
 
@@ -1426,26 +1534,17 @@ msgstr ""
 msgid "Sign up"
 msgstr "הירשם"
 
-msgid "Site"
-msgstr "אתר"
-
-msgid "Confirmation"
-msgstr "אישור"
-
 msgid "Invalid confirmation"
 msgstr "אישור בלתי תקף"
 
 msgid "Invalid phone number"
 msgstr "מספר טלפון בלתי תקף"
 
-msgid "Address"
-msgstr "כתובת"
+msgid "Site"
+msgstr "אתר"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr ""
+msgid "Confirmation"
+msgstr "אישור"
 
 msgid "The answer is too short"
 msgstr ""
@@ -1484,16 +1583,16 @@ msgstr ""
 msgid "View your report"
 msgstr "הצג את הדוח שלך"
 
-msgid "Recipient selection"
-msgstr "בחירת מקבלים"
-
-msgid "Select the recipients of your report:"
+msgid "Select the recipients of your report"
 msgstr ""
 
 msgid "Recipients selected:"
 msgstr "מקבלים שנבחרו:"
 
 msgid "You have reached the maximum number of selectable recipients."
+msgstr ""
+
+msgid "You must select at least one recipient."
 msgstr ""
 
 msgid ""
@@ -1506,17 +1605,11 @@ msgid ""
 "invalid:"
 msgstr ""
 
-msgid "You must select at least one recipient."
-msgstr ""
+msgid "Recipient selection"
+msgstr "בחירת מקבלים"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr ""
-
-msgid "The following steps have errors:"
-msgstr ""
-
-msgid "Hide"
-msgstr "הסתר"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1606,8 +1699,8 @@ msgstr ""
 msgid "What is the outcome you want to achieve with our support?"
 msgstr ""
 
-msgid "Do you want to provide your identification information?"
-msgstr "האם אתה רוצה לספק מידע זיהוי שלך?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "שם פרטי"
@@ -1623,6 +1716,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "אחר"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "{RecipientName} היקר,"
@@ -1684,6 +1780,9 @@ msgstr ""
 
 msgid "The activities with unusual stats are:"
 msgstr "הפעילות עם נתונים סטטיסטיים לא רגילים הן:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1913,6 +2012,9 @@ msgstr ""
 msgid "New report"
 msgstr "דוח חדש"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr ""
 
@@ -1922,17 +2024,15 @@ msgstr ""
 msgid "Some reports will expire soon"
 msgstr ""
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
+msgid "This is an email to notify you the reception of a new report."
 msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
 msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."

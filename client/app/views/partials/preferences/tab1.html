@@ -46,7 +46,7 @@
   <div data-ng-if="resources.preferences.description"><label data-translate>Description</label> {{resources.preferences.description}}</div>
 
   <div id="Contexts" data-ng-if="Authentication.session.role === 'receiver' && public.contexts.length > 1">
-    <label><span data-translate>Contexts</span></label>
+    <label><span data-translate>Channels</span></label>
     <ul data-ng-repeat="context_id in resources.preferences.contexts">
       <li>{{contexts_by_id[context_id].name}}</li>
     </ul>
@@ -57,9 +57,7 @@
     <select class="form-control" data-ng-model="resources.preferences.language" data-ng-options="item.code as item.native for item in languages_enabled_selector"></select>
   </div>
 
-  <div id="EnableNotifications" class="form-group" data-ng-if="(Authentication.session.role === 'admin' && !public.node.disable_admin_notification) ||
-                                                               (Authentication.session.role === 'receiver' && !public.node.disable_receiver_notification) ||
-                                                               (Authentication.session.role === 'custodian' && !public.node.disable_custodian_notification)">
+  <div id="EnableNotifications" class="form-group">
     <input data-ng-model="resources.preferences.notification" type="checkbox">
     <label data-translate>Enable email notifications</label>
   </div>
@@ -71,7 +69,7 @@
     </label>
   </div>
 
-  <div id="EditPGP" data-ng-form="pgpkeyForm">
+  <div id="EditPGP" data-ng-form="pgpkeyForm" data-ng-if="public.node.pgp">
     <div data-ng-show="resources.preferences.pgp_key_fingerprint">
       <div class="form-group">
         <label data-translate>Details of the PGP key:</label>

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: sophat CHY <sophatchy@gmail.com>, 2022\n"
-"Language-Team: Khmer (http://www.transifex.com/otf/globaleaks/language/km/)\n"
+"Language-Team: Khmer (http://app.transifex.com/otf/globaleaks/language/km/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: km\n"
@@ -21,20 +21,14 @@ msgstr ""
 msgid "Log in"
 msgstr "ចូលប្រើប្រាស់"
 
-msgid "Main configuration"
-msgstr "ការកំណត់សំខាន់"
-
-msgid "Theme customization"
-msgstr "ការផ្លាស់ប្តូរទម្រង់ផ្សេងៗ"
-
 msgid "Languages"
 msgstr "ភាសា"
 
 msgid "Text customization"
 msgstr "ការកំណត់អក្សរផ្សេងៗ"
 
-msgid "Advanced settings"
-msgstr "ការកំណត់កម្រិតខ្ពស់"
+msgid "Advanced"
+msgstr "កម្រិតខ្ពស់"
 
 msgid "Question templates"
 msgstr "គំរូសំណួរ"
@@ -54,8 +48,8 @@ msgstr "កំណត់ត្រាការផ្លាស់ប្តូរ"
 msgid "License"
 msgstr "អាជ្ញាប័ណ្ណ"
 
-msgid "Notification templates"
-msgstr "គំរូសារជូនដំណឹង"
+msgid "Templates"
+msgstr "គំរូ"
 
 msgid "Delete"
 msgstr "លុបចោល"
@@ -66,8 +60,8 @@ msgstr "មិនប្រក្រតី"
 msgid "Preferences"
 msgstr "ចំណូលចិត្ត"
 
-msgid "Notification settings"
-msgstr "ការកំណត់សារជូនដំណឹង"
+msgid "Notifications"
+msgstr "ការជូនដំណឹង"
 
 msgid "file unavailable"
 msgstr "ឯកសារមិនអាចបើកបាន"
@@ -87,25 +81,16 @@ msgstr "ឯកសារ"
 msgid "Comments"
 msgstr "មតិយោបល់"
 
-msgid "Messages"
-msgstr "សារ"
-
 msgid "Details"
 msgstr "លម្អិត"
 
 msgid "Platform wizard"
 msgstr "ជំនួយការវេទិកា"
 
-msgid "CREDIT CARD"
-msgstr "កាតឥណទាន"
-
-msgid "YOUR NAME"
-msgstr "ឈ្មោះរបស់អ្នក"
-
 msgid "Label the report"
 msgstr "ដាក់ឈ្មោះរបាយការណ៍"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "ពន្យាកាលបរិច្ឆេទផុតកំណត់"
 
 msgid "Select all"
@@ -117,8 +102,8 @@ msgstr "មិនជ្រើសរើសទាំងអស់"
 msgid "Refresh"
 msgstr "ផ្ទុកឡើងវិញ"
 
-msgid "Context"
-msgstr "បរិបទ"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "មើលព្រាង"
@@ -222,9 +207,6 @@ msgstr "បានស្នើសុំការប្រើប្រាស់"
 msgid "Request access to the whistleblower's identity"
 msgstr "សំណើរចូលទៅកាន់អត្តសញ្ញាណអ្នករាយការណ៍"
 
-msgid "Please write a motivation"
-msgstr "សូមសរសេរការលើកទឹកចិត្តមួយ"
-
 msgid "Reply to the request"
 msgstr "ឆ្លើយតបទៅសំណើរ"
 
@@ -251,9 +233,6 @@ msgstr "បដិសេធការចូលប្រើប្រាស់អត
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "ផ្តល់សិទ្ធិការចូលប្រើប្រាស់អត្តសញ្ញាណអ្នករាយការណ៍"
-
-msgid "Templates"
-msgstr "គំរូ"
 
 msgid "URL redirects"
 msgstr "បញ្ជូនបន្ត URL"
@@ -294,8 +273,8 @@ msgstr "អាចទទួលយកបាន"
 msgid "Strong"
 msgstr "ខ្លាំង"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "អក្សរបង្ហាញនៅលើផ្ទាំងនេះ សម្រាប់ជ្រើសរើសបរិបទ"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "បិទសំឡេងសារជូនដំណឹងអុីមែល"
@@ -358,9 +337,6 @@ msgstr "ទំហំឯកសារអតិបរមាគឺ៖"
 
 msgid "Scheduled jobs"
 msgstr "ការងារដែលបានគ្រោងទុក"
-
-msgid "Sites management"
-msgstr "ការគ្រប់គ្រងគេហទំព័រ"
 
 msgid "Regenerate"
 msgstr "បង្កើតឡើងវិញ"
@@ -460,20 +436,110 @@ msgstr "ចម្លងទៅឃ្នាប"
 msgid "Logout"
 msgstr "ចាកចេញ"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr ""
 
+msgid "Transfer"
+msgstr "បញ្ជូន"
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "លាក់"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr "ជ្រើសរើសជម្រើសមួយ"
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "គោលការណ៍​ភាព​ឯកជន"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr "ភាពអនាមិក"
+
+msgid "Anonymous"
+msgstr ""
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor​"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "បញ្ចូលរបាយការណ៍"
 
-msgid "Select the context of your report:"
-msgstr "ជ្រើសរើសបរិបទនៃរបាយការណ៍របស់អ្នក៖"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "មុនពេលដំណើរការ​ សូមកំណត់ពាក្យសម្ងាត់ថ្មីមួយ។"
@@ -483,102 +549,6 @@ msgstr "មុនពេលដំណើរការ​ សូមបើកកា�
 
 msgid "Enable"
 msgstr "បើក"
-
-msgid "Disable submissions"
-msgstr "បិទការដាក់បញ្ជូន"
-
-msgid "Enable encryption"
-msgstr "បើកកូដនីយកម្ម"
-
-msgid "Enable administrators to change user passwords"
-msgstr "បើកឲ្យអ្នកគ្រប់គ្រងផ្លាស់ប្តូរពាក្យសម្ងាត់អ្នកប្រើប្រាស់"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "អ្នកគ្រប់គ្រងត្រូវបានផ្តល់សិទ្ធិផ្លាស់ប្តូរពាក្យសម្ងាត់អ្នកប្រើប្រាស់៖"
-
-msgid "Enable multisite feature"
-msgstr "បើកមុខងារពហុទំព័រ"
-
-msgid "Enable simplified login"
-msgstr "បើកការចូលសាមញ្ញ"
-
-msgid "Enable search engines indexing"
-msgstr "បើកការផ្ទុកម៉ាស៊ីនស្វែងរក"
-
-msgid "Default questionnaire"
-msgstr "កម្រងសំណួរលំនាំដើម"
-
-msgid "Show contexts in alphabetical order"
-msgstr "បង្ហាញបរិបទតាមលំដាប់អក្សរ"
-
-msgid "Size limit for file attachments"
-msgstr "កំណត់ទំហំសម្រាប់ឯកសារភ្ជាប់"
-
-msgid "megabytes"
-msgstr "មេកាបៃ"
-
-msgid "Require two factor authentication"
-msgstr "ទាមទារការផ្ទៀងផ្ទាត់ពីរកត្តា"
-
-msgid "Password change interval"
-msgstr "ចន្លោះពេលផ្លាស់ប្តូរពាក្យសម្ងាត់"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "ដើម្បីសុវត្ថិភាព​ ការផ្លាស់ប្តូរពាក្យសម្ងាត់ត្រូវបានទាមទារនៅចន្លោះពេលទៀងទាត់។"
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "កំណត់តម្លៃទៅ ០ ដើម្បីបិទមុខងារនេះ។"
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "រយៈពេលដែលនៅសល់សម្រាប់ជូនដំណឹងពីរបាយការណ៍មិនទាន់អានទៅកាន់អ្នកប្រើប្រាស់"
-
-msgid "Disable the privacy panel"
-msgstr "បិទផ្ទាំងឯកជន"
-
-msgid "Enable custom privacy panel"
-msgstr "បើកកំណត់ផ្ទាំងឯកជន"
-
-msgid "Custom privacy panel"
-msgstr "កំណត់ផ្ទាំងឯកជន"
-
-msgid "Enable custodian user role"
-msgstr "បើកតួនាទីជាអ្នកប្រើប្រាស់ដល់អ្នកថែរក្សា"
-
-msgid "Enable scoring system"
-msgstr "បើកប្រព័ន្ធដាក់ពិន្ទុ"
-
-msgid "Logging level"
-msgstr "កម្រិតការចូលប្រើប្រាស់"
-
-msgid "Log accesses of internal users"
-msgstr "ការចូលប្រើប្រាស់របស់អ្នកប្រើប្រាស់ខាងក្នុង"
-
-msgid "Notify administrators of software problems"
-msgstr "ជូនដំណឹងអ្នកគ្រប់គ្រងពីបញ្ហាកម្មវិធី"
-
-msgid "Notify developers of software problems"
-msgstr "ជូនដំណឹងអ្នកអភិវឌ្ឍន៍កម្មវិធីពីបញ្ហាកម្មវិធី"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "នៅពេលបើកមុខងារនេះ អ្នកនឹងចូលរួមធ្វើកំណែរប្រែ និងសុវត្ថិភាពរបស់វេទិកា។"
-
-msgid "Save"
-msgstr "រក្សាទុក"
-
-msgid "Reset reports"
-msgstr "កំណត់របាយការណ៍សារឡើងវិញ"
-
-msgid "Low"
-msgstr "ទាប"
-
-msgid "High"
-msgstr "ខ្ពស់"
-
-msgid "percentage"
-msgstr "ភាគរយ"
 
 msgid "Type"
 msgstr "ប្រភេទ"
@@ -607,6 +577,9 @@ msgstr "កាលបរិច្ឆេទបង្កើត"
 msgid "Last access"
 msgstr "ចូលប្រើប្រាស់ចុងក្រោយ"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "ការចូលប្រើប្រាស់ចុងកក្រោយរបស់អ្នករាយការណ៍"
 
@@ -625,68 +598,29 @@ msgstr "ចន្លោះនេះត្រូវតែបំពេញ"
 msgid "Edit"
 msgstr "កែប្រែ"
 
+msgid "Save"
+msgstr "រក្សាទុក"
+
 msgid "Cancel"
 msgstr "បោះបង់"
+
+msgid "days"
+msgstr "ថ្ងៃ"
+
+msgid "Disabled"
+msgstr "បានបិទ"
 
 msgid "Report statuses"
 msgstr "ស្ថានភាពរបាយការណ៍"
 
-msgid "Logo"
-msgstr "រូបសញ្ញា"
-
-msgid "Project name"
-msgstr "ឈ្មោះគម្រោង"
-
-msgid "Description"
-msgstr "ការពណ៌នា"
-
-msgid "Homepage title"
-msgstr "ចំណងជើងគេហទំព័រ"
-
-msgid "Presentation"
-msgstr "បទបង្ហាញ"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "សំណួរដែលត្រូវទទូចសុំពីអ្នករាយការណ៍"
-
-msgid "Whistleblowing button"
-msgstr "ប៊ូតុងរាយការណ៍"
-
-msgid "Disclaimer"
+msgid "Channels"
 msgstr ""
-
-msgid "Footer"
-msgstr "បាតកថា"
-
-msgid "Upload"
-msgstr "បញ្ជូន"
-
-msgid "Download"
-msgstr "ទាញយក"
-
-msgid "Language:"
-msgstr "ភាសា៖"
-
-msgid "Add custom text"
-msgstr "បន្ថែមអក្សរផ្សេងៗ"
-
-msgid "Custom text"
-msgstr "អក្សរផ្សេងៗ"
-
-msgid "Original text"
-msgstr "អក្សរដើម"
-
-msgid "Original translation"
-msgstr "ការបកប្រែដើម"
-
-msgid "Custom translation"
-msgstr "ការបកប្រែផ្សេងៗ"
-
-msgid "Contexts"
-msgstr "បរិបទ"
 
 msgid "Hidden"
 msgstr "បានលាក់"
+
+msgid "Description"
+msgstr "ការពណ៌នា"
 
 msgid "Questionnaire"
 msgstr "កម្រងសំណួរ"
@@ -694,8 +628,11 @@ msgstr "កម្រងសំណួរ"
 msgid "Recipients"
 msgstr "អ្នកទទួល"
 
-msgid "days"
-msgstr "ថ្ងៃ"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "កំណត់តម្លៃទៅ ០ ដើម្បីបិទមុខងារនេះ។"
 
 msgid "Show the questionnaire navigation interface"
 msgstr "បង្ហាញផ្ទាំងទិសដៅទៅកម្រងសំណួរ"
@@ -712,24 +649,6 @@ msgstr "ចំនួនអតិបរមានៃអ្នកទទួលដែ
 msgid "Show recipients in alphabetical order"
 msgstr "បង្ហាញអ្នកទទួលតាមលំដាប់អក្សរ"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "បង្ហាញព័ត៌មានអ្នកទទួលនៅលើទំព័រស្ថានភាពនៃរបាយការណ៍"
-
-msgid "Enable comments"
-msgstr "បើកមតិយោបល់"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "អនុញ្ញាតអ្នករាយការណ៍អោយសរសេរមតិយោបល់"
-
-msgid "Enable private messages"
-msgstr "បើកសារសម្ងាត់"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "អនុញ្ញាតអ្នករាយការណ៍ឲ្យផ្ញើសារ"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "អនុញ្ញាតអ្នករាយការណ៍បន្ថែមឯកសារភ្ជាប់ទៅកាន់របាយការណ៍"
-
 msgid "Additional questionnaire"
 msgstr "កម្រងសំណួរបន្ថែម"
 
@@ -745,6 +664,9 @@ msgstr "តម្លៃ"
 msgid "Medium"
 msgstr "មធ្យម"
 
+msgid "High"
+msgstr "ខ្ពស់"
+
 msgid "Software version:"
 msgstr "ជំនាន់កម្មវិធី៖"
 
@@ -759,6 +681,9 @@ msgstr "អាសយដ្ឋាន IP ដែលបានអនុញ្ញា�
 
 msgid "Admin"
 msgstr "អ្នកគ្រប់គ្រង"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "អ្នកទទួល"
@@ -839,9 +764,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "ជំនួយការកំណត់ដោយខ្លួនឯង នឹងណែនាំអ្នកតាមរយៈការរៀបចំ HTTPS ពីភ្នាក់ងារវិញ្ញាបនបត្រជំនួស។"
-
-msgid "Disabled"
-msgstr "បានបិទ"
 
 msgid "Auto-renewal"
 msgstr "បន្តដោយស្វ័យប្រវត្តិ"
@@ -956,6 +878,12 @@ msgstr "ទទួលយកចម្លើយច្រើន"
 msgid "Template override"
 msgstr "គំរូជាន់គ្នា"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "លេខទូរស័ព្ទ"
 
@@ -979,6 +907,9 @@ msgstr "វីដេអូ"
 
 msgid "Text shown upon negative answer"
 msgstr "អក្សរបង្ហាញតាមចម្លើយអវិជ្ជមាន"
+
+msgid "Low"
+msgstr "ទាប"
 
 msgid "Trigger conditions"
 msgstr "ភាពសំខាន់នៃស្ថានភាព"
@@ -1010,20 +941,149 @@ msgstr "ស្ទួន"
 msgid "Steps"
 msgstr "ជំហាន"
 
-msgid "Site settings"
-msgstr "ការកំណត់គេហទំព័រ"
+msgid "Logo"
+msgstr "រូបសញ្ញា"
+
+msgid "Project name"
+msgstr "ឈ្មោះគម្រោង"
+
+msgid "Homepage title"
+msgstr "ចំណងជើងគេហទំព័រ"
+
+msgid "Presentation"
+msgstr "បទបង្ហាញ"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "សំណួរដែលត្រូវទទូចសុំពីអ្នករាយការណ៍"
+
+msgid "Whistleblowing button"
+msgstr "ប៊ូតុងរាយការណ៍"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Footer"
+msgstr "បាតកថា"
+
+msgid "Upload"
+msgstr "បញ្ជូន"
+
+msgid "Download"
+msgstr "ទាញយក"
+
+msgid "Language:"
+msgstr "ភាសា៖"
+
+msgid "Add custom text"
+msgstr "បន្ថែមអក្សរផ្សេងៗ"
+
+msgid "Custom text"
+msgstr "អក្សរផ្សេងៗ"
+
+msgid "Original text"
+msgstr "អក្សរដើម"
+
+msgid "Original translation"
+msgstr "ការបកប្រែដើម"
+
+msgid "Custom translation"
+msgstr "ការបកប្រែផ្សេងៗ"
+
+msgid "Disable submissions"
+msgstr "បិទការដាក់បញ្ជូន"
+
+msgid "Enable encryption"
+msgstr "បើកកូដនីយកម្ម"
+
+msgid "Enable administrators to change user passwords"
+msgstr "បើកឲ្យអ្នកគ្រប់គ្រងផ្លាស់ប្តូរពាក្យសម្ងាត់អ្នកប្រើប្រាស់"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "អ្នកគ្រប់គ្រងត្រូវបានផ្តល់សិទ្ធិផ្លាស់ប្តូរពាក្យសម្ងាត់អ្នកប្រើប្រាស់៖"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "បើកការចូលសាមញ្ញ"
+
+msgid "Enable search engines indexing"
+msgstr "បើកការផ្ទុកម៉ាស៊ីនស្វែងរក"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "កំណត់ទំហំសម្រាប់ឯកសារភ្ជាប់"
+
+msgid "megabytes"
+msgstr "មេកាបៃ"
+
+msgid "Require two factor authentication"
+msgstr "ទាមទារការផ្ទៀងផ្ទាត់ពីរកត្តា"
+
+msgid "Password change interval"
+msgstr "ចន្លោះពេលផ្លាស់ប្តូរពាក្យសម្ងាត់"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "ដើម្បីសុវត្ថិភាព​ ការផ្លាស់ប្តូរពាក្យសម្ងាត់ត្រូវបានទាមទារនៅចន្លោះពេលទៀងទាត់។"
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "រយៈពេលដែលនៅសល់សម្រាប់ជូនដំណឹងពីរបាយការណ៍មិនទាន់អានទៅកាន់អ្នកប្រើប្រាស់"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "បិទផ្ទាំងឯកជន"
+
+msgid "Enable custom privacy panel"
+msgstr "បើកកំណត់ផ្ទាំងឯកជន"
+
+msgid "Custom privacy panel"
+msgstr "កំណត់ផ្ទាំងឯកជន"
+
+msgid "Enable scoring system"
+msgstr "បើកប្រព័ន្ធដាក់ពិន្ទុ"
+
+msgid "Logging level"
+msgstr "កម្រិតការចូលប្រើប្រាស់"
+
+msgid "percentage"
+msgstr "ភាគរយ"
+
+msgid "Log accesses of internal users"
+msgstr "ការចូលប្រើប្រាស់របស់អ្នកប្រើប្រាស់ខាងក្នុង"
+
+msgid "Notify administrators of software problems"
+msgstr "ជូនដំណឹងអ្នកគ្រប់គ្រងពីបញ្ហាកម្មវិធី"
+
+msgid "Notify developers of software problems"
+msgstr "ជូនដំណឹងអ្នកអភិវឌ្ឍន៍កម្មវិធីពីបញ្ហាកម្មវិធី"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "នៅពេលបើកមុខងារនេះ អ្នកនឹងចូលរួមធ្វើកំណែរប្រែ និងសុវត្ថិភាពរបស់វេទិកា។"
+
+msgid "Reset reports"
+msgstr "កំណត់របាយការណ៍សារឡើងវិញ"
+
+msgid "Settings"
+msgstr "ការកំណត់"
 
 msgid "Case management"
 msgstr "ការគ្រប់គ្រងករណី"
 
-msgid "Network settings"
-msgstr "ការគ្រប់គ្រងបណ្តាញ"
+msgid "Network"
+msgstr "បណ្តាញ"
 
 msgid "Sites"
 msgstr "គេហទំព័រ"
 
-msgid "Mode:"
-msgstr "ទម្រង់៖"
+msgid "Profile"
+msgstr "រូប"
 
 msgid "Configure"
 msgstr "កំណត់រចនាសម្ព័ន្ធ"
@@ -1031,14 +1091,17 @@ msgstr "កំណត់រចនាសម្ព័ន្ធ"
 msgid "Subdomain"
 msgstr "ឈ្មោះវេបសាយរង"
 
+msgid "Mode:"
+msgstr "ទម្រង់៖"
+
 msgid "Creation date:"
 msgstr "កាលបរិច្ឆេទបង្កើត៖"
 
-msgid "Root domain used for secondary sites"
-msgstr "ឈ្មោះវេបសាយដើម ត្រូវបានប្រើសម្រាប់គេហទំព័របន្ទាប់"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "ប្រើប្រាស់ទំព័រដំបូង សម្រាប់តែគោលបំណងគ្រប់គ្រងតែប៉ុណ្ណោះ"
+
+msgid "Root domain used for secondary sites"
+msgstr "ឈ្មោះវេបសាយដើម ត្រូវបានប្រើសម្រាប់គេហទំព័របន្ទាប់"
 
 msgid "Allow users to sign up"
 msgstr "អនុញ្ញាតអ្នកប្រើប្រាស់ចុះឈ្មោះ"
@@ -1059,10 +1122,10 @@ msgid "Set password"
 msgstr "កំណត់ពាក្យសម្ងាត់"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "ពាក្យសម្ងាត់នេះ ខ្សោយពេក។ ពាក្យសម្ងាត់ត្រឹមត្រូវ គួរមានយ៉ាងហោចណាស់​ ១០ ខ្ទង់ និងមានអក្សរចម្រុះដូចជា អក្សរតូច អក្សរធំ លេខ និងសញ្ញា។"
+msgstr ""
 
 msgid "Force password change"
 msgstr "បង្ខំអោយផ្លាស់ប្តូរពាក្យសម្ងាត់"
@@ -1097,11 +1160,23 @@ msgstr "ជ្រើសរើសដោយបង្ខំ"
 msgid "Allow the recipient to delete reports"
 msgstr "អនុញ្ញាតអ្នកទទួលលុបរបាយការណ៍"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "អនុញ្ញាតអ្នកទទួលពន្យាពេលកាលបរិច្ឆេទផុតកំណត់របាយការណ៍"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "ផ្តល់សិទ្ធអ្នកប្រើប្រាស់ចូលគ្រប់គ្រង​មុខងារដូចខាងក្រោម៖"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "កាលបរិច្ឆេទស្នើសុំ"
@@ -1139,14 +1214,20 @@ msgstr "សូមជ្រើសរើសគណនីរបស់អ្នក៖
 msgid "Now type your password, then click 'Log in':"
 msgstr "ឥឡូវ វាយបញ្ចូលពាក្យសម្ងាត់របស់អ្នក បន្ទាប់មកចុច 'ចូលប្រើប្រាស់'៖"
 
-msgid "Text shown after the user has selected the option."
-msgstr "អក្សរបង្ហាញ បន្ទាប់ពីអ្នកប្រើប្រាស់បានជ្រើសរើសរួច។"
-
 msgid "Confirm"
 msgstr "យល់ព្រម"
 
+msgid "Text shown after the user has selected the option."
+msgstr "អក្សរបង្ហាញ បន្ទាប់ពីអ្នកប្រើប្រាស់បានជ្រើសរើសរួច។"
+
 msgid "Assign score points"
 msgstr "កំណត់ពិន្ទុ"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "ស្ថានភាព៖"
 
 msgid "Are you sure?"
 msgstr "តើ​អ្នក​ប្រាកដ​ឬ?"
@@ -1171,8 +1252,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "ចំលង និងរក្សាទុកនៅកន្លែងសុវត្ថិភាព។ វាមានសារៈសំខាន់ បើអ្នកបាត់បង់ពាក្យសម្ងាត់ ដើម្បីជួយអ្នកក្នុងការចូលប្រើប្រាស់គណនីឡើងវិញ ដោយមិនបាត់បង់ទិន្នន័យ។"
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "វាយបញ្ចូលឈ្មោះសម្រាប់ការចម្លង"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr ""
@@ -1194,14 +1290,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "វេទិកានេះ​ មិនបានកំណត់សម្រាប់ការតភ្ជាប់ HTTPS និងគួរតែត្រូវបានប្រើប្រាស់សម្រាប់សាកល្បងតែប៉ុណ្ណោះ។​"
 
-msgid "Please write a motivation for the reply"
-msgstr "សូមសរសេរការលើកទឹកចិត្តមួយសម្រាប់ការឆ្លើយតប"
-
 msgid "Send"
 msgstr "បញ្ជូន"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "ដោយការបញ្ជាក់នេះ អ្នកនឹងពន្យាកាលបរិច្ឆេទផុតកំណត់ទៅ៖"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "នេះជាវាទិកាសាកល្បង សូមកុំប្រើប្រាស់វាសម្រាប់ការបញ្ជូនពិតប្រាកដ។"
@@ -1235,6 +1334,12 @@ msgstr "ធនធានអាចចូលប្រើប្រាស់បាន
 
 msgid "The upload request exceeds the size limit"
 msgstr "ការស្នើសុំបញ្ជូន​ លើសពីទំហំកំណត់"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "ពាក្យសម្ងាត់បច្ចុប្បន្ន"
@@ -1277,20 +1382,23 @@ msgstr "តើអ្នកបានបំពេញរបាយការណ៍ហ
 msgid "The receipt is either invalid or the report has expired."
 msgstr "បង្កាន់ដៃមិនត្រឹមត្រូវ ឬរបាយការណ៍ផុតកំណត់។"
 
-msgid "Select a file or drag it here."
-msgstr "ជ្រើសឯកសារ ឬអូសវាចូលទីនេះ។"
+msgid "Filename"
+msgstr "ឈ្មោះ​ឯកសារ"
 
 msgid "Size:"
 msgstr "ទំហំ៖"
 
-msgid "Uploading files…"
-msgstr "កំពុងបញ្ជូលឯកសារ..."
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "ការបញ្ជូលបានបញ្ចប់ដោយជោគជ័យ!"
+msgid "Address"
+msgstr "អាសយដ្ឋាន"
 
-msgid "Estimated upload time:"
-msgstr "រយៈពេលបញ្ជូលដោយប៉ាន់ស្មាន៖"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr "លេខពន្ធ"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "អ្នកទទួលបានស្នើសុំអ្នកឲ្យបំពេញកម្រងសំណួរបន្ថែម។"
@@ -1304,8 +1412,8 @@ msgstr "ពី៖"
 msgid "To:"
 msgstr "ទៅ៖"
 
-msgid "Filename"
-msgstr "ឈ្មោះ​ឯកសារ"
+msgid "View"
+msgstr "មើល"
 
 msgid "Upload date"
 msgstr "កាលបរិច្ឆេទបញ្ជូន"
@@ -1318,9 +1426,6 @@ msgstr "ចម្លើយកម្រងសំណួរ"
 
 msgid "Step"
 msgstr "ជំហាន"
-
-msgid "Status:"
-msgstr "ស្ថានភាព៖"
 
 msgid "Files attached by recipients"
 msgstr "ឯកសារភ្ជាប់ដោយអ្នកទទួល"
@@ -1347,9 +1452,6 @@ msgstr "បើអ្នកចង់ចូលរួមចំណែកក្នុ
 msgid "Join our chat:"
 msgstr "ចូលរួមការជជែករបស់យើង៖"
 
-msgid "Follow the project on:"
-msgstr "តាមដានគម្រោងនៅលើ៖"
-
 msgid "An update is available:"
 msgstr "មានបច្ចុប្បន្នភាពមួយ៖"
 
@@ -1359,6 +1461,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "យើងខ្ញុំសូមណែនាំ អ្នកចូលទៅកាន់ផ្នែក “ចំណង់ចំណូលចិត្ត” ដើម្បីទាញយក “លេខកូដសង្គ្រោះគណនី” របស់អ្នក និងរក្សាទុកវាឲ្យមានសុវត្ថិភាព។ លេខកូដនេះ នឹងចាំបាច់ដើម្បីស្តារការចូលប្រើប្រាស់ និងទិន្នន័យរបស់អ្នក ក្នុងករណីអ្នកភ្លេចពាក្យសម្ងាត់។"
+
+msgid "Select a file or drag it here."
+msgstr "ជ្រើសឯកសារ ឬអូសវាចូលទីនេះ។"
 
 msgid "The provided recovery key is invalid."
 msgstr "លេខកូដសង្គ្រោះដែលបានផ្តល់មិនត្រឹមត្រូវ។"
@@ -1391,6 +1496,9 @@ msgstr "កាលបរិច្ឆេទនៃការស្នើសុំ"
 msgid "Show"
 msgstr "បង្ហាញ"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "អប​អរសាទរ!"
 
@@ -1413,26 +1521,17 @@ msgstr "បើមិនដាក់ដំណើរការក្នុងពេ
 msgid "Sign up"
 msgstr "ចុះឈ្មោះ"
 
-msgid "Site"
-msgstr "តំបន់​បណ្ដាញ"
-
-msgid "Confirmation"
-msgstr "ការបញ្ជាក់"
-
 msgid "Invalid confirmation"
 msgstr "ការបញ្ជាក់មិនត្រឹមត្រូវ"
 
 msgid "Invalid phone number"
 msgstr "លេខទូរស័ព្ទមិនត្រឹមត្រូវ"
 
-msgid "Address"
-msgstr "អាសយដ្ឋាន"
+msgid "Site"
+msgstr "តំបន់​បណ្ដាញ"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr "លេខពន្ធ"
+msgid "Confirmation"
+msgstr "ការបញ្ជាក់"
 
 msgid "The answer is too short"
 msgstr "ចម្លើយនេះ​ខ្លីពេក"
@@ -1471,17 +1570,17 @@ msgstr "ប្រើប្រាស់បង្កាន់ដៃ ១៦ ខ្�
 msgid "View your report"
 msgstr "បង្ហាញរបាយការណ៍របស់អ្នក"
 
-msgid "Recipient selection"
-msgstr "ការជ្រើសរើសអ្នកទទួល"
-
-msgid "Select the recipients of your report:"
-msgstr "ជ្រើសរើសអ្នកទទួលរបាយការណ៍របស់អ្នក៖"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "អ្នកទទួលបានជ្រើសរើស៖"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "អ្នកបានឈានដល់ចំនួនអតិបរមានៃអ្នកទទួលដែលអាចជ្រើសរើសបាន។"
+
+msgid "You must select at least one recipient."
+msgstr "អ្នកត្រូវជ្រើសរើសអ្នកទទួលយ៉ាងហោចណាស់ម្នាក់។"
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1493,17 +1592,11 @@ msgid ""
 "invalid:"
 msgstr "ក្នុងជំហាននេះ ចម្លើយទៅកាន់សំណួរខាងក្រោមនេះ អាចបាត់ឬមិនត្រឹមត្រូវ៖"
 
-msgid "You must select at least one recipient."
-msgstr "អ្នកត្រូវជ្រើសរើសអ្នកទទួលយ៉ាងហោចណាស់ម្នាក់។"
+msgid "Recipient selection"
+msgstr "ការជ្រើសរើសអ្នកទទួល"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "កំពុងរង់ចាំឯកសារ​ ដើម្បីបញ្ចប់ការបញ្ជូល។"
-
-msgid "The following steps have errors:"
-msgstr "ជំហានខាងក្រោមនេះមានបញ្ហា៖"
-
-msgid "Hide"
-msgstr "លាក់"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1593,8 +1686,8 @@ msgstr "តើស្ថាប័នទាំងនេះបានស៊ើបអ
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "តើលទ្ធផលបែបណាដែលអ្នកចង់បាន/ទទួលបាន?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "តើអ្នកចង់ផ្តល់ព័ត៌មានអត្តសញ្ញាណរបស់អ្នកទេ?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "នាម"
@@ -1610,6 +1703,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "ផ្សេងៗ"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "ជូនចំពោះ {RecipientName},"
@@ -1671,6 +1767,9 @@ msgstr "ពិនិត្យបញ្ហានេះ ដើម្បីកំ�
 
 msgid "The activities with unusual stats are:"
 msgstr "សកម្មភាពដែលមានស្ថិតិមិនធម្មតាគឺ៖"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1900,6 +1999,9 @@ msgstr ""
 msgid "New report"
 msgstr "របាយការណ៍ថ្មី"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "កាលបរិច្ឆេទផុតកំណត់ដំបូងបំផុតគឺ {EarliestExpirationDate}។"
 
@@ -1909,18 +2011,16 @@ msgstr "សូមកុំភ្លេចឆែកមើលមុនពេលវ
 msgid "Some reports will expire soon"
 msgstr "របាយការណ៍ខ្លះនឹងផុតកំណត់ឆាប់ៗនេះ"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "នេះជាអុីមែលជូនដំណឹងអ្នកថា មានអ្នករាយការណ៍ម្នាក់បានជ្រើសរើសអ្នកជាទទួលដ៏មានតម្លៃសម្រាប់របាយការណ៍របស់គេ។"
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "អ្នកត្រូវបានស្នើសុំឱ្យយកចិត្តទុកដាក់ជាពិសេស ចំពោះព័ត៌មាន និងទិន្នន័យដែលមាននៅក្នុងនោះ។ សូមចងចាំថា អ្នករាយការណ៍តែងតែប្រឈម ហានិភ័យផ្ទាល់ខ្លួនខ្ពស់ដើម្បីផលប្រយោជន៍សាធារណៈ។ ហេតុដូចនេះ ទិន្នន័យដែលបានផ្តល់នៅក្នុងរបាយការណ៍នេះ គួរតែចាត់ទុកថាមានសារៈសំខាន់ខ្ពស់។"
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "នេះជាអុីមែលជូនដំណឹងថា របាយការណ៍ដែលមានស្រាប់មួយត្រូវបានធ្វើបច្ចុប្បន្នភាព។"

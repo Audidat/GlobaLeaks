@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2021-2022\n"
-"Language-Team: Uzbek (http://www.transifex.com/otf/globaleaks/language/uz/)\n"
+"Language-Team: Uzbek (http://app.transifex.com/otf/globaleaks/language/uz/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uz\n"
@@ -19,20 +19,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Kirish"
 
-msgid "Main configuration"
-msgstr "Asosiy sozlamalar"
-
-msgid "Theme customization"
-msgstr "Mavzuni moslash"
-
 msgid "Languages"
 msgstr "Tillar"
 
 msgid "Text customization"
 msgstr "Matnni moslash"
 
-msgid "Advanced settings"
-msgstr "Kengaytirilgan sozlamalar"
+msgid "Advanced"
+msgstr "Qo‘shimcha"
 
 msgid "Question templates"
 msgstr "Savol andozalari"
@@ -52,8 +46,8 @@ msgstr "Oʻzgarishlar"
 msgid "License"
 msgstr "Litsenziya"
 
-msgid "Notification templates"
-msgstr "Bildirishnoma andozalari"
+msgid "Templates"
+msgstr "Andozalar"
 
 msgid "Delete"
 msgstr "Oʻchirish"
@@ -64,8 +58,8 @@ msgstr "Anomaliyalar"
 msgid "Preferences"
 msgstr "Sozlamalar"
 
-msgid "Notification settings"
-msgstr "Bildirishnoma sozlamalari"
+msgid "Notifications"
+msgstr "Bildirishnomalar"
 
 msgid "file unavailable"
 msgstr "fayl mavjud emas"
@@ -85,25 +79,16 @@ msgstr "Fayllar"
 msgid "Comments"
 msgstr "Fikrlar"
 
-msgid "Messages"
-msgstr "Xabarlar"
-
 msgid "Details"
 msgstr "Tafsilotlar"
 
 msgid "Platform wizard"
 msgstr "Platformani sozlash"
 
-msgid "CREDIT CARD"
-msgstr "KREDIT KARTA"
-
-msgid "YOUR NAME"
-msgstr "ISMINGIZ"
-
 msgid "Label the report"
 msgstr "Xabarga yorliq biriktiring"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Muddatini uzaytirish"
 
 msgid "Select all"
@@ -115,8 +100,8 @@ msgstr "Belgilovni bekor qilish"
 msgid "Refresh"
 msgstr "Yangilash"
 
-msgid "Context"
-msgstr "Kanal"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Nazar solish"
@@ -220,9 +205,6 @@ msgstr "Ruxsat soʻraldi"
 msgid "Request access to the whistleblower's identity"
 msgstr "Oshkor qiluvchining shaxsini koʻrishga ruxsat soʻrash"
 
-msgid "Please write a motivation"
-msgstr "Motivatsiyangizni yozing"
-
 msgid "Reply to the request"
 msgstr "Soʻrovga javob berish"
 
@@ -249,9 +231,6 @@ msgstr "Oshkor qiluvchining shaxsiga ruxsatni rad qilish"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Oshkor qiluvchining shaxsiga ruxsat berish"
-
-msgid "Templates"
-msgstr "Andozalar"
 
 msgid "URL redirects"
 msgstr "URL yoʻnaltirishlar"
@@ -292,8 +271,8 @@ msgstr "Qoniqarli"
 msgid "Strong"
 msgstr "Ishonchli"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Kontekstni tanlash interfeysining yuqori qismidagi matn"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Email orqali bildirishnomalar yuborilmay tursin"
@@ -356,9 +335,6 @@ msgstr "Maksimal fayl hajmi:"
 
 msgid "Scheduled jobs"
 msgstr "Rejalashtirilgan vazifalar"
-
-msgid "Sites management"
-msgstr "Saytlar boshqaruvi"
 
 msgid "Regenerate"
 msgstr "Qayta yasash"
@@ -458,20 +434,110 @@ msgstr "Vaqtincha xotiraga nusxalash"
 msgid "Logout"
 msgstr "Chiqish"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Bu qabul qiluvchi uchun anonim xabarlarni koʻrishga ruxsat berish"
-
 msgid "Grant access"
 msgstr "Ruxsat berish"
 
 msgid "Revoke access"
 msgstr "Ruxsatni bekot qilish"
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "Berkitish"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "Maxfiylik siyosati"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr ""
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr ""
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "Anonim xabar yuborish"
 
-msgid "Select the context of your report:"
-msgstr "Xabaringiz kanalini tanlang:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "Davom etishdan oldin yangi parol belgilang."
@@ -481,102 +547,6 @@ msgstr "Davom etishdan oldin ikki bosqichli hisob tekshiruvini yoqing"
 
 msgid "Enable"
 msgstr "Yoqish"
-
-msgid "Disable submissions"
-msgstr "Joylanmalarni oʻchirish"
-
-msgid "Enable encryption"
-msgstr "Shifrlanishni yoqish"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Administratorlarga foydalanuvchilar parollarini oʻzgartirish vakolatini berish"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Quyidagi administratorlar foydalanuvchilar parolini oʻzgartira oladi:"
-
-msgid "Enable multisite feature"
-msgstr "Multisayt funksiyasini yoqish"
-
-msgid "Enable simplified login"
-msgstr "Soddalashtirilgan kirishni yoqish"
-
-msgid "Enable search engines indexing"
-msgstr "Qidiruv tizimlari indeksatsiyasiga ruxsat berish"
-
-msgid "Default questionnaire"
-msgstr "Birlamchi savolnoma"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Kontekstlarni alifbo tartibida chiqarish"
-
-msgid "Size limit for file attachments"
-msgstr "Fayl biriktirmalari hajmi limiti"
-
-msgid "megabytes"
-msgstr "megabayt"
-
-msgid "Require two factor authentication"
-msgstr "Ikki bosqichli hisob tekshiruvini talab qilish"
-
-msgid "Password change interval"
-msgstr "Parolni almashtirish vaqti"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Xavfsizlik maqsadlarida parollar ora-orada muntazam almashtiriladi."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Bu funksiya yoqilmasligi uchun 0 qiymatini belgilang."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Foydalanuvchilarga oʻqilmagan anonim xabarlar haqida necha kundan keyin xabar qilinsin"
-
-msgid "Disable the privacy panel"
-msgstr "Maxfiylik panelini faolsizlantirish"
-
-msgid "Enable custom privacy panel"
-msgstr "Maxsus maxfiylik panelini yoqish"
-
-msgid "Custom privacy panel"
-msgstr "Maxsus maxfiylik paneli"
-
-msgid "Enable custodian user role"
-msgstr "Himoyachi foydalanuvchi vakolatini yoqish"
-
-msgid "Enable scoring system"
-msgstr "Ballar tizimini yoqish"
-
-msgid "Logging level"
-msgstr "Jurnal darajasi"
-
-msgid "Log accesses of internal users"
-msgstr "Ichki foydalanuvchilar kirishini jurnalga yozish"
-
-msgid "Notify administrators of software problems"
-msgstr "Administratorlarga dasturiy muammolar haqida xabar qilish"
-
-msgid "Notify developers of software problems"
-msgstr "Ishlab chiquvchilarga dasturiy muammolar haqida xabar qilish"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Bu funksiya yoqilsa, siz platformaning rivoji va xavfsizligiga hissa qoʻshasiz"
-
-msgid "Save"
-msgstr "Saqlash"
-
-msgid "Reset reports"
-msgstr "Anonim xabarlarni asliga qaytarish"
-
-msgid "Low"
-msgstr "Past"
-
-msgid "High"
-msgstr "Yuqori"
-
-msgid "percentage"
-msgstr "foiz"
 
 msgid "Type"
 msgstr "Turi"
@@ -605,6 +575,9 @@ msgstr "Yaratilgan sanasi"
 msgid "Last access"
 msgstr "Oxirgi ochilgan vaqti"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "Oshkor qiluvchining oxirgi kirgan vaqti"
 
@@ -623,68 +596,29 @@ msgstr "Bu qator toʻldirilishi shart"
 msgid "Edit"
 msgstr "Tahrirlash"
 
+msgid "Save"
+msgstr "Saqlash"
+
 msgid "Cancel"
 msgstr "Bekor qilish"
+
+msgid "days"
+msgstr "kun"
+
+msgid "Disabled"
+msgstr "Yoqilmagan"
 
 msgid "Report statuses"
 msgstr "Anonim xabarlar holati"
 
-msgid "Logo"
-msgstr "Logotip"
-
-msgid "Project name"
-msgstr "Loyiha nomi"
-
-msgid "Description"
-msgstr "Tavsifi"
-
-msgid "Homepage title"
-msgstr "Bosh sahifa sarlavhasi"
-
-msgid "Presentation"
-msgstr "Bosh matni"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Ehtimoliy oshkor qiluvchilarni jalb qiladigan savol"
-
-msgid "Whistleblowing button"
-msgstr "Oshkor qilish tugmasi"
-
-msgid "Disclaimer"
-msgstr "Ogohlantirish"
-
-msgid "Footer"
-msgstr "Futer"
-
-msgid "Upload"
-msgstr "Yuklash"
-
-msgid "Download"
-msgstr "Yuklab olish"
-
-msgid "Language:"
-msgstr "Til:"
-
-msgid "Add custom text"
-msgstr "Maxsus matn kiritish"
-
-msgid "Custom text"
-msgstr "Maxsus matn"
-
-msgid "Original text"
-msgstr "Asl matn"
-
-msgid "Original translation"
-msgstr "Asl tarjima"
-
-msgid "Custom translation"
-msgstr "Maxsus tarjima"
-
-msgid "Contexts"
-msgstr "Kanallar"
+msgid "Channels"
+msgstr ""
 
 msgid "Hidden"
 msgstr "Yashirin"
+
+msgid "Description"
+msgstr "Tavsifi"
 
 msgid "Questionnaire"
 msgstr "Savolnomalar"
@@ -692,8 +626,11 @@ msgstr "Savolnomalar"
 msgid "Recipients"
 msgstr "Qabul qiluvchilar"
 
-msgid "days"
-msgstr "kun"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Bu funksiya yoqilmasligi uchun 0 qiymatini belgilang."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Savolnomalar navigatsiyasi interfeysini chiqarish"
@@ -710,24 +647,6 @@ msgstr "Tanlanadigan qabul qiluvchilarning maksimal soni:"
 msgid "Show recipients in alphabetical order"
 msgstr "Qabul qiluvchilarni alifbo tartibida saralash"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Qabul qiluvchi tafsilotlarini anonim xabarning holati sahifasida chiqarish"
-
-msgid "Enable comments"
-msgstr "Fikrlarni yoqish"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Oshkor qiluvchilar fikr bildirishiga ruxsat berish"
-
-msgid "Enable private messages"
-msgstr "Shaxsiy xabarlarni yoqish"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Oshkor qiluvchilar xabar yuborishiga ruxsat berish"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr ""
-
 msgid "Additional questionnaire"
 msgstr "Qoʻshimcha savolnomalar"
 
@@ -743,6 +662,9 @@ msgstr "Qiymati"
 msgid "Medium"
 msgstr "O‘rtacha"
 
+msgid "High"
+msgstr "Yuqori"
+
 msgid "Software version:"
 msgstr "Dasturiy taʼminot versiyasi:"
 
@@ -757,6 +679,9 @@ msgstr "Ruxsat etilgan IP manzillar"
 
 msgid "Admin"
 msgstr "Administrator"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Qabul qiluvchi"
@@ -837,9 +762,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "Mustaqil konfiguratsiya vositasi yordamida HTTPS protokolini muqobil Sertifikatlash idorasi yordamida sozlash mumkin."
-
-msgid "Disabled"
-msgstr "Yoqilmagan"
 
 msgid "Auto-renewal"
 msgstr "Avto-yangilanishi"
@@ -954,6 +876,12 @@ msgstr "Bir nechta javoblarni qabul qilish"
 msgid "Template override"
 msgstr "Andozani qayta belgilash"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "Telefon raqami"
 
@@ -977,6 +905,9 @@ msgstr "Video"
 
 msgid "Text shown upon negative answer"
 msgstr ""
+
+msgid "Low"
+msgstr "Past"
 
 msgid "Trigger conditions"
 msgstr "Shartlar bajarilishi"
@@ -1008,20 +939,149 @@ msgstr "Takrorlanuvchi"
 msgid "Steps"
 msgstr "Qadamlar"
 
-msgid "Site settings"
-msgstr "Sayt sozlamalari"
+msgid "Logo"
+msgstr "Logotip"
+
+msgid "Project name"
+msgstr "Loyiha nomi"
+
+msgid "Homepage title"
+msgstr "Bosh sahifa sarlavhasi"
+
+msgid "Presentation"
+msgstr "Bosh matni"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Ehtimoliy oshkor qiluvchilarni jalb qiladigan savol"
+
+msgid "Whistleblowing button"
+msgstr "Oshkor qilish tugmasi"
+
+msgid "Disclaimer"
+msgstr "Ogohlantirish"
+
+msgid "Footer"
+msgstr "Futer"
+
+msgid "Upload"
+msgstr "Yuklash"
+
+msgid "Download"
+msgstr "Yuklab olish"
+
+msgid "Language:"
+msgstr "Til:"
+
+msgid "Add custom text"
+msgstr "Maxsus matn kiritish"
+
+msgid "Custom text"
+msgstr "Maxsus matn"
+
+msgid "Original text"
+msgstr "Asl matn"
+
+msgid "Original translation"
+msgstr "Asl tarjima"
+
+msgid "Custom translation"
+msgstr "Maxsus tarjima"
+
+msgid "Disable submissions"
+msgstr "Joylanmalarni oʻchirish"
+
+msgid "Enable encryption"
+msgstr "Shifrlanishni yoqish"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Administratorlarga foydalanuvchilar parollarini oʻzgartirish vakolatini berish"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Quyidagi administratorlar foydalanuvchilar parolini oʻzgartira oladi:"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Soddalashtirilgan kirishni yoqish"
+
+msgid "Enable search engines indexing"
+msgstr "Qidiruv tizimlari indeksatsiyasiga ruxsat berish"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Fayl biriktirmalari hajmi limiti"
+
+msgid "megabytes"
+msgstr "megabayt"
+
+msgid "Require two factor authentication"
+msgstr "Ikki bosqichli hisob tekshiruvini talab qilish"
+
+msgid "Password change interval"
+msgstr "Parolni almashtirish vaqti"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Xavfsizlik maqsadlarida parollar ora-orada muntazam almashtiriladi."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Foydalanuvchilarga oʻqilmagan anonim xabarlar haqida necha kundan keyin xabar qilinsin"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Maxfiylik panelini faolsizlantirish"
+
+msgid "Enable custom privacy panel"
+msgstr "Maxsus maxfiylik panelini yoqish"
+
+msgid "Custom privacy panel"
+msgstr "Maxsus maxfiylik paneli"
+
+msgid "Enable scoring system"
+msgstr "Ballar tizimini yoqish"
+
+msgid "Logging level"
+msgstr "Jurnal darajasi"
+
+msgid "percentage"
+msgstr "foiz"
+
+msgid "Log accesses of internal users"
+msgstr "Ichki foydalanuvchilar kirishini jurnalga yozish"
+
+msgid "Notify administrators of software problems"
+msgstr "Administratorlarga dasturiy muammolar haqida xabar qilish"
+
+msgid "Notify developers of software problems"
+msgstr "Ishlab chiquvchilarga dasturiy muammolar haqida xabar qilish"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Bu funksiya yoqilsa, siz platformaning rivoji va xavfsizligiga hissa qoʻshasiz"
+
+msgid "Reset reports"
+msgstr "Anonim xabarlarni asliga qaytarish"
+
+msgid "Settings"
+msgstr "Sozlamalar"
 
 msgid "Case management"
 msgstr "Murojaatlar boshqaruvi"
 
-msgid "Network settings"
-msgstr "Tarmoq sozlamalari"
+msgid "Network"
+msgstr ""
 
 msgid "Sites"
 msgstr "Saytlar"
 
-msgid "Mode:"
-msgstr "Rejim:"
+msgid "Profile"
+msgstr "Profil"
 
 msgid "Configure"
 msgstr "Sozlash"
@@ -1029,14 +1089,17 @@ msgstr "Sozlash"
 msgid "Subdomain"
 msgstr "Quyidomen"
 
+msgid "Mode:"
+msgstr "Rejim:"
+
 msgid "Creation date:"
 msgstr "Yaratilgan sanasi:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Ikkilamchi saytlarda ishlatiladigan asosiy domen"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Bosh saytni faqat boshqaruv maqsadlarida ishlating"
+
+msgid "Root domain used for secondary sites"
+msgstr "Ikkilamchi saytlarda ishlatiladigan asosiy domen"
 
 msgid "Allow users to sign up"
 msgstr "Foydalanuvchilarga roʻyxatdan oʻtish imkonini berish"
@@ -1057,10 +1120,10 @@ msgid "Set password"
 msgstr "Parol belgilash"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Tanlangan parol juda zaif. Ishonchli parol kamida 10 ta kichik, katta, raqamli va maxsus belgilardan iborat boʻlsin."
+msgstr "Tanlangan parol juda zaif. Ishonchli parol kamida 12 ta kichik, katta, raqamli va maxsus belgilardan iborat boʻlsin."
 
 msgid "Force password change"
 msgstr "Parol majburiy oʻzgartirilsin"
@@ -1095,11 +1158,23 @@ msgstr "Majburiy tanlangan"
 msgid "Allow the recipient to delete reports"
 msgstr "Qabul qiluvchiga anonim xabarlarni oʻchirish imkonini berish"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Qabul qiluvchi anonim xabar muddatini kechiktirishiga ruxsat berish"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Foydalanuvchiga quyidagi funksiyalarni boshqarish vakolatini berish:"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "Soʻrov sanasi"
@@ -1137,14 +1212,20 @@ msgstr "Hisobingizni tanlang:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Endi parolni yozing va “Kirish” ustiga bosing:"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Foydalanuvchi parametr tanlaganidan keyin chiqadigan matn."
-
 msgid "Confirm"
 msgstr "Tasdiqlash"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Foydalanuvchi parametr tanlaganidan keyin chiqadigan matn."
+
 msgid "Assign score points"
 msgstr "Ballarni belgilash"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Holati:"
 
 msgid "Are you sure?"
 msgstr "Ishonchingiz komilmi?"
@@ -1169,8 +1250,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Uni nusxalang va ishonchli joyda saqlang. U parol unutilganda hisobni xavfsiz tiklash uchun kerak boʻladi."
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Nusxa nomini kiriting"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr "Yordam olish"
@@ -1192,14 +1288,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Platforma hozircha HTTPS ulanishlar uchun sozlanmagan va faqat sinov maqsadlarida ishlatiladi."
 
-msgid "Please write a motivation for the reply"
-msgstr "Motivatsiyangizni javobda yozing"
-
 msgid "Send"
 msgstr "Yuborish"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Tasdiqlansa, muddat quyidagi sanagacha kechiktiriladi:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Bu — demo platforma, unga haqiqiy anonim xabarlar yubormang."
@@ -1233,6 +1332,12 @@ msgstr "Manba faqatgina Tor tarmoq ulanishi orqali ochiladi"
 
 msgid "The upload request exceeds the size limit"
 msgstr "Yuklash soʻrovi belgilangan limitdan ortiq"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Joriy parol"
@@ -1275,20 +1380,23 @@ msgstr "Allaqachon anonim xabar qilganmisiz? Murojaat raqamingizni kiriting."
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Anonim xabar yaroqsiz yoki uning muddati eskirgan."
 
-msgid "Select a file or drag it here."
-msgstr "Fayl tanlang yoki shu yerga tortib tashlang."
+msgid "Filename"
+msgstr "Fayl nomi"
 
 msgid "Size:"
 msgstr "Hajmi:"
 
-msgid "Uploading files…"
-msgstr "Fayllar yuklanmoqda…"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "Fayllar yuklandi!"
+msgid "Address"
+msgstr "Manzili"
 
-msgid "Estimated upload time:"
-msgstr "Taxminiy yuklash vaqti:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr ""
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Qabul qiluvchilar qoʻshimcha savolnomani toʻldirishingizni soʻradi."
@@ -1302,8 +1410,8 @@ msgstr "Kimdan:"
 msgid "To:"
 msgstr "Kimga:"
 
-msgid "Filename"
-msgstr "Fayl nomi"
+msgid "View"
+msgstr "Ko‘rish"
 
 msgid "Upload date"
 msgstr "Yuklangan vaqti"
@@ -1316,9 +1424,6 @@ msgstr "Savolnomaga javoblar"
 
 msgid "Step"
 msgstr "Qadam"
-
-msgid "Status:"
-msgstr "Holati:"
 
 msgid "Files attached by recipients"
 msgstr "Qabul qiluvchilar biriktirgan fayllar"
@@ -1345,9 +1450,6 @@ msgstr "Dasturiy taʼminot rivojiga hissa qoʻshish yoki xatoliklar haqida xabar
 msgid "Join our chat:"
 msgstr "Chatimizga qoʻshiling:"
 
-msgid "Follow the project on:"
-msgstr "Loyihani kuzating:"
-
 msgid "An update is available:"
 msgstr "Yangilanish bor:"
 
@@ -1357,6 +1459,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "“Hisobni tiklash kaliti”ngizni olish va xavfsiz joyda saqlash uchun “Parametrlar” bandini ochishni tavsiya etamiz. Bu kalit parol unutilganda platformaga ruxsatingizni xavfsiz tiklashda kerak boʻladi."
+
+msgid "Select a file or drag it here."
+msgstr "Fayl tanlang yoki shu yerga tortib tashlang."
 
 msgid "The provided recovery key is invalid."
 msgstr "Taqdim etilgan tiklash kaliti yaroqsiz."
@@ -1389,6 +1494,9 @@ msgstr "Soʻrov sanasi"
 msgid "Show"
 msgstr "Ko‘rsatish"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Tabriklaymiz!"
 
@@ -1411,26 +1519,17 @@ msgstr "Agar platforma 24 soat ichida aktivatsiya qilinmasa, u avtomatik oʻchir
 msgid "Sign up"
 msgstr "Roʻyxatdan oʻtish"
 
-msgid "Site"
-msgstr ""
-
-msgid "Confirmation"
-msgstr "Tasdiqlash"
-
 msgid "Invalid confirmation"
 msgstr "Yaroqsiz tasdiqlash"
 
 msgid "Invalid phone number"
 msgstr "Telefon raqami yaroqsiz"
 
-msgid "Address"
-msgstr "Manzili"
-
-msgid "Fiscal code"
+msgid "Site"
 msgstr ""
 
-msgid "Tax code"
-msgstr ""
+msgid "Confirmation"
+msgstr "Tasdiqlash"
 
 msgid "The answer is too short"
 msgstr "Javob juda qisqa"
@@ -1469,17 +1568,17 @@ msgstr "Kirishda 16 xonali murojaat raqamidan foydalaning. Uning yordamida sizga
 msgid "View your report"
 msgstr "Anonim xabaringiz"
 
-msgid "Recipient selection"
-msgstr "Qabul qiluvchini tanlash"
-
-msgid "Select the recipients of your report:"
-msgstr "Xabaringiz uchun qabul qiluvchini tanlang:"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "Tanlangan qabul qiluvchilar:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Qabul qiluvchilar maksimal miqdorda tanlandi."
+
+msgid "You must select at least one recipient."
+msgstr "Kamida bitta qabul qiluvchini tanlang."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1491,17 +1590,11 @@ msgid ""
 "invalid:"
 msgstr "Bu bosqichda quyidagi savollarga javoblar berilmagan yoki yaroqsiz:"
 
-msgid "You must select at least one recipient."
-msgstr "Kamida bitta qabul qiluvchini tanlang."
+msgid "Recipient selection"
+msgstr "Qabul qiluvchini tanlash"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Fayl(lar)ning oxirigacha yuklanishi kutilmoqda."
-
-msgid "The following steps have errors:"
-msgstr "Quyidagi bosqichlarda xato bor:"
-
-msgid "Hide"
-msgstr "Berkitish"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1591,8 +1684,8 @@ msgstr "Ушбу ташкилотлар сизнинг даъволаринги�
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Бизнинг ёрдамимиз билан қандай натижага эришмоқчисиз?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Shaxsiy axoborotingiz taqdim qilinsinmi?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Ismi"
@@ -1608,6 +1701,9 @@ msgstr "Men bilan faqat shu platformada bogʻlanilsin"
 
 msgid "Other"
 msgstr "Boshqa"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "Hurmatli {RecipientName},"
@@ -1669,6 +1765,9 @@ msgstr "Muammoni yaxshilab tekshiring, unda noqonuniy harakatlar boʻlishi mumki
 
 msgid "The activities with unusual stats are:"
 msgstr "Noodatiy harakatlarda quyidagilar yuz berishi mumkin:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1898,6 +1997,9 @@ msgstr "Bu xat qabul qiluvchiga bir yoki bir necha anonim xabarlaringizni koʻri
 msgid "New report"
 msgstr "Yangi anonim xabar"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Eng erta muddati: {EarliestExpirationDate}."
 
@@ -1907,18 +2009,16 @@ msgstr "Ularni oʻchib ketishidan oldin tekshirishni unutmang."
 msgid "Some reports will expire soon"
 msgstr "Ayrim anonim xabarlar muddati tez orada tugaydi"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Bu xat oshkor qiluvchi oʻz xabarlariga sizni ishonchli qabul qiluvchi sifatida tanlagani haqida xabar qiladi."
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Tarkibidagi axborot va materiallarni diqqat bilan tekshirishni tavsiya qilamiz. Unutmangki, oshkor qiluvchilar odatda jamiyat farovonligi maqsadida oʻzlarini xavf ostiga qoʻygan holda xabar berayotgan boʻlishi mumkin. Shu sababli kelgan axborotlar diqqat bilan koʻrib chiqilishi lozim."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Bu xat mavjud anonim axborot yangilangani haqida xabar qiladi."

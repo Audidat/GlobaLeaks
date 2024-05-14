@@ -8,13 +8,12 @@ from globaleaks.orm import tw
 from globaleaks.rest import errors
 from globaleaks.state import State
 from globaleaks.tests import helpers
-from globaleaks.tests.utils import test_tls
 from globaleaks.utils.letsencrypt import ChallTok
 
 
 @inlineCallbacks
 def set_init_params():
-    hostname = 'localhost:9999'
+    hostname = '127.0.0.1:9999'
     yield tw(config.db_set_config_variable, 1, 'hostname', hostname)
     State.tenants[1].cache.hostname = hostname
 
@@ -118,7 +117,7 @@ class TestFileHandler(helpers.TestHandler):
         handler = self.request({'name': 'cert', 'content': helpers.HTTPS_DATA['cert']}, role='admin')
         yield handler.post('cert')
 
-        State.tenants[1].cache.hostname = 'localhost'
+        State.tenants[1].cache.hostname = '127.0.0.1'
 
         body = {'name': 'chain', 'content': helpers.HTTPS_DATA[n]}
         handler = self.request(body, role='admin')
@@ -157,17 +156,15 @@ class TestConfigHandler(helpers.TestHandler):
 
 
 class TestCSRHandler(helpers.TestHandler):
-    _handler = https.CSRFileHandler
+    _handler = https.CSRHandler
 
     @inlineCallbacks
     def test_post(self):
-        n = 'csr'
-
         yield set_init_params()
         yield tw(https.db_load_https_key, 1, helpers.HTTPS_DATA['key'])
         State.tenants[1].cache.hostname = 'notreal.ns.com'
 
-        d = {
+        body = {
             'country': 'it',
             'province': 'regione',
             'city': 'citta',
@@ -176,11 +173,8 @@ class TestCSRHandler(helpers.TestHandler):
             'email': 'indrizzio@email',
         }
 
-        body = {'name': 'csr', 'content': d}
         handler = self.request(body, role='admin')
-        yield handler.post(n)
-
-        response = yield handler.get(n)
+        response = yield handler.post()
 
         pem_csr = crypto.load_certificate_request(SSL.FILETYPE_PEM, response)
 

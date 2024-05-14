@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2021-2022\n"
-"Language-Team: Swahili (http://www.transifex.com/otf/globaleaks/language/sw/)\n"
+"Language-Team: Swahili (http://app.transifex.com/otf/globaleaks/language/sw/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sw\n"
@@ -17,20 +17,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Ingia"
 
-msgid "Main configuration"
-msgstr "Usanidi mkuu"
-
-msgid "Theme customization"
-msgstr "Uwekaji mandhari"
-
 msgid "Languages"
 msgstr "Lugha"
 
 msgid "Text customization"
 msgstr "Ubinafsishaji wa maandishi"
 
-msgid "Advanced settings"
-msgstr "Mipangilio ya hali ya juu"
+msgid "Advanced"
+msgstr "Iliyoboreshwa"
 
 msgid "Question templates"
 msgstr "Kiolezo cha maswali"
@@ -50,8 +44,8 @@ msgstr "Badilisha log"
 msgid "License"
 msgstr "Leseni"
 
-msgid "Notification templates"
-msgstr "Violezo vya taarifa"
+msgid "Templates"
+msgstr "Violezo"
 
 msgid "Delete"
 msgstr "Futa"
@@ -62,8 +56,8 @@ msgstr "Isiyo kawaida"
 msgid "Preferences"
 msgstr "Mapendeleo"
 
-msgid "Notification settings"
-msgstr "Mipangilio ya taarifa"
+msgid "Notifications"
+msgstr "Arifa"
 
 msgid "file unavailable"
 msgstr "faili halipatikani"
@@ -83,25 +77,16 @@ msgstr "Mafaili"
 msgid "Comments"
 msgstr "Maoni"
 
-msgid "Messages"
-msgstr "Ujumbe"
-
 msgid "Details"
 msgstr "Maelezo"
 
 msgid "Platform wizard"
 msgstr "Kivinjari cha jukwaa"
 
-msgid "CREDIT CARD"
-msgstr "KADI YA MKOPO"
-
-msgid "YOUR NAME"
-msgstr "JINA LAKO"
-
 msgid "Label the report"
 msgstr "Lebo ripoti"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Ahirisha tarehe ya kumalizika muda"
 
 msgid "Select all"
@@ -113,8 +98,8 @@ msgstr "Usichague zote"
 msgid "Refresh"
 msgstr "Fanyiza upya"
 
-msgid "Context"
-msgstr "Muktadha"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Chungulia kwanza"
@@ -218,9 +203,6 @@ msgstr "Ufikiaji umeombwa"
 msgid "Request access to the whistleblower's identity"
 msgstr "Omba ufikiaji wa kitambulisho cha mtoa taarifa ya siri"
 
-msgid "Please write a motivation"
-msgstr "Tafadhali andika motisha"
-
 msgid "Reply to the request"
 msgstr "Jibu ombi"
 
@@ -247,9 +229,6 @@ msgstr "Kataa ufikiaji wa kitambulisho cha mtoa taarifa ya siri"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Idhinisha ufikiaji wa kitambulisho cha mtoa taarifa ya siri"
-
-msgid "Templates"
-msgstr "Violezo"
 
 msgid "URL redirects"
 msgstr "inaelekeza tena za URL"
@@ -290,8 +269,8 @@ msgstr "Inakubalika"
 msgid "Strong"
 msgstr "Imara"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Maandishi yameonyeshwa juu ya kiolesura cha kuchagua muktadha"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Nyamazisha taarifa za barua pepe"
@@ -354,9 +333,6 @@ msgstr "Kiwango cha juu cha ukubwa wa faili ni:"
 
 msgid "Scheduled jobs"
 msgstr "Kazi zilizopangwa"
-
-msgid "Sites management"
-msgstr "Usimamizi wa Tovuti"
 
 msgid "Regenerate"
 msgstr "Zalisha upya"
@@ -456,19 +432,109 @@ msgstr "Nakili kwenye ubao wa kunakili"
 msgid "Logout"
 msgstr "Toka"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr ""
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "Ficha"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "Sera ya faragha"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr ""
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr ""
 
-msgid "Select the context of your report:"
+msgid "Select a reporting channel:"
 msgstr ""
 
 msgid "Before proceeding, please set a new password."
@@ -479,102 +545,6 @@ msgstr "Kabla ya kuendelea, tafadhali wezesha uthibitishaji wa pili."
 
 msgid "Enable"
 msgstr "Wezesha"
-
-msgid "Disable submissions"
-msgstr "Usiwezeshe mawasilisho"
-
-msgid "Enable encryption"
-msgstr "wezesha usimbuaji"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Wezesha wasimamizi kubadilisha nenosiri za mtumiaji "
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Watawala wameidhinishwa kubadilisha nenosiri za watumiaji:\""
-
-msgid "Enable multisite feature"
-msgstr "Wezesha huduma nyingi katika tofuti"
-
-msgid "Enable simplified login"
-msgstr "Wezesha uingiaji rahisi"
-
-msgid "Enable search engines indexing"
-msgstr "Wezesha kivinjari cha kutafuta"
-
-msgid "Default questionnaire"
-msgstr "Chaguo la msingi la dodoso"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Onyesha muktadha kwa mpangilio wa alfabeti"
-
-msgid "Size limit for file attachments"
-msgstr "Kikomo cha ukubwa wa viambatisho vya faili"
-
-msgid "megabytes"
-msgstr "megabiti"
-
-msgid "Require two factor authentication"
-msgstr "Inahitaji uthibitishaji wa mara ya pili "
-
-msgid "Password change interval"
-msgstr "Muda wa kubadilisha neno la siri"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Kwa sababu za usalama, mabadiliko ya neno la siri yanahitajika kila wakati."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Weka 0 ili kutowezesha huduma hii."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr ""
-
-msgid "Disable the privacy panel"
-msgstr "Usiwezeshe paneli ya faragha"
-
-msgid "Enable custom privacy panel"
-msgstr "Wezesha paneli ya faragha maalum "
-
-msgid "Custom privacy panel"
-msgstr "paneli ya faragha"
-
-msgid "Enable custodian user role"
-msgstr "Wezesha sehemu ya jukumu la Mwangalizi"
-
-msgid "Enable scoring system"
-msgstr "Wezesha mfumo wa upataji wa alama"
-
-msgid "Logging level"
-msgstr "Kiwango cha kuingia"
-
-msgid "Log accesses of internal users"
-msgstr "Ingia ufikiaji wa watumiaji wa ndani"
-
-msgid "Notify administrators of software problems"
-msgstr "Waarifu wasimamizi kuhusu shida katika programu"
-
-msgid "Notify developers of software problems"
-msgstr "Waarifu watengenezaji wa programu hususu shida katika programu"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Kwa kuwezesha huduma hii, utachangia maendeleo na\n\nusalama wa jukwaa."
-
-msgid "Save"
-msgstr "Hifadhi"
-
-msgid "Reset reports"
-msgstr "Weka upya ripoti"
-
-msgid "Low"
-msgstr "Chini"
-
-msgid "High"
-msgstr "Juu"
-
-msgid "percentage"
-msgstr "asilimia"
 
 msgid "Type"
 msgstr "Aina"
@@ -603,6 +573,9 @@ msgstr ""
 msgid "Last access"
 msgstr "Mara ya mwisho kuingia"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "Mara ya mwisho kwa mtoa taarifa za siri kuingia"
 
@@ -621,68 +594,29 @@ msgstr "Sehemu hii ni lazima"
 msgid "Edit"
 msgstr "Hariri"
 
+msgid "Save"
+msgstr "Hifadhi"
+
 msgid "Cancel"
 msgstr "futa"
+
+msgid "days"
+msgstr "siku"
+
+msgid "Disabled"
+msgstr "Haijawezeshwa"
 
 msgid "Report statuses"
 msgstr "Hali ya ripoti"
 
-msgid "Logo"
-msgstr "Logo"
-
-msgid "Project name"
-msgstr "Jina la Mradi"
-
-msgid "Description"
+msgid "Channels"
 msgstr ""
-
-msgid "Homepage title"
-msgstr "Kichwa cha habari cha ukurasa wa kwanza"
-
-msgid "Presentation"
-msgstr "Uwasilishaji"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Swali la kuomba watoa taarifa za siri"
-
-msgid "Whistleblowing button"
-msgstr "Kitufe cha watoa taarifa za siri"
-
-msgid "Disclaimer"
-msgstr ""
-
-msgid "Footer"
-msgstr "Kijachini"
-
-msgid "Upload"
-msgstr "Pakia"
-
-msgid "Download"
-msgstr "Pakua"
-
-msgid "Language:"
-msgstr "Lugha:"
-
-msgid "Add custom text"
-msgstr "Ongeza maandishi binafsi"
-
-msgid "Custom text"
-msgstr "maandishi binafsi"
-
-msgid "Original text"
-msgstr "Maandishi ya mwanzo"
-
-msgid "Original translation"
-msgstr "Tafsiri ya mwanzo"
-
-msgid "Custom translation"
-msgstr "tafsiri binafsi"
-
-msgid "Contexts"
-msgstr "Muktadha"
 
 msgid "Hidden"
 msgstr "Fichwa"
+
+msgid "Description"
+msgstr ""
 
 msgid "Questionnaire"
 msgstr "Dodoso"
@@ -690,8 +624,11 @@ msgstr "Dodoso"
 msgid "Recipients"
 msgstr "Wapokeaji"
 
-msgid "days"
-msgstr "siku"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Weka 0 ili kutowezesha huduma hii."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Onyesha kiolesura cha urambazaji wa dodoso"
@@ -708,24 +645,6 @@ msgstr "Idadi ya juu ya wapokeaji wanaochaguliwa:"
 msgid "Show recipients in alphabetical order"
 msgstr "Onyesha wapokeaji kwa mpangilio wa alfabeti"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Onyesha maelezo ya mpokeaji kwenye ukurasa wa hali ya ripoti"
-
-msgid "Enable comments"
-msgstr "Wezesha maoni "
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Ruhusu mtoa taarifa ya siri kuandika maoni."
-
-msgid "Enable private messages"
-msgstr "Wezesha ujumbe wa faragha "
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Ruhusu mtoa taarifa ya siri kutuma ujumbe"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Ruhusu mtoa taarifa ya siri kuongeza viambatanisho kwenye ripoti"
-
 msgid "Additional questionnaire"
 msgstr "Dodoso la nyongeza"
 
@@ -741,6 +660,9 @@ msgstr "Thamani"
 msgid "Medium"
 msgstr "Kati"
 
+msgid "High"
+msgstr "Juu"
+
 msgid "Software version:"
 msgstr "Toleo la programu:"
 
@@ -755,6 +677,9 @@ msgstr "Anuani za IP zilizoruhusiwa"
 
 msgid "Admin"
 msgstr "Msimamizi"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Mpokeaji"
@@ -835,9 +760,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "Programu saidizi ya usanidi wa mwongozo itakuongoza kupitia usanidi wa HTTPS\n\nkutoka kwa Mamlaka mbadala ya Cheti."
-
-msgid "Disabled"
-msgstr "Haijawezeshwa"
 
 msgid "Auto-renewal"
 msgstr "Uhuishaji kiotomatiki"
@@ -952,6 +874,12 @@ msgstr "Kubali majibu mengi"
 msgid "Template override"
 msgstr "Batilisha kiolezo"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "Namba ya simu"
 
@@ -975,6 +903,9 @@ msgstr "Video"
 
 msgid "Text shown upon negative answer"
 msgstr "Maandishi yameonyeshwa kwa jibu hasi"
+
+msgid "Low"
+msgstr "Chini"
 
 msgid "Trigger conditions"
 msgstr "Chochea hali"
@@ -1006,19 +937,148 @@ msgstr "Nakala"
 msgid "Steps"
 msgstr "Hatua"
 
-msgid "Site settings"
-msgstr "Mipangilio ya tovuti"
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Project name"
+msgstr "Jina la Mradi"
+
+msgid "Homepage title"
+msgstr "Kichwa cha habari cha ukurasa wa kwanza"
+
+msgid "Presentation"
+msgstr "Uwasilishaji"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Swali la kuomba watoa taarifa za siri"
+
+msgid "Whistleblowing button"
+msgstr "Kitufe cha watoa taarifa za siri"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Footer"
+msgstr "Kijachini"
+
+msgid "Upload"
+msgstr "Pakia"
+
+msgid "Download"
+msgstr "Pakua"
+
+msgid "Language:"
+msgstr "Lugha:"
+
+msgid "Add custom text"
+msgstr "Ongeza maandishi binafsi"
+
+msgid "Custom text"
+msgstr "maandishi binafsi"
+
+msgid "Original text"
+msgstr "Maandishi ya mwanzo"
+
+msgid "Original translation"
+msgstr "Tafsiri ya mwanzo"
+
+msgid "Custom translation"
+msgstr "tafsiri binafsi"
+
+msgid "Disable submissions"
+msgstr "Usiwezeshe mawasilisho"
+
+msgid "Enable encryption"
+msgstr "wezesha usimbuaji"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Wezesha wasimamizi kubadilisha nenosiri za mtumiaji "
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Watawala wameidhinishwa kubadilisha nenosiri za watumiaji:\""
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Wezesha uingiaji rahisi"
+
+msgid "Enable search engines indexing"
+msgstr "Wezesha kivinjari cha kutafuta"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Kikomo cha ukubwa wa viambatisho vya faili"
+
+msgid "megabytes"
+msgstr "megabiti"
+
+msgid "Require two factor authentication"
+msgstr "Inahitaji uthibitishaji wa mara ya pili "
+
+msgid "Password change interval"
+msgstr "Muda wa kubadilisha neno la siri"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Kwa sababu za usalama, mabadiliko ya neno la siri yanahitajika kila wakati."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr ""
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Usiwezeshe paneli ya faragha"
+
+msgid "Enable custom privacy panel"
+msgstr "Wezesha paneli ya faragha maalum "
+
+msgid "Custom privacy panel"
+msgstr "paneli ya faragha"
+
+msgid "Enable scoring system"
+msgstr "Wezesha mfumo wa upataji wa alama"
+
+msgid "Logging level"
+msgstr "Kiwango cha kuingia"
+
+msgid "percentage"
+msgstr "asilimia"
+
+msgid "Log accesses of internal users"
+msgstr "Ingia ufikiaji wa watumiaji wa ndani"
+
+msgid "Notify administrators of software problems"
+msgstr "Waarifu wasimamizi kuhusu shida katika programu"
+
+msgid "Notify developers of software problems"
+msgstr "Waarifu watengenezaji wa programu hususu shida katika programu"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Kwa kuwezesha huduma hii, utachangia maendeleo na\n\nusalama wa jukwaa."
+
+msgid "Reset reports"
+msgstr "Weka upya ripoti"
+
+msgid "Settings"
+msgstr "mpangilio"
 
 msgid "Case management"
 msgstr "Usimamizi wa kesi"
 
-msgid "Network settings"
-msgstr "Mipangilio ya mtandao"
+msgid "Network"
+msgstr "Mtandao"
 
 msgid "Sites"
 msgstr "Tovuti"
 
-msgid "Mode:"
+msgid "Profile"
 msgstr ""
 
 msgid "Configure"
@@ -1027,14 +1087,17 @@ msgstr "Sanidi"
 msgid "Subdomain"
 msgstr "Kikoa kidogo"
 
+msgid "Mode:"
+msgstr ""
+
 msgid "Creation date:"
 msgstr "Tarehe ya kuundwa:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Kikoa cha mwanzo kinachotumiwa kwa tovuti zingine"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Tumia tovuti ya kwanza kwa madhumuni ya kiutawala tu"
+
+msgid "Root domain used for secondary sites"
+msgstr "Kikoa cha mwanzo kinachotumiwa kwa tovuti zingine"
 
 msgid "Allow users to sign up"
 msgstr "Ruhusu watumiaji kujisajili"
@@ -1055,10 +1118,10 @@ msgid "Set password"
 msgstr "Weka nenosiri"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Neno la siri lililochaguliwa ni dhaifu sana. Neno la siri halali linapaswa kuwa angalau na herufi 10\n\nndefu na zijumuishe aina za herufi tofauti ikujumuisha angalau a\n\nherufi ndogo, herufi kubwa, namba na herufi maalumu."
+msgstr "Neno la siri lililochaguliwa ni dhaifu sana. Neno la siri halali linapaswa kuwa angalau na herufi 12 ndefu na zijumuishe aina za herufi tofauti ikujumuisha angalau a herufi ndogo, herufi kubwa, namba na herufi maalumu."
 
 msgid "Force password change"
 msgstr "Lazimisha kubadilisha nenosiri"
@@ -1093,11 +1156,23 @@ msgstr "Imechaguliwa kwa nguvu"
 msgid "Allow the recipient to delete reports"
 msgstr "Ruhusu mpokeaji kufuta ripoti"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Ruhusu wapokeaji kuahirisha tarehe ya kumalizika muda wa ripoti."
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Mtumiaji ana ufikiaji wa kiutawala kwa huduma zifuatazo"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "Omba tarehe"
@@ -1135,14 +1210,20 @@ msgstr "Tafadhali chagua akaunti yako:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Sasa andika neno lako la siri, baada ya hapo bonyeza 'Ingia':"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Maandishi yanayoonyeshwa baada ya mtumiaji kuchagua chaguo."
-
 msgid "Confirm"
 msgstr "Thibitisha"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Maandishi yanayoonyeshwa baada ya mtumiaji kuchagua chaguo."
+
 msgid "Assign score points"
 msgstr "Weka alama za kupata"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Hali:"
 
 msgid "Are you sure?"
 msgstr "Una uhakika?"
@@ -1167,8 +1248,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Tengeneza nakala na uihifadhi mahali salama. Itakuwa muhimu ikiwa utapoteza\n\nneno lako la siri kupata ufikiaji wa akaunti yako bila kupoteza data."
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Ingiza jina la nakala"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr ""
@@ -1190,14 +1286,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Jukwaa bado halijasanidiwa kwa unganisho la HTTPS na linapaswa\n\nkutumika tu kwa ajili ya majaribio."
 
-msgid "Please write a motivation for the reply"
-msgstr "Tafadhali andika motisha kwa kujibu"
-
 msgid "Send"
 msgstr "Tuma"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Kwa kudhibitisha, utaahirisha tarehe ya kumalizika muda kuwa"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Hili ni jukwaa la kufanya majaribia au onyesho tu, tafadhali usilitumie kwa uwasilisho halisi. "
@@ -1231,6 +1330,12 @@ msgstr "Rasilimali zinaweza kupatikana tu kupitia mtandao wa Tor"
 
 msgid "The upload request exceeds the size limit"
 msgstr "Ombi la kupakia linazidi kikomo cha ukubwa"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Neno la siri la sasa"
@@ -1273,20 +1378,23 @@ msgstr "Je, umeshajaza ripoti? Ingiza risiti yako."
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Risiti aidha ni batili au ripoti imekwisha muda."
 
-msgid "Select a file or drag it here."
-msgstr "Chagua faili au liburuze hapa."
+msgid "Filename"
+msgstr "Jina la faili"
 
 msgid "Size:"
 msgstr "Ukubwa:"
 
-msgid "Uploading files…"
-msgstr "Inapakia mafaili… "
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "Upakiaji umekamilika kwa mafanikio! "
+msgid "Address"
+msgstr "Anwani"
 
-msgid "Estimated upload time:"
-msgstr "Wakati uliokadiriwa wa kupakia:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr "Nambari ya ushuru"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Wapokeaji wamekuomba ujaze hadidu za nyongeza."
@@ -1300,8 +1408,8 @@ msgstr "Kutoka:"
 msgid "To:"
 msgstr "Kwenda kwa:"
 
-msgid "Filename"
-msgstr "Jina la faili"
+msgid "View"
+msgstr ""
 
 msgid "Upload date"
 msgstr "Tarehe ya kupakiwa"
@@ -1314,9 +1422,6 @@ msgstr "Majibu ya dodoso"
 
 msgid "Step"
 msgstr "Hatua"
-
-msgid "Status:"
-msgstr "Hali:"
 
 msgid "Files attached by recipients"
 msgstr ""
@@ -1343,9 +1448,6 @@ msgstr "Ikiwa unataka kuchangia uendelezaji wa programu au kuripoti kuhusu virus
 msgid "Join our chat:"
 msgstr "Jiunge na chat yetu: "
 
-msgid "Follow the project on:"
-msgstr "Fuata mradi kwenye"
-
 msgid "An update is available:"
 msgstr "Huisho linapatikana:"
 
@@ -1355,6 +1457,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "Tunapendekeza ufikie sehemu ya \"Mapendeleo\" ili upate\n\nUfunguo wako wa Kurejesha Akaunti\" na uihifadhi kwa usalama. Ufunguo huu utakuwa muhimu\n\nkurejesha ufikiaji wako kwenye jukwaa na kwenye taarifa zako ikiwa utasahau\n\nneno lako la siri."
+
+msgid "Select a file or drag it here."
+msgstr "Chagua faili au liburuze hapa."
 
 msgid "The provided recovery key is invalid."
 msgstr "Ufunguo wa kurejesha akaunti uliotolewa ni batili."
@@ -1387,6 +1492,9 @@ msgstr "Tarehe ya kuomba"
 msgid "Show"
 msgstr "Onyesha"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Hongera!"
 
@@ -1409,26 +1517,17 @@ msgstr "Kama haitahaishwa ndani ya masaa 24, jukwaa litafutwa automatiki."
 msgid "Sign up"
 msgstr "Sajili"
 
-msgid "Site"
-msgstr ""
-
-msgid "Confirmation"
-msgstr "Uthibitisho"
-
 msgid "Invalid confirmation"
 msgstr "Uthibitisho batili"
 
 msgid "Invalid phone number"
 msgstr "Namba ya simu batili"
 
-msgid "Address"
-msgstr "Anwani"
-
-msgid "Fiscal code"
+msgid "Site"
 msgstr ""
 
-msgid "Tax code"
-msgstr "Nambari ya ushuru"
+msgid "Confirmation"
+msgstr "Uthibitisho"
 
 msgid "The answer is too short"
 msgstr "Jibu ni fupi sana."
@@ -1467,10 +1566,7 @@ msgstr "Tumia namba 16 za risiti kuingia. Itakuruhusu kuangalia ujumbe wowote\n\
 msgid "View your report"
 msgstr "Angalia ripoti yako"
 
-msgid "Recipient selection"
-msgstr "Uchaguzi wa wapokeaji"
-
-msgid "Select the recipients of your report:"
+msgid "Select the recipients of your report"
 msgstr ""
 
 msgid "Recipients selected:"
@@ -1478,6 +1574,9 @@ msgstr "Wapokeaji waliochaguliwa:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Umefikia kiwango kikubwa cha wapokeaji wanaochaguliwa."
+
+msgid "You must select at least one recipient."
+msgstr "Lazima uchague angalau mpokeaji mmoja."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1489,17 +1588,11 @@ msgid ""
 "invalid:"
 msgstr "Katika hatua hii, majibu kwa maswali yafuatayo aidha yanakosekana au\n\nSio halali:"
 
-msgid "You must select at least one recipient."
-msgstr "Lazima uchague angalau mpokeaji mmoja."
+msgid "Recipient selection"
+msgstr "Uchaguzi wa wapokeaji"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Inasubiri faili/mafaili ili kumaliza upakuaji."
-
-msgid "The following steps have errors:"
-msgstr "Hatua zifuatazo zina makossa:"
-
-msgid "Hide"
-msgstr "Ficha"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1589,8 +1682,8 @@ msgstr ""
 msgid "What is the outcome you want to achieve with our support?"
 msgstr ""
 
-msgid "Do you want to provide your identification information?"
-msgstr "Je, unataka kutoa taarifa zako za kukutambua?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Jina la kwanza"
@@ -1606,6 +1699,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "Mengineyo"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "Kwako {RecipientName}"
@@ -1667,6 +1763,9 @@ msgstr "Chunguza suala ili kubaini ikiwa ni halali au la."
 
 msgid "The activities with unusual stats are:"
 msgstr "Shughuli zilizo na takwimu zisizo za kawaida ni: "
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1896,6 +1995,9 @@ msgstr ""
 msgid "New report"
 msgstr "Ripoti mpya"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Tarehe ya mapema kabisa ya kumalizika ni {EarliestExpirationDate}."
 
@@ -1905,18 +2007,16 @@ msgstr "Tafadhali kumbuka kuzikagua kabla hazijafutwa"
 msgid "Some reports will expire soon"
 msgstr "Baadhi ya ripoti zitaisha muda wake hivi karibuni"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Barua pepe hii ni kukujulisha kuwa, mtoa taarifa ya siri amekuchagua kama\n\nmpokeaji muhimu wa ripoti yao."
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Unaombwa kuweka umakini kwenye taarifa na nyenzo \n\nzilizopo hapa. Tafadhali kumbuka kuwa watoa habari za siri mara nyingi hujiweka\n\nkatika mazingira hatarishi kwa manufaa ya umma. Kwahiyo\n\nnyenzo zilizotolewa ndani ya ripoti hii zinapaswa kuzingatiwa kuwa na\n\numuhimu sana."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr ""

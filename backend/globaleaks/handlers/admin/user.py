@@ -2,13 +2,12 @@
 from twisted.internet.defer import inlineCallbacks
 
 from globaleaks import models
-from globaleaks.handlers.admin.operation import generate_password_reset_token
 from globaleaks.handlers.base import BaseHandler
 from globaleaks.handlers.user import parse_pgp_options, \
                                      user_serialize_user
 from globaleaks.models import fill_localized_keys
-from globaleaks.orm import db_del, db_log, transact, tw
-from globaleaks.rest import requests
+from globaleaks.orm import db_del, db_get, db_log, transact, tw
+from globaleaks.rest import errors, requests
 from globaleaks.state import State
 from globaleaks.transactions import db_get_user
 from globaleaks.utils.crypto import GCE, Base64Encoder, generateRandomPassword
@@ -18,7 +17,7 @@ from globaleaks.utils.utility import datetime_now, datetime_null, uuid4
 def db_set_user_password(session, tid, user, password):
     config = models.config.ConfigFactory(session, tid)
 
-    user.password = GCE.hash_password(password, user.salt)
+    user.hash = GCE.hash_password(password, user.salt)
     user.password_change_date = datetime_now()
 
     if config.get_val('encryption'):
@@ -63,6 +62,10 @@ def db_create_user(session, tid, user_session, request, language):
     if not request['username']:
         user.username = user.id = uuid4()
 
+    existing_user = session.query(models.User).filter(models.User.tid == user.tid, models.User.username == user.username).first()
+    if existing_user:
+        raise errors.DuplicateUserError
+
     user.salt = GCE.generate_salt()
 
     user.language = request['language']
@@ -84,6 +87,16 @@ def db_create_user(session, tid, user_session, request, language):
 
 
 def db_delete_user(session, tid, user_session, user_id):
+    current_user = db_get(session, models.User, models.User.id == user_session.user_id)
+    user_to_be_deleted = db_get(session, models.User, models.User.id == user_id)
+
+    if user_session.user_id == user_id:
+        # Prevent users to delete themeselves
+        raise errors.ForbiddenOperation
+    elif user_to_be_deleted.crypto_escrow_prv_key and not user_session.ek:
+        # Prevent users to delete privileged users when escrow keys could be invalidated
+        raise errors.ForbiddenOperation
+
     db_del(session, models.User, (models.User.tid == tid, models.User.id == user_id))
     db_log(session, tid=tid, type='delete_user', user_id=user_session.user_id, object_id=user_id)
 
@@ -117,11 +130,16 @@ def db_admin_update_user(session, tid, user_session, user_id, request, language)
     fill_localized_keys(request, models.User.localized_keys, language)
 
     user = db_get_user(session, tid, user_id)
-
+    user.can_redact_information = request['can_redact_information']
+    user.can_mask_information = request['can_mask_information']
     if request['mail_address'] != user.mail_address:
         user.change_email_token = None
         user.change_email_address = ''
         user.change_email_date = datetime_null()
+
+    # Prevent administrators to reset password change needed status
+    if user.password_change_needed:
+        request['password_change_needed'] = True
 
     # The various options related in manage PGP keys are used here.
     parse_pgp_options(user, request)
@@ -147,7 +165,7 @@ def db_get_users(session, tid, role=None, language=None):
         users = session.query(models.User).filter(models.User.tid == tid,
                                                   models.User.role == role)
 
-    language = language if language is not None else State.tenants[tid].cache.default_language
+    language = language or State.tenants[tid].cache.default_language
 
     return [user_serialize_user(session, user, language) for user in users]
 

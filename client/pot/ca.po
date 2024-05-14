@@ -8,14 +8,14 @@
 # estrella1876lc <estrella1876lc@gmail.com>, 2014
 # estrella1876lc <estrella1876lc@gmail.com>, 2014-2015
 # Francisco Huerta <francisco.huerta@davinci-ti.es>, 2016,2019
-# Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2014-2018,2020-2022
+# Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2014-2018,2020-2022,2024
 # b33a4006134bb6ee62b30fc0fac5cec6, 2016
 # b33a4006134bb6ee62b30fc0fac5cec6, 2016
 # Joan Bitlloch <joanbit@gmail.com>, 2017-2021
 # Joan Montané, 2020
 # Joan Montané, 2020
 # Joan Redon, 2022
-# José Luis Ramirez, 2022
+# José Luis Ramirez, 2022-2023
 # Josep Anton Rius <j.rius.cat@gmail.com>, 2016
 # Maddish Falzoni <maddish@xnet-x.net>, 2016
 # Nick Skelsey, 2016
@@ -25,8 +25,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
-"Last-Translator: José Luis Ramirez, 2022\n"
-"Language-Team: Catalan (http://www.transifex.com/otf/globaleaks/language/ca/)\n"
+"Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2014-2018,2020-2022,2024\n"
+"Language-Team: Catalan (http://app.transifex.com/otf/globaleaks/language/ca/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ca\n"
@@ -36,20 +36,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Inicia sessió"
 
-msgid "Main configuration"
-msgstr "Configuració principal"
-
-msgid "Theme customization"
-msgstr "Personalització del tema"
-
 msgid "Languages"
 msgstr "Idiomes"
 
 msgid "Text customization"
 msgstr "Personalització del text"
 
-msgid "Advanced settings"
-msgstr "Configuració avançada"
+msgid "Advanced"
+msgstr "Avançat"
 
 msgid "Question templates"
 msgstr "Plantilla de preguntes"
@@ -69,8 +63,8 @@ msgstr "Registre de canvis"
 msgid "License"
 msgstr "Llicència"
 
-msgid "Notification templates"
-msgstr "Plantilles d'avisos"
+msgid "Templates"
+msgstr "Plantilles"
 
 msgid "Delete"
 msgstr "Esborrar"
@@ -81,8 +75,8 @@ msgstr "Anomalies"
 msgid "Preferences"
 msgstr "Preferències"
 
-msgid "Notification settings"
-msgstr "Configuracions de notificació"
+msgid "Notifications"
+msgstr "Notificacions"
 
 msgid "file unavailable"
 msgstr "fitxer no disponible"
@@ -91,7 +85,7 @@ msgid "Date"
 msgstr "Data"
 
 msgid "Expiration date"
-msgstr "Data de caducitat"
+msgstr "Esborrat automàtic"
 
 msgid "Last Access"
 msgstr "Últim accés"
@@ -102,26 +96,17 @@ msgstr "Fitxers"
 msgid "Comments"
 msgstr "Comentaris"
 
-msgid "Messages"
-msgstr "Missatges"
-
 msgid "Details"
 msgstr "Detalls"
 
 msgid "Platform wizard"
 msgstr "Persona assistent de la plataforma informàtica"
 
-msgid "CREDIT CARD"
-msgstr "TARGETA DE CRÈDIT"
-
-msgid "YOUR NAME"
-msgstr "EL TEU NOM"
-
 msgid "Label the report"
 msgstr "Etiqueta l’informe"
 
-msgid "Postpone the expiration date"
-msgstr "Posposa la data de caducitat"
+msgid "Edit the expiration date"
+msgstr "Editar la data de venciment"
 
 msgid "Select all"
 msgstr "Selecciona-ho tot"
@@ -132,7 +117,7 @@ msgstr "Desselecciona-ho tot"
 msgid "Refresh"
 msgstr "Actualitza"
 
-msgid "Context"
+msgid "Channel"
 msgstr "Context"
 
 msgid "Preview"
@@ -237,9 +222,6 @@ msgstr "Accés demanat"
 msgid "Request access to the whistleblower's identity"
 msgstr "Demana l'accés a la identitat de la persona informadora"
 
-msgid "Please write a motivation"
-msgstr "Si us plau, escriu una motivació"
-
 msgid "Reply to the request"
 msgstr "Respon a la petició"
 
@@ -266,9 +248,6 @@ msgstr "Denega l'accés a la identitat de la persona informadora"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Autoritza l'accés a la identitat de l'informador"
-
-msgid "Templates"
-msgstr "Plantilles"
 
 msgid "URL redirects"
 msgstr "Redireccions de URL"
@@ -309,7 +288,7 @@ msgstr "Mitjà"
 msgid "Strong"
 msgstr "Alt"
 
-msgid "Text shown on top of the interface for selecting contexts"
+msgid "Text shown on top of the interface for selecting channels"
 msgstr "El text es mostra a sobre de la interfície per seleccionar els contextos"
 
 msgid "Silence email notifications"
@@ -373,9 +352,6 @@ msgstr "La mida màxima d'un fitxer és de:"
 
 msgid "Scheduled jobs"
 msgstr "Treballs programats"
-
-msgid "Sites management"
-msgstr "Gestió de llocs web"
 
 msgid "Regenerate"
 msgstr "Regenerar"
@@ -475,20 +451,110 @@ msgstr "Copia al porta-retalls"
 msgid "Logout"
 msgstr "Tanca sessió"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Doneu a aquesta persona destinatària la possibilitat de concedir accés a les persones usuàries als informes"
-
 msgid "Grant access"
 msgstr "Concedir accés"
 
 msgid "Revoke access"
 msgstr "Revoca l'accés"
 
+msgid "Transfer"
+msgstr "Transfereix"
+
+msgid "Assigned to"
+msgstr "Assignat a"
+
+msgid "Not provided."
+msgstr "No facilitat."
+
+msgid "Set a reminder"
+msgstr "Establir un recordatori"
+
+msgid "Privileges"
+msgstr "Privilegis"
+
+msgid "Hide"
+msgstr "Oculta"
+
+msgid "Unhide"
+msgstr "Mostrar"
+
+msgid "Redact"
+msgstr "Redactar"
+
+msgid "Select an option"
+msgstr "Seleccioneu una opció"
+
+msgid "Select your language"
+msgstr "Selecciona el teu idioma"
+
+msgid "Give this user ability to mask information"
+msgstr "Donar a aquest usuari la capacitat d'ocultar part del text d'una denúncia"
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr "Donar a aquest usuari la capacitat d'eliminar definitivament part del text d'una denúncia"
+
+msgid "I've read and accept the Privacy Policy"
+msgstr "He llegit i accepte la Política de privacitat"
+
+msgid "Download copy of the Privacy Policy"
+msgstr "Descarregar la Política de privacitat"
+
+msgid "Privacy Policy"
+msgstr "Política de privadesa"
+
+msgid "Whistleblowing Policy"
+msgstr "Política de denúncies"
+
+msgid "Voice"
+msgstr "Veu"
+
+msgid "Everyone"
+msgstr "Tots"
+
+msgid "Recipients only"
+msgstr "Solament receptors"
+
+msgid "Me only"
+msgstr "Únicament jo"
+
+msgid "Returning whistleblowers"
+msgstr "Denunciants que fan seguiment de la denúncia."
+
+msgid "Anonymity"
+msgstr "Anonimat"
+
+msgid "Anonymous"
+msgstr "Anònim "
+
+msgid "Subscribed"
+msgstr "Subscrit"
+
+msgid "Initially anonymous"
+msgstr "Inicialment anònim"
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr "Dispositius"
+
+msgid "Computer"
+msgstr "Ordinador"
+
+msgid "Mobile"
+msgstr "Mòbil"
+
+msgid "Act on behalf of a whistleblower"
+msgstr "Actuar en nom d'un denunciant"
+
+msgid "The link will expire in 7 days."
+msgstr "L'enllaç expirarà en 7 dies"
+
 msgid "File a report"
 msgstr "Presentar un informe"
 
-msgid "Select the context of your report:"
-msgstr "Selecciona el context del teu informe:"
+msgid "Select a reporting channel:"
+msgstr "Trie un canal de denúncia:"
 
 msgid "Before proceeding, please set a new password."
 msgstr "Abans de continuar, estableixi una nova contrasenya."
@@ -498,102 +564,6 @@ msgstr "Abans de continuar, si-us-plau activa l'autenticació de dues passes"
 
 msgid "Enable"
 msgstr "Habilitar"
-
-msgid "Disable submissions"
-msgstr "Deshabilita els enviaments"
-
-msgid "Enable encryption"
-msgstr "Activa el xifratge"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Habiliteu als administradors per canviar les contrasenyes d’usuari"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Persones administradores autoritzats a canviar les contrasenyes de les persones usuàries:"
-
-msgid "Enable multisite feature"
-msgstr "Activa la funció multi lloc"
-
-msgid "Enable simplified login"
-msgstr "Permet l'inici de sessió simplificat"
-
-msgid "Enable search engines indexing"
-msgstr "Habilita els motors de cerca d'indexació"
-
-msgid "Default questionnaire"
-msgstr "Qüestionari per defecte"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Mostra contextos en ordre alfabètic"
-
-msgid "Size limit for file attachments"
-msgstr "Límit de mida per als arxius adjunts"
-
-msgid "megabytes"
-msgstr "megabytes"
-
-msgid "Require two factor authentication"
-msgstr "Requereix autenticació de dues passes"
-
-msgid "Password change interval"
-msgstr "Periodicitat de canvi de contrasenya"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Per motius de seguretat, es requereixen canvis de contrasenya periòdicament."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Establiu el valor a 0 per desactivar aquesta funció."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Nombre de dies fins a la notificació d'informes no llegits als usuaris"
-
-msgid "Disable the privacy panel"
-msgstr "Deshabilita el distintiu de privacitat "
-
-msgid "Enable custom privacy panel"
-msgstr "Habilita distintiu personalitzat de privacitat"
-
-msgid "Custom privacy panel"
-msgstr "Tauler de privacitat del client"
-
-msgid "Enable custodian user role"
-msgstr "Activa el rol de persona usuària guardiana"
-
-msgid "Enable scoring system"
-msgstr "Activa el sistema de puntuació"
-
-msgid "Logging level"
-msgstr "Nivell de registre"
-
-msgid "Log accesses of internal users"
-msgstr "Registre d'accés dels usuaris interns"
-
-msgid "Notify administrators of software problems"
-msgstr "Notifiqueu als administradors els problemes de programari"
-
-msgid "Notify developers of software problems"
-msgstr "Notifica sobre problemes del programari"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Si activeu aquesta funció, contribuireu al desenvolupament i la seguretat de la plataforma."
-
-msgid "Save"
-msgstr "Desa"
-
-msgid "Reset reports"
-msgstr "Restableix els informes"
-
-msgid "Low"
-msgstr "Baix"
-
-msgid "High"
-msgstr "Alt"
-
-msgid "percentage"
-msgstr "percentatge"
 
 msgid "Type"
 msgstr "Tipus"
@@ -622,6 +592,9 @@ msgstr "Data de creació"
 msgid "Last access"
 msgstr "últim accés"
 
+msgid "Receivers"
+msgstr "Receptors"
+
 msgid "Whistleblower's last access"
 msgstr "Últim accés de l'Informant"
 
@@ -640,68 +613,29 @@ msgstr "Aquest camp és obligatori"
 msgid "Edit"
 msgstr "Edita"
 
+msgid "Save"
+msgstr "Desa"
+
 msgid "Cancel"
 msgstr "Cancel·la"
+
+msgid "days"
+msgstr "dies"
+
+msgid "Disabled"
+msgstr "Deshabilitat"
 
 msgid "Report statuses"
 msgstr "Estat de l’informe"
 
-msgid "Logo"
-msgstr "Logotip"
-
-msgid "Project name"
-msgstr "Nom de la iniciativa"
-
-msgid "Description"
-msgstr "Descripció"
-
-msgid "Homepage title"
-msgstr "Títol de la pàgina d'inici"
-
-msgid "Presentation"
-msgstr "Presentació"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Pregunta per sol·licitar possibles informadors"
-
-msgid "Whistleblowing button"
-msgstr "Text del botó per a remetre informació"
-
-msgid "Disclaimer"
-msgstr "Exempció de responsabilitat"
-
-msgid "Footer"
-msgstr "Peu de pàgina"
-
-msgid "Upload"
-msgstr "Carrega"
-
-msgid "Download"
-msgstr "Baixa"
-
-msgid "Language:"
-msgstr "Idioma:"
-
-msgid "Add custom text"
-msgstr "Afegeix text personalitzat"
-
-msgid "Custom text"
-msgstr "Text personalitzat"
-
-msgid "Original text"
-msgstr "Text original"
-
-msgid "Original translation"
-msgstr "Traducció original"
-
-msgid "Custom translation"
-msgstr "Traducció personalitzada"
-
-msgid "Contexts"
+msgid "Channels"
 msgstr "Contextos"
 
 msgid "Hidden"
 msgstr "Ocult"
+
+msgid "Description"
+msgstr "Descripció"
 
 msgid "Questionnaire"
 msgstr "Qüestionari"
@@ -709,8 +643,11 @@ msgstr "Qüestionari"
 msgid "Recipients"
 msgstr "Persones destinatàries"
 
-msgid "days"
-msgstr "dies"
+msgid "Reminder date"
+msgstr "Data de recordatori"
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Establiu el valor a 0 per desactivar aquesta funció."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Mostra la interfície de navegació del qüestionari"
@@ -727,24 +664,6 @@ msgstr "Nombre màxim de destinataris permesos:"
 msgid "Show recipients in alphabetical order"
 msgstr "Mostra els destinataris en ordre alfabètic"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Mostra la informació dels destinataris a la pàgina de l'estat de l'informe"
-
-msgid "Enable comments"
-msgstr "Habilita comentaris"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Permet als informadors escriure comentaris"
-
-msgid "Enable private messages"
-msgstr "Habilita missatges privats"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Permet als informadors enviar missatges"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Permet a les persones reveladores de informació enviar un arxiu adjunt. "
-
 msgid "Additional questionnaire"
 msgstr "Qüestionari addicional"
 
@@ -760,6 +679,9 @@ msgstr "Valor"
 msgid "Medium"
 msgstr "Mitjà"
 
+msgid "High"
+msgstr "Alt"
+
 msgid "Software version:"
 msgstr "Versió del programari:"
 
@@ -774,6 +696,9 @@ msgstr "Adreces IP autoritzades"
 
 msgid "Admin"
 msgstr "Persona administradora"
+
+msgid "Analyst"
+msgstr "Analista"
 
 msgid "Recipient"
 msgstr "Persona destinatària"
@@ -854,9 +779,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "L'assistent de configuració us guiarà a través de la configuració d'HTTPS des d'una Autoritat de Certificació alternativa."
-
-msgid "Disabled"
-msgstr "Deshabilitat"
 
 msgid "Auto-renewal"
 msgstr "Renovació automàtica"
@@ -971,6 +893,12 @@ msgstr "Accepta múltiples respostes"
 msgid "Template override"
 msgstr "Sobreescriu la plantilla"
 
+msgid "Min"
+msgstr "Mín"
+
+msgid "Max"
+msgstr "Màx"
+
 msgid "Phone number"
 msgstr "Número de telèfon"
 
@@ -994,6 +922,9 @@ msgstr "Vídeo"
 
 msgid "Text shown upon negative answer"
 msgstr "Text mostrat en cas de resposta negativa. "
+
+msgid "Low"
+msgstr "Baix"
 
 msgid "Trigger conditions"
 msgstr "Condicions detonants"
@@ -1025,20 +956,149 @@ msgstr "Duplicat"
 msgid "Steps"
 msgstr "Passos"
 
-msgid "Site settings"
-msgstr "Configuració del lloc"
+msgid "Logo"
+msgstr "Logotip"
+
+msgid "Project name"
+msgstr "Nom de la iniciativa"
+
+msgid "Homepage title"
+msgstr "Títol de la pàgina d'inici"
+
+msgid "Presentation"
+msgstr "Presentació"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Pregunta per sol·licitar possibles informadors"
+
+msgid "Whistleblowing button"
+msgstr "Text del botó per a remetre informació"
+
+msgid "Disclaimer"
+msgstr "Exempció de responsabilitat"
+
+msgid "Footer"
+msgstr "Peu de pàgina"
+
+msgid "Upload"
+msgstr "Carrega"
+
+msgid "Download"
+msgstr "Baixa"
+
+msgid "Language:"
+msgstr "Idioma:"
+
+msgid "Add custom text"
+msgstr "Afegeix text personalitzat"
+
+msgid "Custom text"
+msgstr "Text personalitzat"
+
+msgid "Original text"
+msgstr "Text original"
+
+msgid "Original translation"
+msgstr "Traducció original"
+
+msgid "Custom translation"
+msgstr "Traducció personalitzada"
+
+msgid "Disable submissions"
+msgstr "Deshabilita els enviaments"
+
+msgid "Enable encryption"
+msgstr "Activa el xifratge"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Habiliteu als administradors per canviar les contrasenyes d’usuari"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Persones administradores autoritzats a canviar les contrasenyes de les persones usuàries:"
+
+msgid "Enable PGP"
+msgstr "Activar PGP"
+
+msgid "Enable simplified login"
+msgstr "Permet l'inici de sessió simplificat"
+
+msgid "Enable search engines indexing"
+msgstr "Habilita els motors de cerca d'indexació"
+
+msgid "Show channels in alphabetical order"
+msgstr "Mostrar els canals en ordre alfabètic"
+
+msgid "Size limit for file attachments"
+msgstr "Límit de mida per als arxius adjunts"
+
+msgid "megabytes"
+msgstr "megabytes"
+
+msgid "Require two factor authentication"
+msgstr "Requereix autenticació de dues passes"
+
+msgid "Password change interval"
+msgstr "Periodicitat de canvi de contrasenya"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Per motius de seguretat, es requereixen canvis de contrasenya periòdicament."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Nombre de dies fins a la notificació d'informes no llegits als usuaris"
+
+msgid "Custom support URL"
+msgstr "URL personalitzada per a soport"
+
+msgid "Disable the privacy panel"
+msgstr "Deshabilita el distintiu de privacitat "
+
+msgid "Enable custom privacy panel"
+msgstr "Habilita distintiu personalitzat de privacitat"
+
+msgid "Custom privacy panel"
+msgstr "Tauler de privacitat del client"
+
+msgid "Enable scoring system"
+msgstr "Activa el sistema de puntuació"
+
+msgid "Logging level"
+msgstr "Nivell de registre"
+
+msgid "percentage"
+msgstr "percentatge"
+
+msgid "Log accesses of internal users"
+msgstr "Registre d'accés dels usuaris interns"
+
+msgid "Notify administrators of software problems"
+msgstr "Notifiqueu als administradors els problemes de programari"
+
+msgid "Notify developers of software problems"
+msgstr "Notifica sobre problemes del programari"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Si activeu aquesta funció, contribuireu al desenvolupament i la seguretat de la plataforma."
+
+msgid "Reset reports"
+msgstr "Restableix els informes"
+
+msgid "Settings"
+msgstr "Configuració"
 
 msgid "Case management"
 msgstr "Gestió de casos"
 
-msgid "Network settings"
-msgstr "Configuració de xarxa"
+msgid "Network"
+msgstr "Xarxa"
 
 msgid "Sites"
 msgstr "Llocs web"
 
-msgid "Mode:"
-msgstr "Mode:"
+msgid "Profile"
+msgstr "Perfil"
 
 msgid "Configure"
 msgstr "Configura"
@@ -1046,14 +1106,17 @@ msgstr "Configura"
 msgid "Subdomain"
 msgstr "Subdomini"
 
+msgid "Mode:"
+msgstr "Mode:"
+
 msgid "Creation date:"
 msgstr "Data de creació:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Domini arrel utilitzat per a llocs secundaris"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Utilitzeu el primer web només per a fins administratius"
+
+msgid "Root domain used for secondary sites"
+msgstr "Domini arrel utilitzat per a llocs secundaris"
 
 msgid "Allow users to sign up"
 msgstr "Permetre als usuaris registrar-se"
@@ -1074,10 +1137,10 @@ msgid "Set password"
 msgstr "Estableix la contrasenya"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "La contrasenya escollida és massa feble. Una contrasenya vàlida hauria de tenir com a mínim 10 caràcters i ha de contenir una varietat de caràcters, incloent almenys un minúscula, un majúscula, un número i un caràcter especial."
+msgstr "La contrasenya escollida és massa feble. Una contrasenya vàlida hauria de tenir com a mínim 12 caràcters i ha de contenir una varietat de caràcters, incloent almenys un minúscula, un majúscula, un número i un caràcter especial."
 
 msgid "Force password change"
 msgstr "Força un canvi de contrasenya"
@@ -1112,11 +1175,23 @@ msgstr "Obligatòriament seleccionats"
 msgid "Allow the recipient to delete reports"
 msgstr "Permet al destinatari esborrar informes"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Permet al destinatari ajornar la data d'expiració de l'informe"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr "Donar a aquest usuari la capacitat d'accedir a les denúncies"
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr "Donar a aquest usuari la capacitat de transferir denúncies a altres usuaris"
+
+msgid "Allow this user to reopen management of a report"
+msgstr "Permetre a este usuari reobrir la gestió d'una denúncia"
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Doneu a la persona usuària accés administratiu a les funcions següents:"
+
+msgid "Statistics"
+msgstr "Estadístiques"
 
 msgid "Request date"
 msgstr "Data de sol·licitud"
@@ -1154,14 +1229,20 @@ msgstr "Si us plau, selecciona el teu compte:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Ara escriu la teva contrasenya, després clica \"Inicia sessió\":"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Text que es mostra després que l’usuari hagi seleccionat l’opció."
-
 msgid "Confirm"
 msgstr "Confirma extensió"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Text que es mostra després que l’usuari hagi seleccionat l’opció."
+
 msgid "Assign score points"
 msgstr "Assigna puntuació"
+
+msgid "Change status"
+msgstr "Canviar l'estat"
+
+msgid "Status:"
+msgstr "Estat"
 
 msgid "Are you sure?"
 msgstr "N'estàs segur?"
@@ -1186,8 +1267,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Feu una còpia i guardeu-la en un lloc segur. Serà necessari si perdeu la contrasenya per recuperar l’accés al vostre compte sense pèrdues de dades."
 
+msgid "Attention"
+msgstr "Atenció"
+
+msgid "For security reasons the code needs to be changed."
+msgstr "Per raons de seguretat el codi s'ha de canviar"
+
 msgid "Enter a name for the copy"
 msgstr "Introduïu un nom per a la còpia"
+
+msgid "Mask"
+msgstr "Ocultar"
+
+msgid "Unselect"
+msgstr "Anul·lar la selecció"
+
+msgid "Reopen"
+msgstr "Reobrir"
 
 msgid "Request support"
 msgstr "Petició d'ajuda"
@@ -1209,14 +1305,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "La plataforma encara no està configurada per a connexions HTTPS i, per tant, només s'hauria d'utilitzar per fer proves."
 
-msgid "Please write a motivation for the reply"
-msgstr "Si us plau, escriu una motivació per a la resposta"
-
 msgid "Send"
 msgstr "Envia-ho"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Si ho confirmes, posposaràs la data de caducitat fins a:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr "En confirmar, fixarà una data de recordatori:"
+
+msgid "Transfer access"
+msgstr "Transferir accés"
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Aquesta és una plataforma de demostració, no la utilitzeu per a enviaments reals."
@@ -1250,6 +1349,12 @@ msgstr "Només es pot accedir a aquest recurs a través de la xarxa Tor"
 
 msgid "The upload request exceeds the size limit"
 msgstr "La petició de pujada preval sobre els límits de volum de dades"
+
+msgid "A user with this username already exists"
+msgstr "Ja hi ha un usuari amb eixe nom"
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr "Vosté està operant en nom d'un denunciant"
 
 msgid "Current password"
 msgstr "Contrasenya actual"
@@ -1292,20 +1397,23 @@ msgstr "Ja heu fet algun enviament? Introduïu el vostre codi de rebut."
 msgid "The receipt is either invalid or the report has expired."
 msgstr "El codi de rebut no és vàlid o l'informe ha caducat."
 
-msgid "Select a file or drag it here."
-msgstr "Seleccioneu un fitxer o arrossegueu-lo aquí."
+msgid "Filename"
+msgstr "Nom del fitxer"
 
 msgid "Size:"
 msgstr "Mida:"
 
-msgid "Uploading files…"
-msgstr "Carregant fitxers..."
+msgid "Access date"
+msgstr "Data d'accés"
 
-msgid "Upload completed successfully!"
-msgstr "La càrrega s'ha completat satisfactòriament!"
+msgid "Address"
+msgstr "Adreça"
 
-msgid "Estimated upload time:"
-msgstr "Temps estimat de càrrega:"
+msgid "Fiscal code"
+msgstr "Codi postal"
+
+msgid "Tax code"
+msgstr "codi tributari"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Les persones destinatàries han demanat que ompli un qüestionari addicional."
@@ -1319,8 +1427,8 @@ msgstr "Des de:"
 msgid "To:"
 msgstr "A:"
 
-msgid "Filename"
-msgstr "Nom del fitxer"
+msgid "View"
+msgstr "Visualitza"
 
 msgid "Upload date"
 msgstr "Data de pujada"
@@ -1333,9 +1441,6 @@ msgstr "Respostes del qüestionari"
 
 msgid "Step"
 msgstr "Pas"
-
-msgid "Status:"
-msgstr "Estat"
 
 msgid "Files attached by recipients"
 msgstr "Fitxers adjuntats per part de les persones destinatàries"
@@ -1362,9 +1467,6 @@ msgstr "Si voleu contribuir al desenvolupament de programari o informar d'un err
 msgid "Join our chat:"
 msgstr "Uneix-te al nostre xat:"
 
-msgid "Follow the project on:"
-msgstr "Seguiu el projecte a:"
-
 msgid "An update is available:"
 msgstr "Hi ha una actualització disponible:"
 
@@ -1374,6 +1476,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "Us recomanem que accediu a la secció \"Preferències\" per recuperar la vostra \"Clau de recuperació del compte\" i desar-la de manera segura. Aquesta clau serà necessària per recuperar el vostre accés a la plataforma i a les vostres dades en cas que oblideu la contrasenya."
+
+msgid "Select a file or drag it here."
+msgstr "Seleccioneu un fitxer o arrossegueu-lo aquí."
 
 msgid "The provided recovery key is invalid."
 msgstr "La clau de recuperació proporcionada no és vàlida."
@@ -1406,6 +1511,9 @@ msgstr "Data de la petició"
 msgid "Show"
 msgstr "Mostra"
 
+msgid "Subscription date"
+msgstr "Data de subscripció"
+
 msgid "Congratulations!"
 msgstr "Enhorabona!"
 
@@ -1428,26 +1536,17 @@ msgstr "Si no s’activa en 24 hores, la plataforma s'eliminarà automàticament
 msgid "Sign up"
 msgstr "Registrar‐se"
 
-msgid "Site"
-msgstr "Lloc"
-
-msgid "Confirmation"
-msgstr "Confirmació"
-
 msgid "Invalid confirmation"
 msgstr "Confirmació no vàlida"
 
 msgid "Invalid phone number"
 msgstr "Número de telèfon no vàlid"
 
-msgid "Address"
-msgstr "Adreça"
+msgid "Site"
+msgstr "Lloc"
 
-msgid "Fiscal code"
-msgstr "Codi postal"
-
-msgid "Tax code"
-msgstr "codi tributari"
+msgid "Confirmation"
+msgstr "Confirmació"
 
 msgid "The answer is too short"
 msgstr "La resposta és massa curta"
@@ -1486,17 +1585,17 @@ msgstr "Utilitzeu el codi de rebut de 16 dígits per iniciar sessió. Us permetr
 msgid "View your report"
 msgstr "Mira el teu informe"
 
-msgid "Recipient selection"
-msgstr "Selecciona el destinatari"
-
-msgid "Select the recipients of your report:"
-msgstr "Seleccioneu els destinataris de l'informe:"
+msgid "Select the recipients of your report"
+msgstr "Seleccioneu els destinataris de la vostra denúncia"
 
 msgid "Recipients selected:"
 msgstr "Persones destinatàries seleccionades:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Has arribat al límit de nombre màxim de destinataris permesos."
+
+msgid "You must select at least one recipient."
+msgstr "Has de seleccionar com a mínim un destinatari."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1508,17 +1607,11 @@ msgid ""
 "invalid:"
 msgstr "En aquest pas, les respostes a les següents preguntes falten o són invàlides:"
 
-msgid "You must select at least one recipient."
-msgstr "Has de seleccionar com a mínim un destinatari."
+msgid "Recipient selection"
+msgstr "Selecciona el destinatari"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Esperant que la pujada d'arxiu(s) es completi"
-
-msgid "The following steps have errors:"
-msgstr "Els passos següents tenen errors:"
-
-msgid "Hide"
-msgstr "Oculta"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1608,8 +1701,8 @@ msgstr "Aquestes organitzacions han investigat les vostres afirmacions? Si és a
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Quin és el resultat que voleu aconseguir amb el nostre suport?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Vols introduir la teva informació d'identificació?"
+msgid "Would you like to tell us who you are?"
+msgstr "¿Le gustaría identificarse?"
 
 msgid "First name"
 msgstr "Nom"
@@ -1625,6 +1718,9 @@ msgstr "Prefereixo que em contactin només mitjançant aquesta plataforma"
 
 msgid "Other"
 msgstr "Altres"
+
+msgid "Specify"
+msgstr "Especifique"
 
 msgid "Dear {RecipientName},"
 msgstr "Benvolgut/uda {RecipientName},"
@@ -1686,6 +1782,9 @@ msgstr "Examineu el problema per determinar si és legítim o no."
 
 msgid "The activities with unusual stats are:"
 msgstr "Les activitats amb estadístiques inusuals són les següents:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr "Espai disponible en disc: {FreeMemory}/{TotalMemory}"
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1793,7 +1892,7 @@ msgid ""
 msgstr "El certificat HTTPS carregat a la plataforma està caducat o a punt de fer-ho."
 
 msgid "Expiration date: {ExpirationDate}"
-msgstr "Data de caducitat: {ExpirationDate}"
+msgstr "Esborrat automàtic: {ExpirationDate}"
 
 msgid ""
 "Without a valid certificate, the platform will be accessible in a secure way"
@@ -1915,6 +2014,9 @@ msgstr "Aquest és un correu electrònic per notificar-vos que una persona desti
 msgid "New report"
 msgstr "Nou informe"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr "Una o més denúncies van a caducar i en breu se suprimiran."
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "La data de venciment més propera és {EarliestExpirationDate}."
 
@@ -1924,18 +2026,16 @@ msgstr "Si-us-plau, recordeu revisar-los abans d'esborrar-los."
 msgid "Some reports will expire soon"
 msgstr "Alguns informes caducaran aviat"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Això és un missatge de correu electrònic per notificar-te que un informador t'ha seleccionat com a un valuós destinatari del seu informe."
+msgid "This is an email to notify you the reception of a new report."
+msgstr "Aquest correu electrònic és per notificar-vos la recepció d'una nova denúncia."
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Se us demana que presteu especial atenció a la informació i al material que conté. Tingueu en compte que els informadors sovint s'exposen a riscos personals elevats en interès del públic. Per tant, el material proporcionat dins d'aquest informe ha de ser considerat de gran importància."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr "Aquest correu electrònic és per notificar-vos que s'ha complert la data del recordatori d'una o més denúncies."
+
+msgid "Reminder"
+msgstr "Recordatori"
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Es tracta d’un correu electrònic per notificar que s’ha actualitzat un informe existent."

@@ -6,7 +6,6 @@ from globaleaks.db import refresh_tenant_cache
 from globaleaks.handlers.admin.node import db_update_enabled_languages
 from globaleaks.orm import tw
 from globaleaks.rest import api
-from globaleaks.state import State
 from globaleaks.tests.helpers import TestGL, forge_request
 
 
@@ -35,6 +34,7 @@ class TestAPI(TestGL):
                                                    'user',
                                                    'whistleblower',
                                                    'admin',
+                                                   'analyst',
                                                    'receiver',
                                                    'custodian'], check_roles))
             self.assertTrue(len(rest) == 0)
@@ -71,19 +71,21 @@ class TestAPI(TestGL):
             ('Cache-control', 'no-store'),
             ('Content-Language', 'en'),
             ('Content-Security-Policy', 'base-uri \'none\';' \
-                                        'connect-src \'self\';' \
                                         'default-src \'none\';' \
-                                        'font-src \'self\' data:;' \
                                         'form-action \'none\';' \
                                         'frame-ancestors \'none\';' \
-                                        'img-src \'self\' data:;' \
-                                        'script-src \'self\' \'sha256-IYBZitj/YWbzjFFnwLPjJJmMGdSj923kzu2tdCxLKdU=\';' \
-                                        'style-src \'self\' \'sha256-fwyo2zCGlh85NfN4rQUlpLM7MB5cry/1AEDA/G9mQJ8=\';'),
+                                        'sandbox;'),
+            ('Cross-Origin-Embedder-Policy', 'require-corp'),
+            ('Cross-Origin-Opener-Policy', 'same-origin'),
+            ('Cross-Origin-Resource-Policy', 'same-origin'),
             ('Permissions-Policy', "camera=(),"
                                    "document-domain=(),"
                                    "fullscreen=(),"
                                    "geolocation=(),"
-                                   "microphone=()"),
+                                   "microphone=(),"
+                                   "serial=(),"
+                                   "usb=(),"
+                                   "web-share=()"),
             ('Referrer-Policy', 'no-referrer'),
             ('Server', 'GlobaLeaks'),
             ('X-Content-Type-Options', 'nosniff'),
@@ -100,17 +102,17 @@ class TestAPI(TestGL):
                 self.assertEqual(returnedHeaderValue, expectedHeaderValue)
 
     def test_request_state_and_redirects(self):
-        # Remote HTTP connection with HTTPS disabled
+        # Remote HTTP connection is always redirected to HTTPS
         request = forge_request(uri=b'http://www.globaleaks.org/')
         self.api.render(request)
         self.assertFalse(request.client_using_tor)
-        self.assertEqual(request.responseCode, 200)
+        self.assertEqual(request.responseCode, 302)
 
         # Local HTTP connection on port 8082 should be marked as not coming from Tor
         request = forge_request(uri=b'http://127.0.0.1:8082/', client_addr=IPv4Address('TCP', '127.0.0.1', 12345))
         self.api.render(request)
         self.assertFalse(request.client_using_tor)
-        self.assertEqual(request.responseCode, 200)
+        self.assertEqual(request.responseCode, 302)
 
         # Local HTTP connection on port 8083 should be marked as coming from Tor
         request = forge_request(uri=b'http://127.0.0.1:8083/', client_addr=IPv4Address('TCP', '127.0.0.1', 12345))
@@ -119,10 +121,8 @@ class TestAPI(TestGL):
         self.assertEqual(request.responseCode, 302)
 
         # Remote HTTP connection not coming from Tor should be redirected to HTTPS
-        State.tenants[1].cache.https_enabled = True
-        request = forge_request(uri=b'http://www.globaleaks.org/public', client_addr=IPv4Address('TCP', '8.8.8.8', 12345))
+        request = forge_request(uri=b'http://www.globaleaks.org/', client_addr=IPv4Address('TCP', '8.8.8.8', 12345))
         self.api.render(request)
         self.assertFalse(request.client_using_tor)
         self.assertEqual(request.responseCode, 302)
-        self.assertEqual(request.responseHeaders.getRawHeaders('location')[0], 'https://www.globaleaks.org/public')
-        State.tenants[1].cache.https_enabled = False
+        self.assertEqual(request.responseHeaders.getRawHeaders('location')[0], 'https://www.globaleaks.org/')

@@ -1,29 +1,215 @@
 GL.controller("TipCtrl",
-  ["$scope", "$location", "$filter", "$http", "$interval", "$routeParams", "$uibModal", "Authentication", "RTip", "WBTip", "RTipExport", "RTipDownloadRFile", "WBTipDownloadFile", "fieldUtilities",
-  function($scope, $location, $filter, $http, $interval, $routeParams, $uibModal, Authentication, RTip, WBTip, RTipExport, RTipDownloadRFile, WBTipDownloadFile, fieldUtilities) {
+  ["$scope", "$location", "$filter", "$http", "$interval", "$routeParams", "$uibModal", "Authentication", "RTip", "WBTip", "RTipExport", "RTipDownloadWBFile", "WBTipDownloadWBFile", "WBTipDownloadRFile", "RTipViewWBFile", "fieldUtilities",
+  function($scope, $location, $filter, $http, $interval, $routeParams, $uibModal, Authentication, RTip, WBTip, RTipExport, RTipDownloadWBFile, WBTipDownloadWBFile, WBTipDownloadRFile, RTipViewWBFile, fieldUtilities) {
     $scope.fieldUtilities = fieldUtilities;
     $scope.tip_id = $routeParams.tip_id;
 
     $scope.itemsPerPage = 5;
     $scope.currentCommentsPage = 1;
-    $scope.currentMessagesPage = 1;
 
     $scope.answers = {};
     $scope.uploads = {};
 
     $scope.showEditLabelInput = false;
 
+    $scope.audioFiles = {};
+
+    $scope.loadAudioFile = function(reference_id) {
+      for (var i=0; i < $scope.tip.wbfiles.length; i++) {
+        if ($scope.tip.wbfiles[i].reference_id === reference_id) {
+          var id = $scope.tip.wbfiles[i].id;
+          var xhr = new XMLHttpRequest();
+
+          if ($scope.Authentication.session.role === "whistleblower") {
+            xhr.open("GET", "api/whistleblower/wbtip/wbfiles/" + id, true);
+          } else {
+            xhr.open("GET", "api/recipient/wbfiles/" + id, true);
+          }
+
+          xhr.setRequestHeader("x-session", $scope.Authentication.session.id);
+          xhr.overrideMimeType("audio/webm");
+          xhr.responseType = "blob";
+
+          xhr.onload = function() {
+            if (this.status === 200) {
+              $scope.audioFiles[reference_id] = this.response;
+
+              window.addEventListener("message", function(message) {
+                const iframe = document.getElementById("audio-file-" + reference_id);
+
+                if (message.source !== iframe.contentWindow) {
+                  return;
+                }
+
+                var data = {
+                  tag: "audio",
+                  blob: $scope.audioFiles[reference_id]
+                };
+
+                iframe.contentWindow.postMessage(data, "*");
+              });
+
+              $scope.$apply();
+            }
+          };
+
+          xhr.send();
+
+          break;
+        }
+      }
+    };
+
+    $scope.redactMode = false;
+    $scope.redactOperationTitle = $filter("translate")("Mask") + " / " + $filter("translate")("Redact");
+
+    $scope.tabs = [
+      {
+        title: "Everyone",
+        key: "public"
+      },
+      {
+        title: "Recipients only",
+        key: "internal"
+      },
+      {
+        title: "Me only",
+        key: "personal"
+      }
+    ];
+    $scope.activeTabKey = $scope.tabs[0].key;
+
+    $scope.selectedTab = function (key){
+      $scope.activeTabKey = key;
+    };
+
+    $scope.openTipTransferModal = function() {
+      $http({
+        method: "PUT", url: "api/user/operations", data: {
+          "operation": "get_users_names",
+          "args": {}
+        }
+      }).then(function (response) {
+        var selectable_recipients = [];
+
+        $scope.public.receivers.forEach(async (receiver) => {
+          if (receiver.id !== $scope.Authentication.session.user_id && !$scope.tip.receivers_by_id[receiver.id]) {
+            selectable_recipients.push(receiver);
+          }
+        });
+
+        $uibModal.open({
+          templateUrl: "views/modals/transfer_access.html",
+          controller: "ConfirmableModalCtrl",
+          resolve: {
+            arg: {
+              users_names: response.data,
+              selectable_recipients: selectable_recipients
+            },
+            confirmFun: function () {
+              return function (receiver_id) {
+                var req = {
+                  operation: "transfer",
+                  args: {
+                    receiver: receiver_id
+                  },
+                };
+                return $http({ method: "PUT", url: "api/recipient/rtips/" + $scope.tip.id, data: req }).then(function () {
+                  $location.path("recipient/reports");
+                });
+              };
+            },
+            cancelFun: null
+          }
+        });
+      });
+    };
+
+    $scope.openModalReopen = function() {
+      $uibModal.open({
+        templateUrl: "views/modals/reopen_submission.html",
+        controller: "ConfirmableModalCtrl",
+        resolve: {
+          arg: {
+            motivation: "",
+          },
+          confirmFun: function () {
+            return function (motivation) {
+              $scope.tip.status = "opened";
+              $scope.tip.substatus = null;
+              $scope.tip.motivation = motivation;
+              $scope.updateSubmissionStatus();
+            };
+          },
+          cancelFun: null
+        }
+      });
+    };
+
+    $scope.openModalChangeState = function(){
+      $uibModal.open({
+        templateUrl: "views/modals/change_submission_status.html",
+        controller: "ConfirmableModalCtrl",
+        resolve: {
+          arg: {
+            tip: angular.copy($scope.tip),
+            submission_statuses: function() {
+              var sub_copy = angular.copy($scope.submission_statuses);
+              var output = [];
+              for (var x of sub_copy) {
+                if (x.substatuses.length) {
+                  for (var y of x.substatuses) {
+                    output.push({
+                      id: x.id + ":" + y.id,
+                      label: $filter("translate")(x.label ) + " \u2013 " + y.label,
+                      status: x.id,
+                      substatus: y.id,
+                      order: output.length
+                    });
+                  }
+                } else {
+                  x.status = x.id;
+                  x.substatus = "";
+                  x.order = output.length;
+                  output.push(x);
+                }
+              }
+              return output;
+            }()
+          },
+          confirmFun: function () {
+            return function (arg) {
+              $scope.tip.status = arg.status.status;
+              $scope.tip.substatus = arg.status.substatus;
+              $scope.tip.motivation = arg.motivation;
+              $scope.updateSubmissionStatus();
+            };
+          },
+          cancelFun: null
+        }
+      });
+    };
+
     $scope.openGrantTipAccessModal = function () {
       $http({method: "PUT", url: "api/user/operations", data:{
         "operation": "get_users_names",
         "args": {}
       }}).then(function(response) {
+        var selectable_recipients = [];
+
+        $scope.public.receivers.forEach(async (receiver) => {
+          if (receiver.id !== $scope.Authentication.session.user_id && !$scope.tip.receivers_by_id[receiver.id]) {
+            selectable_recipients.push(receiver);
+          }
+        });
+
         $uibModal.open({
           templateUrl: "views/modals/grant_access.html",
           controller: "ConfirmableModalCtrl",
           resolve: {
             arg: {
-              users_names: response.data
+              users_names: response.data,
+              selectable_recipients: selectable_recipients
             },
             confirmFun: function() {
               return function(receiver_id) {
@@ -34,7 +220,7 @@ GL.controller("TipCtrl",
                   },
                 };
 
-                return $http({method: "PUT", url: "api/rtips/" + $scope.tip.id, data: req}).then(function () {
+                return $http({method: "PUT", url: "api/recipient/rtips/" + $scope.tip.id, data: req}).then(function () {
                   $scope.reload();
                 });
               };
@@ -50,12 +236,21 @@ GL.controller("TipCtrl",
         "operation": "get_users_names",
         "args": {}
       }}).then(function(response) {
+        var selectable_recipients = [];
+
+        $scope.public.receivers.forEach(async (receiver) => {
+          if (receiver.id !== $scope.Authentication.session.user_id && $scope.tip.receivers_by_id[receiver.id]) {
+            selectable_recipients.push(receiver);
+          }
+        });
+
         $uibModal.open({
           templateUrl: "views/modals/revoke_access.html",
           controller: "ConfirmableModalCtrl",
           resolve: {
             arg: {
-              users_names: response.data
+              users_names: response.data,
+              selectable_recipients: selectable_recipients
             },
             confirmFun: function() {
               return function(receiver_id) {
@@ -66,7 +261,7 @@ GL.controller("TipCtrl",
                   }
                 };
 
-                return $http({method: "PUT", url: "api/rtips/" + $scope.tip.id, data: req}).then(function () {
+                return $http({method: "PUT", url: "api/recipient/rtips/" + $scope.tip.id, data: req}).then(function () {
                   $scope.reload();
                 });
               };
@@ -87,7 +282,7 @@ GL.controller("TipCtrl",
 
     var filterNotTriggeredField = function(parent, field, answers) {
       var i;
-      if (fieldUtilities.isFieldTriggered(parent, field, answers, $scope.tip.score)) {
+      if (fieldUtilities.isFieldTriggered($scope, parent, field, answers, $scope.tip.score)) {
         for(i=0; i<field.children.length; i++) {
           filterNotTriggeredField(field, field.children[i], answers);
         }
@@ -103,7 +298,7 @@ GL.controller("TipCtrl",
 
         for (i=0; i<questionnaire.steps.length; i++) {
           step = questionnaire.steps[i];
-          if (fieldUtilities.isFieldTriggered(null, step, questionnaire.answers, $scope.tip.score)) {
+          if (fieldUtilities.isFieldTriggered($scope, null, step, questionnaire.answers, $scope.tip.score)) {
             for (j=0; j<step.children.length; j++) {
               filterNotTriggeredField(step, step.children[j], questionnaire.answers);
             }
@@ -114,7 +309,7 @@ GL.controller("TipCtrl",
           step = questionnaire.steps[i];
           j = step.children.length;
           while (j--) {
-            if (step.children[j]["template_id"] === "whistleblower_identity") {
+            if (step.children[j]["template_id"] === "whistleblower_identity" || step.children[j]["key"] === "whistleblower_identity") {
               $scope.whistleblower_identity_field = step.children[j];
               $scope.whistleblower_identity_field.enabled = true;
               step.children.splice(j, 1);
@@ -145,7 +340,7 @@ GL.controller("TipCtrl",
     };
 
     if ($scope.Authentication.session.role === "whistleblower") {
-      $scope.fileupload_url = "api/wbtip/rfile";
+      $scope.fileupload_url = "api/whistleblower/wbtip/wbfiles";
 
       $scope.tip = new WBTip(function(tip) {
         $scope.tip = tip;
@@ -156,10 +351,16 @@ GL.controller("TipCtrl",
         $scope.ctx = "wbtip";
         $scope.preprocessTipAnswers(tip);
 
+        $scope.downloadWBFile = WBTipDownloadWBFile;
+
         $scope.tip.submissionStatusStr = $scope.Utils.getSubmissionStatusText($scope.tip.status, $scope.tip.substatus, $scope.submission_statuses);
 
+        $scope.downloadRFile = function(file) {
+          WBTipDownloadRFile(file);
+        };
+
         $scope.downloadWBFile = function(file) {
-          WBTipDownloadFile(file);
+          WBTipDownloadWBFile(file);
         };
 
         // FIXME: remove this variable that is now needed only to map wb_identity_field
@@ -184,7 +385,7 @@ GL.controller("TipCtrl",
 
             $interval.cancel($scope.interval);
 
-            return $http.post("api/wbtip/" + $scope.tip.id + "/provideidentityinformation",
+            return $http.post("api/whistleblower/wbtip/identity",
                               {"identity_field_id": identity_field_id, "identity_field_answers": identity_field_answers}).
                 then(function(){
                   $scope.reload();
@@ -209,16 +410,107 @@ GL.controller("TipCtrl",
         $scope.preprocessTipAnswers(tip);
 
         $scope.exportTip = RTipExport;
-        $scope.downloadRFile = RTipDownloadRFile;
+        $scope.downloadWBFile = RTipDownloadWBFile;
+        $scope.viewWBFile = RTipViewWBFile;
+
+        $scope.redactFileOperation = function(operation, content_type, file) {
+          var redactionData = {
+            reference_id: file.ifile_id,
+            internaltip_id: $scope.tip.id,
+            entry: "0",
+            operation: operation,
+            content_type: content_type,
+            temporary_redaction: [],
+            permanent_redaction: []
+          };
+
+          if (operation === "full-mask") {
+            redactionData.temporary_redaction = [{"start": "-inf", "end": "inf"}];
+          }
+
+          let redaction = $scope.getRedaction(file.ifile_id, "0");
+
+          if (redaction) {
+            redactionData.id = redaction.id;
+            $scope.tip.updateRedaction(redactionData);
+          } else {
+            $scope.tip.newRedaction(redactionData);
+          }
+        };
 
         $scope.showEditLabelInput = $scope.tip.label === "";
 
         $scope.tip.submissionStatusStr = $scope.Utils.getSubmissionStatusText($scope.tip.status, $scope.tip.substatus, $scope.submission_statuses);
+        $scope.supportedViewTypes = ["application/pdf", "audio/mpeg", "image/gif", "image/jpeg", "image/png", "text/csv", "text/plain", "video/mp4"];
       });
     }
 
     $scope.editLabel = function() {
       $scope.showEditLabelInput = true;
+    };
+
+    $scope.markReportStatus = function (date) {
+      var report_date = new Date(date);
+      var current_date = new Date();
+      return current_date > report_date;
+    };
+
+    function refineContent(content, ranges, code) {
+      var maskedText = content.split("");
+
+      ranges.forEach(function (range) {
+        if (range.start >= 0 && range.start <= maskedText.length && range.end >= 0) {
+          for (var i = range.start; i <= range.end; i++) {
+            maskedText.splice(i, 1, String.fromCharCode(code));
+          }
+        }
+      });
+
+      return maskedText.join("");
+    }
+
+    $scope.maskContent = function(id, index, value) {
+      let redaction = $scope.getRedaction(id, index);
+
+      let masked_value = value;
+
+      if (redaction) {
+        if (redaction.temporary_redaction.length > 0) {
+          var temporaryRedactionArray = Object.values(redaction.temporary_redaction);
+          temporaryRedactionArray.sort(function(a, b) {
+            return a.start - b.start;
+          });
+
+          masked_value = refineContent(masked_value, temporaryRedactionArray, 0x2591);
+        }
+
+        if (redaction.permanent_redaction.length > 0) {
+          var permanentRedactionArray = Object.values(redaction.permanent_redaction);
+          permanentRedactionArray.sort(function(a, b) {
+            return a.start - b.start;
+          });
+
+          masked_value = refineContent(masked_value, permanentRedactionArray, 0x2588);
+        }
+      }
+
+      return masked_value;
+    };
+
+    $scope.getRedaction = function(id, entry) {
+      var redactionObjects = $scope.tip.redactions.filter(function(redaction) {
+        if (!entry) {
+          return redaction.reference_id === id && redaction.entry === "0";
+        } else {
+          return redaction.reference_id === id && redaction.entry === entry;
+        }
+      });
+
+      return redactionObjects.length > 0 ? redactionObjects[0] : null;
+    };
+
+    $scope.isMasked = function(id) {
+      return $scope.getRedaction(id, "0") !== null;
     };
 
     $scope.updateLabel = function(label) {
@@ -234,13 +526,8 @@ GL.controller("TipCtrl",
     };
 
     $scope.newComment = function() {
-      $scope.tip.newComment($scope.tip.newCommentContent);
+      $scope.tip.newComment($scope.tip.newCommentContent, $scope.activeTabKey);
       $scope.tip.newCommentContent = "";
-    };
-
-    $scope.newMessage = function() {
-      $scope.tip.newMessage($scope.tip.newMessageContent);
-      $scope.tip.newMessageContent = "";
     };
 
     $scope.tip_toggle_star = function() {
@@ -280,13 +567,60 @@ GL.controller("TipCtrl",
               tip: $scope.tip,
               operation: "postpone",
               contexts_by_id: $scope.contexts_by_id,
-              expiration_date: $scope.Utils.getPostponeDate($scope.contexts_by_id[$scope.tip.context_id].tip_timetolive),
+              date: $scope.Utils.getPostponeDate($scope.tip.expiration_date, $scope.contexts_by_id[$scope.tip.context_id].tip_timetolive),
               dateOptions: {
-                minDate: new Date($scope.tip.expiration_date),
-                maxDate: $scope.Utils.getPostponeDate(Math.max(365, $scope.contexts_by_id[$scope.tip.context_id].tip_timetolive * 2))
+                minDate: $scope.Utils.getMinPostponeDate($scope.tip.expiration_date)
               },
               opened: false,
               Utils: $scope.Utils
+            };
+          }
+        }
+      });
+    };
+
+    $scope.set_reminder = function () {
+      $uibModal.open({
+        templateUrl: "views/modals/tip_operation_set_reminder.html",
+        controller: "TipOperationsCtrl",
+        resolve: {
+          args: function() {
+            return {
+              tip: $scope.tip,
+              operation: "set_reminder",
+              contexts_by_id: $scope.contexts_by_id,
+              date: $scope.Utils.getReminderDate($scope.contexts_by_id[$scope.tip.context_id].tip_reminder),
+              dateOptions: {
+                minDate: new Date($scope.tip.creation_date)
+              },
+              opened: false,
+              Utils: $scope.Utils
+            };
+          }
+        }
+      });
+    };
+
+    $scope.toggleRedactMode = function() {
+      $scope.redactMode = !$scope.redactMode;
+    };
+
+    $scope.redactInformation = function(type, id, entry, content) {
+      $uibModal.open({
+        templateUrl: "views/modals/redact_information.html",
+        controller: "TipRedactInformationCtrl",
+        resolve: {
+          args: function() {
+            return {
+              tip: $scope.tip,
+              redaction: $scope.getRedaction(id, entry),
+              Utils: $scope.Utils,
+              data: {
+                type,
+                id,
+                entry,
+                content
+              }
             };
           }
         }
@@ -305,7 +639,7 @@ GL.controller("TipCtrl",
     };
 
     $scope.access_identity = function () {
-      return $http.post("api/rtips/" + $scope.tip.id + "/iars", {"request_motivation": ""}).then(function(){
+      return $http.post("api/recipient/rtips/" + $scope.tip.id + "/iars", {"request_motivation": ""}).then(function(){
          $scope.reload();
       });
     };
@@ -341,22 +675,41 @@ controller("TipOperationsCtrl",
     $uibModalInstance.close();
   };
 
+  $scope.disable_reminder = function () {
+    $uibModalInstance.close();
+    var req = {
+      "operation": "set_reminder",
+      "args": {
+        "value": 32503680000000
+      }
+    };
+
+    return $http({method: "PUT", url: "api/recipient/rtips/" + args.tip.id, data: req}).then(function () {
+      $scope.reload();
+    });
+  };
+
   $scope.confirm = function () {
     $uibModalInstance.close();
 
-    if ($scope.args.operation === "postpone") {
+    if ($scope.args.operation === "postpone" || $scope.args.operation === "set_reminder") {
+      $scope.args.date.setUTCHours(0, 0, 0);
+      if ($scope.args.operation === "postpone") {
+        $scope.args.date.setDate($scope.args.date.getDate() + 1);
+      }
+
       var req = {
-        "operation": "postpone",
+        "operation": $scope.args.operation,
         "args": {
-          "value": $scope.args.expiration_date.getTime()
+          "value": $scope.args.date.getTime()
         }
       };
 
-      return $http({method: "PUT", url: "api/rtips/" + args.tip.id, data: req}).then(function () {
+      return $http({method: "PUT", url: "api/recipient/rtips/" + args.tip.id, data: req}).then(function () {
         $scope.reload();
       });
-    } else if (args.operation === "delete") {
-      return $http({method: "DELETE", url: "api/rtips/" + args.tip.id, data:{}}).
+    }  else if (args.operation === "delete") {
+      return $http({method: "DELETE", url: "api/recipient/rtips/" + args.tip.id, data:{}}).
         then(function() {
           $location.url("/recipient/reports");
           $scope.reload();
@@ -364,28 +717,15 @@ controller("TipOperationsCtrl",
     }
   };
 }]).
-controller("RTipWBFileUploadCtrl", ["$scope", "Authentication", "RTipDownloadWBFile", "RTipWBFileResource", function($scope, Authentication, RTipDownloadWBFile, RTipWBFileResource) {
+controller("RTipRFileUploadCtrl", ["$scope", "Authentication", "RTipDownloadRFile", "RTipRFileResource", function($scope, Authentication, RTipDownloadRFile, RTipRFileResource) {
   var reloadUI = function (){ $scope.reload(); };
 
-  $scope.downloadWBFile = function(f) {
-    RTipDownloadWBFile(f);
+  $scope.downloadRFile = function(file) {
+    RTipDownloadRFile(file);
   };
 
-  $scope.deleteWBFile = function(f) {
-    RTipWBFileResource.remove({"id":f.id}).$promise.finally(reloadUI);
-  };
-}]).
-controller("WBTipFileDownloadCtrl", ["$scope", "$uibModalInstance", "WBTipDownloadFile", "file", "tip", function($scope, $uibModalInstance, WBTipDownloadFile, file, tip) {
-  $scope.ctx = "download";
-  $scope.file = file;
-  $scope.tip = tip;
-  $scope.confirm = function() {
-    $uibModalInstance.close();
-    WBTipDownloadFile(file);
-  };
-
-  $scope.cancel = function () {
-    $uibModalInstance.close();
+  $scope.deleteRFile = function(f) {
+    RTipRFileResource.remove({"id":f.id}).$promise.finally(reloadUI);
   };
 }]).
 controller("IdentityAccessRequestCtrl",
@@ -400,7 +740,7 @@ controller("IdentityAccessRequestCtrl",
   $scope.confirm = function () {
     $uibModalInstance.close();
 
-    return $http.post("api/rtips/" + tip.id + "/iars", {"request_motivation": $scope.request_motivation}).
+    return $http.post("api/recipient/rtips/" + tip.id + "/iars", {"request_motivation": $scope.request_motivation}).
       then(function(){
         $scope.reload();
       });
@@ -411,4 +751,111 @@ controller("WhistleblowerFilesCtrl", ["$scope", function ($scope) {
 }]).
 controller("WhistleblowerIdentityFormCtrl", ["$scope", function ($scope) {
   $scope.uploads = {};
+}]).
+controller("TipRedactInformationCtrl", ["$scope", "$document", "$filter", "mask", "$sce", "$uibModalInstance", "args", function($scope, $document, $filter, mask, $sce, $uibModalInstance, args) {
+  $scope.redaction = null;
+  $scope.args = args;
+  $scope.forced_visible = false;
+
+  $scope.vars = {
+    redaction_switch: true // True: Masking; False: Redaction
+  };
+
+  if (!$scope.resources.preferences.can_mask_information && $scope.resources.preferences.can_redact_information) {
+    $scope.vars.redaction_switch = false;
+  }
+
+  $scope.ranges_selected = [];
+
+  $scope.cancel = function() {
+    $uibModalInstance.close();
+  };
+
+  $scope.toggleVisibility = function() {
+    $scope.forced_visible = !$scope.forced_visible;
+  };
+
+  $scope.initializeMasking = function() {
+    $scope.redaction = $scope.args.redaction;
+    $scope.temporary_redaction = [];
+    $scope.permanent_redaction = [];
+    $scope.ranges_selected = [];
+
+    if ($scope.redaction) {
+      $scope.permanent_redaction = $scope.redaction.permanent_redaction;
+      $scope.temporary_redaction = $scope.redaction.temporary_redaction;
+
+      if ($scope.vars.redaction_switch) {
+        $scope.ranges_selected = $scope.temporary_redaction;
+      }
+    }
+
+    $scope.unmaskedContent = $scope.content = $scope.args.data.content;
+    $scope.originalContent = $scope.content = mask.maskContent($scope.content, $scope.temporary_redaction, true, String.fromCharCode(0x2591));
+  };
+
+  $scope.selectContent = function() {
+    let response = mask.getSelectedRanges(true, $scope.ranges_selected);
+    if (!$scope.vars.redaction_switch) {
+      $scope.ranges_selected = mask.intersectRanges($scope.temporary_redaction, response.new_ranges);
+      $scope.content = mask.maskContent($scope.content, $scope.ranges_selected, true, String.fromCharCode(0x2588));
+    } else {
+      if (!$scope.resources.preferences.can_mask_information) {
+        $scope.ranges_selected = mask.intersectRanges($scope.temporary_redaction, response.new_ranges);
+      } else {
+        $scope.ranges_selected = response.new_ranges;
+      }
+
+      $scope.content = mask.maskContent($scope.content, $scope.ranges_selected, true, String.fromCharCode(0x2591));
+      $scope.content = mask.maskContent($scope.content, $scope.permanent_redaction, true, String.fromCharCode(0x2588));
+    }
+  };
+
+  $scope.unSelectContent = function() {
+    let response = mask.getSelectedRanges(false, $scope.ranges_selected);
+    $scope.ranges_selected = response.new_ranges;
+    $scope.content = mask.onUnHighlight($scope.content, $scope.unmaskedContent, [response.selected_ranges]);
+  };
+
+  $scope.saveMasking = function() {
+    let redactionData = {
+      internaltip_id: $scope.args.tip.id,
+      reference_id: $scope.args.data.id,
+      entry: $scope.args.data.entry,
+      temporary_redaction: [],
+      permanent_redaction: []
+    };
+
+    if ($scope.vars.redaction_switch) {
+      redactionData["operation"] = "mask";
+      redactionData["content_type"] = $scope.args.data.type;
+      redactionData["temporary_redaction"] = $scope.ranges_selected;
+    } else {
+      redactionData["operation"] = "redact";
+      redactionData["content_type"] = $scope.args.data.type;
+      redactionData["permanent_redaction"] = $scope.ranges_selected;
+    }
+
+    if ($scope.redaction) {
+      redactionData.id = $scope.redaction.id;
+      $scope.args.tip.updateRedaction(redactionData);
+    } else {
+      $scope.args.tip.newRedaction(redactionData);
+    }
+
+    $scope.cancel();
+  };
+
+  $scope.ignoreEdit = function(event) {
+    if (event.keyCode >= 37 && event.keyCode <= 40) {
+      return;
+    }
+    event.preventDefault();
+  };
+
+  $scope.toggleMasking = function() {
+    $scope.initializeMasking();
+  };
+
+  $scope.initializeMasking();
 }]);

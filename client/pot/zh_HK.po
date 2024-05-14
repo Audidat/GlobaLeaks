@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2021-2022\n"
-"Language-Team: Chinese (Hong Kong) (http://www.transifex.com/otf/globaleaks/language/zh_HK/)\n"
+"Language-Team: Chinese (Hong Kong) (http://app.transifex.com/otf/globaleaks/language/zh_HK/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_HK\n"
@@ -19,20 +19,14 @@ msgstr ""
 msgid "Log in"
 msgstr "登入"
 
-msgid "Main configuration"
-msgstr "主要設定"
-
-msgid "Theme customization"
-msgstr "自訂外觀"
-
 msgid "Languages"
 msgstr "語言"
 
 msgid "Text customization"
 msgstr "自訂內文"
 
-msgid "Advanced settings"
-msgstr "進階設定"
+msgid "Advanced"
+msgstr "高级"
 
 msgid "Question templates"
 msgstr "問題範本"
@@ -52,8 +46,8 @@ msgstr "更新日誌"
 msgid "License"
 msgstr "授權"
 
-msgid "Notification templates"
-msgstr "通知範本"
+msgid "Templates"
+msgstr "範本"
 
 msgid "Delete"
 msgstr "刪除"
@@ -64,8 +58,8 @@ msgstr "異常狀況"
 msgid "Preferences"
 msgstr "帳號設定"
 
-msgid "Notification settings"
-msgstr "通知設定"
+msgid "Notifications"
+msgstr "通知"
 
 msgid "file unavailable"
 msgstr "無法存取檔案"
@@ -85,25 +79,16 @@ msgstr "檔案"
 msgid "Comments"
 msgstr "註釋"
 
-msgid "Messages"
-msgstr "訊息"
-
 msgid "Details"
 msgstr "詳情"
 
 msgid "Platform wizard"
 msgstr "平台設定精靈"
 
-msgid "CREDIT CARD"
-msgstr "信用卡"
-
-msgid "YOUR NAME"
-msgstr "您的姓名"
-
 msgid "Label the report"
 msgstr "標籤此報告"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "延遲到期日"
 
 msgid "Select all"
@@ -115,8 +100,8 @@ msgstr "取消全選"
 msgid "Refresh"
 msgstr "重新整理"
 
-msgid "Context"
-msgstr "主題"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "預覽"
@@ -220,9 +205,6 @@ msgstr "已發送存取請求"
 msgid "Request access to the whistleblower's identity"
 msgstr "請求讀取吹哨者的個人身份"
 
-msgid "Please write a motivation"
-msgstr "請說明理由"
-
 msgid "Reply to the request"
 msgstr "回覆請求"
 
@@ -249,9 +231,6 @@ msgstr "拒絕讀取吹哨者的個人身份"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "批准讀取吹哨者的個人身份"
-
-msgid "Templates"
-msgstr "範本"
 
 msgid "URL redirects"
 msgstr "URL 重新導向"
@@ -292,8 +271,8 @@ msgstr "中等"
 msgid "Strong"
 msgstr "強"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "顯示在選擇主題介面上方的文字"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "停用電郵通知"
@@ -356,9 +335,6 @@ msgstr "檔案不可大於："
 
 msgid "Scheduled jobs"
 msgstr "工作排程"
-
-msgid "Sites management"
-msgstr "多網站管理"
 
 msgid "Regenerate"
 msgstr "重新生成"
@@ -458,20 +434,110 @@ msgstr "複製到剪貼簿"
 msgid "Logout"
 msgstr "登出"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr "撤銷存取"
 
+msgid "Transfer"
+msgstr "傳送"
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr "特權"
+
+msgid "Hide"
+msgstr "隱藏"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr "标记"
+
+msgid "Select an option"
+msgstr "选择一个选项"
+
+msgid "Select your language"
+msgstr "选择您的语言"
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "隱私政策"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr "聲音"
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr "匿名"
+
+msgid "Anonymous"
+msgstr "匿名"
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor工具"
+
+msgid "Devices"
+msgstr "設備"
+
+msgid "Computer"
+msgstr "计算机"
+
+msgid "Mobile"
+msgstr "流動"
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "提交報告"
 
-msgid "Select the context of your report:"
-msgstr "請選擇您的報告主題："
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "在繼續之前，請更新您的密碼。"
@@ -481,102 +547,6 @@ msgstr "在繼續之前，請先啟用雙重認證。"
 
 msgid "Enable"
 msgstr "啟用"
-
-msgid "Disable submissions"
-msgstr "停止接收報告"
-
-msgid "Enable encryption"
-msgstr "使用加密"
-
-msgid "Enable administrators to change user passwords"
-msgstr "允許管理員更改使用者的密碼"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "有權更改使用者密碼的管理員："
-
-msgid "Enable multisite feature"
-msgstr "啟用多網站功能"
-
-msgid "Enable simplified login"
-msgstr "開啟簡易登入"
-
-msgid "Enable search engines indexing"
-msgstr "允許搜尋引擎進行索引"
-
-msgid "Default questionnaire"
-msgstr "預設問卷"
-
-msgid "Show contexts in alphabetical order"
-msgstr "以字母順序顯示主題"
-
-msgid "Size limit for file attachments"
-msgstr "附件檔案大小上限"
-
-msgid "megabytes"
-msgstr "MB"
-
-msgid "Require two factor authentication"
-msgstr "啟用雙重認證"
-
-msgid "Password change interval"
-msgstr "強制更改密碼時距日數"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "基於安全起見，使用者應定時更改密碼。"
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "將值設為 0 以停用此功能。"
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "新報告有多少天未讀才通知使用者"
-
-msgid "Disable the privacy panel"
-msgstr "隱藏私隱通告"
-
-msgid "Enable custom privacy panel"
-msgstr "自訂平台頁首的私隱通告"
-
-msgid "Custom privacy panel"
-msgstr "自訂私隱通告內文"
-
-msgid "Enable custodian user role"
-msgstr "啟用保管人使用者身份"
-
-msgid "Enable scoring system"
-msgstr "啟用評分系統"
-
-msgid "Logging level"
-msgstr "日誌級別"
-
-msgid "Log accesses of internal users"
-msgstr "記錄内部使用者的存取"
-
-msgid "Notify administrators of software problems"
-msgstr "向管理員通報軟件問題"
-
-msgid "Notify developers of software problems"
-msgstr "向開發人員通報軟件問題"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "啟用此功能將有助於該平台的開發與安全維護工作。"
-
-msgid "Save"
-msgstr "儲存"
-
-msgid "Reset reports"
-msgstr "重設所有報告"
-
-msgid "Low"
-msgstr "低"
-
-msgid "High"
-msgstr "高"
-
-msgid "percentage"
-msgstr "百分比"
 
 msgid "Type"
 msgstr "檔案類型"
@@ -605,6 +575,9 @@ msgstr "建立日期"
 msgid "Last access"
 msgstr "最近一次存取"
 
+msgid "Receivers"
+msgstr "接收者"
+
 msgid "Whistleblower's last access"
 msgstr "吹哨者最近一次存取"
 
@@ -623,68 +596,29 @@ msgstr "必須填寫"
 msgid "Edit"
 msgstr "編輯"
 
+msgid "Save"
+msgstr "儲存"
+
 msgid "Cancel"
 msgstr "取消"
+
+msgid "days"
+msgstr "天"
+
+msgid "Disabled"
+msgstr "已停用"
 
 msgid "Report statuses"
 msgstr "報告狀態"
 
-msgid "Logo"
-msgstr "標誌"
-
-msgid "Project name"
-msgstr "平台名稱"
-
-msgid "Description"
-msgstr "平台描述"
-
-msgid "Homepage title"
-msgstr "首頁標題"
-
-msgid "Presentation"
-msgstr "首頁簡介"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "給吹哨者的徵求"
-
-msgid "Whistleblowing button"
-msgstr "舉報按鈕"
-
-msgid "Disclaimer"
-msgstr "免责声明"
-
-msgid "Footer"
-msgstr "頁尾文字"
-
-msgid "Upload"
-msgstr "上傳"
-
-msgid "Download"
-msgstr "下載"
-
-msgid "Language:"
-msgstr "語言："
-
-msgid "Add custom text"
-msgstr "新增自訂內文"
-
-msgid "Custom text"
-msgstr "自訂內文"
-
-msgid "Original text"
-msgstr "原定內文"
-
-msgid "Original translation"
-msgstr "原定翻譯"
-
-msgid "Custom translation"
-msgstr "自訂翻譯"
-
-msgid "Contexts"
-msgstr "主題"
+msgid "Channels"
+msgstr ""
 
 msgid "Hidden"
 msgstr "已隱藏"
+
+msgid "Description"
+msgstr "平台描述"
 
 msgid "Questionnaire"
 msgstr "問卷"
@@ -692,8 +626,11 @@ msgstr "問卷"
 msgid "Recipients"
 msgstr "接收者"
 
-msgid "days"
-msgstr "天"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "將值設為 0 以停用此功能。"
 
 msgid "Show the questionnaire navigation interface"
 msgstr "顯示問卷導覽介面"
@@ -710,24 +647,6 @@ msgstr "可選接收者上限："
 msgid "Show recipients in alphabetical order"
 msgstr "以字母順序顯示接收者名單"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "在報告的狀態頁面顯示接收者資料"
-
-msgid "Enable comments"
-msgstr "啟用註釋"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "允許此吹哨者撰寫註釋"
-
-msgid "Enable private messages"
-msgstr "啟用私人訊息"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "允許此吹哨者傳送訊息"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "吹哨者可在提交報告時新增附件"
-
 msgid "Additional questionnaire"
 msgstr "附加問卷"
 
@@ -743,6 +662,9 @@ msgstr "值"
 msgid "Medium"
 msgstr "中"
 
+msgid "High"
+msgstr "高"
+
 msgid "Software version:"
 msgstr "軟件版本："
 
@@ -757,6 +679,9 @@ msgstr "IP 地址白名單"
 
 msgid "Admin"
 msgstr "管理員"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "接收者"
@@ -837,9 +762,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "手動配置精靈會引導您，透過另外的憑證頒發機構設置 HTTPS 憑證。"
-
-msgid "Disabled"
-msgstr "已停用"
 
 msgid "Auto-renewal"
 msgstr "自動更新"
@@ -954,6 +876,12 @@ msgstr "接受多個答案"
 msgid "Template override"
 msgstr "以此範本取替"
 
+msgid "Min"
+msgstr "最小"
+
+msgid "Max"
+msgstr "最大"
+
 msgid "Phone number"
 msgstr "電話號碼"
 
@@ -977,6 +905,9 @@ msgstr "影片"
 
 msgid "Text shown upon negative answer"
 msgstr "收到否定答案時所顯示的文字"
+
+msgid "Low"
+msgstr "低"
 
 msgid "Trigger conditions"
 msgstr "觸發條件"
@@ -1008,20 +939,149 @@ msgstr "複製"
 msgid "Steps"
 msgstr "步驟"
 
-msgid "Site settings"
-msgstr "網站設定"
+msgid "Logo"
+msgstr "標誌"
+
+msgid "Project name"
+msgstr "平台名稱"
+
+msgid "Homepage title"
+msgstr "首頁標題"
+
+msgid "Presentation"
+msgstr "首頁簡介"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "給吹哨者的徵求"
+
+msgid "Whistleblowing button"
+msgstr "舉報按鈕"
+
+msgid "Disclaimer"
+msgstr "免责声明"
+
+msgid "Footer"
+msgstr "頁尾文字"
+
+msgid "Upload"
+msgstr "上傳"
+
+msgid "Download"
+msgstr "下載"
+
+msgid "Language:"
+msgstr "語言："
+
+msgid "Add custom text"
+msgstr "新增自訂內文"
+
+msgid "Custom text"
+msgstr "自訂內文"
+
+msgid "Original text"
+msgstr "原定內文"
+
+msgid "Original translation"
+msgstr "原定翻譯"
+
+msgid "Custom translation"
+msgstr "自訂翻譯"
+
+msgid "Disable submissions"
+msgstr "停止接收報告"
+
+msgid "Enable encryption"
+msgstr "使用加密"
+
+msgid "Enable administrators to change user passwords"
+msgstr "允許管理員更改使用者的密碼"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "有權更改使用者密碼的管理員："
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "開啟簡易登入"
+
+msgid "Enable search engines indexing"
+msgstr "允許搜尋引擎進行索引"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "附件檔案大小上限"
+
+msgid "megabytes"
+msgstr "MB"
+
+msgid "Require two factor authentication"
+msgstr "啟用雙重認證"
+
+msgid "Password change interval"
+msgstr "強制更改密碼時距日數"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "基於安全起見，使用者應定時更改密碼。"
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "新報告有多少天未讀才通知使用者"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "隱藏私隱通告"
+
+msgid "Enable custom privacy panel"
+msgstr "自訂平台頁首的私隱通告"
+
+msgid "Custom privacy panel"
+msgstr "自訂私隱通告內文"
+
+msgid "Enable scoring system"
+msgstr "啟用評分系統"
+
+msgid "Logging level"
+msgstr "日誌級別"
+
+msgid "percentage"
+msgstr "百分比"
+
+msgid "Log accesses of internal users"
+msgstr "記錄内部使用者的存取"
+
+msgid "Notify administrators of software problems"
+msgstr "向管理員通報軟件問題"
+
+msgid "Notify developers of software problems"
+msgstr "向開發人員通報軟件問題"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "啟用此功能將有助於該平台的開發與安全維護工作。"
+
+msgid "Reset reports"
+msgstr "重設所有報告"
+
+msgid "Settings"
+msgstr "設置"
 
 msgid "Case management"
 msgstr "個案管理"
 
-msgid "Network settings"
-msgstr "網絡設定"
+msgid "Network"
+msgstr "网络"
 
 msgid "Sites"
 msgstr "網站"
 
-msgid "Mode:"
-msgstr "狀態："
+msgid "Profile"
+msgstr "配置"
 
 msgid "Configure"
 msgstr "配置"
@@ -1029,14 +1089,17 @@ msgstr "配置"
 msgid "Subdomain"
 msgstr "子網域"
 
+msgid "Mode:"
+msgstr "狀態："
+
 msgid "Creation date:"
 msgstr "建立日期："
 
-msgid "Root domain used for secondary sites"
-msgstr "次要網站使用的根網域"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "主網站只用作管理用途"
+
+msgid "Root domain used for secondary sites"
+msgstr "次要網站使用的根網域"
 
 msgid "Allow users to sign up"
 msgstr "接受新用戶註冊"
@@ -1057,10 +1120,10 @@ msgid "Set password"
 msgstr "設置密碼"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "密碼過弱。有效密碼必須有至少10個字元，並包含大小寫、數字和符號。"
+msgstr "所选密码太弱。有效密码应至少包含 12 个多种字符，包括至少一个小写字母、一个大写字母、一个数字以及一个特殊符号。"
 
 msgid "Force password change"
 msgstr "強制更改密碼"
@@ -1095,11 +1158,23 @@ msgstr "強制選擇"
 msgid "Allow the recipient to delete reports"
 msgstr "允許此接收者刪除報告"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "允許此接收者延遲報告到期日"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "允許此使用者使用以下功能："
+
+msgid "Statistics"
+msgstr "統計"
 
 msgid "Request date"
 msgstr "請求日期"
@@ -1137,14 +1212,20 @@ msgstr "請選擇您的帳號："
 msgid "Now type your password, then click 'Log in':"
 msgstr "請輸入您的密碼，然後按「登入」："
 
-msgid "Text shown after the user has selected the option."
-msgstr "選項被選後所顯示的文字"
-
 msgid "Confirm"
 msgstr "確認"
 
+msgid "Text shown after the user has selected the option."
+msgstr "選項被選後所顯示的文字"
+
 msgid "Assign score points"
 msgstr "指定評分"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "狀態："
 
 msgid "Are you sure?"
 msgstr "您確定嗎？"
@@ -1169,8 +1250,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "請將它備份並存放於安全之處。一旦遺失密碼，則必須用它來修復帳號資料。"
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "為此複本命名"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr "请求支持"
@@ -1192,14 +1288,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "平台仍未設定 HTTPS 連接，故應只爲測試目的而使用。"
 
-msgid "Please write a motivation for the reply"
-msgstr "請闡述答覆理由"
-
 msgid "Send"
 msgstr "傳送"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "您會將到期日延遲至："
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "這是示範平台，請勿在此提交真實報告。"
@@ -1233,6 +1332,12 @@ msgstr "資源僅能透過 Tor 網路讀取"
 
 msgid "The upload request exceeds the size limit"
 msgstr "上傳請求超出檔案大小上限"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "現時密碼"
@@ -1275,20 +1380,23 @@ msgstr "想查看您之前提交的報告？在此輸入收據號碼："
 msgid "The receipt is either invalid or the report has expired."
 msgstr "收據號碼無效或報告已到期。"
 
-msgid "Select a file or drag it here."
-msgstr "選取檔案或將其拖曳到此處。"
+msgid "Filename"
+msgstr "檔案名稱"
 
 msgid "Size:"
 msgstr "大小：   "
 
-msgid "Uploading files…"
-msgstr "檔案上傳中……"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "檔案已成功上傳！"
+msgid "Address"
+msgstr "地址"
 
-msgid "Estimated upload time:"
-msgstr "預計上傳時間："
+msgid "Fiscal code"
+msgstr "税控码"
+
+msgid "Tax code"
+msgstr "稅務編號"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "接收者想請您填寫一份附加問卷。"
@@ -1302,8 +1410,8 @@ msgstr "寄件人："
 msgid "To:"
 msgstr "收件人："
 
-msgid "Filename"
-msgstr "檔案名稱"
+msgid "View"
+msgstr "觀看"
 
 msgid "Upload date"
 msgstr "上傳日期"
@@ -1316,9 +1424,6 @@ msgstr "問卷答覆"
 
 msgid "Step"
 msgstr "步驟"
-
-msgid "Status:"
-msgstr "狀態："
 
 msgid "Files attached by recipients"
 msgstr "接收者附加的檔案"
@@ -1345,9 +1450,6 @@ msgstr "如您想幫助軟件開發、或想通報軟件問題，請到此建立
 msgid "Join our chat:"
 msgstr "加入聊天群組："
 
-msgid "Follow the project on:"
-msgstr "追蹤我們："
-
 msgid "An update is available:"
 msgstr "有可用的更新："
 
@@ -1357,6 +1459,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "請到「帳號設定」以取得您的「帳號修復金鑰」並妥善保存。萬一您忘記了密碼，只有此金鑰才可修復帳號資料。"
+
+msgid "Select a file or drag it here."
+msgstr "選取檔案或將其拖曳到此處。"
 
 msgid "The provided recovery key is invalid."
 msgstr "所提供的修復金鑰無效。"
@@ -1389,6 +1494,9 @@ msgstr "請求日期"
 msgid "Show"
 msgstr "顯示"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "恭喜您！"
 
@@ -1411,26 +1519,17 @@ msgstr "如未能在 24 小時內完成啟動手續，平台將會被自動刪�
 msgid "Sign up"
 msgstr "註冊"
 
-msgid "Site"
-msgstr "網站"
-
-msgid "Confirmation"
-msgstr "確認"
-
 msgid "Invalid confirmation"
 msgstr "確認失敗"
 
 msgid "Invalid phone number"
 msgstr "電話號碼無效"
 
-msgid "Address"
-msgstr "地址"
+msgid "Site"
+msgstr "網站"
 
-msgid "Fiscal code"
-msgstr "税控码"
-
-msgid "Tax code"
-msgstr "稅務編號"
+msgid "Confirmation"
+msgstr "確認"
 
 msgid "The answer is too short"
 msgstr "答案過短"
@@ -1469,17 +1568,17 @@ msgstr "您可使用此 16 位數字的收據號碼登入至報告頁面，以�
 msgid "View your report"
 msgstr "查看您的報告"
 
-msgid "Recipient selection"
-msgstr "選擇接收者"
-
-msgid "Select the recipients of your report:"
-msgstr "請爲您的報告選擇接收者："
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "已選接收者："
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "您所選擇的接收者人數已達上限。"
+
+msgid "You must select at least one recipient."
+msgstr "請選擇至少一個接收者。"
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1491,17 +1590,11 @@ msgid ""
 "invalid:"
 msgstr "以下問題的答案或有錯漏："
 
-msgid "You must select at least one recipient."
-msgstr "請選擇至少一個接收者。"
+msgid "Recipient selection"
+msgstr "選擇接收者"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "檔案上傳中"
-
-msgid "The following steps have errors:"
-msgstr "以下步驟存在錯誤："
-
-msgid "Hide"
-msgstr "隱藏"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1591,8 +1684,8 @@ msgstr "這些機構有否就你的匯報進行調查？如有，其結果如何
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "你期望可實現/達致甚麼結果?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "您想提供您的個人身份資料嗎？"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "名"
@@ -1608,6 +1701,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "其他"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "尊敬的 {RecipientName}，"
@@ -1669,6 +1765,9 @@ msgstr "查驗此事故，以確定其性質。"
 
 msgid "The activities with unusual stats are:"
 msgstr "數據不尋常的活動如下："
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1898,6 +1997,9 @@ msgstr ""
 msgid "New report"
 msgstr "新報告"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "最早的到期日是 {EarliestExpirationDate}。"
 
@@ -1907,18 +2009,16 @@ msgstr "請在報告刪除之前檢查一下。"
 msgid "Some reports will expire soon"
 msgstr "有些報告即將到期"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "謹以此電郵通知您，某吹哨者剛選擇您作爲其報告的接收者。"
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "敬請留心關注此報告內的所有資料。請謹記，吹哨者爲了公衆權益而提交此報告，而極可能因此面臨高度的人身風險。所以，報告內的資料應被好好重視。"
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "謹以此電郵通知您，一份現有報告剛被更新。"

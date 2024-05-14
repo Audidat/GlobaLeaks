@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2020,2022\n"
-"Language-Team: Galician (http://www.transifex.com/otf/globaleaks/language/gl/)\n"
+"Language-Team: Galician (http://app.transifex.com/otf/globaleaks/language/gl/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: gl\n"
@@ -21,20 +21,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Acceder"
 
-msgid "Main configuration"
-msgstr "Configuración principal"
-
-msgid "Theme customization"
-msgstr "Personalización do tema"
-
 msgid "Languages"
 msgstr "Linguas"
 
 msgid "Text customization"
 msgstr "Personalización de texto"
 
-msgid "Advanced settings"
-msgstr "Configuración avanzada"
+msgid "Advanced"
+msgstr "Avanzados"
 
 msgid "Question templates"
 msgstr "Modelos de preguntas"
@@ -54,8 +48,8 @@ msgstr "Changelog"
 msgid "License"
 msgstr "Licenza"
 
-msgid "Notification templates"
-msgstr "Modelos de notificacións"
+msgid "Templates"
+msgstr "Modelos"
 
 msgid "Delete"
 msgstr "Eliminar"
@@ -66,8 +60,8 @@ msgstr "Anomalías"
 msgid "Preferences"
 msgstr "Preferencias"
 
-msgid "Notification settings"
-msgstr "Configuración de notificacións"
+msgid "Notifications"
+msgstr "Notificacións"
 
 msgid "file unavailable"
 msgstr "ficheiro non dispoñible"
@@ -87,25 +81,16 @@ msgstr "Arquivos"
 msgid "Comments"
 msgstr "Comentarios"
 
-msgid "Messages"
-msgstr "Mensaxes"
-
 msgid "Details"
 msgstr "Detalles"
 
 msgid "Platform wizard"
 msgstr "Asistente de plataforma"
 
-msgid "CREDIT CARD"
-msgstr "TARXETA DE CRÉDITO"
-
-msgid "YOUR NAME"
-msgstr "O TEU NOME"
-
 msgid "Label the report"
 msgstr "Etiqueta a presentación"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Pospoñer a data de caducidade"
 
 msgid "Select all"
@@ -117,8 +102,8 @@ msgstr "Cancelar todos"
 msgid "Refresh"
 msgstr "Actualizar"
 
-msgid "Context"
-msgstr "Contexto"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Vista previa"
@@ -222,9 +207,6 @@ msgstr "Acceso solicitado"
 msgid "Request access to the whistleblower's identity"
 msgstr "Solicitar acceso á identidade do denunciante"
 
-msgid "Please write a motivation"
-msgstr "Por favor, escriba o motivo"
-
 msgid "Reply to the request"
 msgstr "Responder á solicitude"
 
@@ -251,9 +233,6 @@ msgstr "Negar o acceso á identidade do denunciante"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Autoriza o acceso á identidade do denunciante"
-
-msgid "Templates"
-msgstr "Modelos"
 
 msgid "URL redirects"
 msgstr ""
@@ -294,8 +273,8 @@ msgstr "Aceptable"
 msgid "Strong"
 msgstr "Forte"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Texto que se mostra na parte superior da interface para seleccionar contextos"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Silenciar as notificacións do correo electrónico"
@@ -358,9 +337,6 @@ msgstr "O tamaño máximo do ficheiro é:"
 
 msgid "Scheduled jobs"
 msgstr "Traballos programados"
-
-msgid "Sites management"
-msgstr "Xestión de sitios"
 
 msgid "Regenerate"
 msgstr "Rexenerar"
@@ -460,19 +436,109 @@ msgstr "Copiar o portapapeis"
 msgid "Logout"
 msgstr "Saír"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr "Revogar acceso"
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "Agochar"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr ""
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr "Anónimo"
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr "Computador"
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr ""
 
-msgid "Select the context of your report:"
+msgid "Select a reporting channel:"
 msgstr ""
 
 msgid "Before proceeding, please set a new password."
@@ -483,102 +549,6 @@ msgstr ""
 
 msgid "Enable"
 msgstr "Activar"
-
-msgid "Disable submissions"
-msgstr "Deshabilita envíos"
-
-msgid "Enable encryption"
-msgstr "Activar cifrado"
-
-msgid "Enable administrators to change user passwords"
-msgstr ""
-
-msgid "Administrators authorized to change user passwords:"
-msgstr ""
-
-msgid "Enable multisite feature"
-msgstr "Habilitar características de multisite"
-
-msgid "Enable simplified login"
-msgstr "Activar o inicio de sesión simplificado"
-
-msgid "Enable search engines indexing"
-msgstr "Activar a indexación dos motores de busca"
-
-msgid "Default questionnaire"
-msgstr "Cuestionario predeterminado"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Mostrar contextos por orde alfabética"
-
-msgid "Size limit for file attachments"
-msgstr "Límite de tamaño para ficheiros anexados"
-
-msgid "megabytes"
-msgstr ""
-
-msgid "Require two factor authentication"
-msgstr ""
-
-msgid "Password change interval"
-msgstr "Intervalo de cambio de contrasinal"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Por razóns de seguridade, os cambios de contrasinal son necesarios a intervalos regulares."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Establece o valor en 0 para desactivar esta función."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr ""
-
-msgid "Disable the privacy panel"
-msgstr "Desactivar o panel de privacidade"
-
-msgid "Enable custom privacy panel"
-msgstr "Habilita o panel de privacidade personalizado"
-
-msgid "Custom privacy panel"
-msgstr "Panel de privacidade personalizado"
-
-msgid "Enable custodian user role"
-msgstr ""
-
-msgid "Enable scoring system"
-msgstr "Habilita o sistema de puntuación"
-
-msgid "Logging level"
-msgstr "Nivel de rexistro"
-
-msgid "Log accesses of internal users"
-msgstr "Rexistro de accesos a usuarios internos"
-
-msgid "Notify administrators of software problems"
-msgstr "Notificar aos administradores problemas de software"
-
-msgid "Notify developers of software problems"
-msgstr "Notificar aos programadores problemas de software"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Ao activar esta función, contribuirá ao desenvolvemento e a seguridade da plataforma."
-
-msgid "Save"
-msgstr "Gardar"
-
-msgid "Reset reports"
-msgstr ""
-
-msgid "Low"
-msgstr ""
-
-msgid "High"
-msgstr "Alto"
-
-msgid "percentage"
-msgstr ""
 
 msgid "Type"
 msgstr "Tipo"
@@ -607,6 +577,9 @@ msgstr "Data de creación"
 msgid "Last access"
 msgstr "Último acceso"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr ""
 
@@ -625,68 +598,29 @@ msgstr "Este campo é obrigatorio"
 msgid "Edit"
 msgstr "Editar"
 
+msgid "Save"
+msgstr "Gardar"
+
 msgid "Cancel"
 msgstr "Cancelar"
+
+msgid "days"
+msgstr "días"
+
+msgid "Disabled"
+msgstr "Desactivado"
 
 msgid "Report statuses"
 msgstr ""
 
-msgid "Logo"
-msgstr "Logo"
-
-msgid "Project name"
-msgstr "Nome do proxecto"
-
-msgid "Description"
-msgstr "Descrición"
-
-msgid "Homepage title"
-msgstr "Título da páxina de inicio"
-
-msgid "Presentation"
-msgstr "Presentación"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Pregunta para solicitar posibles denuncias"
-
-msgid "Whistleblowing button"
-msgstr "Botón de denuncia"
-
-msgid "Disclaimer"
+msgid "Channels"
 msgstr ""
-
-msgid "Footer"
-msgstr "Pé de páxina"
-
-msgid "Upload"
-msgstr "Cargar"
-
-msgid "Download"
-msgstr "Descargar"
-
-msgid "Language:"
-msgstr "Lingua:"
-
-msgid "Add custom text"
-msgstr "Engadir texto personalizado"
-
-msgid "Custom text"
-msgstr "Texto personalizado"
-
-msgid "Original text"
-msgstr "Texto orixinal"
-
-msgid "Original translation"
-msgstr "Tradución orixinal"
-
-msgid "Custom translation"
-msgstr "Tradución personalizada"
-
-msgid "Contexts"
-msgstr "Contextos"
 
 msgid "Hidden"
 msgstr "Oculto"
+
+msgid "Description"
+msgstr "Descrición"
 
 msgid "Questionnaire"
 msgstr "Cuestionario"
@@ -694,8 +628,11 @@ msgstr "Cuestionario"
 msgid "Recipients"
 msgstr "Destinatarios"
 
-msgid "days"
-msgstr "días"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Establece o valor en 0 para desactivar esta función."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Mostrar a interface de navegación do cuestionario"
@@ -712,24 +649,6 @@ msgstr "Número máximo de destinatarios seleccionables:"
 msgid "Show recipients in alphabetical order"
 msgstr "Mostrar os destinatarios en orde alfabética"
 
-msgid "Show recipient details on the status page of the report"
-msgstr ""
-
-msgid "Enable comments"
-msgstr "Activar comentarios"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Permitir ao denunciante escribir comentarios"
-
-msgid "Enable private messages"
-msgstr "Habilitar mensaxes privadas"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Permitir que o denunciante envíe mensaxes"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Permitir que o denunciante engada anexos ao envío"
-
 msgid "Additional questionnaire"
 msgstr "Cuestionario adicional"
 
@@ -745,6 +664,9 @@ msgstr "Valor"
 msgid "Medium"
 msgstr "Medio"
 
+msgid "High"
+msgstr "Alto"
+
 msgid "Software version:"
 msgstr "Versión de software:"
 
@@ -759,6 +681,9 @@ msgstr ""
 
 msgid "Admin"
 msgstr "Admin"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Destinatario"
@@ -839,9 +764,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "O asistente de configuración manual guiaralle a través da configuración de HTTPS a partir dunha Autoridade de Certificación alternativa."
-
-msgid "Disabled"
-msgstr "Desactivado"
 
 msgid "Auto-renewal"
 msgstr "Renovación automática"
@@ -956,6 +878,12 @@ msgstr "Aceptar respostas múltiples"
 msgid "Template override"
 msgstr "Substitución de modelo"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "Número de teléfono"
 
@@ -979,6 +907,9 @@ msgstr "Video"
 
 msgid "Text shown upon negative answer"
 msgstr "Texto amosado na resposta negativa"
+
+msgid "Low"
+msgstr ""
 
 msgid "Trigger conditions"
 msgstr ""
@@ -1010,20 +941,149 @@ msgstr "Duplicar"
 msgid "Steps"
 msgstr "Pasos"
 
-msgid "Site settings"
-msgstr "Configuración do sitio"
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Project name"
+msgstr "Nome do proxecto"
+
+msgid "Homepage title"
+msgstr "Título da páxina de inicio"
+
+msgid "Presentation"
+msgstr "Presentación"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Pregunta para solicitar posibles denuncias"
+
+msgid "Whistleblowing button"
+msgstr "Botón de denuncia"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Footer"
+msgstr "Pé de páxina"
+
+msgid "Upload"
+msgstr "Cargar"
+
+msgid "Download"
+msgstr "Descargar"
+
+msgid "Language:"
+msgstr "Lingua:"
+
+msgid "Add custom text"
+msgstr "Engadir texto personalizado"
+
+msgid "Custom text"
+msgstr "Texto personalizado"
+
+msgid "Original text"
+msgstr "Texto orixinal"
+
+msgid "Original translation"
+msgstr "Tradución orixinal"
+
+msgid "Custom translation"
+msgstr "Tradución personalizada"
+
+msgid "Disable submissions"
+msgstr "Deshabilita envíos"
+
+msgid "Enable encryption"
+msgstr "Activar cifrado"
+
+msgid "Enable administrators to change user passwords"
+msgstr ""
+
+msgid "Administrators authorized to change user passwords:"
+msgstr ""
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Activar o inicio de sesión simplificado"
+
+msgid "Enable search engines indexing"
+msgstr "Activar a indexación dos motores de busca"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Límite de tamaño para ficheiros anexados"
+
+msgid "megabytes"
+msgstr ""
+
+msgid "Require two factor authentication"
+msgstr ""
+
+msgid "Password change interval"
+msgstr "Intervalo de cambio de contrasinal"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Por razóns de seguridade, os cambios de contrasinal son necesarios a intervalos regulares."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr ""
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Desactivar o panel de privacidade"
+
+msgid "Enable custom privacy panel"
+msgstr "Habilita o panel de privacidade personalizado"
+
+msgid "Custom privacy panel"
+msgstr "Panel de privacidade personalizado"
+
+msgid "Enable scoring system"
+msgstr "Habilita o sistema de puntuación"
+
+msgid "Logging level"
+msgstr "Nivel de rexistro"
+
+msgid "percentage"
+msgstr ""
+
+msgid "Log accesses of internal users"
+msgstr "Rexistro de accesos a usuarios internos"
+
+msgid "Notify administrators of software problems"
+msgstr "Notificar aos administradores problemas de software"
+
+msgid "Notify developers of software problems"
+msgstr "Notificar aos programadores problemas de software"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Ao activar esta función, contribuirá ao desenvolvemento e a seguridade da plataforma."
+
+msgid "Reset reports"
+msgstr ""
+
+msgid "Settings"
+msgstr "Axustes"
 
 msgid "Case management"
 msgstr "Xestión de casos"
 
-msgid "Network settings"
-msgstr "Configuración de rede"
+msgid "Network"
+msgstr "Rede"
 
 msgid "Sites"
 msgstr "Sitios"
 
-msgid "Mode:"
-msgstr "Modo:"
+msgid "Profile"
+msgstr ""
 
 msgid "Configure"
 msgstr "Configurar"
@@ -1031,14 +1091,17 @@ msgstr "Configurar"
 msgid "Subdomain"
 msgstr ""
 
+msgid "Mode:"
+msgstr "Modo:"
+
 msgid "Creation date:"
+msgstr ""
+
+msgid "Use the first site for administrative purposes only"
 msgstr ""
 
 msgid "Root domain used for secondary sites"
 msgstr "Dominio raíz usado para sitios secundarios"
-
-msgid "Use the first site for administrative purposes only"
-msgstr ""
 
 msgid "Allow users to sign up"
 msgstr "Permitir aos usuarios rexistrarse"
@@ -1059,7 +1122,7 @@ msgid "Set password"
 msgstr "Establecer contrasinal"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
 msgstr ""
@@ -1097,11 +1160,23 @@ msgstr "Seleccionado á forza"
 msgid "Allow the recipient to delete reports"
 msgstr ""
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
+msgstr ""
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
 msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr ""
+
+msgid "Statistics"
+msgstr "Estadísticas"
 
 msgid "Request date"
 msgstr "Data de solicitude"
@@ -1139,14 +1214,20 @@ msgstr "Selecciona a túa conta:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Agora escriba o seu contrasinal e prema en \"Iniciar sesión\":"
 
-msgid "Text shown after the user has selected the option."
-msgstr ""
-
 msgid "Confirm"
 msgstr "Confirmar"
 
+msgid "Text shown after the user has selected the option."
+msgstr ""
+
 msgid "Assign score points"
 msgstr "Asignar puntos"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Estado"
 
 msgid "Are you sure?"
 msgstr "Estás seguro?"
@@ -1171,8 +1252,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr ""
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Introduce un nome para a copia"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr ""
@@ -1194,14 +1290,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "A plataforma aínda non está configurada para conexións HTTPS e debería polo tanto, só se pode empregar para probas."
 
-msgid "Please write a motivation for the reply"
-msgstr "Por favor, escriba unha motivación para a resposta"
-
 msgid "Send"
 msgstr "Enviar"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Ao confirmar, adiarás a data de caducidade a:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr ""
@@ -1235,6 +1334,12 @@ msgstr "Só se pode acceder ao recurso a través da rede Tor"
 
 msgid "The upload request exceeds the size limit"
 msgstr "A solicitude de carga supera o límite de tamaño"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Contrasinal actual"
@@ -1277,20 +1382,23 @@ msgstr ""
 msgid "The receipt is either invalid or the report has expired."
 msgstr ""
 
-msgid "Select a file or drag it here."
-msgstr ""
+msgid "Filename"
+msgstr "Nome de arquivo"
 
 msgid "Size:"
 msgstr "Tamaño:"
 
-msgid "Uploading files…"
-msgstr "Cargando ficheiros ..."
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "A carga completause con éxito!"
+msgid "Address"
+msgstr "Enderezo"
 
-msgid "Estimated upload time:"
-msgstr "Tempo estimado de carga:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr ""
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Os destinatarios pediron que complete un cuestionario adicional."
@@ -1304,8 +1412,8 @@ msgstr "De:"
 msgid "To:"
 msgstr "Para:"
 
-msgid "Filename"
-msgstr "Nome de arquivo"
+msgid "View"
+msgstr "Ver"
 
 msgid "Upload date"
 msgstr "Data de carga"
@@ -1318,9 +1426,6 @@ msgstr "Respostas do cuestionario"
 
 msgid "Step"
 msgstr "Paso"
-
-msgid "Status:"
-msgstr "Estado"
 
 msgid "Files attached by recipients"
 msgstr "Arquivos adxuntos por destinatarios"
@@ -1347,9 +1452,6 @@ msgstr "Se desexa contribuír ao desenvolvemento de software ou informe dun erro
 msgid "Join our chat:"
 msgstr ""
 
-msgid "Follow the project on:"
-msgstr "Segue o proxecto en:"
-
 msgid "An update is available:"
 msgstr "Hai unha actualización dispoñible:"
 
@@ -1358,6 +1460,9 @@ msgid ""
 "your “Account Recovery Key” and store it safely. This key will be necessary "
 "to recover your access to the platform and to your data in case you forget "
 "your password."
+msgstr ""
+
+msgid "Select a file or drag it here."
 msgstr ""
 
 msgid "The provided recovery key is invalid."
@@ -1391,6 +1496,9 @@ msgstr "Data da solicitude"
 msgid "Show"
 msgstr "Amosar"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Parabéns!"
 
@@ -1413,25 +1521,16 @@ msgstr ""
 msgid "Sign up"
 msgstr "Rexistrarse "
 
-msgid "Site"
-msgstr "SItio"
-
-msgid "Confirmation"
-msgstr ""
-
 msgid "Invalid confirmation"
 msgstr ""
 
 msgid "Invalid phone number"
 msgstr "Número de teléfono non válido"
 
-msgid "Address"
-msgstr "Enderezo"
+msgid "Site"
+msgstr "SItio"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
+msgid "Confirmation"
 msgstr ""
 
 msgid "The answer is too short"
@@ -1471,10 +1570,7 @@ msgstr "Use o recibo de 16 díxitos para iniciar sesión. Permitirá ver todas a
 msgid "View your report"
 msgstr ""
 
-msgid "Recipient selection"
-msgstr "Selección de destinatarios"
-
-msgid "Select the recipients of your report:"
+msgid "Select the recipients of your report"
 msgstr ""
 
 msgid "Recipients selected:"
@@ -1482,6 +1578,9 @@ msgstr "Destinatarios seleccionados:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr ""
+
+msgid "You must select at least one recipient."
+msgstr "Debe seleccionar polo menos un destinatario."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1493,17 +1592,11 @@ msgid ""
 "invalid:"
 msgstr "Neste paso as respostas para as seguintes preguntas están perdidas ou invalidadas "
 
-msgid "You must select at least one recipient."
-msgstr "Debe seleccionar polo menos un destinatario."
+msgid "Recipient selection"
+msgstr "Selección de destinatarios"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Esperando que o ficheiro (s) finalice a carga."
-
-msgid "The following steps have errors:"
-msgstr "Os seguintes pasos teñen erros:"
-
-msgid "Hide"
-msgstr "Agochar"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1593,8 +1686,8 @@ msgstr ""
 msgid "What is the outcome you want to achieve with our support?"
 msgstr ""
 
-msgid "Do you want to provide your identification information?"
-msgstr "Desexa proporcionar a súa información de identificación?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Nome"
@@ -1610,6 +1703,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "Outra"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "Estimado {RecipientName},"
@@ -1671,6 +1767,9 @@ msgstr "Examine o problema para determinar se é lexítimo ou non."
 
 msgid "The activities with unusual stats are:"
 msgstr "As actividades con estatísticas pouco comúns son:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1900,6 +1999,9 @@ msgstr ""
 msgid "New report"
 msgstr ""
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "A data de caducidade máis próxima é {EarliestExpirationDate}."
 
@@ -1909,17 +2011,15 @@ msgstr "Por favor, lembre verificalos antes de que se eliminen."
 msgid "Some reports will expire soon"
 msgstr ""
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
+msgid "This is an email to notify you the reception of a new report."
 msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
 msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."

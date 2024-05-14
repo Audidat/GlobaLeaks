@@ -1,11 +1,11 @@
 <div class="modal-header">
   <div class="modal-title" data-translate>Additional questionnaire</div>
-  <button type="submit" class="close" aria-hidden="true" data-ng-click="cancel()">
+  <button type="submit" class="close" aria-hidden="true" data-ng-click="cancel()" aria-label="{{'Close' | translate}}">
     <i class="fa-solid fa-times"></i>
   </button>
 </div>
 <div class="modal-body">
-  <form id="submissionForm" name="vars.submissionForm" autocomplete="off" novalidate>
+  <form id="SubmissionForm" name="vars.submissionForm" autocomplete="off" novalidate>
     <div class="tabbable tabs-below">
       <ul id="SubmissionTabsNavigationBox" class="nav nav-tabs" data-ng-if="tip.additional_questionnaire.steps.length > 1">
         <li class="nav-item" data-ng-repeat="step in tip.additional_questionnaire.steps | orderBy:'order'" data-ng-if="step.enabled">
@@ -16,7 +16,7 @@
       </ul>
 
       <div id="SubmissionTabsContentBox" class="tab-content">
-        <div data-ng-if="displayErrors()" data-ng-include="'views/whistleblower/submission_error.html'"></div>
+        <div data-ng-if="displayErrors()" data-ng-include="'views/whistleblower/submission_errors.html'"></div>
         <div data-ng-repeat="step in tip.additional_questionnaire.steps | orderBy:'order'" data-ng-controller="SubmissionStepCtrl" data-ng-if="step.enabled">
           <div id="{{stepId}}" data-ng-form="{{stepId}}" class="SubmissionStep" data-ng-show="navigation === $index">
             <div class="description" data-ng-if="step.description">{{step.description}}</div>

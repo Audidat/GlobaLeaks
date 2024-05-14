@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2015-2022\n"
-"Language-Team: Japanese (http://www.transifex.com/otf/globaleaks/language/ja/)\n"
+"Language-Team: Japanese (http://app.transifex.com/otf/globaleaks/language/ja/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
@@ -22,20 +22,14 @@ msgstr ""
 msgid "Log in"
 msgstr "ログイン"
 
-msgid "Main configuration"
-msgstr "主要な設定"
-
-msgid "Theme customization"
-msgstr "テーマのカスタマイズ"
-
 msgid "Languages"
 msgstr "言語"
 
 msgid "Text customization"
 msgstr "テキストのカスタマイズ"
 
-msgid "Advanced settings"
-msgstr "詳細設定"
+msgid "Advanced"
+msgstr "詳細"
 
 msgid "Question templates"
 msgstr "質問のテンプレート"
@@ -55,8 +49,8 @@ msgstr "変更履歴"
 msgid "License"
 msgstr "ライセンス"
 
-msgid "Notification templates"
-msgstr "通知のテンプレート"
+msgid "Templates"
+msgstr "テンプレート"
 
 msgid "Delete"
 msgstr "削除"
@@ -67,8 +61,8 @@ msgstr "異変"
 msgid "Preferences"
 msgstr "設定"
 
-msgid "Notification settings"
-msgstr "通知設定"
+msgid "Notifications"
+msgstr "通知"
 
 msgid "file unavailable"
 msgstr "利用不能なファイル"
@@ -88,25 +82,16 @@ msgstr "ファイル"
 msgid "Comments"
 msgstr "コメント"
 
-msgid "Messages"
-msgstr "メッセージ"
-
 msgid "Details"
 msgstr "詳細"
 
 msgid "Platform wizard"
 msgstr "プラットフォーム ウィザード"
 
-msgid "CREDIT CARD"
-msgstr "クレジットカード"
-
-msgid "YOUR NAME"
-msgstr "あなたの名前"
-
 msgid "Label the report"
 msgstr "報告にラベルを付ける"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "有効期限を延期する"
 
 msgid "Select all"
@@ -118,8 +103,8 @@ msgstr "すべて選択解除"
 msgid "Refresh"
 msgstr "更新"
 
-msgid "Context"
-msgstr "コンテキスト"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "プレビュー"
@@ -223,9 +208,6 @@ msgstr "アクセスをリクエストしました"
 msgid "Request access to the whistleblower's identity"
 msgstr "内部告発者の身元にアクセスするリクエスト"
 
-msgid "Please write a motivation"
-msgstr "動機を書いてください"
-
 msgid "Reply to the request"
 msgstr "リクエストに返信"
 
@@ -252,9 +234,6 @@ msgstr "内部告発者の身元へのアクセスを拒否"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "内部告発者の身元へのアクセスを承認"
-
-msgid "Templates"
-msgstr "テンプレート"
 
 msgid "URL redirects"
 msgstr "URL リダイレクト"
@@ -295,8 +274,8 @@ msgstr "満足"
 msgid "Strong"
 msgstr "強い"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "コンテキストを選択するインターフェイスの先頭に表示されるテキスト"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "メール通知をオフにする"
@@ -359,9 +338,6 @@ msgstr "最大ファイルサイズは:"
 
 msgid "Scheduled jobs"
 msgstr "スケジュールされたジョブ"
-
-msgid "Sites management"
-msgstr "サイト管理"
 
 msgid "Regenerate"
 msgstr "再生成"
@@ -461,20 +437,110 @@ msgstr "クリップボードにコピー"
 msgid "Logout"
 msgstr "ログアウト"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr ""
-
 msgid "Grant access"
 msgstr ""
 
 msgid "Revoke access"
 msgstr "破棄されたアクセス"
 
+msgid "Transfer"
+msgstr "転送"
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr "特権"
+
+msgid "Hide"
+msgstr "非表示"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr "編集"
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr "言語を選択してください"
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "プライバシーポリシー"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr "皆"
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr "匿名性"
+
+msgid "Anonymous"
+msgstr "匿名"
+
+msgid "Subscribed"
+msgstr "購読済み"
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr "コンピュータ"
+
+msgid "Mobile"
+msgstr "モバイル"
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "報告を保存する"
 
-msgid "Select the context of your report:"
-msgstr "報告のコンテキストを選択してください:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "次に進む前に、新しいパスワードを設定してください。"
@@ -484,102 +550,6 @@ msgstr "次に進む前に、2要素認証を有効にしてください。"
 
 msgid "Enable"
 msgstr "有効"
-
-msgid "Disable submissions"
-msgstr "提出を無効にする"
-
-msgid "Enable encryption"
-msgstr "暗号化を有効にする"
-
-msgid "Enable administrators to change user passwords"
-msgstr "管理者によるユーザーのパスワード変更を許可する"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "ユーザーのパスワード変更を許可された管理者:"
-
-msgid "Enable multisite feature"
-msgstr "マルチサイト機能を有効にする"
-
-msgid "Enable simplified login"
-msgstr "簡易ログインを有効にする"
-
-msgid "Enable search engines indexing"
-msgstr "検索エンジンのインデックス化を有効にする"
-
-msgid "Default questionnaire"
-msgstr "デフォルトのアンケート"
-
-msgid "Show contexts in alphabetical order"
-msgstr "コンテキストをアルファベット順に表示"
-
-msgid "Size limit for file attachments"
-msgstr "添付ファイルの制限サイズ"
-
-msgid "megabytes"
-msgstr "メガバイトで"
-
-msgid "Require two factor authentication"
-msgstr "2要素認証が必要です"
-
-msgid "Password change interval"
-msgstr "パスワード変更間隔"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "セキュリティ上の理由から、定期的にパスワードを変更する必要があります。"
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "この機能を無効にするには、値を0に設定します。"
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "未読の報告をユーザーに通知するまでの日数"
-
-msgid "Disable the privacy panel"
-msgstr "プライバシー・バッジを無効にする"
-
-msgid "Enable custom privacy panel"
-msgstr "カスタムのプライバシー・バッジを有効にする"
-
-msgid "Custom privacy panel"
-msgstr "プライバシー・バッジのカスタム"
-
-msgid "Enable custodian user role"
-msgstr "管理人のユーザー役割を有効にする"
-
-msgid "Enable scoring system"
-msgstr "スコアリングシステムを有効にする"
-
-msgid "Logging level"
-msgstr "ログ取得レベル"
-
-msgid "Log accesses of internal users"
-msgstr "内部ユーザーのログアクセス"
-
-msgid "Notify administrators of software problems"
-msgstr "ソフトウェアの問題を管理者に通知"
-
-msgid "Notify developers of software problems"
-msgstr "ソフトウェアの問題を開発者に通知"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "この機能を有効にすると、プラットフォームの開発とセキュリティに貢献します。"
-
-msgid "Save"
-msgstr "保存"
-
-msgid "Reset reports"
-msgstr "報告をリセット"
-
-msgid "Low"
-msgstr "低"
-
-msgid "High"
-msgstr "高い"
-
-msgid "percentage"
-msgstr "パーセントで"
 
 msgid "Type"
 msgstr "タイプ"
@@ -608,6 +578,9 @@ msgstr "作成日"
 msgid "Last access"
 msgstr "最終アクセス"
 
+msgid "Receivers"
+msgstr "受信者"
+
 msgid "Whistleblower's last access"
 msgstr "WBの最終アクセス"
 
@@ -626,68 +599,29 @@ msgstr "このフィールドは必須です"
 msgid "Edit"
 msgstr "編集"
 
+msgid "Save"
+msgstr "保存"
+
 msgid "Cancel"
 msgstr "キャンセル"
+
+msgid "days"
+msgstr "日"
+
+msgid "Disabled"
+msgstr "無効"
 
 msgid "Report statuses"
 msgstr "報告状況"
 
-msgid "Logo"
-msgstr "ロゴ"
-
-msgid "Project name"
-msgstr "プロジェクト名"
-
-msgid "Description"
-msgstr "説明"
-
-msgid "Homepage title"
-msgstr "ホームページのタイトル"
-
-msgid "Presentation"
-msgstr "プレゼンテーション"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "内部告発の質問"
-
-msgid "Whistleblowing button"
-msgstr "内部告発ボタン"
-
-msgid "Disclaimer"
+msgid "Channels"
 msgstr ""
-
-msgid "Footer"
-msgstr "フッター"
-
-msgid "Upload"
-msgstr "アップロード"
-
-msgid "Download"
-msgstr "ダウンロード"
-
-msgid "Language:"
-msgstr "言語:"
-
-msgid "Add custom text"
-msgstr "カスタムのテキストを追加"
-
-msgid "Custom text"
-msgstr "カスタムのテキスト"
-
-msgid "Original text"
-msgstr "元のテキスト"
-
-msgid "Original translation"
-msgstr "元の翻訳"
-
-msgid "Custom translation"
-msgstr "カスタムの翻訳"
-
-msgid "Contexts"
-msgstr "コンテキスト"
 
 msgid "Hidden"
 msgstr "非表示"
+
+msgid "Description"
+msgstr "説明"
 
 msgid "Questionnaire"
 msgstr "アンケート"
@@ -695,8 +629,11 @@ msgstr "アンケート"
 msgid "Recipients"
 msgstr "受信者"
 
-msgid "days"
-msgstr "日"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "この機能を無効にするには、値を0に設定します。"
 
 msgid "Show the questionnaire navigation interface"
 msgstr "アンケートのナビゲーションインターフェースを表示"
@@ -713,24 +650,6 @@ msgstr "選択可能な受信者の最大数:"
 msgid "Show recipients in alphabetical order"
 msgstr "受信者をアルファベット順に表示"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "報告の状況ページで受信者の詳細を表示する"
-
-msgid "Enable comments"
-msgstr "コメントを有効にする"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "その内部告発者が、コメントを書くことを許可"
-
-msgid "Enable private messages"
-msgstr "プライベートメッセージを有効にする"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "その内部告発者が、メッセージを送信することを許可"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "その内部告発者が、報告に添付ファイルを追加することを許可する"
-
 msgid "Additional questionnaire"
 msgstr "追加のアンケート"
 
@@ -746,6 +665,9 @@ msgstr "値"
 msgid "Medium"
 msgstr "ミディアム"
 
+msgid "High"
+msgstr "高い"
+
 msgid "Software version:"
 msgstr "ソフトウェア バージョン:"
 
@@ -760,6 +682,9 @@ msgstr "許可される IP アドレス"
 
 msgid "Admin"
 msgstr "管理者"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "受信者"
@@ -840,9 +765,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "手動設定ウィザードは、代替認証局からの HTTPS の設定をガイドします。"
-
-msgid "Disabled"
-msgstr "無効"
 
 msgid "Auto-renewal"
 msgstr "自動更新"
@@ -957,6 +879,12 @@ msgstr "複数の回答を受け付ける"
 msgid "Template override"
 msgstr "テンプレートの上書き"
 
+msgid "Min"
+msgstr "最小"
+
+msgid "Max"
+msgstr "最大"
+
 msgid "Phone number"
 msgstr "電話番号"
 
@@ -980,6 +908,9 @@ msgstr "ビデオ"
 
 msgid "Text shown upon negative answer"
 msgstr "否定的な回答に表示されるテキスト"
+
+msgid "Low"
+msgstr "低"
 
 msgid "Trigger conditions"
 msgstr "トリガー条件"
@@ -1011,20 +942,149 @@ msgstr "複製"
 msgid "Steps"
 msgstr "ステップ"
 
-msgid "Site settings"
-msgstr "サイト設定"
+msgid "Logo"
+msgstr "ロゴ"
+
+msgid "Project name"
+msgstr "プロジェクト名"
+
+msgid "Homepage title"
+msgstr "ホームページのタイトル"
+
+msgid "Presentation"
+msgstr "プレゼンテーション"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "内部告発の質問"
+
+msgid "Whistleblowing button"
+msgstr "内部告発ボタン"
+
+msgid "Disclaimer"
+msgstr ""
+
+msgid "Footer"
+msgstr "フッター"
+
+msgid "Upload"
+msgstr "アップロード"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Language:"
+msgstr "言語:"
+
+msgid "Add custom text"
+msgstr "カスタムのテキストを追加"
+
+msgid "Custom text"
+msgstr "カスタムのテキスト"
+
+msgid "Original text"
+msgstr "元のテキスト"
+
+msgid "Original translation"
+msgstr "元の翻訳"
+
+msgid "Custom translation"
+msgstr "カスタムの翻訳"
+
+msgid "Disable submissions"
+msgstr "提出を無効にする"
+
+msgid "Enable encryption"
+msgstr "暗号化を有効にする"
+
+msgid "Enable administrators to change user passwords"
+msgstr "管理者によるユーザーのパスワード変更を許可する"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "ユーザーのパスワード変更を許可された管理者:"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "簡易ログインを有効にする"
+
+msgid "Enable search engines indexing"
+msgstr "検索エンジンのインデックス化を有効にする"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "添付ファイルの制限サイズ"
+
+msgid "megabytes"
+msgstr "メガバイトで"
+
+msgid "Require two factor authentication"
+msgstr "2要素認証が必要です"
+
+msgid "Password change interval"
+msgstr "パスワード変更間隔"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "セキュリティ上の理由から、定期的にパスワードを変更する必要があります。"
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "未読の報告をユーザーに通知するまでの日数"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "プライバシー・バッジを無効にする"
+
+msgid "Enable custom privacy panel"
+msgstr "カスタムのプライバシー・バッジを有効にする"
+
+msgid "Custom privacy panel"
+msgstr "プライバシー・バッジのカスタム"
+
+msgid "Enable scoring system"
+msgstr "スコアリングシステムを有効にする"
+
+msgid "Logging level"
+msgstr "ログ取得レベル"
+
+msgid "percentage"
+msgstr "パーセントで"
+
+msgid "Log accesses of internal users"
+msgstr "内部ユーザーのログアクセス"
+
+msgid "Notify administrators of software problems"
+msgstr "ソフトウェアの問題を管理者に通知"
+
+msgid "Notify developers of software problems"
+msgstr "ソフトウェアの問題を開発者に通知"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "この機能を有効にすると、プラットフォームの開発とセキュリティに貢献します。"
+
+msgid "Reset reports"
+msgstr "報告をリセット"
+
+msgid "Settings"
+msgstr "設定"
 
 msgid "Case management"
 msgstr "ケース管理"
 
-msgid "Network settings"
-msgstr "ネットワーク設定"
+msgid "Network"
+msgstr "ネットワーク"
 
 msgid "Sites"
 msgstr "サイト"
 
-msgid "Mode:"
-msgstr "モード:"
+msgid "Profile"
+msgstr "プロフィール"
 
 msgid "Configure"
 msgstr "設定"
@@ -1032,14 +1092,17 @@ msgstr "設定"
 msgid "Subdomain"
 msgstr "サブドメイン"
 
+msgid "Mode:"
+msgstr "モード:"
+
 msgid "Creation date:"
 msgstr "生成日:"
 
-msgid "Root domain used for secondary sites"
-msgstr "二番目のサイトで使用するルートドメイン"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "管理目的に最初のサイトのみ使用する"
+
+msgid "Root domain used for secondary sites"
+msgstr "二番目のサイトで使用するルートドメイン"
 
 msgid "Allow users to sign up"
 msgstr "ユーザーによるサインアップを許可"
@@ -1060,10 +1123,10 @@ msgid "Set password"
 msgstr "パスワードを設定"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "選択したパスワードは弱すぎます。 有効なパスワードは10文字以上で、少なくとも小文字、大文字、数字、記号を含める必要があります。"
+msgstr "選択したパスワードは弱すぎます。 有効なパスワードは12文字以上で、少なくとも小文字、大文字、数字、記号を含める必要があります。"
 
 msgid "Force password change"
 msgstr "強制的にパスワードを変更する"
@@ -1098,11 +1161,23 @@ msgstr "強制的に選択"
 msgid "Allow the recipient to delete reports"
 msgstr "受信者が報告を削除することを許可する"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "受信者が報告の有効期限を延長することを許可する"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "次の機能にユーザーの管理アクセス権を与えます:"
+
+msgid "Statistics"
+msgstr "統計"
 
 msgid "Request date"
 msgstr "リクエスト日"
@@ -1140,14 +1215,20 @@ msgstr "あなたのアカウントを選択してください:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "パスワードを入力して、'ログイン'をクリックしてください:"
 
-msgid "Text shown after the user has selected the option."
-msgstr "ユーザーがオプションを選択した後に表示されるテキスト"
-
 msgid "Confirm"
 msgstr "延期を確認"
 
+msgid "Text shown after the user has selected the option."
+msgstr "ユーザーがオプションを選択した後に表示されるテキスト"
+
 msgid "Assign score points"
 msgstr "スコアポイントを割り当て"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "状態"
 
 msgid "Are you sure?"
 msgstr "よろしいですか?"
@@ -1172,8 +1253,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "コピーを作成して、安全な場所に保管してください。 パスワードを紛失した場合に、データを失うことなくアカウントへのアクセスを回復する必要があります。"
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "コピーの名前を入力してください"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr ""
@@ -1195,14 +1291,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "プラットフォームはまだ HTTPS 接続用に構成されていないため、テスト目的のみで使用する必要があります。"
 
-msgid "Please write a motivation for the reply"
-msgstr "返信の動機を書いてください"
-
 msgid "Send"
 msgstr "送信"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "確認すると、有効期限を以下に延期します:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "これはデモプラットフォームです。実際の提出には使用しないでください。"
@@ -1236,6 +1335,12 @@ msgstr "リソースはTorネットワーク内でのみアクセスできます
 
 msgid "The upload request exceeds the size limit"
 msgstr "アップロードリクエストがサイズ制限を超過しました"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "現在のパスワード"
@@ -1278,20 +1383,23 @@ msgstr "すでに報告を行っていますか？あなたの受領番号を入
 msgid "The receipt is either invalid or the report has expired."
 msgstr "受領番号が無効であるか、報告が有効期限切れです。"
 
-msgid "Select a file or drag it here."
-msgstr "ファイルを選択するか、ここにドラッグしてください。"
+msgid "Filename"
+msgstr "ファイル名"
 
 msgid "Size:"
 msgstr "サイズ："
 
-msgid "Uploading files…"
-msgstr "ファイルのアップロード中…"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "アップロードが正常に完了しました!"
+msgid "Address"
+msgstr "アドレス"
 
-msgid "Estimated upload time:"
-msgstr "見積アップロード時間:"
+msgid "Fiscal code"
+msgstr "財務コード"
+
+msgid "Tax code"
+msgstr "納税番号"
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "受領者があなたに追加のアンケートを記入するよう依頼しました。"
@@ -1305,8 +1413,8 @@ msgstr "差出人:"
 msgid "To:"
 msgstr "宛先:"
 
-msgid "Filename"
-msgstr "ファイル名"
+msgid "View"
+msgstr "表示"
 
 msgid "Upload date"
 msgstr "アップロード日"
@@ -1319,9 +1427,6 @@ msgstr "アンケート回答"
 
 msgid "Step"
 msgstr "ステップ"
-
-msgid "Status:"
-msgstr "状態"
 
 msgid "Files attached by recipients"
 msgstr "受信者が添付したファイル"
@@ -1348,9 +1453,6 @@ msgstr "ソフトウェア開発に貢献したり、バグを報告したい場
 msgid "Join our chat:"
 msgstr "私たちのチャットに参加してください:"
 
-msgid "Follow the project on:"
-msgstr "プロジェクトをフォローしてください:"
-
 msgid "An update is available:"
 msgstr "アップデートが利用できます。"
 
@@ -1360,6 +1462,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "「アカウント回復鍵」を取得して安全に保管するために、「設定」セクションにアクセスすることをお勧めします。 この鍵は、パスワードを忘れた場合にプラットフォームとデータへのアクセスを回復するために必要です。"
+
+msgid "Select a file or drag it here."
+msgstr "ファイルを選択するか、ここにドラッグしてください。"
 
 msgid "The provided recovery key is invalid."
 msgstr "指定された回復鍵は無効です。"
@@ -1392,6 +1497,9 @@ msgstr "リクエスト日"
 msgid "Show"
 msgstr "表示"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "おめでとうございます"
 
@@ -1414,26 +1522,17 @@ msgstr "24時間以内に有効にしない場合、プラットフォームは�
 msgid "Sign up"
 msgstr "登録"
 
-msgid "Site"
-msgstr "サイト"
-
-msgid "Confirmation"
-msgstr "確認"
-
 msgid "Invalid confirmation"
 msgstr "確認できません"
 
 msgid "Invalid phone number"
 msgstr "電話番号が正しくありません"
 
-msgid "Address"
-msgstr "アドレス"
+msgid "Site"
+msgstr "サイト"
 
-msgid "Fiscal code"
-msgstr "財務コード"
-
-msgid "Tax code"
-msgstr "納税番号"
+msgid "Confirmation"
+msgstr "確認"
 
 msgid "The answer is too short"
 msgstr "回答が短すぎます"
@@ -1472,17 +1571,17 @@ msgstr "16桁の受領番号を使用してログインください。私たち�
 msgid "View your report"
 msgstr "報告を表示"
 
-msgid "Recipient selection"
-msgstr "受信者の選択"
-
-msgid "Select the recipients of your report:"
-msgstr "報告の受信者を選択してください:"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "選択された受信者:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "選択可能な受信者の最大数に達しました。"
+
+msgid "You must select at least one recipient."
+msgstr "少なくとも一人の受信者を選択する必要があります。"
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1494,17 +1593,11 @@ msgid ""
 "invalid:"
 msgstr "このステップでは、以下の質問に対する回答が見つからないか、無効です:"
 
-msgid "You must select at least one recipient."
-msgstr "少なくとも一人の受信者を選択する必要があります。"
+msgid "Recipient selection"
+msgstr "受信者の選択"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "ファイルのアップロードが完了するのを待っています。"
-
-msgid "The following steps have errors:"
-msgstr "次のステップにエラーがあります:"
-
-msgid "Hide"
-msgstr "非表示"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1594,8 +1687,8 @@ msgstr ""
 msgid "What is the outcome you want to achieve with our support?"
 msgstr ""
 
-msgid "Do you want to provide your identification information?"
-msgstr "あなたの身元情報を提供しますか?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "名"
@@ -1611,6 +1704,9 @@ msgstr ""
 
 msgid "Other"
 msgstr "その他"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "{RecipientName} 様"
@@ -1672,6 +1768,9 @@ msgstr "問題が正当なものかどうかを調べます。"
 
 msgid "The activities with unusual stats are:"
 msgstr "異常な統計の活動は次のとおりです:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1901,6 +2000,9 @@ msgstr ""
 msgid "New report"
 msgstr "新しい報告"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "最も早い有効期限は {EarliestExpirationDate} です。"
 
@@ -1910,18 +2012,16 @@ msgstr "削除する前に確認するのを忘れないでください。"
 msgid "Some reports will expire soon"
 msgstr "一部の報告はまもなく期限が切れます"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "これは、内部告発者があなたを報告の価値のある受信者として選択したことを通知するメールです。"
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "あなたは、含まれる情報および資料に特に注意を払うよう求められます。 内部通報者はしばしば、公衆の利益のために高い個人的リスクにさらされることに注意してください。 したがって、この提出書類の中で報告される資料は、重要性が高いと考えるべきです。"
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "これは、既存の報告が更新されたことを通知するメールです。"

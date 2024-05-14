@@ -8,27 +8,25 @@
     </span>
   </div>
 </div>
-<div data-ng-controller="ReceiptCtrl" data-ng-if="Authentication.session.receipt" data-ng-include="'views/whistleblower/receipt.html'"></div>
 <div class="row" data-ng-if="tip.status !== 'closed' && tip.context.additional_questionnaire_id && tip.questionnaires.length === 1">
   <div class="col-md-12" data-ng-include="'views/partials/tip_additional_questionnaire_invite.html'"></div>
 </div>
 <div class="row">
   <div class="col-md-12" data-ng-include="'views/partials/tip_info.html'"></div>
 </div>
-<div class="row" data-ng-if="tip.context.show_recipients_details">
+<div class="row" data-ng-if="tip.receivers.length > 1">
   <div class="col-md-12" data-ng-include="'views/partials/tip_receiver_list.html'"></div>
 </div>
 <div class="row">
-  <div class="col-md-6" data-ng-include="'views/partials/tip_questionnaire_answers.html'"></div>
+  <div data-ng-class="{'col-md-12': !tip.enable_whistleblower_identity, 'col-md-6': tip.enable_whistleblower_identity}" data-ng-include="'views/partials/tip_questionnaire_answers.html'"></div>
   <div class="col-md-6" data-ng-if="tip.enable_whistleblower_identity" data-ng-include="'views/whistleblower/whistleblower_identity.html'"></div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <div data-ng-if="tip.enable_attachments" data-ng-controller="WhistleblowerIdentityFormCtrl" data-ng-include="'views/partials/tip_files_whistleblower.html'"></div>
-    <div data-ng-if="tip.wbfiles.length" data-ng-controller="WhistleblowerFilesCtrl" data-ng-include="'views/partials/widget_wbfiles.html'"></div>
+    <div data-ng-controller="WhistleblowerIdentityFormCtrl" data-ng-include="'views/partials/tip_files_whistleblower.html'"></div>
+    <div data-ng-if="tip.rfiles.length" data-ng-controller="WhistleblowerFilesCtrl" data-ng-include="'views/partials/widget_rfiles.html'"></div>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-6" data-ng-if="tip.context.enable_comments || tip.comments.length" data-ng-include="'views/partials/tip_comments.html'"></div>
-  <div class="col-md-6" data-ng-if="tip.context.enable_messages || tip.messages.length" data-ng-include="'views/partials/tip_messages.html'"></div>
+  <div class="col-md-12" data-ng-include="'views/partials/tip_comments.html'"></div>
 </div>

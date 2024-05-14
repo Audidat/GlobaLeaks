@@ -9,7 +9,7 @@ from globaleaks.handlers.public import db_get_submission_status, \
     serialize_submission_substatus
 from globaleaks.models import fill_localized_keys
 from globaleaks.orm import db_del, db_get, transact, tw
-from globaleaks.rest import requests
+from globaleaks.rest import errors, requests
 
 
 def db_update_status_model_from_request(model_obj, request, language):
@@ -123,7 +123,6 @@ def db_create_submission_substatus(session, tid, status_id, request, language):
 @transact
 def order_status_elements(session, handler, req_args, *args, **kwargs):
     """Sets the presentation order for status elements"""
-
     statuses = session.query(models.SubmissionStatus) \
                       .filter(models.SubmissionStatus.tid == handler.request.tid)
 
@@ -204,11 +203,14 @@ class SubmissionSubStatusCollection(OperationHandler):
         request = self.validate_request(self.request.content.read(),
                                         requests.SubmissionSubStatusDesc)
 
+        if request["tip_timetolive"] < -1:
+            raise errors.ForbiddenOperation
+
         return tw(db_create_submission_substatus, self.request.tid, status_id, request, self.request.language)
 
     def operation_descriptors(self):
         return {
-            'order_elements': (order_substatus_elements, {'ids': [str]}),
+            'order_elements': order_substatus_elements,
         }
 
 

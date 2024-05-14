@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2021-2022\n"
-"Language-Team: Belarusian (http://www.transifex.com/otf/globaleaks/language/be/)\n"
+"Language-Team: Belarusian (http://app.transifex.com/otf/globaleaks/language/be/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: be\n"
@@ -18,20 +18,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Увайсьці"
 
-msgid "Main configuration"
-msgstr "Асноўная канфігурацыя"
-
-msgid "Theme customization"
-msgstr "Налады тэмы"
-
 msgid "Languages"
 msgstr "Мовы"
 
 msgid "Text customization"
 msgstr "Выгляд тэксту"
 
-msgid "Advanced settings"
-msgstr "Пашыраныя налады"
+msgid "Advanced"
+msgstr "Пашыраны"
 
 msgid "Question templates"
 msgstr "Узоры пытанняў"
@@ -51,8 +45,8 @@ msgstr "Журнал зменаў"
 msgid "License"
 msgstr "Ліцэнзія"
 
-msgid "Notification templates"
-msgstr "Шаблоны апавяшчэнняў"
+msgid "Templates"
+msgstr "Шаблоны"
 
 msgid "Delete"
 msgstr "Выдаліць"
@@ -63,8 +57,8 @@ msgstr "Анамаліі"
 msgid "Preferences"
 msgstr "Налады"
 
-msgid "Notification settings"
-msgstr "Налады апавяшчэнняў"
+msgid "Notifications"
+msgstr "Апавяшчэнні"
 
 msgid "file unavailable"
 msgstr "файл недаступны"
@@ -84,25 +78,16 @@ msgstr "Файлы"
 msgid "Comments"
 msgstr "Каментары"
 
-msgid "Messages"
-msgstr "Паведамленні"
-
 msgid "Details"
 msgstr "Падрабязнасці"
 
 msgid "Platform wizard"
 msgstr "Майстар наладу платформы"
 
-msgid "CREDIT CARD"
-msgstr "БАНКАЎСКАЯ КАРТКА"
-
-msgid "YOUR NAME"
-msgstr "ВАША ІМЯ"
-
 msgid "Label the report"
 msgstr "Тытул заявы"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Перанесці сканчэнне тэрміну дзеяння"
 
 msgid "Select all"
@@ -114,8 +99,8 @@ msgstr "Адмяніць выбар ўсяго"
 msgid "Refresh"
 msgstr "Абнавіць"
 
-msgid "Context"
-msgstr "Кантэкст"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Папярэдні прагляд"
@@ -219,9 +204,6 @@ msgstr "Запыт доступу зроблены"
 msgid "Request access to the whistleblower's identity"
 msgstr "Запыт доступу да інфармацыі пра асобу выкрывальніка"
 
-msgid "Please write a motivation"
-msgstr "Калі ласка, напішыце прычыну"
-
 msgid "Reply to the request"
 msgstr "Адказаць на запыт"
 
@@ -248,9 +230,6 @@ msgstr "Адмовіць ў доступе да інфармацыі пра ас
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Дазволіць доступ да інфармацыі пра асобу выкрывальніка"
-
-msgid "Templates"
-msgstr "Шаблоны"
 
 msgid "URL redirects"
 msgstr "Перанакіраванні URL-адрасоў"
@@ -291,8 +270,8 @@ msgstr "Прымальны"
 msgid "Strong"
 msgstr "Моцны"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Тэкст, паказаны ўверсе інтэрфейсу для выбару кантэкстаў"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Выключыць апавяшчэнні па электроннай пошце"
@@ -355,9 +334,6 @@ msgstr "Максімальны памер файла:"
 
 msgid "Scheduled jobs"
 msgstr "Запланаваныя заданні"
-
-msgid "Sites management"
-msgstr "Кіраванне сайтамі"
 
 msgid "Regenerate"
 msgstr "Стварыць паўторна"
@@ -457,20 +433,110 @@ msgstr "Скапіяваць у буфер абмену"
 msgid "Logout"
 msgstr "Выхад"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Дазволіць гэтаму атрымальніку даваць права карыстальніцкага доступу да справаздачаў"
-
 msgid "Grant access"
 msgstr "Даць доступ"
 
 msgid "Revoke access"
 msgstr "Адклікаць доступ"
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "Схаваць"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "Палітыка канфідэнцыяльнасці"
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr ""
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr "Tor"
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "Падаць справаздачу"
 
-msgid "Select the context of your report:"
-msgstr "Апішыце кантэкст вашай справаздачы:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "Перад тым як працягнуць, к.л., стварыце новы пароль."
@@ -480,102 +546,6 @@ msgstr "Перад тым як працягнуць, к.л., уключыце д
 
 msgid "Enable"
 msgstr "Уключыць"
-
-msgid "Disable submissions"
-msgstr "Адключыць падачу матэрыялаў"
-
-msgid "Enable encryption"
-msgstr "Уключыць шыфраванне"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Дазволіць адміністратарам змяняць паролі карыстальнікаў"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Адміністратары ўпаўнаважаныя змяняць паролі карыстальнікаў:"
-
-msgid "Enable multisite feature"
-msgstr "Уключыць функцыю мултысайтавага разгортвання"
-
-msgid "Enable simplified login"
-msgstr "Уключыць спрошаны ўваход"
-
-msgid "Enable search engines indexing"
-msgstr "Уключыць індэксацыю пошукавых сістэм"
-
-msgid "Default questionnaire"
-msgstr "Анкета па змаўчанні"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Паказваць кантэксты ў алфавітным парадку"
-
-msgid "Size limit for file attachments"
-msgstr "Абмежаванне памеру далучаных файлаў"
-
-msgid "megabytes"
-msgstr "мегабайты"
-
-msgid "Require two factor authentication"
-msgstr "Патрабуецца двухфактарная аўтэнтыфікацыя"
-
-msgid "Password change interval"
-msgstr "Інтэрвал паміж зменамі паролю"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "З меркаванняў бяспекі трэба мяняць пароль праз пэўны прамежак часу."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Каб адключыць гэтую функцыю, выбярыце значэнне \"0\"."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Колькасць дзён, што застаецца да апавяшчэння карыстальнікаў пра непрачытаныя справаздачы"
-
-msgid "Disable the privacy panel"
-msgstr "Адключыць панэль канфідэнцыйнасці"
-
-msgid "Enable custom privacy panel"
-msgstr "Уключыць карыстальніцкую панэль канфідэнцыйнасці"
-
-msgid "Custom privacy panel"
-msgstr "Карыстальніцкая панэль канфідэнцыйнасці"
-
-msgid "Enable custodian user role"
-msgstr "Уключыць ролю захавальніка"
-
-msgid "Enable scoring system"
-msgstr "Уключыць сістэму налічэння балаў"
-
-msgid "Logging level"
-msgstr "Узровень рэгістрацыі"
-
-msgid "Log accesses of internal users"
-msgstr "Журналы доступу ўнутраных карыстальнікаў"
-
-msgid "Notify administrators of software problems"
-msgstr "Паведаміць адміністратарам пра праблемы з праграмным забеспячэннем"
-
-msgid "Notify developers of software problems"
-msgstr "Паведаміць распрацоўшчыкам пра праблемы з праграмным забеспячэннем"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Уключыўшы гэтую функцыю, вы будзеце спрыяць развіццю і бяспецы платформы."
-
-msgid "Save"
-msgstr "Захаваць"
-
-msgid "Reset reports"
-msgstr "Ачысціць справаздачы"
-
-msgid "Low"
-msgstr "Нізкая"
-
-msgid "High"
-msgstr "Высокая"
-
-msgid "percentage"
-msgstr "працэнт"
 
 msgid "Type"
 msgstr "Тып"
@@ -604,6 +574,9 @@ msgstr "Дата стварэння"
 msgid "Last access"
 msgstr "Апошні доступ"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "Апошні заход на платформу выкрывальніка"
 
@@ -622,68 +595,29 @@ msgstr "Гэта поле з'яўляецца абавязковым"
 msgid "Edit"
 msgstr "Рэдагаваць"
 
+msgid "Save"
+msgstr "Захаваць"
+
 msgid "Cancel"
 msgstr "Адмяніць"
+
+msgid "days"
+msgstr "дн."
+
+msgid "Disabled"
+msgstr "Адключаны"
 
 msgid "Report statuses"
 msgstr "Статусы справаздачы"
 
-msgid "Logo"
-msgstr "Лога"
-
-msgid "Project name"
-msgstr "Назва праекту"
-
-msgid "Description"
-msgstr "Апісанне"
-
-msgid "Homepage title"
-msgstr "Загаловак хатняй старонкі"
-
-msgid "Presentation"
-msgstr "Презентацыя"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Пытанне, каб заахвоціць магчымых выкрывальнікаў"
-
-msgid "Whistleblowing button"
-msgstr "Кнопка для выкрывальніцтва"
-
-msgid "Disclaimer"
-msgstr "Заява аб абмежаванні адказнасці"
-
-msgid "Footer"
-msgstr "Ніжні калонтытул"
-
-msgid "Upload"
-msgstr "Загрузіць"
-
-msgid "Download"
-msgstr "Спампаваць"
-
-msgid "Language:"
-msgstr "Мова"
-
-msgid "Add custom text"
-msgstr "Дадаць карыстальніцкі тэкст"
-
-msgid "Custom text"
-msgstr "Карыстальніцкі тэкст"
-
-msgid "Original text"
-msgstr "Першапачатковы тэкст"
-
-msgid "Original translation"
-msgstr "Першапачатковы пераклад"
-
-msgid "Custom translation"
-msgstr "Карыстальніцкі пераклад"
-
-msgid "Contexts"
-msgstr "Кантэксты"
+msgid "Channels"
+msgstr ""
 
 msgid "Hidden"
 msgstr "Схаваны"
+
+msgid "Description"
+msgstr "Апісанне"
 
 msgid "Questionnaire"
 msgstr "Анкета"
@@ -691,8 +625,11 @@ msgstr "Анкета"
 msgid "Recipients"
 msgstr "Атрымальнікі"
 
-msgid "days"
-msgstr "дн."
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Каб адключыць гэтую функцыю, выбярыце значэнне \"0\"."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Паказаць інтэрфейс навігацыі анкеты"
@@ -709,24 +646,6 @@ msgstr "Максімальная колькасць атрымальнікаў, 
 msgid "Show recipients in alphabetical order"
 msgstr "Паказваць атрымальнікаў у алфавітным парадку"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Паказваць падрабязную інфармацыю пра атрымальніка на старонцы статусу справаздачы"
-
-msgid "Enable comments"
-msgstr "Дазволіць каментары"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Дазволіць выкрывальніку пакідаць каментары"
-
-msgid "Enable private messages"
-msgstr "Уключыць канфідэнцыйныя паведамленні"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Дазволіць выкрывальніку адпраўляць паведамленні"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Дазволіць выкрывальніку дадаваць да справаздачы далучаныя файлы "
-
 msgid "Additional questionnaire"
 msgstr "Дадатковая анкета"
 
@@ -742,6 +661,9 @@ msgstr "Значэнне"
 msgid "Medium"
 msgstr "Сярэдняе"
 
+msgid "High"
+msgstr "Высокая"
+
 msgid "Software version:"
 msgstr "Версія праграмнага абсталявання"
 
@@ -756,6 +678,9 @@ msgstr "Дазволеныя IP адрасы"
 
 msgid "Admin"
 msgstr "Адміністратар"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Атрымальнік"
@@ -836,9 +761,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "Майстар канфігурацыі ўручную правядзе вас праз налададжванне HTTPS з альтэрнатыўнага цэнтра па сертыфікацыі."
-
-msgid "Disabled"
-msgstr "Адключаны"
 
 msgid "Auto-renewal"
 msgstr "Аўта-аднаўленне"
@@ -953,6 +875,12 @@ msgstr "Пагадзіцца на магчымасць некалькіх адк
 msgid "Template override"
 msgstr "Перавызначэнне шаблону"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "Нумар тэлефона"
 
@@ -976,6 +904,9 @@ msgstr "Відэа"
 
 msgid "Text shown upon negative answer"
 msgstr ""
+
+msgid "Low"
+msgstr "Нізкая"
 
 msgid "Trigger conditions"
 msgstr "Адлюстраваць умовы"
@@ -1007,20 +938,149 @@ msgstr "Стварыць копію"
 msgid "Steps"
 msgstr "Крокі"
 
-msgid "Site settings"
-msgstr "Налады сайта"
+msgid "Logo"
+msgstr "Лога"
+
+msgid "Project name"
+msgstr "Назва праекту"
+
+msgid "Homepage title"
+msgstr "Загаловак хатняй старонкі"
+
+msgid "Presentation"
+msgstr "Презентацыя"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Пытанне, каб заахвоціць магчымых выкрывальнікаў"
+
+msgid "Whistleblowing button"
+msgstr "Кнопка для выкрывальніцтва"
+
+msgid "Disclaimer"
+msgstr "Заява аб абмежаванні адказнасці"
+
+msgid "Footer"
+msgstr "Ніжні калонтытул"
+
+msgid "Upload"
+msgstr "Загрузіць"
+
+msgid "Download"
+msgstr "Спампаваць"
+
+msgid "Language:"
+msgstr "Мова"
+
+msgid "Add custom text"
+msgstr "Дадаць карыстальніцкі тэкст"
+
+msgid "Custom text"
+msgstr "Карыстальніцкі тэкст"
+
+msgid "Original text"
+msgstr "Першапачатковы тэкст"
+
+msgid "Original translation"
+msgstr "Першапачатковы пераклад"
+
+msgid "Custom translation"
+msgstr "Карыстальніцкі пераклад"
+
+msgid "Disable submissions"
+msgstr "Адключыць падачу матэрыялаў"
+
+msgid "Enable encryption"
+msgstr "Уключыць шыфраванне"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Дазволіць адміністратарам змяняць паролі карыстальнікаў"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Адміністратары ўпаўнаважаныя змяняць паролі карыстальнікаў:"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Уключыць спрошаны ўваход"
+
+msgid "Enable search engines indexing"
+msgstr "Уключыць індэксацыю пошукавых сістэм"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Абмежаванне памеру далучаных файлаў"
+
+msgid "megabytes"
+msgstr "мегабайты"
+
+msgid "Require two factor authentication"
+msgstr "Патрабуецца двухфактарная аўтэнтыфікацыя"
+
+msgid "Password change interval"
+msgstr "Інтэрвал паміж зменамі паролю"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "З меркаванняў бяспекі трэба мяняць пароль праз пэўны прамежак часу."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Колькасць дзён, што застаецца да апавяшчэння карыстальнікаў пра непрачытаныя справаздачы"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Адключыць панэль канфідэнцыйнасці"
+
+msgid "Enable custom privacy panel"
+msgstr "Уключыць карыстальніцкую панэль канфідэнцыйнасці"
+
+msgid "Custom privacy panel"
+msgstr "Карыстальніцкая панэль канфідэнцыйнасці"
+
+msgid "Enable scoring system"
+msgstr "Уключыць сістэму налічэння балаў"
+
+msgid "Logging level"
+msgstr "Узровень рэгістрацыі"
+
+msgid "percentage"
+msgstr "працэнт"
+
+msgid "Log accesses of internal users"
+msgstr "Журналы доступу ўнутраных карыстальнікаў"
+
+msgid "Notify administrators of software problems"
+msgstr "Паведаміць адміністратарам пра праблемы з праграмным забеспячэннем"
+
+msgid "Notify developers of software problems"
+msgstr "Паведаміць распрацоўшчыкам пра праблемы з праграмным забеспячэннем"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Уключыўшы гэтую функцыю, вы будзеце спрыяць развіццю і бяспецы платформы."
+
+msgid "Reset reports"
+msgstr "Ачысціць справаздачы"
+
+msgid "Settings"
+msgstr "Налады"
 
 msgid "Case management"
 msgstr "Кіраванне справай"
 
-msgid "Network settings"
-msgstr "Налады сеткі"
+msgid "Network"
+msgstr ""
 
 msgid "Sites"
 msgstr "Сайты"
 
-msgid "Mode:"
-msgstr "Рэжым:"
+msgid "Profile"
+msgstr "Профіль"
 
 msgid "Configure"
 msgstr "Наладзіць"
@@ -1028,14 +1088,17 @@ msgstr "Наладзіць"
 msgid "Subdomain"
 msgstr "Паддамен"
 
+msgid "Mode:"
+msgstr "Рэжым:"
+
 msgid "Creation date:"
 msgstr "Дата стварэння:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Каранёвы дамен, які выкарыстоўваецца для другасных сайтаў"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Выкарыстоўваць першы сайт толькі ў адміністратарскіх мэтах"
+
+msgid "Root domain used for secondary sites"
+msgstr "Каранёвы дамен, які выкарыстоўваецца для другасных сайтаў"
 
 msgid "Allow users to sign up"
 msgstr "Дазволіць рэгістрацыю карыстальнікаў"
@@ -1056,10 +1119,10 @@ msgid "Set password"
 msgstr "Задаць пароль"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Выбраны пароль занадта слабы. Дзейсны пароль павінен складацца з не менш чым 10 знакаў і ўтрымліваць разнастайныя знакі, у тым ліку, прынамсі, адну маленькую, адну вялікую літары, адну лічбу і адзін спецыяльны знак."
+msgstr "Выбраны пароль занадта слабы. Дзейсны пароль павінен складацца з не менш чым 12 знакаў і ўтрымліваць разнастайныя знакі, у тым ліку, прынамсі, адну маленькую, адну вялікую літары, адну лічбу і адзін спецыяльны знак."
 
 msgid "Force password change"
 msgstr "Прымусовая змена паролю"
@@ -1094,11 +1157,23 @@ msgstr "Абавязковы элемент"
 msgid "Allow the recipient to delete reports"
 msgstr "Дазволіць атрымальніку выдаляць справаздачы"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Дазволіць атрымальніку пераносіць сканчэнне тэрміну дзеяння справаздачы"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Даць карыстальніку адміністратарскі доступ да наступных функцый:"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "Дата запыту"
@@ -1136,14 +1211,20 @@ msgstr "Выберыце свой уліковы запіс:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Зараз увесці пароль, а потым націснуць \"Уваход\":"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Тэкст, які паказваецца пасля таго, як карыстальнік выбраў гэтую опцыю."
-
 msgid "Confirm"
 msgstr "Пацвердзіць"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Тэкст, які паказваецца пасля таго, як карыстальнік выбраў гэтую опцыю."
+
 msgid "Assign score points"
 msgstr "Налічыць балы"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Статус:"
 
 msgid "Are you sure?"
 msgstr "Упэўненыя?"
@@ -1168,8 +1249,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Зрабіце копію і захавайце яе ў бяспечным месцы. Гэта будзе неабходна, калі вы згубіце пароль, каб аднавіць доступ да ўліковага запісу без страты дадзеных."
 
+msgid "Attention"
+msgstr "Увага"
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Увесці назву для копіі"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr "Зрабіць запыт аб дапамозе"
@@ -1191,14 +1287,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Платформа па -ранейшаму не сканфігураваная для злучэнняў HTTPS, і таму яе варта выкарыстоўваць толькі ў мэтах тэставання."
 
-msgid "Please write a motivation for the reply"
-msgstr "Калі ласка, напішыце прычыну такога адказу"
-
 msgid "Send"
 msgstr "Адправіць"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Пацвярджаючы, вы пераносіце сканчэнне тэрміну дзеяння справаздачы на:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Гэта дэма-платформа, калі ласка, не выкарыстоўвайце яе для падачы рэальных матэрыялаў."
@@ -1232,6 +1331,12 @@ msgstr "Даступ да рэсурсу можна атрымаць тольк�
 
 msgid "The upload request exceeds the size limit"
 msgstr "Файл для загрузкі перавышае максімальны памер"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Цяперашні пароль"
@@ -1274,20 +1379,23 @@ msgstr "Вы ўжо паведамілі інфармацыю? Увесьці к
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Код або няправільны, або састарэлы."
 
-msgid "Select a file or drag it here."
-msgstr "Выбраць файл або перацягнуць яго сюды."
+msgid "Filename"
+msgstr "Назва файла"
 
 msgid "Size:"
 msgstr "Памер:"
 
-msgid "Uploading files…"
-msgstr "Загрузка файлаў..."
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "Загрузка паспяхова завершаная!"
+msgid "Address"
+msgstr "Адрас"
 
-msgid "Estimated upload time:"
-msgstr "Разліковы час загрузкі:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr ""
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Атрымальнікі зрабілі вам запыт запоўніць дадатковую анкету."
@@ -1301,8 +1409,8 @@ msgstr "Ад:"
 msgid "To:"
 msgstr "Каму:"
 
-msgid "Filename"
-msgstr "Назва файла"
+msgid "View"
+msgstr "Прагляд"
 
 msgid "Upload date"
 msgstr "Дата загрузкі"
@@ -1315,9 +1423,6 @@ msgstr "Адказы на пытанні анкеты"
 
 msgid "Step"
 msgstr "Крок"
-
-msgid "Status:"
-msgstr "Статус:"
 
 msgid "Files attached by recipients"
 msgstr "Файлы, далучаныя атрымальнікамі"
@@ -1344,9 +1449,6 @@ msgstr "Калі вы хочаце зрабіць свой унёсак у ра�
 msgid "Join our chat:"
 msgstr "Далучыцца да нашага чату"
 
-msgid "Follow the project on:"
-msgstr "Сачыць за нашым праектам на:"
-
 msgid "An update is available:"
 msgstr "Абнаўленне даступнае"
 
@@ -1356,6 +1458,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "Рэкамендуем зайсці ў раздзел \"Параметры\", каб атрымаць \"Ключ аднаўлення ўліковага запісу\" і захоўваць яго бяспечна. Гэты ключ спатрэбіцца для аднаўлення доступу да платформы і да вашых дадзеных у выпадку, калі вы забудзеце пароль."
+
+msgid "Select a file or drag it here."
+msgstr "Выбраць файл або перацягнуць яго сюды."
 
 msgid "The provided recovery key is invalid."
 msgstr "Уведзены ключ аднаўлення несапраўдны."
@@ -1388,6 +1493,9 @@ msgstr "Дата запыту"
 msgid "Show"
 msgstr "Паказаць"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Віншуем!"
 
@@ -1410,26 +1518,17 @@ msgstr "Калі яе не актываваць на працягу 24 гадз�
 msgid "Sign up"
 msgstr "Зарэгістравацца"
 
-msgid "Site"
-msgstr "Сайт"
-
-msgid "Confirmation"
-msgstr "Пацверджанне"
-
 msgid "Invalid confirmation"
 msgstr "Несапраўднае пацверджанне"
 
 msgid "Invalid phone number"
 msgstr "Несапраўдны нумар тэлефону"
 
-msgid "Address"
-msgstr "Адрас"
+msgid "Site"
+msgstr "Сайт"
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr ""
+msgid "Confirmation"
+msgstr "Пацверджанне"
 
 msgid "The answer is too short"
 msgstr "Адказ занадта кароткі"
@@ -1468,17 +1567,17 @@ msgstr "Для ўваходу ўжыць код з 16 лічбаў. Гэта д�
 msgid "View your report"
 msgstr "Прагляд справаздачы"
 
-msgid "Recipient selection"
-msgstr "Выбар атрымальніка"
-
-msgid "Select the recipients of your report:"
-msgstr "Выбраць атрымальнікаў вашай справаздачы:"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "Атрымальнікі выбраныя:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Вы выбралі максімальную колькасць атрымальнікаў."
+
+msgid "You must select at least one recipient."
+msgstr "Вы мусіце выбраць прынамсі аднаго атрымальніка."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1490,17 +1589,11 @@ msgid ""
 "invalid:"
 msgstr "На гэтым этапе адказы на наступныя пытанні або адсутнічаюць, або несапраўдныя:"
 
-msgid "You must select at least one recipient."
-msgstr "Вы мусіце выбраць прынамсі аднаго атрымальніка."
+msgid "Recipient selection"
+msgstr "Выбар атрымальніка"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Чаканне завяршэння загрузкі файла(ў)."
-
-msgid "The following steps have errors:"
-msgstr "Наступныя крокі маюць памылкі:"
-
-msgid "Hide"
-msgstr "Схаваць"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1590,8 +1683,8 @@ msgstr "Ці расследавалі гэтыя арганізацыі вашы
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Якога выніку вы хочаце дасягнуць з дапамогай нашай падтрымкі?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Вы хочаце ідэнтыфікаваць сябе?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Імя"
@@ -1607,6 +1700,9 @@ msgstr "Пажадана кантактавацца са мною толькі �
 
 msgid "Other"
 msgstr "Іншае"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "Паважаны {RecipientName},"
@@ -1668,6 +1764,9 @@ msgstr "Вывучыць пытанне, каб вызначыць, законн
 
 msgid "The activities with unusual stats are:"
 msgstr "Актыўнасць з незвычайнай статыстыкай:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1897,6 +1996,9 @@ msgstr "Гэтым электронным лістом паведамляем, �
 msgid "New report"
 msgstr "Новая справаздача"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Самая ранняя дата сканчэння тэрміну дзеяння - {EarliestExpirationDate}."
 
@@ -1906,18 +2008,16 @@ msgstr "Калі ласка, не забудзьцеся праверыць іх
 msgid "Some reports will expire soon"
 msgstr "Тэрмін дзеяння некаторых справаздачаў хутка скончыцца"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Гэтым электронным лістом паведамляем, што выкрывальнік абраў вас у якасці вартага атрымальніка сваёй справаздачы."
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Просім звярнуць асаблівую ўвагу на інфармацыю і матэрыялы, якія тут змяшчаюцца. Калі ласка, майце на ўвазе, што выкрывальнікі часта бяруць на сябе высокую асабістую рызыку у інтарэсах грамадскасці. Такім чынам, матэрыялы, прадстаўленыя ў такой справаздачы, павінны лічыцца вельмі важнымі."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Гэтым электронным лістом паведамляем, што цякучая справаздача абноўленая."

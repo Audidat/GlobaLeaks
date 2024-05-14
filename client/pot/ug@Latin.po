@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2021-2022\n"
-"Language-Team: Uighur (Latin) (http://www.transifex.com/otf/globaleaks/language/ug@Latin/)\n"
+"Language-Team: Uighur (Latin) (http://app.transifex.com/otf/globaleaks/language/ug@Latin/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ug@Latin\n"
@@ -17,20 +17,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Tizimgha kir"
 
-msgid "Main configuration"
-msgstr "Asasiy seplime"
-
-msgid "Theme customization"
-msgstr "Téma ixtiyari"
-
 msgid "Languages"
 msgstr "Tillar"
 
 msgid "Text customization"
 msgstr "Tékist ixtiyari"
 
-msgid "Advanced settings"
-msgstr "Aliy tengshekler"
+msgid "Advanced"
+msgstr ""
 
 msgid "Question templates"
 msgstr "Su’al qélipliri"
@@ -50,8 +44,8 @@ msgstr "Özgertish xatirisi"
 msgid "License"
 msgstr "Neshr hoquqi"
 
-msgid "Notification templates"
-msgstr "Uqturush qélipliri"
+msgid "Templates"
+msgstr "Qéliplar"
 
 msgid "Delete"
 msgstr "Öchür"
@@ -62,8 +56,8 @@ msgstr "Binormalliqlar"
 msgid "Preferences"
 msgstr "Mayilliqlar"
 
-msgid "Notification settings"
-msgstr "Uqturush tengshekliri"
+msgid "Notifications"
+msgstr ""
 
 msgid "file unavailable"
 msgstr "Höjjetni ishletküsiz "
@@ -83,25 +77,16 @@ msgstr "Höjjetler"
 msgid "Comments"
 msgstr "Inkaslar"
 
-msgid "Messages"
-msgstr "Uchurlar"
-
 msgid "Details"
 msgstr "Tepsilatlar"
 
 msgid "Platform wizard"
 msgstr "Supa séhirgeri"
 
-msgid "CREDIT CARD"
-msgstr "Inawetlik kart"
-
-msgid "YOUR NAME"
-msgstr "Namingiz"
-
 msgid "Label the report"
 msgstr "Melumatqa belge sal"
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Sürük chéslasini keynige sür"
 
 msgid "Select all"
@@ -113,8 +98,8 @@ msgstr "Hemmini bikar qil"
 msgid "Refresh"
 msgstr "Yéngila"
 
-msgid "Context"
-msgstr "Kontékist"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Aldin kör"
@@ -218,9 +203,6 @@ msgstr "Ziyaret hoquqi telep qilindi"
 msgid "Request access to the whistleblower's identity"
 msgstr "Pash qilghuchining kimlikini ziyaret qilishni telep qiling"
 
-msgid "Please write a motivation"
-msgstr "Bir meqset yézing"
-
 msgid "Reply to the request"
 msgstr "Telepke jawab ber"
 
@@ -247,9 +229,6 @@ msgstr "Pash qilghuchining kimlikini ziyaret qilishni ret qiling"
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Pash qilghuchining kimlikini ziyaret qilishqa hoquq ber"
-
-msgid "Templates"
-msgstr "Qéliplar"
 
 msgid "URL redirects"
 msgstr "URL qayta yéteklesh"
@@ -290,8 +269,8 @@ msgstr "Qobul qilishqa bolidu"
 msgid "Strong"
 msgstr "Küchlük"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Mezmunni tallash üchün ara yüzning üstide körsitilgen tékist"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Élxet uqturushni jim qil"
@@ -354,9 +333,6 @@ msgstr "Eng chong höjjet sighimi bolsa:"
 
 msgid "Scheduled jobs"
 msgstr "Pilanlan’ghan xizmetler"
-
-msgid "Sites management"
-msgstr "Tor békiti bashqurush"
 
 msgid "Regenerate"
 msgstr "Qayta hasilla"
@@ -456,20 +432,110 @@ msgstr "Chaplaq taxtisigha chapla"
 msgid "Logout"
 msgstr "Tizimdin chiq"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Bu tapshuriwalghuchigha ishletküchilerge melumatni ziyaret qilish hoquqi bérish iqtidari ber"
-
 msgid "Grant access"
 msgstr "Hoquq ber"
 
 msgid "Revoke access"
 msgstr "Hoquqni qayturiwal"
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "Yoshur"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr ""
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr "Namsiz"
+
+msgid "Anonymous"
+msgstr ""
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr ""
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "Bir melumat yolla"
 
-msgid "Select the context of your report:"
-msgstr "Melumatingizning mezmunini tallang:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "Bir terep qilishtin burun, yéngi bir parol belgileng."
@@ -479,102 +545,6 @@ msgstr "Dawam qilishtin burun, ikki qedemlik toghrulashni qozghiting."
 
 msgid "Enable"
 msgstr "Qozghat"
-
-msgid "Disable submissions"
-msgstr "Tapshurushlarni cheklesh"
-
-msgid "Enable encryption"
-msgstr "Shifirleshni qozghat"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Bashqurghichilar ishletküchi parollirini özgerteleydighan bolsun"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Bashqurghuchilargha ishletküchi parollirini özgertishke hoquq bérildi: "
-
-msgid "Enable multisite feature"
-msgstr "Köp béket iqtidarini qozghat"
-
-msgid "Enable simplified login"
-msgstr "Addilashqan tizimgha kirishni qozghat"
-
-msgid "Enable search engines indexing"
-msgstr "Axturush matorlirining indékislishini qozghat"
-
-msgid "Default questionnaire"
-msgstr "Köngüldiki ray sinash"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Mezmunlarni élipbe tertipi boyiche körset"
-
-msgid "Size limit for file attachments"
-msgstr "Höjjet qoshumchiliri üchün chongluq chéki"
-
-msgid "megabytes"
-msgstr "Mégabayts"
-
-msgid "Require two factor authentication"
-msgstr "Ikki qedemlik toghrulashni telep qil"
-
-msgid "Password change interval"
-msgstr "Parol özgertish ariliqi"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Bixeterlikni közde tutup, qerellik parol özgertish telep qilinidu."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Bu iqtidarni cheklesh üchün qimmitini 0 qilip békiting."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Oqulmighan melumatlarni ishletküchilerge uqturghiche ötidighan kün sani"
-
-msgid "Disable the privacy panel"
-msgstr "Ixtiyari shexsiyet taxtisini chekle"
-
-msgid "Enable custom privacy panel"
-msgstr "Ixtiyari shexsiyet taxtisini qozghat"
-
-msgid "Custom privacy panel"
-msgstr "Ixtiyari shexsiyet taxtisi"
-
-msgid "Enable custodian user role"
-msgstr "Saqlighuchi ishletküchi rolini qozghat"
-
-msgid "Enable scoring system"
-msgstr "Nomur qoyüsh sistémisini qozghat"
-
-msgid "Logging level"
-msgstr "Xatirige élish sewiyesi"
-
-msgid "Log accesses of internal users"
-msgstr "Ichki ishletküchilerning ziyaretlirini xatirile"
-
-msgid "Notify administrators of software problems"
-msgstr "Yumshaq détal mesililirini bashqurghuchilargha uqtu"
-
-msgid "Notify developers of software problems"
-msgstr "Yumshaq détal mesililirini achquchilargha uqtur"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Bu iqtidarni qozghitish arqiliq, supining tereqqiyati we bixeterliki üchün hesse qoshalaysiz."
-
-msgid "Save"
-msgstr "Saqla"
-
-msgid "Reset reports"
-msgstr "Melumatlarni qayta seplesh"
-
-msgid "Low"
-msgstr "Töwen"
-
-msgid "High"
-msgstr "Yuquri"
-
-msgid "percentage"
-msgstr "Pirsenti"
 
 msgid "Type"
 msgstr "Türi"
@@ -603,6 +573,9 @@ msgstr "Qurulghan chésla"
 msgid "Last access"
 msgstr "Axirqi ziyaret"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "Pash qilghuchining axirqi ziyariti"
 
@@ -621,68 +594,29 @@ msgstr "Bu bölek mejburiy"
 msgid "Edit"
 msgstr "Tehrirle"
 
+msgid "Save"
+msgstr "Saqla"
+
 msgid "Cancel"
 msgstr "Waz kech"
+
+msgid "days"
+msgstr "Künler"
+
+msgid "Disabled"
+msgstr "Cheklen’gen"
 
 msgid "Report statuses"
 msgstr "Doklat haletliri"
 
-msgid "Logo"
-msgstr "Tugh"
-
-msgid "Project name"
-msgstr "Tür nami"
-
-msgid "Description"
-msgstr "Chüshendürüsh"
-
-msgid "Homepage title"
-msgstr "Bash bet témisi"
-
-msgid "Presentation"
-msgstr "Körsetme"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Pash qilghuchi bolush mümkinchiligi bar kishilerdin sorilidighan su’allar"
-
-msgid "Whistleblowing button"
-msgstr "Pash qilish kunupkisi"
-
-msgid "Disclaimer"
-msgstr "Mes’ul bolmasliq bayanati"
-
-msgid "Footer"
-msgstr "Bet asti"
-
-msgid "Upload"
-msgstr "Yüklesh"
-
-msgid "Download"
-msgstr "Chüshürüsh"
-
-msgid "Language:"
-msgstr "Til:"
-
-msgid "Add custom text"
-msgstr "Ixtiyari tékist qosh"
-
-msgid "Custom text"
-msgstr "Ixtiyari tékist"
-
-msgid "Original text"
-msgstr "Esli tékist"
-
-msgid "Original translation"
-msgstr "Esli terjime"
-
-msgid "Custom translation"
-msgstr "Ixtiyari terjime"
-
-msgid "Contexts"
-msgstr "Mezmunlar"
+msgid "Channels"
+msgstr ""
 
 msgid "Hidden"
 msgstr "Yoshurun"
+
+msgid "Description"
+msgstr "Chüshendürüsh"
 
 msgid "Questionnaire"
 msgstr "Ray sinash"
@@ -690,8 +624,11 @@ msgstr "Ray sinash"
 msgid "Recipients"
 msgstr "Tapshuriwalghuchilar"
 
-msgid "days"
-msgstr "Künler"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Bu iqtidarni cheklesh üchün qimmitini 0 qilip békiting."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Ray sinash yéteklime ara yüzini körset"
@@ -708,24 +645,6 @@ msgstr "Tallan’ghan tapshuriwalghuchilar sani eng köp bolghanda:"
 msgid "Show recipients in alphabetical order"
 msgstr "Tapshuriwalghuchilarni élipbe tertipi boyiche körset"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Tapshuriwalghuchining tepsili ehwalini melumatning halet bétide körset"
-
-msgid "Enable comments"
-msgstr "Bahalashni qozghat"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Pash qilghuchining baha yézishige ruxset qil"
-
-msgid "Enable private messages"
-msgstr "Shexsiy uchurlarni qozghat"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Pash qilghuchining uchur ewetishige ruxset qil"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Pash qilghuchining melumatqa qoshumche qisturishigha ruxset qil"
-
 msgid "Additional questionnaire"
 msgstr "Qoshumche ray sinash"
 
@@ -741,6 +660,9 @@ msgstr "Qimmet"
 msgid "Medium"
 msgstr "Otturihal"
 
+msgid "High"
+msgstr "Yuquri"
+
 msgid "Software version:"
 msgstr "Yumshaq détal neshri:"
 
@@ -755,6 +677,9 @@ msgstr "Ruxset qilin’ghan IP adrésliri"
 
 msgid "Admin"
 msgstr "Bashqurghuchi"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Tapshuriwalghuchi"
@@ -835,9 +760,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "Qolda seplesh séhirgeri sizning HTTPS seplimisni bashqa bir guwahname orgini arqiliq seplishingizge yétekchilik qilidu."
-
-msgid "Disabled"
-msgstr "Cheklen’gen"
 
 msgid "Auto-renewal"
 msgstr "Aptumatik yéngilash"
@@ -952,6 +874,12 @@ msgstr "Köp jawapni qobul qil"
 msgid "Template override"
 msgstr "Qéliipning üstige yaz"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "Téléfon nomuri"
 
@@ -975,6 +903,9 @@ msgstr "Sin"
 
 msgid "Text shown upon negative answer"
 msgstr "Selbiy jawabta körsitilidighan tékist"
+
+msgid "Low"
+msgstr "Töwen"
 
 msgid "Trigger conditions"
 msgstr "Qozghitilish shertler"
@@ -1006,20 +937,149 @@ msgstr "Köpeyt"
 msgid "Steps"
 msgstr "Qedemler"
 
-msgid "Site settings"
-msgstr "Béket tengshekliri"
+msgid "Logo"
+msgstr "Tugh"
+
+msgid "Project name"
+msgstr "Tür nami"
+
+msgid "Homepage title"
+msgstr "Bash bet témisi"
+
+msgid "Presentation"
+msgstr "Körsetme"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Pash qilghuchi bolush mümkinchiligi bar kishilerdin sorilidighan su’allar"
+
+msgid "Whistleblowing button"
+msgstr "Pash qilish kunupkisi"
+
+msgid "Disclaimer"
+msgstr "Mes’ul bolmasliq bayanati"
+
+msgid "Footer"
+msgstr "Bet asti"
+
+msgid "Upload"
+msgstr "Yüklesh"
+
+msgid "Download"
+msgstr "Chüshürüsh"
+
+msgid "Language:"
+msgstr "Til:"
+
+msgid "Add custom text"
+msgstr "Ixtiyari tékist qosh"
+
+msgid "Custom text"
+msgstr "Ixtiyari tékist"
+
+msgid "Original text"
+msgstr "Esli tékist"
+
+msgid "Original translation"
+msgstr "Esli terjime"
+
+msgid "Custom translation"
+msgstr "Ixtiyari terjime"
+
+msgid "Disable submissions"
+msgstr "Tapshurushlarni cheklesh"
+
+msgid "Enable encryption"
+msgstr "Shifirleshni qozghat"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Bashqurghichilar ishletküchi parollirini özgerteleydighan bolsun"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Bashqurghuchilargha ishletküchi parollirini özgertishke hoquq bérildi: "
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Addilashqan tizimgha kirishni qozghat"
+
+msgid "Enable search engines indexing"
+msgstr "Axturush matorlirining indékislishini qozghat"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Höjjet qoshumchiliri üchün chongluq chéki"
+
+msgid "megabytes"
+msgstr "Mégabayts"
+
+msgid "Require two factor authentication"
+msgstr "Ikki qedemlik toghrulashni telep qil"
+
+msgid "Password change interval"
+msgstr "Parol özgertish ariliqi"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Bixeterlikni közde tutup, qerellik parol özgertish telep qilinidu."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Oqulmighan melumatlarni ishletküchilerge uqturghiche ötidighan kün sani"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Ixtiyari shexsiyet taxtisini chekle"
+
+msgid "Enable custom privacy panel"
+msgstr "Ixtiyari shexsiyet taxtisini qozghat"
+
+msgid "Custom privacy panel"
+msgstr "Ixtiyari shexsiyet taxtisi"
+
+msgid "Enable scoring system"
+msgstr "Nomur qoyüsh sistémisini qozghat"
+
+msgid "Logging level"
+msgstr "Xatirige élish sewiyesi"
+
+msgid "percentage"
+msgstr "Pirsenti"
+
+msgid "Log accesses of internal users"
+msgstr "Ichki ishletküchilerning ziyaretlirini xatirile"
+
+msgid "Notify administrators of software problems"
+msgstr "Yumshaq détal mesililirini bashqurghuchilargha uqtu"
+
+msgid "Notify developers of software problems"
+msgstr "Yumshaq détal mesililirini achquchilargha uqtur"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Bu iqtidarni qozghitish arqiliq, supining tereqqiyati we bixeterliki üchün hesse qoshalaysiz."
+
+msgid "Reset reports"
+msgstr "Melumatlarni qayta seplesh"
+
+msgid "Settings"
+msgstr ""
 
 msgid "Case management"
 msgstr "Ehwal bashqurush"
 
-msgid "Network settings"
-msgstr "Tor tengshekliri"
+msgid "Network"
+msgstr ""
 
 msgid "Sites"
 msgstr "Béketler"
 
-msgid "Mode:"
-msgstr "Haliti:"
+msgid "Profile"
+msgstr ""
 
 msgid "Configure"
 msgstr "Seple"
@@ -1027,14 +1087,17 @@ msgstr "Seple"
 msgid "Subdomain"
 msgstr "Qismi da’ire"
 
+msgid "Mode:"
+msgstr "Haliti:"
+
 msgid "Creation date:"
 msgstr "Qurulghan chésla:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Ikkilemchi tor béketlerge ishlitilidighan yiltiz da’ire"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Birinchi béketni peqetla bashqurush meqsitide ishlet"
+
+msgid "Root domain used for secondary sites"
+msgstr "Ikkilemchi tor béketlerge ishlitilidighan yiltiz da’ire"
 
 msgid "Allow users to sign up"
 msgstr "Ishletküchilerning tizimlitishigha ruxset qil"
@@ -1055,10 +1118,10 @@ msgid "Set password"
 msgstr "Parol seplesh"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Tallighan parolingiz bek ajiz. Bir inawetlik parol eng az dégende oxshash bolmighan 10 belge uzunliqida bolishi, eng az bir kichik herp, bir chong herp, bir reqem we bir alahide belgidin terkip tépishi kérek."
+msgstr "Таллиған паролиңиз бәк аҗиз. Бир инавәтлик парол әң аз дегәндә охшаш болмиған 10 бәлгә узунлиқида болиши, әң аз бир кичик һәрп, бир чоң һәрп,бир рәқәм вә бир алаһидә бәлгидин тәркип тепиши керәк."
 
 msgid "Force password change"
 msgstr "Parol yéngilashqa mejburla"
@@ -1093,11 +1156,23 @@ msgstr "Mejburiy tallandi"
 msgid "Allow the recipient to delete reports"
 msgstr "Tapshuriwalghuchilarning melumatlarni öchürishige ruxset qil"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Tapshuriwalghuchining melumat sürükini keynige sürishige ruxset qil"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Töwendiki iqtidarlar üchün ishletküchilerge bashqurghuchi ziyaret hoquqi ber:"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "Telep chéslasi"
@@ -1135,14 +1210,20 @@ msgstr "Hésabingizni tallang:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Hazir yéngi parolingizni kirgüzüng, andin «tizimgha kir»ni chéking:"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Ishletküchi tallanmini tallighandin kéyin tékist körsitilidu."
-
 msgid "Confirm"
 msgstr "Jezimle"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Ishletküchi tallanmini tallighandin kéyin tékist körsitilidu."
+
 msgid "Assign score points"
 msgstr "Nomur nuqtilirini belgileng"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Halet:"
 
 msgid "Are you sure?"
 msgstr "Jezim qilamsiz?"
@@ -1167,8 +1248,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Bir kupiyesini éling we ixeter yerde saqlang. eger parolingizni untup qélip, hésabitingizdiki melumatlarni yoqatmastin ziyaret qilmaqchi bolghiningizda lazim bolghusi."
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Kupiye üchün bir nam kirgüzüng"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr "Yardem telep"
@@ -1190,14 +1286,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Bu supigha téxiche HTTPS baghlinishliri seplenmeptu we shundaq bolghachqa peqet sinaq meqsitidila ishlitish kérek.  "
 
-msgid "Please write a motivation for the reply"
-msgstr "Jawa qayturushtiki bir meqsitingizni yézing"
-
 msgid "Send"
 msgstr "Ewet"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Jezimlisingiz, sürük chéslasini bu kün’ge keynige sürgen bolisiz:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Bu bir körsetme supa, buni heqiqiy yollanmilar üchün ishletmeng."
@@ -1231,6 +1330,12 @@ msgstr "Menbeni peqet Tor tori bilenla ziyaret qilghili bolidu "
 
 msgid "The upload request exceeds the size limit"
 msgstr "Yüklime telipi chongluq chékidin éship ketti"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Hazirqi parol"
@@ -1273,20 +1378,23 @@ msgstr "Alliburun bir melumat toshquzghanmitingiz? taloningizni kirgüzüng:"
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Taloningz inawetsiz yaki melumatingizning sürüki toshüp ketken."
 
-msgid "Select a file or drag it here."
-msgstr "Bir höjjet tallang yaki bu yerge sörep tashlang."
+msgid "Filename"
+msgstr "Höjjet nami"
 
 msgid "Size:"
 msgstr "Chongluqi:"
 
-msgid "Uploading files…"
-msgstr "Yükliniwatqan höjjetler…"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "Yüklesh muweppiqiyetlik tamamlandi!"
+msgid "Address"
+msgstr "Adrés"
 
-msgid "Estimated upload time:"
-msgstr "Texminen yüklesh waqti:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr ""
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Tapshuriwalghuchilar sizning bir qoshumche ray sinashni toshquzishingizni telep qildi."
@@ -1300,8 +1408,8 @@ msgstr "Ewetküchi:"
 msgid "To:"
 msgstr "Tapshuriwalghuchi:"
 
-msgid "Filename"
-msgstr "Höjjet nami"
+msgid "View"
+msgstr ""
 
 msgid "Upload date"
 msgstr "Yüklen’gen chésla"
@@ -1314,9 +1422,6 @@ msgstr "Ray sinash jawabliri"
 
 msgid "Step"
 msgstr "Qedem"
-
-msgid "Status:"
-msgstr "Halet:"
 
 msgid "Files attached by recipients"
 msgstr "Höjjetler tapshuriwalghuchilar teripidin qoshup qoyuldi"
@@ -1343,9 +1448,6 @@ msgstr "Yumshaq détal échishqa töhpe qoshmaqchi yaki kemtük melum qilmaqchi 
 msgid "Join our chat:"
 msgstr "Söhbitimizge qétiling:"
 
-msgid "Follow the project on:"
-msgstr "Türimizge bu yerdin egishing:"
-
 msgid "An update is available:"
 msgstr "Bir yéngilanma bar:"
 
@@ -1355,6 +1457,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "«Hésabatni eslige keltürüsh achquchi» ni yighip bixeter saqlap qoyush üchün, «mayilliq» bölikini ziyaret qilishingizni tewsiye qilimiz. Bu achquch parolni untup qalghan waqtingizda, supa we sanliq melumatliringizni ziyaret qilishni eslige keltürüsh üchün lazim bolidu."
+
+msgid "Select a file or drag it here."
+msgstr "Bir höjjet tallang yaki bu yerge sörep tashlang."
 
 msgid "The provided recovery key is invalid."
 msgstr "Teminlen’gen eslige keltürüsh achquchi inawetsiz."
@@ -1387,6 +1492,9 @@ msgstr "Telep qilghan chésla"
 msgid "Show"
 msgstr "Körset"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Tebrikleymiz!"
 
@@ -1409,26 +1517,17 @@ msgstr "Eger 24 sa’etkiche aktiplimisngiz, bu supa aptomatik öchürülidu."
 msgid "Sign up"
 msgstr "tizimliting"
 
-msgid "Site"
-msgstr ""
-
-msgid "Confirmation"
-msgstr "Jezmleng"
-
 msgid "Invalid confirmation"
 msgstr "Inawetsiz jezimlesh"
 
 msgid "Invalid phone number"
 msgstr "Inawetsiz téléfon nomuri"
 
-msgid "Address"
-msgstr "Adrés"
-
-msgid "Fiscal code"
+msgid "Site"
 msgstr ""
 
-msgid "Tax code"
-msgstr ""
+msgid "Confirmation"
+msgstr "Jezmleng"
 
 msgid "The answer is too short"
 msgstr "Jawap bek qisqa"
@@ -1467,17 +1566,17 @@ msgstr "Tizimgha kirish üchün 16 xaniliq talon kodini ishliting. u sizning biz
 msgid "View your report"
 msgstr "Melumatingizni körüng"
 
-msgid "Recipient selection"
-msgstr "Tapshuriwalghuchi tallash"
-
-msgid "Select the recipients of your report:"
-msgstr "Melumatingizni tapshuriwalghuchilarni tallang"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "Tallan’ghan tapshuriwalghuchilar:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Tallashqa bolidighan tapshuriwalghuchilar san chékige yettingiz."
+
+msgid "You must select at least one recipient."
+msgstr "Az dégende bir tapshuriwalghuchi tallishingiz kérek."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1489,17 +1588,11 @@ msgid ""
 "invalid:"
 msgstr "Bu qedemde töwendiki su’allargha bérilgen jawaplar xata yaki inawetsiz."
 
-msgid "You must select at least one recipient."
-msgstr "Az dégende bir tapshuriwalghuchi tallishingiz kérek."
+msgid "Recipient selection"
+msgstr "Tapshuriwalghuchi tallash"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Höjjet(ler)ning yüklinip bolishini saqlawatidu."
-
-msgid "The following steps have errors:"
-msgstr "Töwendiki qedemlerde xataliq bar:"
-
-msgid "Hide"
-msgstr "Yoshur"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1589,8 +1682,8 @@ msgstr ""
 msgid "What is the outcome you want to achieve with our support?"
 msgstr ""
 
-msgid "Do you want to provide your identification information?"
-msgstr "Kimlik uchurliringizni teminleshni xalamsiz?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Ismi"
@@ -1606,6 +1699,9 @@ msgstr "Peqetla bu supa arqiliq méning bilen alaqilashsun"
 
 msgid "Other"
 msgstr "Bashqa"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "‏Qedirlik {RecipientName},"
@@ -1667,6 +1763,9 @@ msgstr "Buning bir normal ishmu emesligini ayrish üchün, mesilini tekshürüng
 
 msgid "The activities with unusual stats are:"
 msgstr "Binormal pa’aliyetlerning istatistikisi bular:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1896,6 +1995,9 @@ msgstr "Bu élxet sizge tapshuriwalghuchining bir yaki bir nechche melumatni ziy
 msgid "New report"
 msgstr "Yéngi melumat"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Eng burunqi sürük waqti: {EarliestExpirationDate}."
 
@@ -1905,18 +2007,16 @@ msgstr "Öchürülüshtin burun ularni tekshürüshni unutmang."
 msgid "Some reports will expire soon"
 msgstr "Bezi melumatlarning yéqinda süriki toshidu"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Bu élxet, bir pash qilghuchining sizni öz melumatida qimmetlik tapshuriwalghuchi, dep tallighanliqini uqturush üchündur."
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Bu yerdiki uchurlar we matériyallargha alahide ehmiyet bérishingiz telep qilinidu. ésingizde bolsunki , pash qilghuchilar köpinche omumning menpe’eti üchün chong xeterge tewekkül qilidu. Shunga bu melumatta teminlen’gen matériyallarni intayin muhim, dep qarilishi kérek."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Bu élxet sizge bir mewjut melumatning yéngilan’ghanliqini uqturush üchündur."

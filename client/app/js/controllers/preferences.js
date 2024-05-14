@@ -31,7 +31,7 @@ GL.controller("PreferencesCtrl", ["$scope", "$q", "$http", "$location", "$window
 
     $scope.changePassword = function() {
       return $scope.Utils.runUserOperation("change_password", $scope.changePasswordArgs).then(function() {
-        $scope.newPasswordArgs = {};
+        $scope.changePasswordArgs = {};
       });
     };
 
@@ -99,7 +99,8 @@ GL.controller("PreferencesCtrl", ["$scope", "$q", "$http", "$location", "$window
     $scope.loadPublicKeyFile = function(file) {
       $scope.Utils.readFileAsText(file).then(function(txt) {
         $scope.resources.preferences.pgp_key_public = txt;
-       }, $scope.Utils.displayErrorMsg);
+	return $scope.save();
+       });
     };
 }]).
 controller("TwoFactorModalCtrl",

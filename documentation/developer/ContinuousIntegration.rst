@@ -5,7 +5,7 @@ The GlobaLeaks codebase is continuously tested for bug within a complete continu
 
 Testes are performed at every commit by:
 
-* performing static and dynamic testing on `TravisCI <https://travis-ci.org/github/globaleaks/GlobaLeaks>`_;
+* performing continous integration testing with `GitHub Actions <https://github.com/globaleaks/GlobaLeaks/actions>`_;
 * tracking tests coverage and code quality with `Codacy <https://app.codacy.com/manual/GlobaLeaks/GlobaLeaks>`_.
 
 Unit Tests
@@ -16,14 +16,16 @@ Tests can be run manually by issuing:
 
 .. code:: sh
 
-  cd GlobaLeaks/backend && trial globaleaks
+  cd GlobaLeaks/backend
+  trial globaleaks
 
 E2E Tests
 =========
-End to end tests are implemented by means of the Protractor Angular JS library.
+End to end tests are implemented by means of Cypress.
 
 Tests can be run manually by issuing:
 
 .. code:: sh
 
-  cd GlobaLeaks/client && ./node_modules/protractor/bin/protractor tests/protractor.config.js 
+  cd GlobaLeaks/client
+  ./node_modules/cypress/bin/cypress run

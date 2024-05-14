@@ -1,5 +1,4 @@
-GL.controller("AdminFieldEditorCtrl", ["$scope", "$http", "FileSaver",
-  function($scope, $http, FileSaver) {
+GL.controller("AdminFieldEditorCtrl", ["$scope", function($scope) {
     $scope.admin_receivers_by_id = $scope.Utils.array_to_map($scope.resources.users);
 
     $scope.editing = false;
@@ -202,13 +201,7 @@ GL.controller("AdminFieldEditorCtrl", ["$scope", "$http", "FileSaver",
     };
 
     $scope.exportQuestion = function(obj) {
-      $http({
-        method: "GET",
-        url: "api/admin/fieldtemplates/" + obj.id,
-        responseType: "blob",
-      }).then(function (response) {
-        FileSaver.saveAs(response.data, obj.label + ".json");
-      });
+      return $scope.Utils.saveAs(obj.label + ".json", "api/admin/fieldtemplates/" + obj.id);
     };
   }
 ]).

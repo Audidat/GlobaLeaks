@@ -9,8 +9,9 @@ from globaleaks.handlers.base import BaseHandler
 from globaleaks.models import config, profiles
 from globaleaks.orm import transact
 from globaleaks.rest import requests, errors
-from globaleaks.utils.crypto import Base64Encoder, GCE, generateRandomPassword
+from globaleaks.utils.crypto import Base64Encoder, GCE
 from globaleaks.utils.log import log
+from globaleaks.utils.sock import isIPAddress
 
 
 def db_wizard(session, tid, hostname, request):
@@ -47,7 +48,9 @@ def db_wizard(session, tid, hostname, request):
     node.set_val('default_language', language)
     node.set_val('wizard_done', True)
     node.set_val('enable_developers_exception_notification', request['enable_developers_exception_notification'])
-    node.set_val('hostname', hostname)
+
+    if tid == 1 and not isIPAddress(hostname):
+       node.set_val('hostname', hostname)
 
     profiles.load_profile(session, tid, request['profile'])
 
@@ -62,7 +65,6 @@ def db_wizard(session, tid, hostname, request):
     if not request['skip_admin_account_creation']:
         admin_desc = models.User().dict(language)
         admin_desc['username'] = request['admin_username']
-        admin_desc['name'] = request['admin_name']
         admin_desc['name'] = request['admin_name']
         admin_desc['mail_address'] = request['admin_mail_address']
         admin_desc['language'] = language
@@ -103,11 +105,14 @@ def db_wizard(session, tid, hostname, request):
         return
 
     # Secondary tenants initialization starts here
+    subdomain = node.get_val('subdomain')
+    rootdomain = root_tenant_node.get_val('rootdomain')
+    if subdomain and rootdomain:
+        node.set_val('hostname', subdomain + "." + rootdomain)
 
     mode = node.get_val('mode')
 
     if mode != 'default':
-        node.set_val('hostname', node.get_val('subdomain') + '.' + root_tenant_node.get_val('rootdomain'))
         node.set_val('tor', False)
 
     if mode in ['wbpa']:
@@ -120,8 +125,8 @@ def db_wizard(session, tid, hostname, request):
 
         context.questionnaire_id = root_tenant_node.get_val('default_questionnaire')
 
-        # Set data retention policy to 18 months
-        context.tip_timetolive = 540
+        # Set data retention policy to 12 months
+        context.tip_timetolive = 365
 
         # Delete the admin user
         request['admin_password'] = ''

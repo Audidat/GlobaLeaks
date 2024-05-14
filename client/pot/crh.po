@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: GlobaLeaks\n"
 "PO-Revision-Date: 2013-05-29 17:59+0000\n"
 "Last-Translator: Giovanni Pellerano <giovanni.pellerano@evilaliv3.org>, 2022\n"
-"Language-Team: Crimean Turkish (http://www.transifex.com/otf/globaleaks/language/crh/)\n"
+"Language-Team: Crimean Turkish (http://app.transifex.com/otf/globaleaks/language/crh/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: crh\n"
@@ -17,20 +17,14 @@ msgstr ""
 msgid "Log in"
 msgstr "Кириш"
 
-msgid "Main configuration"
-msgstr "Эсас сазламалар"
-
-msgid "Theme customization"
-msgstr "Мевзу сазламасы"
-
 msgid "Languages"
 msgstr "Тиллер"
 
 msgid "Text customization"
 msgstr "Метин сазламасы"
 
-msgid "Advanced settings"
-msgstr "Къошма сазламалар"
+msgid "Advanced"
+msgstr ""
 
 msgid "Question templates"
 msgstr "Суаллер ичюн шаблонлар"
@@ -50,8 +44,8 @@ msgstr "Денъишмелер журналы"
 msgid "License"
 msgstr "Лицензия"
 
-msgid "Notification templates"
-msgstr "Бильдирме шаблонлары"
+msgid "Templates"
+msgstr "Шаблонлар"
 
 msgid "Delete"
 msgstr "Ёкъ этмек"
@@ -62,8 +56,8 @@ msgstr "Аномалиялар"
 msgid "Preferences"
 msgstr "Сазламалар"
 
-msgid "Notification settings"
-msgstr "Бильдирме сазламалары"
+msgid "Notifications"
+msgstr ""
 
 msgid "file unavailable"
 msgstr "файлге иришильмез"
@@ -83,25 +77,16 @@ msgstr "Файллар"
 msgid "Comments"
 msgstr "Изаатлар"
 
-msgid "Messages"
-msgstr "Месажлар"
-
 msgid "Details"
 msgstr "Айрынтылар"
 
 msgid "Platform wizard"
 msgstr "Платформа устасы"
 
-msgid "CREDIT CARD"
-msgstr "КРЕДИТ КАРТЫ"
-
-msgid "YOUR NAME"
-msgstr "АДЫНЪЫЗ"
-
 msgid "Label the report"
 msgstr "Малюматлар берильгенини къайд этмек "
 
-msgid "Postpone the expiration date"
+msgid "Edit the expiration date"
 msgstr "Сонъ къуллама тарихини кериге чекмек"
 
 msgid "Select all"
@@ -113,8 +98,8 @@ msgstr "Сайлавны лягъу этмек "
 msgid "Refresh"
 msgstr "Янъартмакъ"
 
-msgid "Context"
-msgstr "Контекст"
+msgid "Channel"
+msgstr ""
 
 msgid "Preview"
 msgstr "Ильк бакъма "
@@ -218,9 +203,6 @@ msgstr "Иришим соратылды"
 msgid "Request access to the whistleblower's identity"
 msgstr "Малюмат бериджи шахсиетине иришимни соратмакъ"
 
-msgid "Please write a motivation"
-msgstr "Лютфен, мотивацияны бельгиленъиз"
-
 msgid "Reply to the request"
 msgstr "Соратмагъа джевап бермек"
 
@@ -247,9 +229,6 @@ msgstr "Малюмат бериджи шахсиетине иришимни ре
 
 msgid "Authorize access to the whistleblower's identity"
 msgstr "Малюмат бериджи шахсиетине иришимге изин бермек"
-
-msgid "Templates"
-msgstr "Шаблонлар"
 
 msgid "URL redirects"
 msgstr "URL ёнетмелери"
@@ -290,8 +269,8 @@ msgstr "Къабул этиле билир"
 msgid "Strong"
 msgstr "Кучьлю"
 
-msgid "Text shown on top of the interface for selecting contexts"
-msgstr "Контекст сайлама интерфейси узеринде косьтерильген метин"
+msgid "Text shown on top of the interface for selecting channels"
+msgstr ""
 
 msgid "Silence email notifications"
 msgstr "Электрон почта бильдирмелерни сёндюрмек"
@@ -354,9 +333,6 @@ msgstr "Файлнынъ максималь ольчюси:"
 
 msgid "Scheduled jobs"
 msgstr "Планлаштырылгъан вазифелер"
-
-msgid "Sites management"
-msgstr "Сайтларнынъ идаре этилюви"
 
 msgid "Regenerate"
 msgstr "Гъайрыдан тиклемек"
@@ -456,20 +432,110 @@ msgstr "Денъишюв буферине копияламакъ"
 msgid "Logout"
 msgstr "Чыкъыш"
 
-msgid "Give this recipient ability to grant user access to reports"
-msgstr "Бу алыджыгъа къулланыджылар эсабатларына иришим имкяныны бермек"
-
 msgid "Grant access"
 msgstr "Иришимге изин бермек"
 
 msgid "Revoke access"
 msgstr "Иришимни ред этмек"
 
+msgid "Transfer"
+msgstr ""
+
+msgid "Assigned to"
+msgstr ""
+
+msgid "Not provided."
+msgstr ""
+
+msgid "Set a reminder"
+msgstr ""
+
+msgid "Privileges"
+msgstr ""
+
+msgid "Hide"
+msgstr "Гизлемек"
+
+msgid "Unhide"
+msgstr ""
+
+msgid "Redact"
+msgstr ""
+
+msgid "Select an option"
+msgstr ""
+
+msgid "Select your language"
+msgstr ""
+
+msgid "Give this user ability to mask information"
+msgstr ""
+
+msgid "Give this user ability to permanently redact masked information"
+msgstr ""
+
+msgid "I've read and accept the Privacy Policy"
+msgstr ""
+
+msgid "Download copy of the Privacy Policy"
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr ""
+
+msgid "Whistleblowing Policy"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Everyone"
+msgstr ""
+
+msgid "Recipients only"
+msgstr ""
+
+msgid "Me only"
+msgstr ""
+
+msgid "Returning whistleblowers"
+msgstr ""
+
+msgid "Anonymity"
+msgstr ""
+
+msgid "Anonymous"
+msgstr ""
+
+msgid "Subscribed"
+msgstr ""
+
+msgid "Initially anonymous"
+msgstr ""
+
+msgid "Tor"
+msgstr ""
+
+msgid "Devices"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Act on behalf of a whistleblower"
+msgstr ""
+
+msgid "The link will expire in 7 days."
+msgstr ""
+
 msgid "File a report"
 msgstr "Эсабат бермек"
 
-msgid "Select the context of your report:"
-msgstr "Малюматларынъыз ичюн контекст сайланъыз:"
+msgid "Select a reporting channel:"
+msgstr ""
 
 msgid "Before proceeding, please set a new password."
 msgstr "Девам этмезден эвель, лютфен, янъы пароль яратынъыз."
@@ -479,102 +545,6 @@ msgstr "Лютфен, девам этмезден эвель эки фактор
 
 msgid "Enable"
 msgstr "Ишлетмек"
-
-msgid "Disable submissions"
-msgstr "Малюматларны яйынламакъ имкянындан марум этмек"
-
-msgid "Enable encryption"
-msgstr "Шифрелемени ишлетмек"
-
-msgid "Enable administrators to change user passwords"
-msgstr "Идареджилерге къулланыджы пароллерни денъиштирмеге изин бермек"
-
-msgid "Administrators authorized to change user passwords:"
-msgstr "Идареджилерге къулланыджы пароллерини денъиштирмеге изин берильди:"
-
-msgid "Enable multisite feature"
-msgstr "Мульти-сайт сазламасыны ишлетмек"
-
-msgid "Enable simplified login"
-msgstr "Саде киришке изин бермек"
-
-msgid "Enable search engines indexing"
-msgstr "Къыдырма системаларнынъ индекслемесини башламакъ"
-
-msgid "Default questionnaire"
-msgstr "Стандарт суаллер джедвели"
-
-msgid "Show contexts in alphabetical order"
-msgstr "Контекстлерни элифбе тертибинде сыраламакъ"
-
-msgid "Size limit for file attachments"
-msgstr "Илявелер ичюн ольчю сынъыры"
-
-msgid "megabytes"
-msgstr "мегабайтлар"
-
-msgid "Require two factor authentication"
-msgstr "Эки факторлы аутентификацияны талап этмек"
-
-msgid "Password change interval"
-msgstr "Парольни денъиштирмек ичюн вакъыт"
-
-msgid ""
-"For security reasons, password changes are required at regular intervals."
-msgstr "Телюкесизлик себеплеринден мунтазам суретте парольни денъиштирмеге лязим."
-
-msgid "Set the value to 0 to disable this feature."
-msgstr "Бу функцияны сёндюрмек ичюн 0 дёгмесине басынъыз."
-
-msgid "Number of days till notifying unread reports to users"
-msgstr "Къулланыджыларгъа эсабатлар окъунмамасыны хабердар этильмесине къадар олгъан куньлернинъ сайысы"
-
-msgid "Disable the privacy panel"
-msgstr "Гизлилик сазламалар панелини сёндюрмек"
-
-msgid "Enable custom privacy panel"
-msgstr "Гизлилик сазламалар панелини чалыштырмакъ"
-
-msgid "Custom privacy panel"
-msgstr "Гизлилик сазламалар панели "
-
-msgid "Enable custodian user role"
-msgstr "Къулланыджы-къоруйыджы ролюни ишлетмек"
-
-msgid "Enable scoring system"
-msgstr "Баа къойма системасыны ишлетмек"
-
-msgid "Logging level"
-msgstr "Къайдларнынъ севиеси"
-
-msgid "Log accesses of internal users"
-msgstr "Ички къулланыджыларнынъ авторизация журналы"
-
-msgid "Notify administrators of software problems"
-msgstr "Идареджилерге программа темининде проблемалар олгъаныны бильдиринъиз"
-
-msgid "Notify developers of software problems"
-msgstr "Программаны ишлеп чыкъаргъанларгъа программадаки проблемалар олгъаныны бильдиринъиз"
-
-msgid ""
-"By enabling this feature, you will contribute to the development and "
-"security of the platform."
-msgstr "Бу функцияны ишлетип, сиз платформанынъ инкишафына ве телюкесизлигине иссенъизни къошарсынъыз."
-
-msgid "Save"
-msgstr "Сакълап къалдырмакъ"
-
-msgid "Reset reports"
-msgstr "Эсабатлар сыфырламасы"
-
-msgid "Low"
-msgstr "Алчакъ"
-
-msgid "High"
-msgstr "Юксек"
-
-msgid "percentage"
-msgstr "фаиз"
 
 msgid "Type"
 msgstr "Чешит"
@@ -603,6 +573,9 @@ msgstr "Яратма тарихи"
 msgid "Last access"
 msgstr "Сонъ иришим"
 
+msgid "Receivers"
+msgstr ""
+
 msgid "Whistleblower's last access"
 msgstr "Малюмат бериджининъ сонъ иришими"
 
@@ -621,68 +594,29 @@ msgstr "Бу аланны толдурмакъ шарттыр"
 msgid "Edit"
 msgstr "Денъиштирмек"
 
+msgid "Save"
+msgstr "Сакълап къалдырмакъ"
+
 msgid "Cancel"
 msgstr "Лягъу этме"
+
+msgid "days"
+msgstr "куньлер"
+
+msgid "Disabled"
+msgstr "Сёндюрильди"
 
 msgid "Report statuses"
 msgstr "Эсабат статуслары"
 
-msgid "Logo"
-msgstr "Логотип"
-
-msgid "Project name"
-msgstr "Тешеббюс ады"
-
-msgid "Description"
-msgstr "Тасвир"
-
-msgid "Homepage title"
-msgstr "Баш саифе серлевасы"
-
-msgid "Presentation"
-msgstr "Презентация"
-
-msgid "Question to solicit possible whistleblowers"
-msgstr "Потенциаль малюмат бериджилер ичюн суаль"
-
-msgid "Whistleblowing button"
-msgstr "Малюмат дёгмеси"
-
-msgid "Disclaimer"
-msgstr "Месулиетликтен ред этме"
-
-msgid "Footer"
-msgstr "Алтбильги"
-
-msgid "Upload"
-msgstr "Юклеме"
-
-msgid "Download"
-msgstr "Эндирме"
-
-msgid "Language:"
-msgstr "Тиль:"
-
-msgid "Add custom text"
-msgstr "Озь метинни къошмакъ"
-
-msgid "Custom text"
-msgstr "Озь метин"
-
-msgid "Original text"
-msgstr "Асыл метин"
-
-msgid "Original translation"
-msgstr "Асыл терджиме"
-
-msgid "Custom translation"
-msgstr "Озь терджиме"
-
-msgid "Contexts"
-msgstr "Контекстлер"
+msgid "Channels"
+msgstr ""
 
 msgid "Hidden"
 msgstr "Гизли"
+
+msgid "Description"
+msgstr "Тасвир"
 
 msgid "Questionnaire"
 msgstr "Суаллер джедвели"
@@ -690,8 +624,11 @@ msgstr "Суаллер джедвели"
 msgid "Recipients"
 msgstr "Алыджылар"
 
-msgid "days"
-msgstr "куньлер"
+msgid "Reminder date"
+msgstr ""
+
+msgid "Set the value to 0 to disable this feature."
+msgstr "Бу функцияны сёндюрмек ичюн 0 дёгмесине басынъыз."
 
 msgid "Show the questionnaire navigation interface"
 msgstr "Суаллер джедвели идаре этме интерфейсини косьтермек"
@@ -708,24 +645,6 @@ msgstr "Алыджыларнынъ максималь сайысы:"
 msgid "Show recipients in alphabetical order"
 msgstr "Алыджыларны элифбе тертибине коре сыраламакъ"
 
-msgid "Show recipient details on the status page of the report"
-msgstr "Малюмат берме вазиети саифесинде алыджы бильгилерни косьтермек"
-
-msgid "Enable comments"
-msgstr "Изаатларны ишлетмек"
-
-msgid "Allow the whistleblower to write comments"
-msgstr "Малюмат бериджиге изаатларны къошмагъа изин бермек"
-
-msgid "Enable private messages"
-msgstr "Шахсий месажларны ишлетмек"
-
-msgid "Allow the whistleblower to send messages"
-msgstr "Малюмат бериджиге беянатларны ёлламагъа изин бермек"
-
-msgid "Allow the whistleblower to add attachments"
-msgstr "Малюмат бериджиге берильген весикъаларгъа илявелерни къошмагъа изин бермек"
-
 msgid "Additional questionnaire"
 msgstr "Къошма суаллер джедвели"
 
@@ -741,6 +660,9 @@ msgstr "Къыймет"
 msgid "Medium"
 msgstr "Орта"
 
+msgid "High"
+msgstr "Юксек"
+
 msgid "Software version:"
 msgstr "Программа теминаты версиясы:"
 
@@ -755,6 +677,9 @@ msgstr "Къабиль IP-адреслер"
 
 msgid "Admin"
 msgstr "Идареджи"
+
+msgid "Analyst"
+msgstr ""
 
 msgid "Recipient"
 msgstr "Алыджы"
@@ -835,9 +760,6 @@ msgid ""
 "The manual configuration wizard will guide you through the setup of HTTPS "
 "from an alternative Certificate Authority."
 msgstr "Эль сазламасы устасы альтернитив Сертификация Меркезинден HTTPS сазламасына имкян берип, сизни конфигурация джерьянындан кечирир."
-
-msgid "Disabled"
-msgstr "Сёндюрильди"
 
 msgid "Auto-renewal"
 msgstr "Автоматик девам эттирме"
@@ -952,6 +874,12 @@ msgstr "Бир къач джевап къабул этмек"
 msgid "Template override"
 msgstr "Шаблонны лягъу этмек"
 
+msgid "Min"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
 msgid "Phone number"
 msgstr "Телефон номерасы"
 
@@ -975,6 +903,9 @@ msgstr "Видео"
 
 msgid "Text shown upon negative answer"
 msgstr ""
+
+msgid "Low"
+msgstr "Алчакъ"
 
 msgid "Trigger conditions"
 msgstr "Ишлетюв шартлары"
@@ -1006,20 +937,149 @@ msgstr "Дубликат"
 msgid "Steps"
 msgstr "Адымлар"
 
-msgid "Site settings"
-msgstr "Сайт сазламалар"
+msgid "Logo"
+msgstr "Логотип"
+
+msgid "Project name"
+msgstr "Тешеббюс ады"
+
+msgid "Homepage title"
+msgstr "Баш саифе серлевасы"
+
+msgid "Presentation"
+msgstr "Презентация"
+
+msgid "Question to solicit possible whistleblowers"
+msgstr "Потенциаль малюмат бериджилер ичюн суаль"
+
+msgid "Whistleblowing button"
+msgstr "Малюмат дёгмеси"
+
+msgid "Disclaimer"
+msgstr "Месулиетликтен ред этме"
+
+msgid "Footer"
+msgstr "Алтбильги"
+
+msgid "Upload"
+msgstr "Юклеме"
+
+msgid "Download"
+msgstr "Эндирме"
+
+msgid "Language:"
+msgstr "Тиль:"
+
+msgid "Add custom text"
+msgstr "Озь метинни къошмакъ"
+
+msgid "Custom text"
+msgstr "Озь метин"
+
+msgid "Original text"
+msgstr "Асыл метин"
+
+msgid "Original translation"
+msgstr "Асыл терджиме"
+
+msgid "Custom translation"
+msgstr "Озь терджиме"
+
+msgid "Disable submissions"
+msgstr "Малюматларны яйынламакъ имкянындан марум этмек"
+
+msgid "Enable encryption"
+msgstr "Шифрелемени ишлетмек"
+
+msgid "Enable administrators to change user passwords"
+msgstr "Идареджилерге къулланыджы пароллерни денъиштирмеге изин бермек"
+
+msgid "Administrators authorized to change user passwords:"
+msgstr "Идареджилерге къулланыджы пароллерини денъиштирмеге изин берильди:"
+
+msgid "Enable PGP"
+msgstr ""
+
+msgid "Enable simplified login"
+msgstr "Саде киришке изин бермек"
+
+msgid "Enable search engines indexing"
+msgstr "Къыдырма системаларнынъ индекслемесини башламакъ"
+
+msgid "Show channels in alphabetical order"
+msgstr ""
+
+msgid "Size limit for file attachments"
+msgstr "Илявелер ичюн ольчю сынъыры"
+
+msgid "megabytes"
+msgstr "мегабайтлар"
+
+msgid "Require two factor authentication"
+msgstr "Эки факторлы аутентификацияны талап этмек"
+
+msgid "Password change interval"
+msgstr "Парольни денъиштирмек ичюн вакъыт"
+
+msgid ""
+"For security reasons, password changes are required at regular intervals."
+msgstr "Телюкесизлик себеплеринден мунтазам суретте парольни денъиштирмеге лязим."
+
+msgid "Number of days till notifying unread reports to users"
+msgstr "Къулланыджыларгъа эсабатлар окъунмамасыны хабердар этильмесине къадар олгъан куньлернинъ сайысы"
+
+msgid "Custom support URL"
+msgstr ""
+
+msgid "Disable the privacy panel"
+msgstr "Гизлилик сазламалар панелини сёндюрмек"
+
+msgid "Enable custom privacy panel"
+msgstr "Гизлилик сазламалар панелини чалыштырмакъ"
+
+msgid "Custom privacy panel"
+msgstr "Гизлилик сазламалар панели "
+
+msgid "Enable scoring system"
+msgstr "Баа къойма системасыны ишлетмек"
+
+msgid "Logging level"
+msgstr "Къайдларнынъ севиеси"
+
+msgid "percentage"
+msgstr "фаиз"
+
+msgid "Log accesses of internal users"
+msgstr "Ички къулланыджыларнынъ авторизация журналы"
+
+msgid "Notify administrators of software problems"
+msgstr "Идареджилерге программа темининде проблемалар олгъаныны бильдиринъиз"
+
+msgid "Notify developers of software problems"
+msgstr "Программаны ишлеп чыкъаргъанларгъа программадаки проблемалар олгъаныны бильдиринъиз"
+
+msgid ""
+"By enabling this feature, you will contribute to the development and "
+"security of the platform."
+msgstr "Бу функцияны ишлетип, сиз платформанынъ инкишафына ве телюкесизлигине иссенъизни къошарсынъыз."
+
+msgid "Reset reports"
+msgstr "Эсабатлар сыфырламасы"
+
+msgid "Settings"
+msgstr ""
 
 msgid "Case management"
 msgstr "Дава идаре этилюви"
 
-msgid "Network settings"
-msgstr "Агъын сазламалар"
+msgid "Network"
+msgstr ""
 
 msgid "Sites"
 msgstr "Сайтлар"
 
-msgid "Mode:"
-msgstr "Режим:"
+msgid "Profile"
+msgstr ""
 
 msgid "Configure"
 msgstr "Сазлама"
@@ -1027,14 +1087,17 @@ msgstr "Сазлама"
 msgid "Subdomain"
 msgstr "Субдомен"
 
+msgid "Mode:"
+msgstr "Режим:"
+
 msgid "Creation date:"
 msgstr "Яратма тарихи:"
 
-msgid "Root domain used for secondary sites"
-msgstr "Экинджи дереджели сайтлар ичюн къулланылгъан тамыр домен"
-
 msgid "Use the first site for administrative purposes only"
 msgstr "Биринджи сайтны тек административ макъсад иле къулланмакъ"
+
+msgid "Root domain used for secondary sites"
+msgstr "Экинджи дереджели сайтлар ичюн къулланылгъан тамыр домен"
 
 msgid "Allow users to sign up"
 msgstr "Къулланыджылыргъа къайд олунмагъа изин бермек"
@@ -1055,10 +1118,10 @@ msgid "Set password"
 msgstr "Пароль бельгилемек"
 
 msgid ""
-"The chosen password is too weak. A valid password should be at least 10 "
+"The chosen password is too weak. A valid password should be at least 12 "
 "characters long and contain a variety of characters including at least a "
 "lowercase character, a capital character, a number and a special character."
-msgstr "Сайлангъан пароль пек зайыф. Къабул этиледжек пароль энъ азындан 10 ишареттен тешкиль олунмалы. Парольге чешит ишаретлер кирмели: кучюк ве буюк арифлер, ракъам ве хусусий ишарет."
+msgstr ""
 
 msgid "Force password change"
 msgstr "Меджбурий пароль денъиштирмеси"
@@ -1093,11 +1156,23 @@ msgstr "Джебрен сайланды"
 msgid "Allow the recipient to delete reports"
 msgstr "Алыджыгъа эсабатларны ёкъ этмеге изин бермек"
 
-msgid "Allow the recipient to postpone the report expiration date"
+msgid "Allow the recipient to edit the report expiration date"
 msgstr "Алыджыгъа эсабат битме муддетини кечиктирмеге изин бермек"
+
+msgid "Give this user ability to grant user access to reports"
+msgstr ""
+
+msgid "Give this user ability to transfer reports to other users"
+msgstr ""
+
+msgid "Allow this user to reopen management of a report"
+msgstr ""
 
 msgid "Give the user administrative access to the following features:"
 msgstr "Къулланыджыгъа невбеттеки функцияларгъа административ иришимни беринъиз:"
+
+msgid "Statistics"
+msgstr ""
 
 msgid "Request date"
 msgstr "Соратма тарихи"
@@ -1135,14 +1210,20 @@ msgstr "Эсабынъызны бельгиленъиз:"
 msgid "Now type your password, then click 'Log in':"
 msgstr "Энди паролинъизни язып, «Кириш» нокътасына басынъыз:"
 
-msgid "Text shown after the user has selected the option."
-msgstr "Къулланыджы опцияны сайлагъан сонъ косьтерильген метин."
-
 msgid "Confirm"
 msgstr "Тасдикъламакъ"
 
+msgid "Text shown after the user has selected the option."
+msgstr "Къулланыджы опцияны сайлагъан сонъ косьтерильген метин."
+
 msgid "Assign score points"
 msgstr "Къыймет кесмек"
+
+msgid "Change status"
+msgstr ""
+
+msgid "Status:"
+msgstr "Статус:"
 
 msgid "Are you sure?"
 msgstr "Эминсинъизми?"
@@ -1167,8 +1248,23 @@ msgid ""
 "your password to recover the access to your account without data loss."
 msgstr "Копия япып, оны телюкесиз ерге ерлештиринъиз. Эгер паролинъизни джойсанъыз, копиядаки малюматлар джойылмайып, эсабынъызнен иришимни гъайрыдан къурмакъ ичюн керек олур."
 
+msgid "Attention"
+msgstr ""
+
+msgid "For security reasons the code needs to be changed."
+msgstr ""
+
 msgid "Enter a name for the copy"
 msgstr "Копия адыны кирсетинъиз"
+
+msgid "Mask"
+msgstr ""
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
 
 msgid "Request support"
 msgstr "Ярдым соратмакъ"
@@ -1190,14 +1286,17 @@ msgid ""
 "therefore only be used for testing purposes."
 msgstr "Платформа HTTPS бирлешмеси ичюн сазлаштырылмагъан, бу себептен о тек тест ичюн къулланылмакъ керек."
 
-msgid "Please write a motivation for the reply"
-msgstr "Лютфен, джевапнынъ мотивациясыны бельгиленъиз"
-
 msgid "Send"
 msgstr "Ёлламакъ"
 
 msgid "By confirming, you will postpone the expiration date to:"
 msgstr "Тасдикъ олунса, сиз сонъ къулланма тарихини бу шекильде узатырсынъыз:"
+
+msgid "By confirming, you will set a reminder on date:"
+msgstr ""
+
+msgid "Transfer access"
+msgstr ""
 
 msgid "This is a demo platform, please do not use it for real submissions."
 msgstr "Бу косьтерме платформасыдыр, оны керчек весикъаларнынъ берильмеси ичюн къулланманъыз."
@@ -1231,6 +1330,12 @@ msgstr "Ресурскъа иришим тек Tor агъындан мумкюн
 
 msgid "The upload request exceeds the size limit"
 msgstr "Серверге файл юклемесине соратма тайин этильген лимиттен устюндир"
+
+msgid "A user with this username already exists"
+msgstr ""
+
+msgid "You are operating on behalf of a whistleblower."
+msgstr ""
 
 msgid "Current password"
 msgstr "Шимдики пароль"
@@ -1273,20 +1378,23 @@ msgstr "Сиз энди эсабатны тапшырдынъызмы? Озь к
 msgid "The receipt is either invalid or the report has expired."
 msgstr "Квитанция керчек дегиль я да эсабат къулланма тарихи битти."
 
-msgid "Select a file or drag it here."
-msgstr "Файлны сайланъыз я да оны мында чекинъиз."
+msgid "Filename"
+msgstr "Файл ады"
 
 msgid "Size:"
 msgstr "Ольчю:"
 
-msgid "Uploading files…"
-msgstr "Файллар юкленмеси…"
+msgid "Access date"
+msgstr ""
 
-msgid "Upload completed successfully!"
-msgstr "Юкленме мувафакъиетнен тамамланды!"
+msgid "Address"
+msgstr ""
 
-msgid "Estimated upload time:"
-msgstr "Юкленменинъ вакъыты:"
+msgid "Fiscal code"
+msgstr ""
+
+msgid "Tax code"
+msgstr ""
 
 msgid "Recipients have requested you to fill an additional questionnaire."
 msgstr "Алыджылар сизни къошма суаллер джедвелини толдурмагъа риджа эттилер."
@@ -1300,8 +1408,8 @@ msgstr "Кимден:"
 msgid "To:"
 msgstr "Кимге:"
 
-msgid "Filename"
-msgstr "Файл ады"
+msgid "View"
+msgstr ""
 
 msgid "Upload date"
 msgstr "Юкленме тарихи"
@@ -1314,9 +1422,6 @@ msgstr "Суаллер джедвелининъ джеваплары"
 
 msgid "Step"
 msgstr "Адым"
-
-msgid "Status:"
-msgstr "Статус:"
 
 msgid "Files attached by recipients"
 msgstr "Алыджылар тарафындан иляве этильген файллар"
@@ -1343,9 +1448,6 @@ msgstr "Сиз программа теминаты ишленмесинде иш
 msgid "Join our chat:"
 msgstr "Чатымызгъа къошулынъыз:"
 
-msgid "Follow the project on:"
-msgstr "Лейханынъ инкишафыны козетинъиз:"
-
 msgid "An update is available:"
 msgstr "Янъартма мевджуттир:"
 
@@ -1355,6 +1457,9 @@ msgid ""
 "to recover your access to the platform and to your data in case you forget "
 "your password."
 msgstr "«Сазламалар» болюгине кирип, «эсапны гъайрыдан къурма анахтары»ны алынъыз ве оны телюкесиз ерде сакъланъыз. Бу анахтар платформагъа иришимни гъайрыдан къурмакъ ве парольни унутсанъыз бильгилеринъизге иришмек керекли олур."
+
+msgid "Select a file or drag it here."
+msgstr "Файлны сайланъыз я да оны мында чекинъиз."
 
 msgid "The provided recovery key is invalid."
 msgstr "Теклиф этильген гъайрыдан тикленме анахтары догъру дегиль."
@@ -1387,6 +1492,9 @@ msgstr "Соратма тарихи"
 msgid "Show"
 msgstr "Косьтермек"
 
+msgid "Subscription date"
+msgstr ""
+
 msgid "Congratulations!"
 msgstr "Хайырлаймыз!"
 
@@ -1409,26 +1517,17 @@ msgstr "Эгер платформа 24 саатте активация япыл�
 msgid "Sign up"
 msgstr "Къайд олмакъ"
 
-msgid "Site"
-msgstr ""
-
-msgid "Confirmation"
-msgstr "Тасдикъ"
-
 msgid "Invalid confirmation"
 msgstr "Тасдикъ догъру дегиль"
 
 msgid "Invalid phone number"
 msgstr "Телефон номерасы догъру дегиль"
 
-msgid "Address"
+msgid "Site"
 msgstr ""
 
-msgid "Fiscal code"
-msgstr ""
-
-msgid "Tax code"
-msgstr ""
+msgid "Confirmation"
+msgstr "Тасдикъ"
 
 msgid "The answer is too short"
 msgstr "Джевап пек къыскъа"
@@ -1467,17 +1566,17 @@ msgstr "Системагъа кирмек ичюн 16 ишаретли квит�
 msgid "View your report"
 msgstr "Эсабатынъызны бакъып чыкъынъыз"
 
-msgid "Recipient selection"
-msgstr "Алыджы сайламасы"
-
-msgid "Select the recipients of your report:"
-msgstr "Эсабатынъызнынъ алыджыларыны сайланъыз:"
+msgid "Select the recipients of your report"
+msgstr ""
 
 msgid "Recipients selected:"
 msgstr "Сайлангъан алыджылар:"
 
 msgid "You have reached the maximum number of selectable recipients."
 msgstr "Сиз алыджыларнынъ максималь сайысыны къулландынъыз."
+
+msgid "You must select at least one recipient."
+msgstr "Сиз энъ азындан бир алыджыны сайламакъ керексинъиз."
 
 msgid ""
 "The following recipients will receive your report and could not be "
@@ -1489,17 +1588,11 @@ msgid ""
 "invalid:"
 msgstr "Невбеттеки суаллерге джевап берильмеди я да джеваплар догъру дегиль:"
 
-msgid "You must select at least one recipient."
-msgstr "Сиз энъ азындан бир алыджыны сайламакъ керексинъиз."
+msgid "Recipient selection"
+msgstr "Алыджы сайламасы"
 
 msgid "Waiting for the file(s) to finish uploading."
 msgstr "Файл(лар) юклене."
-
-msgid "The following steps have errors:"
-msgstr "Невбеттеки арекетлерде хата япылды:"
-
-msgid "Hide"
-msgstr "Гизлемек"
 
 msgid ""
 "The following step-by-step procedure will guide you through creating your "
@@ -1589,8 +1682,8 @@ msgstr "Бу тешкилятлар иддиаларынъызны тедкъи�
 msgid "What is the outcome you want to achieve with our support?"
 msgstr "Ярдымымыз иле насыл нетиджеге иришмеге истейсинъиз?"
 
-msgid "Do you want to provide your identification information?"
-msgstr "Сиз озюнъиз акъкъында малюмат къалдырмакъ истейсинъизми?"
+msgid "Would you like to tell us who you are?"
+msgstr ""
 
 msgid "First name"
 msgstr "Ад"
@@ -1606,6 +1699,9 @@ msgstr "Меннен тек платформа аркъалы багълангъ
 
 msgid "Other"
 msgstr "Башкъа"
+
+msgid "Specify"
+msgstr ""
 
 msgid "Dear {RecipientName},"
 msgstr "Азиз {RecipientName},"
@@ -1667,6 +1763,9 @@ msgstr "Бу нормаль активлик я да ёкъ, яни меселе
 
 msgid "The activities with unusual stats are:"
 msgstr "Типик олмагъан статистикалы активлик:"
+
+msgid "Available disk space: {FreeMemory}/{TotalMemory}"
+msgstr ""
 
 msgid ""
 "The server cannot guarantee that a new report can be stored, so submissions "
@@ -1896,6 +1995,9 @@ msgstr "Бу электрон мектюпнен алыджы бир я да б�
 msgid "New report"
 msgstr "Янъы эсабат"
 
+msgid "One or more reports are expiring and will be soon deleted."
+msgstr ""
+
 msgid "The earliest expiration date is {EarliestExpirationDate}."
 msgstr "Энъ эрте къулланма тарихи {EarliestExpirationDate}."
 
@@ -1905,18 +2007,16 @@ msgstr "Лютфен, олар программа иле ёкъ этильмег
 msgid "Some reports will expire soon"
 msgstr "Бир къач эсабатларнынъ къулланма тарихи якъында битеджек"
 
-msgid ""
-"This is an email to notify you that a whistleblower has selected you as a "
-"valuable recipient of their report."
-msgstr "Бу мектюпнен малюмат бериджи сизни эсабатынынъ муим алыджысы оларакъ сайлагъаныны хабер этемиз."
+msgid "This is an email to notify you the reception of a new report."
+msgstr ""
 
 msgid ""
-"You are asked to pay special attention to the information and material "
-"contained therein. Please keep in mind that whistleblowers often expose "
-"themselves to high personal risks in the interest of the public. Therefore "
-"the material provided within this report should be considered to be of high "
-"importance."
-msgstr "Лютфен, мектюптеки олгъан бильги ве малюматларгъа айрыджа дикъкъат этинъиз. Малюмат бериджилер джемиетнинъ меракълары ичюн озьлерини джиддий телюкеге огъраткъанларыны козь огюнде тутунъыз. Бу себептен эсабатта олгъан малюматлар гъает муим сайыла."
+"This is an email to notify you that the reminder date for one or more "
+"reports has been met."
+msgstr ""
+
+msgid "Reminder"
+msgstr ""
 
 msgid "This is an email to notify that an existing report has been updated."
 msgstr "Бу мектюп бар олгъан эсабат янъартылгъаны акъкъында хабер этмек ичюн ёлланылды."

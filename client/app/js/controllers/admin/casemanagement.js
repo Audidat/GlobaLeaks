@@ -83,7 +83,7 @@ GL.controller("AdminCaseManagementCtrl", ["$scope", function($scope){
 
       $http({
         method: "PUT",
-        url: "api/admin/submission_statuses",
+        url: "api/admin/statuses",
         data: {
           "operation": "order_elements",
           "args": reordered_ids,
@@ -105,7 +105,7 @@ GL.controller("AdminCaseManagementCtrl", ["$scope", function($scope){
       };
 
       $http.post(
-        "api/admin/submission_statuses",
+        "api/admin/statuses",
         new_submissions_status
       ).then(function (result) {
         $scope.resources.submission_statuses.push(result.data);
@@ -132,9 +132,20 @@ GL.controller("AdminCaseManagementCtrl", ["$scope", function($scope){
       });
     };
 
+    $scope.updateRetentionOption = function(substatus) {
+      if (substatus.tip_timetolive_option <= -1) {
+        substatus.tip_timetolive = -1;
+      } else if (substatus.tip_timetolive_option === 0) {
+        if (substatus.tip_timetolive <= 0) {
+          substatus.tip_timetolive = 30;
+        }
+      }
+    };
+
     $scope.save_submissions_substatuses = function (substatus, cb) {
-      var updated_submissions_substatuses = new AdminSubmissionSubStatusResource(substatus);
-      return $scope.Utils.update(updated_submissions_substatuses, cb);
+      var updated_submissions_substatus = new AdminSubmissionSubStatusResource(substatus);
+
+      return $scope.Utils.update(updated_submissions_substatus, cb);
     };
 
     function swapSs($event, index, n) {
@@ -151,7 +162,7 @@ GL.controller("AdminCaseManagementCtrl", ["$scope", function($scope){
 
       $http({
         method: "PUT",
-        url: "api/admin/submission_statuses/" + $scope.submissions_status.id + "/substatuses",
+        url: "api/admin/statuses/" + $scope.submissions_status.id + "/substatuses",
         data: {
           "operation": "order_elements",
           "args":  {"ids" : $scope.submissions_status.substatuses.map(function(c) { return c.id; })}
@@ -169,11 +180,12 @@ GL.controller("AdminCaseManagementCtrl", ["$scope", function($scope){
     $scope.addSubmissionSubStatus = function () {
       var new_submissions_substatuses = {
         "label": $scope.new_substatus.label,
-        "order": $scope.order
+        "order": $scope.order,
+        "tip_timetolive": -1
       };
 
       $http.post(
-        "api/admin/submission_statuses/" + $scope.submissions_status.id + "/substatuses",
+        "api/admin/statuses/" + $scope.submissions_status.id + "/substatuses",
         new_submissions_substatuses
       ).then(function (result) {
         $scope.submissions_status.substatuses.push(result.data);
@@ -211,7 +223,7 @@ GL.controller("AdminCaseManagementCtrl", ["$scope", function($scope){
       };
 
       $http.post(
-        "api/admin/submission_statuses/" + $scope.submissions_status.id + "/substatuses",
+        "api/admin/statuses/" + $scope.submissions_status.id + "/substatuses",
         new_submissions_substatuses
       ).then(function (result) {
         $scope.submissions_status.substatuses.push(result.data);

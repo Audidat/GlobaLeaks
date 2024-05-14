@@ -36,6 +36,20 @@ controller("AdminContextEditorCtrl", ["$scope", "$http", "AdminContextResource",
     $scope.editing = !$scope.editing;
   };
 
+  $scope.onReminderSoftChanged = function() {
+    if ($scope.context.tip_reminder_soft > $scope.context.tip_reminder_hard){
+      $scope.context.tip_reminder_hard = $scope.context.tip_reminder_soft;
+    }
+  };
+
+  $scope.onReminderHardChanged = function() {
+    if ($scope.context.tip_reminder_hard === 0){
+      $scope.context.tip_reminder_soft = 0;
+    }else if ($scope.context.tip_reminder_hard < $scope.context.tip_reminder_soft){
+      $scope.context.tip_reminder_soft = $scope.context.tip_reminder_hard;
+    }
+  };
+
   function swap($event, index, n) {
     $event.stopPropagation();
 
@@ -101,7 +115,7 @@ controller("AdminContextAddCtrl", ["$scope", function($scope) {
     var context = new $scope.AdminUtils.new_context();
 
     context.name = $scope.new_context.name;
-    context.questionnaire_id = $scope.resources.node.default_questionnaire;
+    context.questionnaire_id = "default";
     context.order = $scope.newItemOrder($scope.resources.contexts, "order");
 
     context.$save(function(new_context){

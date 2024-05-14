@@ -1,5 +1,10 @@
-GL.controller("SignupCtrl", ["$scope", "$route", "$http",
-              function($scope, $route, $http) {
+GL.controller("SignupCtrl", ["$scope", "$location", "$route", "$http",
+              function($scope, $location, $route, $http) {
+  /* if the signup module is not enabled */
+  if (!$scope.public.node.enable_signup) {
+    $location.path("/");
+    return;
+  }
 
   $scope.hostname = "";
 
@@ -25,7 +30,10 @@ GL.controller("SignupCtrl", ["$scope", "$route", "$http",
   $scope.updateSubdomain = function() {
     $scope.signup.subdomain = "";
     if ($scope.signup.organization_name) {
-      $scope.signup.subdomain = $scope.signup.organization_name.replace(/[^\w]/gi, "").toLowerCase();
+      $scope.signup.subdomain = $scope.signup.organization_name.replace(/[^\w]/gi, "");
+      $scope.signup.subdomain = $scope.signup.subdomain.toLowerCase();
+      $scope.signup.subdomain = $scope.signup.subdomain.replace(/[^a-z0-9-]/g,"");
+      $scope.signup.subdomain = $scope.signup.subdomain.substring(0, 60);
     }
   };
 
@@ -45,6 +53,6 @@ controller("SignupActivationCtrl", ["$scope", "$http", "$location",
                     function($scope, $http, $location) {
   var token = $location.search().token;
   if (token) {
-    $http.get("api/signup/" + token);
+    $http.post("api/signup/" + token);
   }
 }]);
